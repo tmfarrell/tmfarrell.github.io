@@ -1,5 +1,4 @@
 tmfarrell.github.io
-
 ===================
 
 the professional and personal webpage of Tim Farrell (tmfarrell), tfarrell01@gmail.com, in development. 
