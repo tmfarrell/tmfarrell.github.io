@@ -5,9 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Timothy M. Farrell's Website</title>
-		<link rel="stylesheet" href="bootstrap/bootstrap.css">
-		<link rel="stylesheet" href="bootstrap/bootstrap-theme.css">
-		<link rel="stylesheet" href="bootstrap/bootstrap.css.map">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="css/pdf.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.css.map">
 	</head>
 
 	<body>
@@ -25,18 +26,23 @@
 			<li class="active">
 				<a href="#">Resume</a>
 			</li>
-			<li class="active">
+			<li>
 				<a href="contact.html">Contact</a>
 		</ul>
 		
 		<!--Main content-->
-		<object data="img/Resume (as of 25SEPT14).pdf" type="application/pdf" width="100%" height="100%">
- 
-		  <p>It appears you don't have a PDF plugin for this browser.
-		  No biggie... you can <a href="img/Resume (as of 25SEPT14).pdf">click here</a> to
-		  download the PDF file.</a></p>
-  
+		<div id="pdf">
+		<object	data="img/Resume (as of 25SEPT14).pdf#toolbar=1&amp;navpanes=0&amp;scrollbar=1&amp;page=1&amp;view=FitH" 
+		        type="application/pdf" 
+		        width="100%" 
+		        height="100%">
+
+		<p>
+			It appears you don't have a PDF plugin for this browser. No biggie... you can 
+			<a href="img/Resume (as of 25SEPT14).pdf">click here to download the PDF file.</a>
+		</p>
 		</object>
+		</div>
 	</div>	
 	</body>
 </html>

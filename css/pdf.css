@@ -1,0 +1,15 @@
+#pdf {
+	width: 50%;
+	height: 300px;
+	margin: 2em auto;
+	border: 10px solid #6699FF;
+}
+
+#pdf p {
+   padding: 1em;
+}
+
+#pdf object {
+   display: block;
+   border: solid 1px #666;
+}
