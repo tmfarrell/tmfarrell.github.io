@@ -4,16 +4,28 @@
   {% include head.html %}
 
   <body>
+      
+    <div class="container">
+        <div class="one column sidebar">
+            <nav>
+                <h4>Tim Farrell</h4>
+                <ul>
+                    <li><a href="{{ "/about/index.html" | prepend: site.baseurl }}">Home</a></li>
+                    <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Writings</a></li>
+                    <li>Contact Me</li>
+                </ul>
+            </nav>
+            &nbsp;
+        </div>
+    </div>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="twelve columns offset-by-one content">
+      <div class="wrapper">         <!----> 
         {{ content }}
       </div>
     </div>
 
-    {% include footer.html %}
+    <!--{% include footer.html %}-->
 
   </body>
 
