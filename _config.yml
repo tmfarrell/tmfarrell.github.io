@@ -9,7 +9,7 @@
 title: 
 email: tfarrell01@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is the website of Tim Farrell, a biomedical data engineer operating out of Boston.
+  This is the website of Tim Farrell, a biomedical data engineer operating in Boston.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tmfarrell.github.io" # the base hostname & protocol for your site
 twitter_username: tfarrell01
