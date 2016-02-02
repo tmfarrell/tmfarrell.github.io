@@ -178,7 +178,7 @@
 .post-list {
     margin-left: 0;
     list-style: none;
-
+    padding-left: 60px; 
     > li {
         margin-bottom: $spacing-unit;
     }
@@ -187,6 +187,12 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+}
+
+.post-date { 
+    font-size: $small-font-size;
+    color: $grey-color;
+    padding-left: 60px; 
 }
 
 .post-link {
@@ -207,6 +213,7 @@
     font-size: 28px;
     letter-spacing: -1px;
     line-height: 1;
+    padding-left: 60px; 
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -215,6 +222,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    padding-left: 60px; 
 
     h2 {
         font-size: 32px;
