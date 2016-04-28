@@ -44,7 +44,7 @@ In other words, taking this model literally we would have to assume MJ was natur
 
 And further, looking at Watson's quote, he recommends doubling your rate of failure. Assuming he means doubling your average rate of failure \\(n(1-p) \to 2n(1-p)\\), this is the same as doubling your number of trials (since we wouldn't want to touch the individual failure rate[^1]). This does double our success rate as well (since \\(np\\) would become \\(2np\\)), but again lies the issue that at small values of \\(p\\) a level of success is more and more unlikely. (Implying that talent/ ability is highly limiting.)
 
-So actually this isn't our best bet either. The issue here is our assumption of independence between trials. The key message of their quotes is really that the more we fail, the more we are likely _in any given trial_. Our chances of success/ failure at the trial level change after each trial (or some interval of trials).
+So really this isn't our best bet either. The issue here is our assumption of independence between trials. The key implication of their recommendations is that the more we fail, the more we are likely to succeed _at a given trial_. Our chances of success/ failure at the trial level change after each trial (or some interval of trials).
 
 So would we model this? It becomes some stochastic process where as \\(t \to t + 1\\) our chances of success is updated \\(p\_t \to p\_{t+1}\\). And assuming we try at \\(t\\), is improved over some distribution. 
 
@@ -54,7 +54,7 @@ Now this is something. This would leave talent less relevant. This would allow f
 
 And actually research has shown that world-class performers consistently push themselves to a position of discomfort during practice, consciously putting themselves in positions to fail.[^2]
 
-Surely, this can be formalized more and there's probably some stochastic models out (something not unlike a birth-death process) that would do the trick, but I'll leave this for later.
+Surely, this can be formalized more and there's probably some stochastic models out there (something not unlike a kind of inverse birth-death process) that would do the trick, but I'll leave this for later.
 
 
 
