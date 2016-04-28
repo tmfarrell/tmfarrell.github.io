@@ -46,7 +46,7 @@ And further, looking at Watson's quote, he recommends doubling your rate of fail
 
 So really this isn't our best bet either. The issue here is our assumption of independence between trials. The key implication of their recommendations is that the more we fail, the more we are likely to succeed _at a given trial_. Our chances of success/ failure at the trial level change after each trial (or some interval of trials).
 
-So would we model this? It becomes some stochastic process where as \\(t \to t + 1\\) our chances of success is updated \\(p\_t \to p\_{t+1}\\). And assuming we try at \\(t\\), is improved over some distribution. 
+So would we model this? It becomes some stochastic process where as \\(t \to t + 1\\) our chance of success is updated \\(p\_t \to p\_{t+1}\\). And assuming we try at \\(t\\), is improved over some distribution. 
 
 Maybe even, which I think is exactly what Watson implies, the degree of improvement is proportional to the degree to which we fail. As we accumulate failure/ fail more, we improve our \\(p\_t\\) to the same degree. And conversely, maybe the less we fail, the more we get complacent, the more \\(p\_t\\) decreases (over some distribution). 
 
@@ -62,6 +62,6 @@ Surely, this can be formalized more and there's probably some stochastic models 
     $$q + p = 1 \to q' + p' = 1$$
     $$q' = 2q = 2(1 - p)$$
     $$p' = 1 - q' = 1 - 2(1 - p) = 2p - 1.$$
-Which means if your success rate is even a tad under 50/50, you'll never succeed: \\((2(0.49) - 1)\_+ \to 0 \\).
+    Which means if your success rate is even a tad under 50/50, you'll never succeed: \\((2(0.49) - 1)\_+ \to 0 \\).
 
 [^2]: See [here](http://nautil.us/issue/35/boundaries/not-all-practice-makes-perfect).
