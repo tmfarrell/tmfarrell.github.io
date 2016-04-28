@@ -4,11 +4,11 @@ layout: default
 
 <div class="home">
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for writing in site.writings %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ writing.date | date: "%b %-d, %Y" }}</span>
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ writing.title }}</a>
         </h2>
       </li>
     {% endfor %}
