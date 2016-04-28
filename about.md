@@ -3,15 +3,16 @@ layout: page
 title: About
 permalink: /about/
 ---
-Biomedical/ bioinformatics engineer operating in Boston. 
+Biomedical/ bioinformatics engineer operating in Boston.  
 
 My interests lie at the intersection of engineering, biomedicine and
 computation. Though my latest work is mostly computational, I'm equally 
-interested in wetwork. (Mainly I want to make biostuff that is useful and works.)
+interested in wetwork (having recognized that software is easy, hardware 
+hard). Mainly I want to make biostuff that is useful and works.
 
 I use this to write meaningfully about things I read/ think. 
 
-Feel free to [contact me](tfarrell01@gmail.com) with comments/ feedback.  
+Feel free to [contact me](mailto:tfarrell01@gmail.com) with comments/ feedback.  
 
 <!--
 Along with standard links to professional info and (oft-neglected)
@@ -28,7 +29,7 @@ If I was in the manner of giving a name to this <strike>blog</strike>
 set of writings, it might be called "of measure and machine". Or just
 as easily "portraits by an (bio)engineer as a young man". Or probably
 some other equally arbitrary/gratuitous set of strings, meant to rapture 
-souls and convey intelligent coolness. Ado, I am not. As such you'll have
+souls and convey intelligent coolness. Ado, I'm not. You'll have
 to take this/ these for exactly what's written, not what's advertised. 
 --> 
 
