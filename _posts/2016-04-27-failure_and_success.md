@@ -58,7 +58,7 @@ Surely this is an informal argument and lacks rigor. But maybe there's some stoc
 
 
 
-[^1]: Since doubling your individual trial rate of failure would decrease your individual trial success rate to \\(2p - 1\\).  
+[^1]: Doubling your individual trial rate of failure would decrease your individual trial success rate to \\(2p - 1\\).  
     $$q + p = 1 \to q' + p' = 1$$
     $$q' = 2q = 2(1 - p)$$
     $$p' = 1 - q' = 1 - 2(1 - p) = 2p - 1.$$
