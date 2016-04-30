@@ -36,7 +36,7 @@ Except, this is really an over-simplification. Success isn't usually some event 
 
 Instead then maybe we model this as a binomial, which is similar to the geometric except it allows for more than one success in the set of trials. The probability of \\(k\\) successes in \\(n\\) trials for a binomial is \\((1-p)^{n-k}p^k\\). 
 
-So is this what we want? As we increase \\(n\\), the mean of the distribution, i.e. the average probability of success over all \\(k\\), is \\(np\\). Which means indeed our average success is proportional to how many times we try. So, sure, these folks were on to something. 
+So is this what we want? As we increase \\(n\\), the mean of the distribution, i.e. the average probability of success over all \\(k\\), is \\(np\\). Which means indeed our average success is proportional to how many times we try. 
 
 But thinking about this further, this too is incomplete. This means that our average success is still also proportional to \\(p\\), our individual trial success rate. So if this is small we have to try more (make \\(n\\) larger) to get the same average success than if \\(p\\) were larger. And with lower values of \\(p\\), it becomes increasingly prohibitive of larger amounts of success.  
 
@@ -46,15 +46,15 @@ And further, looking at Watson's quote, he recommends doubling your rate of fail
 
 So really this isn't our best bet either. And our initial assumption of independence between trials (something statisticians enjoy assuming) is the issue at hand here. 
 
-The quotes above argue that our chances for successes are actually exactly dependent upon previous trials (within some trailing window, likely). Further, they argue that: the more we try AND fail, the more we are likely to succeed _at a given trial_. 
+The quotes above argue that our chances for successes are actually exactly dependent upon previous trials (within some trailing window). Further, they argue that: the more we try AND fail, the more we are likely to succeed _at a given trial_. 
 
-So would we model this? Probably we should turn to some stochastic process where as \\(t \to t + 1\\) our chance of success is updated \\(p\_t \to p\_{t+1}\\). And assuming we attempt a trial at \\(t\\), is improved over some distribution. And further, this degree of improvement is dependent (and proportional) to the degree to which we fail. 
+So how would we model this? Probably we should turn to some stochastic process where as \\(t \to t + 1\\) our chance of success is updated \\(p\_t \to p\_{t+1}\\). And assuming we attempt a trial at \\(t\\), is improved over some distribution. And further, this degree of improvement is dependent (and proportional) to the degree to which we fail. 
 
 Now this is something. This would leave talent less relevant. This would allow for training to matter.  
 
 And actually research has shown that world-class performers consistently push themselves to a position of discomfort during practice, consciously putting themselves in positions to fail.[^2]
 
-Surely this is an informal argument and lacks rigor. But maybe there's some stochastic models out there, something not unlike a kind of inverse birth-death process, that would do the trick. Interesting to think about. 
+Surely this is an informal argument and lacks rigor. But maybe there's some stochastic models out there, something not unlike a kind of inverse birth-death process, that would do the trick.  
 
 
 
