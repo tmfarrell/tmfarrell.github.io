@@ -12,7 +12,7 @@ And it got me thinking, this isn't the only example of failure being labelled re
 
 >I've missed more than 9000 shots in my career. I've lost almost 300 games. 26 times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.
 
-And again later: 
+Also relevant here, MJ later: 
     
 >I can accept failure, everyone fails at something. But I can't accept not trying.
     
@@ -32,29 +32,29 @@ More formally, this could follow a geometric distribution with success rate \\(p
 
 True, so this is something. 
 
-Except, this is really an over-simplification. Success isn't usually some event you need only hit once, like the lottery. Mike isn't just trying to make one shot, or win one game. 
+Except, this is really an over-simplification. Success isn't usually some event you need only hit once, like the lottery. Mike wasn't trying to make one shot, or win one game. 
 
-Instead maybe we model this as a binomial, which is similar to the geometric except it allows for more than one success in the set of trials. The probability of \\(k\\) successes in \\(n\\) trials for a binomial is \\((1-p)^{n-k}p^k\\). 
+Instead then maybe we model this as a binomial, which is similar to the geometric except it allows for more than one success in the set of trials. The probability of \\(k\\) successes in \\(n\\) trials for a binomial is \\((1-p)^{n-k}p^k\\). 
 
-So is this what we want? Well, as we increase \\(n\\), the mean of the distribution, i.e. the average probability of success over all \\(k\\), is \\(np\\). Which means indeed our average success is proportional to how many times we try. So, sure, these folks were on to something. 
+So is this what we want? As we increase \\(n\\), the mean of the distribution, i.e. the average probability of success over all \\(k\\), is \\(np\\). Which means indeed our average success is proportional to how many times we try. So, sure, these folks were on to something. 
 
 But thinking about this further, this too is incomplete. This means that our average success is still also proportional to \\(p\\), our individual trial success rate. So if this is small we have to try more (make \\(n\\) larger) to get the same average success than if \\(p\\) were larger. And with lower values of \\(p\\), it becomes increasingly prohibitive of larger amounts of success.  
 
 In other words, taking this model literally we would have to assume MJ was naturally talented from the start (had a high probability of success for each trial) since his success would be near impossible if he weren't. Players have to make many more shots (or win many more games) than they miss on average and over time to be great. 
 
-And further, looking at Watson's quote, he recommends doubling your rate of failure. Assuming he means doubling your average rate of failure \\(n(1-p) \to 2n(1-p)\\), this is the same as doubling your number of trials (since we wouldn't want to touch the individual failure rate[^1]). This does double our success rate as well (since \\(np\\) would become \\(2np\\)), but again lies the issue that at small values of \\(p\\) a level of success is more and more unlikely. (Implying that talent/ ability is highly limiting.)
+And further, looking at Watson's quote, he recommends doubling your rate of failure. Assuming he means doubling your average rate of failure \\(n(1-p) \to 2n(1-p)\\), this is the same as doubling your number of trials (since we wouldn't want to touch the individual failure rate[^1]). This does double our success rate since \\(np\\) would become \\(2np\\); but still lies the issue that at small values of \\(p\\) a level of success is more and more unlikely. (Implying that inherent ability/ talent, that which determines our initial individual success rate, is limiting.)
 
-So really this isn't our best bet either. The issue here is our assumption of independence between trials. The key implication of their recommendations is that the more we fail, the more we are likely to succeed _at a given trial_. Our chances of success/ failure at the trial level change after each trial (or some interval of trials).
+So really this isn't our best bet either. And our initial assumption of independence between trials (something statisticians enjoy assuming) is the issue at hand here. 
 
-So would we model this? It becomes some stochastic process where as \\(t \to t + 1\\) our chance of success is updated \\(p\_t \to p\_{t+1}\\). And assuming we try at \\(t\\), is improved over some distribution. 
+The quotes above argue that our chances for successes are actually exactly dependent upon previous trials (within some trailing window, likely). Further, they argue that: the more we try AND fail, the more we are likely to succeed _at a given trial_. 
 
-Maybe even, which I think is exactly what Watson implies, the degree of improvement is proportional to the degree to which we fail. As we accumulate failure/ fail more, we improve our \\(p\_t\\) to the same degree. And conversely, maybe the less we fail, the more we get complacent, the more \\(p\_t\\) decreases (over some distribution). 
+So would we model this? Probably we should turn to some stochastic process where as \\(t \to t + 1\\) our chance of success is updated \\(p\_t \to p\_{t+1}\\). And assuming we attempt a trial at \\(t\\), is improved over some distribution. And further, this degree of improvement is dependent (and proportional) to the degree to which we fail. 
 
 Now this is something. This would leave talent less relevant. This would allow for training to matter.  
 
 And actually research has shown that world-class performers consistently push themselves to a position of discomfort during practice, consciously putting themselves in positions to fail.[^2]
 
-Surely, this can be formalized more and there's probably some stochastic models out there (something not unlike a kind of inverse birth-death process) that would do the trick, but I'll leave this for later.
+Surely this is an informal argument and lacks rigor. But maybe there's some stochastic models out there, something not unlike a kind of inverse birth-death process, that would do the trick. Interesting to think about. 
 
 
 
