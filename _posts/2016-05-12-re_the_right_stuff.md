@@ -2,7 +2,7 @@
 layout: post
 title:  "Re: The Right Stuff"
 date:   2016-05-12 02:00 
-categories: reading psychology phil
+categories: reading
 ---
 
 Swag.  
@@ -16,10 +16,10 @@ The Business.
 The Right Stuff.   
 The Midas Touch.  
 The Oft-Imitated, Never-Replicated.   
-That Which You Know It When You See It.  
+That Which You Know When You See It.  
 That Which Counts But Cannot Easily Be Counted. 
 
-Some say, you either have it or you don't. 
+Some say you either have it or you don't. 
 
 But in fact "The Right Stuff" (Tom Wolfe) is really just a discussion of how 
 the astronauts that have the so-called have "right stuff" really just have 

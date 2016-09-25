@@ -2,7 +2,7 @@
 layout: post
 title:  "Hume and Human Nature"
 date:   2016-04-19 20:00 
-categories: reading phil
+categories: reading
 ---
 
 Came across this excerpt in the intro to David Hume's **Treatise on Human Nature**. He's got a great point here, one that scientists/ engineers/ technical-types sometimes forget.
