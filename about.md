@@ -3,16 +3,17 @@ layout: page
 title: About
 permalink: /about/
 ---
-Biomedical/ bioinformatics engineer operating in Boston.  
+(Biomedical Automation/Data | Bioinformatics) Engineer operating in Boston.  
 
-My interests lie at the intersection of engineering, biomedicine and
-computation. Though my latest work is mostly computational, I'm equally 
-interested in wetwork (and have experience there). Mainly, I want to make 
-biostuff (not specific to any one level of the biological hiearchy) that 
-is useful and works.
+My interests lie at the intersection of computation/automation, engineering 
+and biomedicine. My latest work has been mostly computational/software-related; 
+however, I'm equally interested in wetwork/hardware (and have experience there). 
+Mainly, I want to make "biostuff", not specific to any one level of the biological 
+hiearchy, that works and is useful.
 
 I use this to write meaningfully about things I read/ think. 
-
+<br>  
+<br>  
 Feel free to [contact me](mailto:tfarrell01@gmail.com) with comments/ feedback.  
 
 <!--
