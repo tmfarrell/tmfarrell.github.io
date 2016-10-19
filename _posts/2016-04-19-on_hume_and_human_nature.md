@@ -31,7 +31,7 @@ We should remember that there are no panceas or perfect technologies; however mu
 
 We should remember that after all we are operating on hard/software that is highly complicated and dynamic. And also old and maybe in need of a bit of updating. (And we know this. This is why we educate.) 
 
-
 <br>
 <br>
+------
 <a name="f1">1</a>: Some might argue that philosophy or the humanities is what sets us apart. I think it's hard to argue against math/sci/tech as the culmination of human thought. What has had more influence on our fitness as a species than physics? 
