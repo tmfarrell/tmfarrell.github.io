@@ -12,9 +12,9 @@ Came across this excerpt in the intro to David Hume's **Treatise on Human Nature
 Indeed, the practice of math/science/technology is indeed inherently a product of human nature. And there are two angles/points here.  
 
 
-First, I think from this (Hume's) perspective it could be argued math/sci/tech is the *most human* product of our nature. Our capacity for higher order reason, which finds its pinnacle in the labs and office of math/sci/tech, is what sets us apart.<sup>[1](#myfootnote1)</sup> It's the reason for our dominance as a species. 
+First, I think from this (Hume's) perspective it could be argued math/sci/tech is the *most human* product of our nature. Our capacity for higher order reason, which finds its pinnacle in the labs and office of math/sci/tech, is what sets us apart.<sup>[1](#f1)</sup> It's the reason for our dominance as a species. 
 
-We have the ability to develop language that describes the order of Nature, by testing, trying and iterating it over time. We have the ability to use the resulting language to rearrange Natural order to do our bidding. 
+We have the ability to develop language that describes the order of Nature, by testing, trying and iterating it over time. We have the ability to use the resulting language to rearrange this Natural order to do our bidding. 
 
 No other species has this ability. 
 
@@ -32,6 +32,6 @@ We should remember that there are no panceas or perfect technologies; however mu
 We should remember that after all we are operating on hard/software that is highly complicated and dynamic. And also old and maybe in need of a bit of updating. (And we know this. This is why we educate.) 
 
 
-
-# #
-<a name="myfootnote1">1</a>: Some might argue that philosophy or the humanities is what sets us apart. I think it's clear at this point that math/science is the real culmination of human thought. What has had more influence on our fitness as a species than physics? 
+<br>
+<br>
+<a name="f1">1</a>: Some might argue that philosophy or the humanities is what sets us apart. I think it's hard to argue against math/sci/tech as the culmination of human thought. What has had more influence on our fitness as a species than physics? 
