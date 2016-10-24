@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-(Biomedical (automation|data)?| Bioinformatics) engineer operating in Boston.  
+(Bioinformatics|(Biomedical (Data|Automation))) Engineer operating in Boston.  
 
 My interests lie at the intersection of computation/automation, engineering 
 and biomedicine. My latest work has been mostly computational/software-related; 
