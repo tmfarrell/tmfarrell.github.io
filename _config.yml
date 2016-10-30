@@ -15,6 +15,6 @@ twitter_username: tfarrell01
 github_username:  tmfarrell
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: [footnotes]
+markdown: kramdown
+#redcarpet:
+#  extensions: [footnotes]
