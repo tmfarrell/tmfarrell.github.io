@@ -184,6 +184,12 @@
     font-size: 20px;
 }
 
+.page-subtitle { 
+    font-size: $base-font-size; 
+    color: darken($brand-color, 10%);  
+    padding-left: 60px; 
+}
+
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -200,7 +206,7 @@
 
 .post-subtitle { 
     font-size: $small-font-size; 
-    color: darken($brand-color, 20%); 
+    color: darken($brand-color, 20%);  
 }
 
 .post-date { 
