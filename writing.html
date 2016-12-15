@@ -1,0 +1,21 @@
+---
+layout: default
+title: Writing
+---
+
+<div class="home">
+  <ul class="post-list">
+    {% for post in site.categories.writing %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" style="margin-bottom:5pt" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+        </a>
+        <span class="post-subtitle">{{ post.subtitle }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <!--
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  --> 
+</div>
