@@ -10,8 +10,8 @@ knowledge/ endevour.*
 
 ## Space 
 
-X-axis: Density \\(\Longleftrightarrow\\) Dispersity  
-Y-axis: Formality \\(\Longleftrightarrow\\) Informality  
+Y-axis: Density \\(\Longleftrightarrow\\) Dispersity  
+X-axis: Formality \\(\Longleftrightarrow\\) Informality  
 Z-axis: Constructive/ Engineering \\(\Longleftrightarrow\\) Deconstructive/ Science  
 
 ## Density 
