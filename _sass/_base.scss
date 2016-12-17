@@ -110,12 +110,22 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: darken($grey-color, 7.5);
+    color: lighten($brand-color, 3%);
     /*border-left: 4px solid $grey-color-light;*/
-    padding-left: $spacing-unit / 2;
-    font-size: $small-font-size * 0.9;
-    /*letter-spacing: 1px;
-    font-style: italic*/;
+    padding-left: 30px;
+    padding-right: 30px; 
+    padding-top: 4px; 
+    padding-bottom: 4px; 
+    font-size: $small-font-size * 0.87;
+    /*letter-spacing: 1px;*/
+    /*font-style: italic;*/
+    background-color: lighten(lightgrey, 13.5%);  
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-left: 40px; 
+    margin-right: 80px; 
 
     > :last-child {
         margin-bottom: 0;

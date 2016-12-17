@@ -35,29 +35,33 @@ chemistry) may be right. Chemistry is less formal than physics. So it only seems
 that biology would be less formal than chemistry. This may be unavoidable. 
 
 But the way I see it, biology, the study of biological organisms, is much like the studying of automobiles. 
-Yes, cars, organisms are like cars. Except ones we ourselves haven't built so we don't completely 
+Yes cars, organisms are like cars. Except ones we ourselves haven't built so we don't completely 
 understand how they work. We've examined their components and systems enough to know in good detail how
 they work and how to fix them if they're broken (usually). But for the most part, we are clueless when it 
 comes to how to *build* and *design* them. (Ideally, how to build and design them better.)
 
-Now, we're getting closer. The highly-touted CRISPR is getting us to a place where we can alter the 
-blueprints to improve the end machinery. This is a big improvement. But it's only scratching the surface. 
+Now, we are getting closer and these are exciting times. The highly-touted CRISPR is getting us to a place 
+where we can alter the blueprints to improve the end machinery. This is a big improvement. But it's only 
+scratching the surface. 
 
-Again, we should remember that, in truth, biological systems are the real machines. They were the machines
-before there were the kinds of machines we think of as machines, before there were cars/etc, before we
-made them. And the power/ value in a machine is that it can convert different forms of energy into one 
-another; it's in the transducers and the converters, etc. It's in *doing valued work*.
+We should remember that, in truth, biological systems are the original machines. They were the machines
+before there were the kinds of machines we think of as machines, before there were cars/etc (before we
+made them). 
 
-And that with respect to biological systems it shouldn't just be about genetically altering to make small 
-changes, to eliminate deficiences, etc. But in using the theories of biology (again, in more formal forms), 
-to genetically engineer powerful little biological systems that trully harness the power/ value of their 
-machinic nature. 
+And the power/ value in a machine is that it can convert different forms of energy into one 
+another; it's in the transducers and the converters, etc. It's in transforming some cheap energy into
+*valued work*, which can take many forms, from mechanical to medical.  
+
+So with respect to biological systems it shouldn't just be about genetically altering to make 
+small changes, to eliminate deficiences, etc. But in using the theories of biology (again, in more formal 
+terms), to engineer powerful biological systems that trully harness the power/ value of their machinic 
+(the transducing of energy for value) nature. 
 
 <br>
 <br> 
 
 ------
 <a name="f1">1.</a> It's been argued that the most viable candidate for a mathematics suitable for
-the formalization of biology is so-called post-modern mathematics. And I happen to agree I think that
-theoretical computer science has much to offer biology in the way of formality. I mean, theories of trees, 
-learning and language, what more do folks as proof of promise?
+the formalization of biology is so-called post-modern mathematics. I happen to agree. I think that
+theoretical computer science (and related maths) has much to offer biology in the way of formality. 
+Theories of trees, learning and language, what more do folks need as proof of promise?
