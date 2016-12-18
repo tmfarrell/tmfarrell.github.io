@@ -32,7 +32,7 @@ I happen to *believe* these recommendations are true, and useful. But I'm more i
 
 At first thought it might seem pretty obvious: more trials means more opportunities to hit success. Assuming your chances of success/ failure are independent at each trial, then it follows that adding trials increases the chance of hitting success. 
 
-More formally, this could follow a geometric distribution with success rate \\(p\\), failure rate \\((1-p)\\), where your probability of needing \\(k\\) trials to hit your first success is \\((1-p)^{k-1}p\\). And so by complement the chances of your having success by the \\(k\\)<sup>th</sup> trial is \\(1 - (1-p)^{k-1}p\\). Clearly for \\(k\\) large, this gets closer and closer to 1.
+More formally, this could follow a geometric distribution with success rate $$p$$, failure rate $$(1-p)$$, where your probability of needing $$k$$ trials to hit your first success is $$(1-p)^{k-1}p\\). And so by complement the chances of your having success by the $$k$$<sup>th</sup> trial is $$1 - (1-p)^{k-1}p$$. Clearly for $$k$$ large, this gets closer and closer to 1.
 
 Except, this is really an over-simplification. Success isn't usually some event you need only hit once, like a lottery. Mike wasn't trying to make one shot, or win one game.
 
