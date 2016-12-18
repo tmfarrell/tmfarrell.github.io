@@ -10,7 +10,7 @@ knowledge/ endevour.*
 
 ## Space 
 
-Y-axis: Density $$ \forall $$ Dispersity  
+Y-axis: Density $$ \begin{displaymath} \sigma \end{displaymath} $$ Dispersity  
 X-axis: Formality \\(\Longleftrightarrow\\) Informality  
 Z-axis: Constructive/ Engineering \\(\Longleftrightarrow\\) Deconstructive/ Science  
 
