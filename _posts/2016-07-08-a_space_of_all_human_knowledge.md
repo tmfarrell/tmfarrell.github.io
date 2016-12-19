@@ -51,22 +51,18 @@ Some of these statements claim to be true, but they need to be *formalized* in o
 ## Constructive
 
 Constructive. To build statements of knowledge/ endevour anew from logic or materials, for the 
-purposes of density/ work/ utility/ value. (This is engineering.) 
+purposes of density/ work/ utility/ value. This is engineering. 
 
 To deconstruct means to take apart, to reduce, into materials or less dense statements, usually for the 
-purposes of knowledge. (This is science.)
+purposes of knowledge. This is science.
 
-Constructive can mean both actively building something physical, or the writing describing the building 
-of something. But the degree to which some action is constructive is the degree to which the building 
-actually manipulates physical matter. 
+The degree to which some procedures/ processes are constructive is the degree to which that process changes
+the density of the space upon which it acts; the degree to which it produces some large \\(\Delta\delta\\), 
+where \\(\delta\\) density and \\(\Delta\delta = \delta_f - \delta_i\\). To make statements (or actual physical 
+structures) more dense and less dispersed is constructive and results in positive change. To make statements/ 
+structures less dense and more dispersed is deconstructive and results in negative change. 
 
-In the case of writing, it is much less constructive because it doesn't actually construct something 
-physical, it only puts ink stains on a page. Though it is still constructive, and actually is does depend 
-on the nature of the writing. With certain endevours (ahem, software writing), the writing does have 
-consequences that may manipulate a good deal of physical matter and thus may be more constructive than 
-building physical structure. 
-
-Construction has to do with the amount of physical matter it has actively reordered or has, as product 
-of its function, reordered (say, a robot on some assembly line). 
-
-
+And deconstruction is science and construction is engineering. Science's main aim is to reduce systems and 
+statements down to their essential parts, to decompose them into tautologies. Engineering's main aim is to 
+pack statements/ parts into a small space in well-designed way. (Design is a packing problem; a question of
+allocating space.)
