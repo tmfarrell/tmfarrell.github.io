@@ -147,7 +147,7 @@ Out[12]:
 
 This is probably the reason why simplification has been touted so much by the greats. It's a powerful avenue toward being more right, finding more truth, etc.<sup id="a1">[1](#f1)</sup>  
 
-But it's not always as simple as this, either. For instance, how do we choose which dimensions are important versus which ones are not. Essentially, this is a problem of choosing $$M$$ dimensions out of $$N$$, of which there are $${N \choose M}$$ possibilities. Assuming there's only one possible right answer to the set of most important dimensions than the probability of choosing the right set is: 
+But it's not always as simple as this, either. For instance, how do we choose which dimensions are important versus which ones are not? Essentially, this is a problem of choosing $$M$$ dimensions out of $$N$$, of which there are $${N \choose M}$$ possibilities. Assuming there's only one possible right answer to the set of most important dimensions than the probability of choosing the right set is: 
 
 $$ Pr\{$$**Most Important Set**$$\} = \frac{1}{N \choose M} $$
 {: style="text-align: center;"}
