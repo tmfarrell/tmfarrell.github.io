@@ -5,7 +5,7 @@ title: About
 Biomedical/ bioinformatics engineer with interests at the intersection of biomedicine/ bioeng 
 and computation/ automation. 
 
-I'm equally interested in working on software and wetware. Mainly, I want to make bioengineering/
+I'm equally interested in working on software and wetware. In the end, I want to make bioengineering/
 biomedicine easier and more effective. And I'm prepared to practice whatever skills necessary to do this. 
 <!--<a href="{{ "/writing/2016/10/21/on_the_nature_and_order_of_things.html"
 | prepend: site.baseurl}}"></a>-->  
