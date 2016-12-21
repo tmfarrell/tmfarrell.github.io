@@ -182,7 +182,9 @@ But here's the deal, for any given problem, we're not starting over from scratch
 
 There is also an ordering to nature, to things, that allows us to combine "atomic" facts into higher-level more general facts that have a form we might be more familiar with. And so we don't always have to work at the level of atoms. We can work at higher levels (which have lower dimension) and the decisions we make, truth values we choose, would apply at lower levels. Higher level facts are functions of lower level facts, but can also be treated as "atomic" facts. Allowing for dimensionality reduction to be less about choose the right, most important set, and more about agregating atomic facts into higher level facts that can be more **simply** handled. 
 
-No doubt these two advantages, history and hierarchy, can be formalized as well, just like the above. 
+No doubt these two advantages, history and hierarchy, can be formalized as well, just like the above. And they no doubt have been by machine learning (ML) researchers. The hierarchy piece is probably a reason why deep learning techniques (with many layers of generality) are as effective as they are. The history piece also is captured by ML techniques that take sequences (which could be sequences across time as well as space).
+
+And, with this, we should realize that advances in ML really do apply to the way we (humans) make decisions. We should take seriously the idea that computer science is not just an avenue to build better software, but also has implications for how we (as computing machines ourselves) should think.<sup id="a2">[2](#f2)</sup>
 
 <br>  
 <br>  
@@ -190,3 +192,5 @@ No doubt these two advantages, history and hierarchy, can be formalized as well,
 ----------- 
   
 <a name="f1">1.</a> Emerson: "Simplify, simplify, simplify." Einstein: "Things should be as simple as possible, but no less." [Go Back](#a1).
+
+<a name="f2">2.</a> We were after all the original computers. (And still are in fact, just now at a higher level.)
