@@ -2,7 +2,7 @@
 layout: post
 title:  "Does Failure Gives Success?"
 date:   2016-04-27 20:00 
-categories: writing
+categories: 
 ---
 
 Came across [this](http://www.nature.com/naturejobs/2010/101118/pdf/nj7322-467a.pdf) today, a discussion 
