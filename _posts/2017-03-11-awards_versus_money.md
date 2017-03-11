@@ -11,10 +11,10 @@ Most of the time I think (or make myself think) I'm against all professional rec
 awards and money). Because (I say) it distracts from the work. And really all that matters are the results, the product, the 
 endpoint. 
 
-Which is all fine and true up until the point where someone gets recognized whom I don't think really deserved it. Forcing me to 
+Which is all fine and true up until the point where someone gets recognized whom I don't think really deserved it, forcing me to 
 come to terms with my view of what recognition really should be.
 
-So I guess it's not that I'm against recognition. It's just that I think simply: recognition should be in exact proportion to
+So I guess it's not that I'm against recognition, it's just that I think simply: recognition should be in exact proportion to
 accomplishment. But this is tricky business, translating accomplishment to recognition. 
 
 It's difficult to do with awards because they are a discrete, as opposed to continuous, value. So it's sometimes possible for 
@@ -24,7 +24,7 @@ piece), the magnitude of this range can vary widely.
 
 ## Money
 
-This is all contrast to money. Money is a continuous value and is almost exclusively, if the basic principles of economics are
+This all in contrast to money. Money is a continuous value and is almost exclusively, if the basic principles of economics are
 to be believed (which, not that I'm an expert or anything, I believe they are), awarded in exact proportion to value/ work 
 provided. Money is, in theory, our abstract version of value. 
 
@@ -61,7 +61,7 @@ network associated with its winning of it.
 ## They Are Both Representations
 
 But, of course, there are the artists/ scientists/ mathematicians whom think it distainful to go after any awards/ compensation 
-whatsoever. Who think that awards are a bunch of bollocks and true art/ science/ truth needs no awarding, needs no recognizing. 
+whatsoever. Who think that awards are bollocks and true art/ science/ truth needs no awarding, needs no recognizing. 
 
 And actually this is probably a sensible position. Mainly because, as mentioned specifically about money, I'd say in general any 
 mistaking of a representation for the real thing leads to dangerous behavior. It leads to never-ending wild 
