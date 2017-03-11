@@ -47,9 +47,9 @@ is what it means to "sell out", remember?) And it's exactly these communities th
 The Nobel Prize and the Oscars are the most obvious ones that come to mind.<sup id="a2">[2](#f2)</sup>
 
 The main thing about awards is that they represent mostly social value in their recognition, which is a space that money (at least 
-we say<sup id="a3">[3](#f3)</sup>) can't touch. You can't buy collegues whom respect you for money. You can't buy a Fields Medal 
-for money. By their very nature they represent what money can't buy.  As useful as money is in representing value, and 
-transforming it from various value types to others, it can't (at least explicitly) be used to exchange for certain types of social 
+we say<sup id="a3">[3](#f3)</sup>) can't touch. You can't buy collegues whom respect you. You can't buy a Fields Medal. By their 
+very nature they represent what money can't buy.  As useful as money is in representing value, and transforming it from various 
+value types to others, it can't (at least explicitly) be used to exchange for certain types of social 
 value.<sup id="a4">[4](#f4)</sup> 
 
 But, then again, for some people this might not matter much. Who would want something of immense value that can't be 
