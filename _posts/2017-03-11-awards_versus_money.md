@@ -5,34 +5,35 @@ date:   2017-03-11 15:55
 categories: writing
 ---
 
-## Recognition And Awards
+## Recognition And Compensation
 
 Most of the time I think (or make myself think) I'm against all professional recognition and large amounts of compensation (i.e. 
 awards and money). Because (I say) it distracts from the work. And really all that matters are the results, the product, the 
 endpoint. 
 
-Which is all fine and true up until the point where someone gets recognized whom I don't think really deserved it, forcing me to 
-come to terms with my view of what recognition really should be.
+Which is all fine and true up until the point where someone gets recognized/ compensated whom I don't think really deserved it, forcing me to 
+come to terms with my view of how recognition/ compensation really should work.
 
-So I guess it's not that I'm against recognition, it's just that I think simply: recognition should be in exact proportion to
-accomplishment. But this is tricky business, translating accomplishment to recognition. 
+So I guess it's not that I'm against recognition/ compensation, it's just that I think simply: it should be in exact proportion to
+accomplishment. But this is tricky business, translating accomplishment into value. 
 
-It's difficult to do with awards because they are a discrete, as opposed to continuous, value. So it's sometimes possible for 
+It's especially difficult to do with awards because they are a discrete, as opposed to continuous, value. So it's possible for 
 those awarded to have done more or less than is deserving of that award. In other words, there's a range of value/ work that is 
 sufficient for the winning of an award and, depending on the value/ work type of that award and the award's social factors (a big 
 piece), the magnitude of this range can vary widely. 
 
 ## Money
 
-This all in contrast to money. Money is a continuous value and is almost exclusively, if the basic principles of economics are
+This in contrast to money. Money is a continuous value and is almost exclusively, if the basic principles of economics are
 to be believed (which, not that I'm an expert or anything, I believe they are), awarded in exact proportion to value/ work 
 provided. Money is, in theory, our abstract version of value. 
 
 When done right (which is actually harder to do than seems right), value/ work maps directly to some amount of money on the 
 continuous money line. Which seems a more fair and accurate system than the mapping of ranges of values to some confined 
-set<sup id="a1">[1](#f1)</sup> of awards, whose mapping is arbitrary and (arguably) more likely at the whim of social factors.   
+set<sup id="a1">[1](#f1)</sup> of awards, whose mapping is arbitrary and (arguably) more likely at the whim of social factors. 
+(Although it should be admitted that monetary compensation is also very much at the whim of social factors.)
 
-Now look, I'm not advocating greed here. I think it's sensible to have a slight distain for the dealings of money, because, as 
+Now, I'm not advocating greed here. I think it's sensible to have a slight distain for the dealings of money, because, as 
 I mentioned, it keeps focus on the actual work/ value, which is what really matters. Money is simply the representation of that 
 value/ work, in abstract terms, which can be a very useful concept. But it's not something that should be focused on exclusively,
 as an end in it of itself. This misses the point of its being a *representation*, and leads to dangerous behavior. 
@@ -46,11 +47,10 @@ Scientists/ artists who work solely for the money are (or at least were) thought
 is what it means to "sell out", remember?) And it's exactly these communities that awards are the most highly regarded and touted.
 The Nobel Prize and the Oscars are the most obvious ones that come to mind.<sup id="a2">[2](#f2)</sup>
 
-The main thing about awards is that they represent mostly social value in their recognition, which is a space that money (at least 
-we say<sup id="a3">[3](#f3)</sup>) can't touch. You can't buy collegues whom respect you. You can't buy a Fields Medal. By their 
-very nature they represent what money can't buy.  As useful as money is in representing value, and transforming it from various 
-value types to others, it can't (at least explicitly) be used to exchange for certain types of social 
-value.<sup id="a4">[4](#f4)</sup> 
+The main thing about awards is that they represent mostly social value in their compensation, which is a space that money (at least 
+we say<sup id="a3">[3](#f3)</sup>) can't touch. You can't buy collegues whom respect you just like you can't buy a Fields Medal. By 
+their very nature they represent what money can't buy.  As useful as money is in representing value, and transforming it from various 
+value types to others, it can't (at least explicitly) be used to exchange for certain types of social value.<sup id="a4">[4](#f4)</sup> 
 
 But, then again, for some people this might not matter much. Who would want something of immense value that can't be 
 translated into/ used for other things? What good's a medal that can't be used to pay rent with? Though it must be admitted that 
@@ -60,12 +60,12 @@ network associated with its winning of it.
 
 ## They Are Both Representations
 
-But, of course, there are the artists/ scientists/ mathematicians whom think it distainful to go after any awards/ compensation 
-whatsoever. Who think that awards are bollocks and true art/ science/ truth needs no awarding, needs no recognizing. 
+But, of course, there are the artists/ scientists/ mathematicians whom think it distainful to go after any awards/ money 
+whatsoever. Who think that awards/ money are bollocks and true art/ science/ truth needs no awarding, needs no compensating. 
 
-And actually this is probably a sensible position. Mainly because, as mentioned specifically about money, I'd say in general any 
-mistaking of a representation for the real thing leads to dangerous behavior. It leads to never-ending wild 
-goose chases. It leads to realizing, possibly after a lot of "hard" work, goals/ aspirations fictions outside reality. 
+And actually this is probably a sensible position. Mainly because (as I mentioned specifically about money) I'd say in general any 
+mistaking of a representation for the real thing leads to dangerous behavior. It leads to wild goose chases that may never end. It leads 
+to realizing, possibly after a lot of "hard" work, goals/ aspirations fictions outside reality. 
 
 And this may be the most reasonable view. It holds the work as the highest good/ value, which ultimately if done well enough 
 for long enough will inevitably lead to either money or awards, or both. And which also actually results in (god forbid) __real value__.
