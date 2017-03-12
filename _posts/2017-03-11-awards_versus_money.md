@@ -70,8 +70,6 @@ to realizing, possibly after a lot of "hard" work, goals/ aspirations fictions o
 And this may be the most reasonable view. It holds the work as the highest good/ value, which ultimately if done well enough 
 for long enough will inevitably lead to either money or awards, or both. And which also actually results in (god forbid) __real value__.
 
-But, then again, there's still the challenge of translating it into something to eat.  
-
 <br>
 <br>
 
