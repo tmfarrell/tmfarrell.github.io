@@ -9,59 +9,66 @@ categories: writing
 
 ## Biology Is Soft
 
-Biology has failed (I think) to find a central paradigm, a general framework for thinking about organisms/ 
-living things. Especially, for the purposes of building up biology to be more of a hard science, to making
-it more like its more formal counterparts, which translate well to the applied domain. 
+Biology has failed to find a central/ general/ formal framework for thinking about organisms. In this way it's
+always been unlike its peers, physics and chemistry, which translate much better to the applied domain. 
 
-Sure, we have the central dogma: DNA \\( \to \\) RNA \\( \to \\) Protein; which is something. It give us a 
-high-level picture of how biological systems work generally, and implies how they've come to be in the 
-first place. 
+Sure, we have the central dogma: DNA \\( \to \\) RNA \\( \to \\) Protein. Which gives a high-level picture of 
+how biological systems work, and implies how they've come to be in the first place (the primordial soup). 
 
-But if we're being honest, it is really just a sketch. And it's too specific. It's not formalized, it's not general. If we want to make biology harder, so its applied domains have a platform to really stand on; it 
-must have some more formality, and it must be more general. 
+But if we're being honest, it is really just a sketch. It's not formalized and it's not general. If we want to make biology 
+harder, so its applied domains have a platform to really stand on, it must have some more formality and generality. 
 
-For instance, another example, the theory of evolution. This is hands-down the central paradigm of biology (making the dogma a close second). It is so useful, one scientist famously remarked, "Nothing in biology 
-makes sense, except in light of evolution." 
+Another example, the theory of evolution. This is hands-down the central paradigm of biology (making the dogma a 
+close second). Simply because "nothing in biology (including our understanding of the central dogma) makes sense, except 
+in light of evolution." 
 
-And yet, the theory is soft, too. Where's the mathematics? When can we have mathematics that justify
-the building of synthetic systems that have the capacity for evolution, and to optimize this process, etc.
-Biology just isn't there yet, and undoubtedly the answer has to be mathemetics, as it's the most effective
-language we have (but maybe it's not the type of typical mathematics everyone is used to<sup id="a1">[1](#f1)</sup>).
+And yet, the theory is soft, too. Theories are "hard" insofar as we can use them for making/ designing things, and 
+we can't really do that with evolution. Sure, we can use it in a vague way to design/ build systems that have the
+capacity for evolution and so on; but this is imprecise business. Where are the numbers? 
+
+Bottom line, biology isn't there yet, it's still soft. I believe undoubtedly the answer has to be mathemetics and
+computation, as they are the most effective tools we have.<sup id="a1">[1](#f1)</sup>
 
 ## Machines Before The Machines
 
-The naysayers whom may doubt that biology can become as hard as its more formal counterparts (physics and
-chemistry) may be right. Chemistry is less formal than physics. So it only seems a logical progression
-that biology would be less formal than chemistry. This may be unavoidable. 
+The naysayers whom doubt that biology can become as hard as its more formal counterparts may be right. Chemistry is 
+less formal than physics so it seems reasonable that biology would be less formal than chemistry. This may be unavoidable. 
 
-But the way I see it, biology, the study of biological organisms, is much like the studying of automobiles. 
-Yes cars, organisms are like cars. Except ones we ourselves haven't built so we don't completely 
-understand how they work. We've examined their components and systems enough to know in good detail how
-they work and how to fix them if they're broken (usually). But for the most part, we are clueless when it 
-comes to how to *build* and *design* them. (Ideally, how to build and design them better.)
+But the way I see it, biology, the study of biological organisms, is much like the study of automobiles---their varieties/ 
+styles, their organization, their evolution. (Yes, machines, organisms are like machines.<sup id="a2">[2](#f2)</sup>) So, in 
+theory, biology should at least be as formal as a study of mechanical/ electrical engineering (which are less formal than 
+physics by virtue of being applied). 
 
-Now, we are getting closer and these are exciting times. The highly-touted CRISPR is getting us to a place 
-where we can alter the blueprints to improve the end machinery. This is a big improvement. But it's only 
-scratching the surface. 
+Now by this point, we've examined them enough to understand (vaguely) how they work/ operate at a low level. And also for the 
+big bulky, highly mechanical ones (which we call mammals) how sometimes to fix them when they're broken, at a high level. But we still haven't understood them to the point where we can *design* and *build* them at all levels.<sup id="a3">[3](#f3)</sup> 
 
-We should remember that, in truth, biological systems are the original machines. They were the machines
-before there were the kinds of machines we think of as machines, before there were cars/etc (before we
-made them). 
+And we should remember this is possible. Because, in truth, biological systems were/ are the original machines. They were the machines before there were the kinds of machines we think of as machines (automobiles, robots, etc.), the kinds we design and build at all levels. 
 
-And the power/ value in a machine is that it can convert different forms of energy into one 
-another; it's in the transducers and the converters, etc. It's in transforming some cheap energy into
-*valued work*, which can take many forms, from mechanical to medical.  
+## Towards Value
 
-So with respect to biological systems it shouldn't just be about genetically altering to make 
-small changes, to eliminate deficiences, etc. But in using the theories of biology (again, in more formal 
-terms), to engineer powerful biological systems that trully harness the power/ value of their machinic 
-(the transducing of energy for value) nature. 
+And furthermore we should remember that the power/ value/ usefulness of a machine is that it __does work__. It transforms some 
+(usually more available) energy/ material (e.g. gasoline) into some (usually less available) work/ energy (e.g. locomotion).   
+
+So with respect to biological systems it shouldn't just be about making small genetic changes (although this is inevitably 
+where we must begin). But in using the theories of biology (again, in more formal terms) to engineer biological systems that 
+trully harness the power of their machinic nature (the production of value). 
 
 <br>
 <br> 
 
 ------
 <a name="f1">1.</a> It's been argued that the most viable candidate for a mathematics suitable for
-the formalization of biology is so-called post-modern mathematics. I happen to agree. I think that
+the formalization of biology is (so-called) post-modern mathematics. I happen to agree. I think that
 theoretical computer science (and related maths) has much to offer biology in the way of formality. 
-Theories of trees, learning and language, what more do folks need as proof of promise?
+Theories of trees, learning and language; it seems like it's all there, minus maybe some 
+statistical mechanics. 
+
+<a name="f2">2.</a> Except, for one, biological machines are made of biochemical components, which makes them much more 
+complicated and dynamic at their lowest levels. Mechanical components, on the other hand, are much less dynamic, more 
+homogenous and do not need an aqueous environment to operate. And, for two, they're machines we didn't design, only operate, 
+so we don't fully understand their internals, especially how they work *between* levels. (We are exactly like most operators of 
+modern technology. We don't have to know how the internals of our car/ smart-phone/ tablet to work the user interface.) 
+
+<a name="f3">3.</a> At least now we have the right idea: genome engineering initiatives (Human Genome Project-build), the rise 
+of CRISPR and synthetic biology research/ industry will no doubt increase our toolset. Systems biology research hopefully will 
+increase our understanding of the underlying dynamics. 

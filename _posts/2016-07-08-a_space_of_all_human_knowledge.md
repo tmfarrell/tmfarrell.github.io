@@ -16,45 +16,29 @@ Z-axis: Constructive/ Engineering \\(\Longleftrightarrow\\) Deconstructive/ Scie
 
 ## Density 
 
-Density. The amount of information/ entropy (across time and space) in some piece 
-of knowledge, in whatever medium it's manifested.
+The amount of entropy/ information (across time and space) "contained" in a piece of 
+knowledge per bit of information in the medium it's manifested.
 
-For instance, consider an equilibrium constant \\(K_a\\) for some chemical equation. 
-Then consider the equation for the relationship between free energy and equilibrium constants. 
-Which has more information/ entropy? 
-
-The latter seems to, because it refers to the behavior of all equilibrium constants and reactions. 
-But really, it only applies to the numbers that describe those reactions. The numbers 
-themselves don't take up much space *in bits* (and don't have that much entropy). The former is 
-actually much more dense b/c it refers to the behavior of all instances of that particular reaction,
-which depending on the reaction may be incredibly ubiquitous. 
-
-Then, after quantifying the information it contains, the density can computed by divided by that 
-number by the volume in bits of that knowledge representation. In this way, density is akin to a 
-kind of data compression. 
+Basically, it's data compression. Divide the amount of information in the description of a system
+by the entropy of that described system.<sup id="a1">[1](https://en.wikipedia.org/wiki/Data_compression)</sup>
 
 ## Formality 
 
-Formality. The degree to which statements of knowledge hold true under some system of logic. 
+The degree to which statements of knowledge are shown to follow from a certain set of axioms under a defined set
+of rules. Insofar as the axioms and rules are stated and shown to lay the foundation for the asserted statement,
+the statement is formal; insofar as they are not stated and not shown to follow, the statement is informal.
 
-Formality essentially is the degree to which statements can be, or are capable of being, proven. For 
-instance, there may be a great number of statements that *claim* to be very dense---to explain the 
-nature of physics with a unifying equation, for instance---but cannot necessarily be proven under a 
-system of (usually agreed-upon) logic. 
+Formality is a property of the language used. Insofar as the language used can be type-checked, that is shown to
+follow from some axioms according to some rules, the language is formal. Insofar as it can't it's informal. 
 
-And formality doesn't necessarily imply density, b/c some very formal statements may only apply to other 
-formal statements, which may not themselves be very much information. 
-
-Informal statements of knowledge are those that don't manifest themselves under a system of logic. 
-Some of these statements claim to be true, but they need to be *formalized* in order to be proven so. 
+And formality can be quantified through some sort of static analysis of statements, where the statements
+are taken as programs and type-checked. And the degree of formality can be taken to be the concentration of formal,
+as opposed to informal, language used. 
 
 ## Constructive
 
-Constructive. To build statements of knowledge/ endevour anew from logic or materials, for the 
-purposes of density/ work/ utility/ value. This is engineering. 
-
-To deconstruct means to take apart, to reduce, into materials or less dense statements, usually for the 
-purposes of knowledge. This is science.
+To build statements from materials/ information for the purposes of density or formality. This is engineering. 
+To deconstruct, to take apart, to reduce, into materials or less dense statements. This is science.
 
 The degree to which some procedures/ processes are constructive is the degree to which that process changes
 the density of the space upon which it acts; the degree to which it produces some large \\(\Delta\delta\\), 
@@ -62,7 +46,13 @@ where \\(\delta\\) density and \\(\Delta\delta = \delta_f - \delta_i\\). To make
 structures) more dense and less dispersed is constructive and results in positive change. To make statements/ 
 structures less dense and more dispersed is deconstructive and results in negative change. 
 
-And deconstruction is science and construction is engineering. Science's main aim is to reduce systems and 
+Deconstruction is science and construction is engineering. Science's main aim is to reduce systems and 
 statements down to their essential parts, to decompose them into tautologies. Engineering's main aim is to 
-pack statements/ parts into a small space in well-designed way. (Design is a packing problem; a question of
-allocating space.)
+pack statements/ parts into a small space in well-designed way. Design is a packing problem; a question of
+allocating space.
+
+<br>
+<br>
+
+<!---------------
+<a name="f1">2.</a> -->

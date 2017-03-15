@@ -2,12 +2,12 @@
 layout: page
 title: About
 ---
-Biomedical/ bioinformatics engineer with interests at the intersection of biomedicine/ bioeng 
+Biomedical/ bioinformatics engineer with interests at the intersection of bioeng/ biomedicine/ health 
 and computation/ automation. 
 
 
 I'm interested in working on both software and wetware. In the end, I want to make bioengineering/
-biomedicine easier and more effective. And I'm prepared to practice whatever skills necessary. 
+biomedicine/ health easier and more effective. And I'm prepared to practice whatever skills necessary. 
 
 
 I write here occasionally to make sense of what I read/ think. Feel free to [contact me](mailto:tfarrell01@gmail.com) 

@@ -7,8 +7,7 @@ categories: writing
 
 ## Wrong Is More Likely 
 
-The state of "being right", in the most general sense (i.e. for any statement of fact, or solution to problem) can 
-be described as: 
+The state of "being right", in the most general sense (i.e. for any statement of fact, solution to problem) can be described as: 
 
 $$ \prod_{i=1}^{N} b_i = 1  \hspace{2.5mm} \mid \hspace{2.5mm} b_i \in \{0, 1\} $$  
 
