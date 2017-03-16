@@ -16,8 +16,8 @@ with feedback or comments. See [here]({{ site.baseurl }}/Resume, Tim Farrell (BE
 <br>
 <br>
 <br>
-__Note:__ I am currently coming off a 9-month tour as an Army Reservist (Company-level Executive Officer) and am looking 
-for opportunities in biotech/ medtech. 
+__Note:__ I am currently coming off a 9-month overseas tour as an Army Reservist (Company-level Executive Officer) 
+and am looking for opportunities in biotech/ medtech. Please feel free to reach out, if interested. 
 
 <br>  
 *All opinions expressed here are entirely my own and do not reflect those of affiliations.* 
