@@ -6,8 +6,8 @@ Biomedical/ bioinformatics engineer with interests at the intersection of bioeng
 and computation/ automation. 
 
 
-I'm interested in working on both software and wetware. In the end, I want to make bioengineering/
-biomedicine/ health easier and more effective. And I'm prepared to practice whatever skills necessary. 
+Ultimately, I want to advance bioengineering/ biomedicine/ health by making it easier and more effective. 
+And am prepared to practice whatever skills necessary to do this. 
 
 
 I write here occasionally to make sense of what I read/ think. Feel free to [contact me](mailto:tfarrell01@gmail.com) 
