@@ -26,7 +26,7 @@ And yet, the theory is soft, too. Theories are "hard" insofar as we can use them
 we can't really do that with evolution. Sure, we can use it in a vague way to design/ build systems that have the
 capacity for evolution and so on; but this is imprecise business. Where are the numbers? 
 
-Bottom line, biology isn't there yet, it's still soft. I believe undoubtedly the answer has to be mathemetics and
+Bottom line, biology isn't there yet, it's still soft. I believe undoubtedly the answer has to be mathematics and
 computation, as they are the most effective tools we have.<sup id="a1">[1](#f1)</sup>
 
 ## Machines Before The Machines
