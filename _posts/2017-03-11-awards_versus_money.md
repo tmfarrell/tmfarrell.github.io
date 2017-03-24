@@ -2,20 +2,19 @@
 layout: post
 title:  "Awards Versus Money"
 date:   2017-03-11 15:55 
-categories: writing
+categories: 
 ---
 
 ## Recognition And Compensation
 
-Most of the time I think (or make myself think) I'm against all professional recognition and large amounts of compensation (i.e. 
-awards and money). Because (I say) it distracts from the work. And really all that matters are the results, the product, the 
-endpoint. 
+Most of the time I'm against all professional recognition and large amounts of compensation (i.e. awards and money). Because it 
+distracts from the work. After all, what matters is the results, the product, the endpoint. 
 
-Which is all fine and true up until the point where someone gets recognized/ compensated whom I don't think really deserved it, forcing me to 
-come to terms with my view of how recognition/ compensation really should work.
+Which is all fine and true up until the point where someone gets recognized/ compensated whom doesn't seem to really deserve it, 
+forcing me to come to terms with my view of recognition/ compensation.
 
-So I guess it's not that I'm against recognition/ compensation, it's just that I think simply: it should be in exact proportion to
-accomplishment. But this is tricky business, translating accomplishment into value. 
+It turns out, it's not that I think it's best to be against all recognition/ compensation, it's just that I think each should be 
+given *in exact proportion* to accomplishment. But this is tricky business, translating accomplishment into value. 
 
 It's especially difficult to do with awards because they are a discrete, as opposed to continuous, value. So it's possible for 
 those awarded to have done more or less than is deserving of that award. In other words, there's a range of value/ work that is 

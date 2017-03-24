@@ -11,7 +11,7 @@ categories: writing
 
 X: Density \\(\Longleftrightarrow\\) Dispersity  
 Y: Formality \\(\Longleftrightarrow\\) Informality  
-Z: Representative/ Simulatory \\(\Longleftrightarrow\\) Unrepresentative/ Nonsimulative 
+Z: Representative \\(\Longleftrightarrow\\) Unrepresentative
 
 ## Density 
 
@@ -37,7 +37,7 @@ language used within the sequence of either informal or formal statements (where
 that doesn't necessarily directly contain either the axioms or statements that have already shown to follow 
 directly from the axioms). 
 
-## Representation/ Simulation
+## Representation
 
 The degree to which a piece of knowledge actually represents what it claims to represent. Also the degree to 
 which a statement accurately simulates what it claims to simulate. 

@@ -15,10 +15,7 @@ with feedback or comments. See [here (biotech)]({{ site.baseurl }}/Resume, Tim F
 [here (medtech)]({{ site.baseurl }}/Resume, Tim Farrell (CDE; 2017).pdf) for my resume, and 
 [here](https://www.linkedin.com/in/timothy-m-farrell-8003bb42) for LinkedIn.
 <br>
-<br>
-<br>
-__Note:__ I am currently coming off a 9-month overseas tour as an Army Reservist (Company-level Executive Officer) 
-and am looking for opportunities in biotech/ medtech. Please feel free to reach out, if interested. 
+
 
 <br>  
 *All opinions expressed here are entirely my own and do not reflect those of affiliations.* 
