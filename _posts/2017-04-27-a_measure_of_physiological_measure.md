@@ -5,7 +5,7 @@ date:   2017-04-28 18:00
 categories: writing
 ---
 
-Recently read [this piece](http://waitbutwhy.com/2017/04/neuralink.html#part3) on Elon Musk's 
+Recently read [this piece](http://waitbutwhy.com/2017/04/neuralink.html) on Elon Musk's 
 most recent venture, Neuralink. Fascinating article for a fascinating company. 
 
 To set the stage for Musk's vision for the company, Urban recaps not only the whole of human
@@ -55,17 +55,17 @@ What would be a decent **scale** for blood biometrics, that is volume of blood m
 data point? That is, how much volume should we gather with each sample to select a portion representative
 of that individual's whole blood?  
 
-This also leads naturally into thinking about spatial **resolution**, which for blood would be anatomical
+This also leads naturally into thinking about **spatial resolution**, which for blood would be anatomical
 locations of sample collection: arms vs legs, arterial vs venous vs capillary. If we have it at one location, 
 say a venous port in one of the arms, this would be of a smaller spatial resolution than if the samples were
 from multiple locations at each data point, say a venous port in an arm and a leg. (This would also probably
 increase scale as well, since in this case there is a relationship between spatial resolution and scale.)
 
-Then we could also think about temporal resolution: how often do we have to/ should we sample to capture 
+Then we could also think about **temporal resolution**: how often do we have to/ should we sample to capture 
 the most relevant physiological/ functional dynamics in blood? That is, what are the frequency ranges that
 capture the most interesting biomolecular dynamics in blood? 
 
-And invasiveness: are there ways in which we can measure biomolecular composition in blood without a port, 
+And **invasiveness**: are there ways in which we can measure biomolecular composition in blood without a port, 
 without drawing blood outside the body? This differientiates approaches: to take blood out of the body would
 likely take a biochemical approach (some sort of immunological assay) whereas to measure inside without 
 taking out would likely need a biophysical one (taking physical measurements that are representative
