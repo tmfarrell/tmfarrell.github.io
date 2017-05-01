@@ -42,7 +42,7 @@ constraints.
 For example, the first application of this evaluation space that came to mind was blood 
 biometrics.<sup id="a1">[1](#f1)</sup> For many reasons, there is a lot of interest in developing 
 technology that provides a continuous measure of blood biomolecular (protein, genomic, etc.) 
-composition.<sup id="a1">[2](#f2)</sup> However, it's difficult to imagine how this might be accomplished 
+composition.<sup id="a2">[2](#f2)</sup> However, it's difficult to imagine how this might be accomplished 
 given all the layers of tissue between the most reasonable measure space (outside the body) and arteries/ 
 veins (which permeate the innermost layers of cardiovasculatured organisms). 
 
