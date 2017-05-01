@@ -93,7 +93,7 @@ _____
 <a name="f1">1</a>: I use the term biometric very generally to mean any measure of biological process
 or function. [Go Back](#a1)
 
-<a name="f2">1</a>: Blood is the slow-information highway for the body (as opposed to the fast-information
+<a name="f2">2</a>: Blood is the slow-information highway for the body (as opposed to the fast-information
 highway of the nervous system). Blood facilitates travel/ transport for all the components of the endocrine and 
 immune systems, which although both operate at lower frequencies/ slower speeds than the nervous system I think
 harbor much more interesting and exciting progressive dynamics in the long-term (i.e. learned immunity, 
