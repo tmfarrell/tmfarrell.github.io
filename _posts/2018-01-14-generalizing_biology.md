@@ -35,19 +35,7 @@ with being applied and useful, the name of the game will more and more become *g
 Why? 
 
 For one, generalizability is oftentimes proportional to utility. By definition, the more general
-some fact is, the greater the number of specific facts it applies to. This is often because 
-general statements are more abstract, stripped of their specific details and left only with their
-essential features. 
-
-(Although, this doesn't always need be the case. The central dogma is fairly specific in its description. 
-More or less, it works the same way in all organisms. The differences between its specific instantiations
-in different types of organisms pales in comparison to its commonalities. 
-
-What makes the central dogma general is the fact that it occurs at a lower level of the biological
-heirarchy, so it applies to all higher levels. And similiarly it was evolved at the earliest stages 
-of life, so it supports and applies to all later stages of life.
-
-So generality can also mean deeper, or earlier/ historical, facts.)
+some fact is, the greater the number of specific facts it applies to.<sup id="a1">[1](#f1)</sup> 
 
 As biology and medicine become more and more concerned with application, I'd argue that it's more
 and more important to seek out the utility of generality. As we have seen from the application of 
@@ -64,9 +52,17 @@ A more general biology will undoubtedly result in a better biology. And a better
 
 ------- 
 
-<a name="f1">1.</a> [https://hbr.org/2000/03/meeting-the-challenge-of-disruptive-change](https://hbr.org/2000/03/meeting-the-challenge-of-disruptive-change). [Return.](#a1)
+<a name="f1">1.</a> This is often because general statements are more abstract, stripped of their specific 
+details and left only with their essential features. 
 
-<a name="f2">2.</a> See Samuel Johnson's ["Where Good Ideas Come From"](https://hbr.org/2000/03/meeting-the-challenge-of-disruptive-change) 
-for more on origins of ideas. There are good reasons to believe this is really how ideas work. [Return](#a2) 
+Although, this doesn't always need be the case. The central dogma is fairly specific in its description. 
+More or less, it works the same way in all organisms. The differences between its specific instantiations
+in different types of organisms pales in comparison to its commonalities. 
+
+What makes the central dogma general is the fact that it occurs at a lower level of the biological
+heirarchy, so it applies to all higher levels. And similiarly it was evolved at the earliest stages 
+of life, so it supports and applies to all later stages of life.
+
+So generality can also mean deeper, or earlier/ historical, facts. [Return.](#a1)
 
 
