@@ -41,7 +41,7 @@ A good idea should feel like it has a life of its own.
 
 And this should be embraced to a degree. Treat an idea/ company like you would a garden, or a child. You're 
 responsible for the watering, the providing for, but don't give it less credit than it deserves. If we set it 
-up for success, it will grow big and powerful. Ideally, it grow much bigger and more powerful than the individual
+up for success, it will grow big and powerful. Ideally, it will grow much bigger and more powerful than the individual
 whom created it.
 
 Anther implication of this line of thinking: to get infected with an idea is not a unique or special phenomenon. 
