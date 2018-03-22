@@ -32,7 +32,7 @@ is little time for theory and formality when you're dealing with bags of meat an
 There are examples in the history of biology/ medicine where generality has shown its utility there too, 
 though.  
 
-The most obvious example is the discovery of the central dogma. DNA \\[\Rightarrow\\] RNA \\[\Rightarrow\\] Protein. 
+The most obvious example is the discovery of the central dogma. DNA \\(\Rightarrow\\) RNA \\(\Rightarrow\\) Protein. 
 The very reason this was exciting/ useful was because it applied (i.e. generalized) to **all** living organisms. 
 The central dogma is the very basis for biological life. 
 
