@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Understanding Science"
-date:   2018-04-10 20:00 
+date:   2018-04-10 17:00 
 categories: writing 
 ---
 
