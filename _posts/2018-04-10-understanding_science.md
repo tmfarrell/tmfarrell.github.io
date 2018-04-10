@@ -59,10 +59,10 @@ Once those are taken care of, then you tackle the logic. Is the program really d
 you want it to? Does the output make sense at every step? (This can also be pretty difficult
 if you don't know what "truth" is.)
 
-The goal of crafting any scientific talk/ paper, then, should be to to get the 
-language clean and error-free first. Formalize (i.e. mathematize) it as needed 
-depending on the subtlety of the section (e.g. certain parts of the methods
-should be made as formal as possible). Then focus on making the logic make sense.
+The goal of understanding/ crafting any scientific talk/ paper, then, should be to to get the 
+language clean and error-free first. Formalize (i.e. mathematize) it as needed depending on 
+the subtlety of the section (e.g. certain parts of the methods should be made as formal as possible). 
+Then focus on seeing if the logic makes sense.
 
 
 
