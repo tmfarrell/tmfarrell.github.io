@@ -16,24 +16,20 @@ given error/ ambiguity belongs to.
 
 Scientific error occurs either at (a) the level of language or (b) the level of logic. 
 
-Language is the level concerned with the keywords and syntax that make up statements.  
-
-Logic is the level concerned with how statements relate to one another, how 
-they are ordered and how they combine together into a well-formed argument or claim. 
-
-Language deals with sentences and logic deals with sets of sentences (and sets 
-of sets of sentences, etc.).
+Language is the level concerned with the keywords and syntax that make up statements. 
+Logic is the level concerned with how statements relate to one another, how they are 
+ordered and how they combine together into a well-formed argument or claim. Language 
+deals with sentences and logic deals with sets of sentences (and sets of sets of 
+sentences, etc.).
 
 Errors of language occur with ambigious or ill-defined terms, vague/
 imprecise descriptors/ values, spelling/ grammatic inconsistency and so on.
 
 Logic errors occur at a deeper level and can be more difficult to identify,
 since they often sit underneath layers of language errors. Once all language 
-errors are corrected, those that remain are logical. 
-
-A logic error occurs when you take a set of clean statements together, 
-work out how they relate to one another and what they imply, and find the 
-conclusion contradictory or fallacious. 
+errors are corrected, those that remain are logical. A logic error occurs when 
+you take a set of clean statements together, work out how they relate to one 
+another and what they imply, and find the conclusion contradictory or fallacious. 
 
 Now, as mentioned, the real difficulty arises because of how closely related
 language and logic are. 
