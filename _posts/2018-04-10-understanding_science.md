@@ -6,15 +6,13 @@ categories: writing
 ---
 
 Understanding a scientific talk or paper is difficult business. Not only 
-because the concepts can often be counterintuitive or unsettling. But also
-because even scientific talks/ papers (depending the field's expected level
-of rigor) can be riddled with errors and ambiguities.  
+because the concepts can often be complicated, counterintuitive or unsettling. 
+But also because even scientific talks/ papers are subject to errors. Depending 
+the field's expected level of rigor, any given paper or talk will inevitably 
+present with errors and ambiguities, especially when probed.  
 
-Moreover, these errors can occur at 2 different levels and, because of the 
-proximity/ relatedness of these 2 levels, it's tough to know which one any 
-given error/ ambiguity belongs to. 
-
-Scientific error occurs either at (a) the level of language or (b) the level of logic. 
+Moreover, these errors can occur at 2 different levels. Either at (a) the level 
+of language or (b) the level of logic. 
 
 Language is the level concerned with the keywords and syntax that make up statements. 
 Logic is the level concerned with how statements relate to one another, how they are 
@@ -22,27 +20,27 @@ ordered and how they combine together into a well-formed argument or claim. Lang
 deals with sentences and logic deals with sets of sentences (and sets of sets of 
 sentences, etc.).
 
-Errors of language occur with ambigious or ill-defined terms, vague/
-imprecise descriptors/ values, spelling/ grammatic inconsistency and so on.
+Errors of language occur at the surface: ambigious or ill-defined terms, vague/
+imprecise descriptors/ values, spelling/ grammatic inconsistency and so on. Logic 
+errors occur at a deeper level and can be more difficult to identify,
+since they often sit underneath layers of language errors. 
 
-Logic errors occur at a deeper level and can be more difficult to identify,
-since they often sit underneath layers of language errors. Once all language 
-errors are corrected, those that remain are logical. A logic error occurs when 
-you take a set of clean statements together, work out how they relate to one 
+Once all language errors are corrected, those that remain are logical. A logic error 
+occurs when you take a set of clean statements together, work out how they relate to one 
 another and what they imply, and find the conclusion contradictory or fallacious. 
 
-Now, as mentioned, the real difficulty arises because of how closely related
-language and logic are. 
+Now, these errors would be difficult enough to fix in isolation, but the real difficulty
+arises because of how closely related language and logic are. 
 
-With programming/ formal languages, how languages are defined dictate how 
-the logic of that language works. This is also true with less formal languages,
-like scientific language, though the relation between language and logic is less
-precisely defined.   
+With programming/ formal languages, language definitions dictate how the logic of that 
+language works. This is also true with less formal languages (like scientific language), 
+but the precise relations between language and logic break down in proportion to the language's
+informality.   
 
-Along this vein, scientific papers can be though of as less formal equivalents of 
-computer programs and mathematical proofs. A true mathematical proof can still be bad. 
-A working program can still be unreadable. Their logic can be sound but their language 
-unelegant and sloppy. Similarly, a beautifully written/ formalized mathematical proof 
+If we take this analogy further, we can think of scientific papers as less formal 
+equivalents of computer programs and mathematical proofs. And we see that the same categories 
+of errors occur in these media.  A true mathematical proof can still be bad (i.e. inelegant, sloppy language). 
+A working program can still be unreadable. Conversely, a beautifully written/ formalized mathematical proof 
 can still be completely false/ bogus. 
 
 When debugging a computer program, assuming ample amounts of time, I'd argue that it's
