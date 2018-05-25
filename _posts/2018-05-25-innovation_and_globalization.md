@@ -87,7 +87,7 @@ A more accurate representation would be the following:
 Where \\(u(t)\\) and \\(n(t)\\) are the utility and scale functions of your work/ product 
 at some time \\(t\\). 
 
-So \\(U\\) then would be true overall utility of your work/ product some time period \\(t_i\\)
+So \\(U\\) then would be true overall utility of your work/ product over some time period \\(t_i\\)
 to \\(t_f\\), which is more realistically how things work. 
 
 ## Innovation > Globalization? 
@@ -116,7 +116,7 @@ company's \\(u_{company}\\) where \\(\alpha\\) small), much more so that if you 
 company, which would likely be smaller (and so \\(\alpha\\) bigger).  If you could obtain a 
 highly influential position in such a company, though, then you could increase your \\(\alpha\\) to 
 the point where \\(\alpha u_{company} \ast n \\) might be comparable to your working at a start-up,
-if there \\(n\\) is sufficiently small. 
+if their \\(n\\) is sufficiently small. 
 
 
 
