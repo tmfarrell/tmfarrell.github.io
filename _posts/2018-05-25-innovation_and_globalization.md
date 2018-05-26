@@ -112,7 +112,7 @@ achieve this scale. This doesn't happen overnight.
 If you want to engage/impact globalizing activities meaningfully, you have to join a company with 
 established resources.  A company which has its own agenda and many other individuals.  In this case, 
 your contribution would be diluted (i.e. \\(u_{you}\\) would be some fraction \\(\alpha\\) of the 
-company's \\(u_{company}\\) where \\(\alpha\\) small), much more so that if you were a part of an innovative 
+company's \\(u_{company}\\) where \\(\alpha\\) small), much more so than if you were a part of an innovative 
 company, which would likely be smaller (and so \\(\alpha\\) bigger).  If you could obtain a 
 highly influential position in such a company, though, then you could increase your \\(\alpha\\) to 
 the point where \\(\alpha u_{company} \ast n \\) might be comparable to your working at a start-up,
