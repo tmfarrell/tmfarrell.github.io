@@ -16,7 +16,7 @@ first place, I'm not sure this is true. And, in the second place, even if it is,
 it still seems uncompelling. 
 
 He had a few other arguments for why innovation > globalization, but I don't recall
-him give giving a simple, clear argument that was obviously true.  To be clear, 
+him giving a simple, clear argument that was obviously true.  To be clear, 
 I think he is right.  It does seem that innovation is more important than 
 globalization, but I'm not exactly sure why.   
 
