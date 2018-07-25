@@ -6,8 +6,8 @@ categories: writing
 ---
 
 In [Zero to One](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296), 
-Peter Thiel's manifest on startups and the future, he argues that *innovation*---doing/ 
-creating something new---is fundamentally more important than *globalization*---implementing/ 
+Peter Thiel's manifest on startups and the future, he argues that **innovation**---doing/ 
+creating something new---is fundamentally more important than **globalization**---implementing/ 
 copying in other places what has been shown to work in innovation centers.  
 
 One of his main arguments is that globalization focuses on dis/replacing workers 
@@ -22,15 +22,16 @@ globalization, but I'm not exactly sure why.
 
 ## A Rough Estimate  
 
-Let's talk about what innovation and globalization are more precisely. These
-aren't discrete categories, but rather continuous quantities: some activities
-are more globalizing/ spreading and some are more innovating/ advancing.  But any 
-given activity seems to have properties of both spreading and advancing.  The 
+Let's try to see what innovation and globalization are more precisely. These
+aren't discrete categories of activity, but rather more continuous quantities: some 
+activities are more globalizing/ spreading and some are more innovating/ advancing.  
+But any given activity seems to have properties of both spreading and advancing.  The 
 question then is: what does this space of spreading/ advancing activities look like? 
 
-Say you wanted to quantify the potential utility of two different
-activities---one globalizing \\(A\\), one innovating \\(B\\)---so you could decide 
-which to devote your time to. A useful estimate might be: 
+Let's start with trying to define a rough/ abstract estimate of any activity's
+utility, with the thought that this might give us factors/ metrics that could be
+used to contruct such a space. A rough estimate of the utility of an globalizing or 
+innovative activity might something like: 
 
 \\[ U_{gain} \propto t_{gain} \times u_{gain} \times n \\]
 
@@ -49,8 +50,9 @@ which we'll call scale.
 
 So, then, \\( U_{gain} \\) is the overall utility gained from your doing/ producing
 your work/ product at some time \\( t_{you} \\) with some utility \\( u_{you} \\). 
-This is a useful estimation space for innovation and globalization, because it 
-immediately suggests what factors innovation and globalization focus on maximizing. 
+And indeed these factors seem to immediately suggests a useful estimation space for 
+delineating innovation/ globalization, because we can tell immediately which ones
+innovating versus globalizing activities focus on maximizing (to raise \\( U_{gain \\)). 
 
 Primarily, innovation is concerned with increasing \\(t_{gain}\\) and \\(u_{gain}\\). 
 You want to do things earlier than everyone else, and/or at the very least way 
@@ -92,25 +94,32 @@ to \\(t_f\\), which is more realistically how things work.
 
 ## Innovation > Globalization? 
 
-So what about those two activities we wanted to decide between? You would compute \\(U_A\\)
-and \\(U_B\\) and if \\(U_A > U_B\\) do \\(A\\), otherwise do \\(B\\).
+So what about if we had two activities or endevours we that we had the potential to focus on: 
+say, working for a small startup focused on a new and narrow area of technology, or working for
+a large established country that deploys well-established broad technologies across the globe. 
+How would you decide which to choose? Obviously, this is a tough choice and involves many factors, 
+but what you could do is try to quasi-compute \\(U\\) for each activity and then compare them 
+to see which would ultimately give you highest yield.
 
-The point is: **you have to do the math**. You'll inevitably have to do some guesstimation
-to get at these values, but it's much better than just saying innovation > globalization in
-all cases.  It's not that simple. 
+You would inevitably have to do some guesstimation to get at these values, but the point is: 
+I'd argue **you have to do this math** in order to really say innovation > globalization. I 
+don't believe it's as simple as saying innovation > globalization in all cases, because you could
+easily imagine in this case that the bigger company may be a more sure-fire way of having
+utility.  
 
 That said, though, if you're similar to me (i.e. live in an American city, particularly a hub
 of innovation), then more likely than not it will much easier to achieve higher 
 \\(u_{gain}\\) and \\(t_{gain}\\) than anywhere else.  We have access to the most cutting-edge 
 science and technology.  And probably even greater access to capital to increase \\(n\\) over 
-time. The environment is conducive to innovating over globalizing.  
+time. Environments/ conditions can be conducive to innovating over globalizing, or vice versa.  
 
-And this also implies some facts about choosing to pursue globalizing activities.  If you want 
-to achieve very high \\(n\\), you must have access to resources and systems sufficient to 
-achieve this scale. This doesn't happen overnight.  
+And also from all this, there are some more implications for globalizing activities.  If you need 
+to achieve very high \\(n\\) (since you have to compensate for the modesty of your other factors), 
+you must have access to resources and systems sufficient to achieve large scale. And this doesn't 
+happen overnight.  
 
-If you want to engage/impact globalizing activities meaningfully, you have to join a company with 
-established resources.  A company which has its own agenda and many other individuals.  In this case, 
+If you want to engage/ impact globalizing activities meaningfully, you probably have to join a company with 
+established resources.  A company which has its own culture, agenda and many other individuals.  In this case, 
 your contribution would be diluted (i.e. \\(u_{you}\\) would be some fraction \\(\alpha\\) of the 
 company's \\(u_{company}\\) where \\(\alpha\\) small), much more so than if you were a part of an innovative 
 company, which would likely be smaller (and so \\(\alpha\\) bigger).  If you could obtain a 
