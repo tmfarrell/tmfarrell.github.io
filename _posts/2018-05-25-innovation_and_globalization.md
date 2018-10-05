@@ -52,7 +52,7 @@ So, then, \\( U_{gain} \\) is the overall utility gained from your doing/ produc
 your work/ product at some time \\( t_{you} \\) with some utility \\( u_{you} \\). 
 And indeed these factors seem to immediately suggests a useful estimation space for 
 delineating innovation/ globalization, because we can tell immediately which ones
-innovating versus globalizing activities focus on maximizing (to raise \\( U_{gain \\)). 
+innovating versus globalizing activities focus on maximizing (to raise \\( U_{gain} \\)). 
 
 Primarily, innovation is concerned with increasing \\(t_{gain}\\) and \\(u_{gain}\\). 
 You want to do things earlier than everyone else, and/or at the very least way 
