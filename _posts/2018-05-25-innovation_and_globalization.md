@@ -52,7 +52,7 @@ So, then, \\( U_{gain} \\) is the overall utility gained from your doing/ produc
 your work/ product at some time \\( t_{you} \\) with some utility \\( u_{you} \\). 
 And indeed these factors seem to immediately suggests a useful estimation space for 
 delineating innovation/ globalization, because we can tell immediately which ones
-innovating versus globalizing activities focus on maximizing (to raise \\( U_{gain \\)). 
+innovating versus globalizing activities focus on maximizing (to raise \\( U_{gain} \\)). 
 
 Primarily, innovation is concerned with increasing \\(t_{gain}\\) and \\(u_{gain}\\). 
 You want to do things earlier than everyone else, and/or at the very least way 
@@ -96,7 +96,7 @@ to \\(t_f\\), which is more realistically how things work.
 
 So what about if we had two activities or endevours we that we had the potential to focus on: 
 say, working for a small startup focused on a new and narrow area of technology, or working for
-a large established country that deploys well-established broad technologies across the globe. 
+a large established company that deploys well-established broad technologies across the globe. 
 How would you decide which to choose? Obviously, this is a tough choice and involves many factors, 
 but what you could do is try to quasi-compute \\(U\\) for each activity and then compare them 
 to see which would ultimately give you highest yield.
