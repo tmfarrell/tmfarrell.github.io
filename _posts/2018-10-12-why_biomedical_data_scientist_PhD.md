@@ -77,7 +77,7 @@ My point in all this is to say: specialization, as much as it's touted in biomed
 
 Ultimately, what you want ideally though is an individual with both broad and deep expertise. Do you find that in someone with a PhD? Maybe. I think more often you would find this in someone with more experience. After all, education is more for show that for skill.<sup id="a7">[7](#f7)</sup> 
 
-And, additionally, with the state of computation/ automation where it is, what you really want is someone who can best understand and control the powerful machines at our exposal, which for the reasons Colson outlines, takes a generalist.  
+And, additionally, with the state of computation/ automation where it is, what you really want is someone who can best understand and control the powerful machines at our exposal, which for the reasons Colson outlines, takes a generalist.<sup id="a8">[8](#f8)</sup>
 
 
 <br>
@@ -100,6 +100,8 @@ And, additionally, with the state of computation/ automation where it is, what y
 <a name="f6">6.</a> <a href="https://towardsdatascience.com/why-model-explainability-is-the-next-data-science-superpower-b11b6102a5e0">https://towardsdatascience.com/why-model-explainability-is-the-next-data-science-superpower-b11b6102a5e0</a>
 
 <a name="f7">7.</a> <a href="https://blog.press.princeton.edu/2018/01/23/bryan-caplan-on-the-case-against-education/">https://blog.press.princeton.edu/2018/01/23/bryan-caplan-on-the-case-against-education/</a> and <a href='https://www.latimes.com/opinion/op-ed/la-oe-caplan-education-credentials-20180211-story.html'>https://www.latimes.com/opinion/op-ed/la-oe-caplan-education-credentials-20180211-story.html</a>
+
+<a name="f8">8.</a> Nothing machines do is for show, only for function. 
 
 
 
