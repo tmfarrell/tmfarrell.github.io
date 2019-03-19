@@ -11,8 +11,8 @@ And am prepared to practice whatever skills necessary to do this.
 
 
 I write here occasionally to make sense of what I read/ think. Feel free to [contact me](mailto:tfarrell01@gmail.com) 
-with feedback or comments. See [here]({{ site.baseurl }}/Resume, Tim Farrell (ND; 2017)_compressed.pdf) for my resume, 
-[here](https://www.linkedin.com/in/timothy-m-farrell-8003bb42) for LinkedIn and [here](https://twitter.com/tfarrell01) for twitter.
+with feedback or comments. See [here]({{ site.baseurl }}/Resume - Farrell (201903).pdf) for my resume, 
+[here](https://www.linkedin.com/in/tim-farrell-8003bb42) for LinkedIn and [here](https://twitter.com/tfarrell01) for Twitter.
 <br>
 <br>
 
