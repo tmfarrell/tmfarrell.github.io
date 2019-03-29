@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Presenting
+title: Analyzing
 ---
 
 <div class="home">
@@ -8,9 +8,9 @@ title: Presenting
     {% assign files = site.static_files | reverse %}
     {% for file in files %}
       <li>
-        {% assign ext = file.path | slice: -8, 8 %}
-        {% if ext == "talk.pdf" %}
-          {% assign name_size = file.path | size | minus: 19 %}
+        {% assign ext = file.path | slice: -12, 12 %}
+        {% if ext == "analysis.pdf" %}
+          {% assign name_size = file.path | size | minus: 23 %}
           {% assign name = file.path | slice: 10, name_size %}
           {% assign date = file.path | slice: 1, 8 %}
           <span class="post-meta">{{ date }}</span>
