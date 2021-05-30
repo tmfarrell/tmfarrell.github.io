@@ -30,9 +30,10 @@ from mistakes/ successes and (d) copying practices that led to success.
 
 Why should this work so well? Because it mimicks the most powerful process known to man: evolution. 
 
-The catch is that organizations must be diligent about carrying over the selection and copying parts (c and d). 
-Biology does this automatically by way of reproduction/ replication, but organizations could have very bad
-documentation and learning practices. 
+The important piece is that organizations need to be diligent about the capturing learnings and copying
+parts (c and d). Biology does this automatically in the form of DNA and by way of reproduction/ replication;
+however there's no guarantee that organizations have the right processes set up to do both of these well. 
+This is one of the major responsibilities of leadership. 
 
 
 
