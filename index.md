@@ -23,12 +23,12 @@ with feedback or comments. See [here]({{ site.baseurl }}/Tim-Farrell-Resume-v202
 
 <div class="sharebuttons">
     <ul>
-        <li class="twitter">
+        <li>
             <a href="https://twitter.com/tfarrell01">
                 {% include social/twitter.svg %}
             </a>
         </li>
-        <li class="linkedin">
+        <li>
           <a href="https://www.linkedin.com/in/tim-farrell-8003bb42">
             {% include social/linkedin.svg %}
           </a>
