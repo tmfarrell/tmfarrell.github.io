@@ -1,0 +1,24 @@
+- id: dzd-1
+  description: "Rapid, precise and robust bacterial relatedness pipeline from WGS data"
+  path: assets/pdf/20201116-asm_ngs_bioinfo_pipelines-epixact-talk.pdf
+  date: 2021-01-16
+- id: broad-2
+  description: "Microbial genomics in the cloud"
+  path: assets/pdf/20181128-microbial_meeting_broad_malaria_firecloud-talk.pdf
+  date: 2018-11-28
+- id: broad-1
+  description: "Accurate haplotype calling for polyclonal malaria infections"
+  path: "assets/pdf/20180915-American Society of Tropical Medicine and Health 2018 Poster-talk.pdf"
+  date: 2018-09-15
+- id: bu-3
+  description: "Blood antigen phenotype prediction from clinical sequencing data"
+  path: "assets/pdf/20160410-BU Data Science Day 2016 Poster-talk.pdf"
+  date: 2016-04-10
+- id: bu-2
+  description: "Predicting blood antigen clinical phenotypes from structurally variant genotypes"
+  path: "assets/pdf/20151211_Phenotype prediction from highly-polymorphic structurally-variant genotypes_talk.pdf"
+  date: 2015-12-11
+- id: bu-1
+  description: "Paper review: Resource for benchmarking SNP and indel genotype calls on human sequencing data"
+  path: "assets/pdf/20151028_NIST benchmark variant-calling_talk.pdf"
+  date: 2015-10-28

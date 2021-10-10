@@ -5,20 +5,12 @@ title: Presenting
 
 <div class="home">
   <ul class="post-list">
-    {% assign files = site.static_files | reverse %}
-    {% for file in files %}
-      <li>
-        {% assign ext = file.path | slice: -8, 8 %}
-        {% if ext == "talk.pdf" %}
-          {% assign name_size = file.path | size | minus: 19 %}
-          {% assign name = file.path | slice: 10, name_size %}
-          {% assign date = file.path | slice: 1, 8 %}
-          <span class="post-meta">{{ date }}</span>
-          <a class="post-link" href="{{ file.path | prepend: site.baseurl }}">
-              {{ name }}
-          </a>
-        {% endif %}
-      </li>
+    {% for pdf in site.data.talks %}
+        <li>
+            <span class="post-meta">{{ pdf.date }}</span>
+            <p><i>{{ pdf.description }}</i><p></p>
+            <embed src="{{ pdf.path }}" type="application/pdf" width="100%" height="600px" />
+        </li>
     {% endfor %}
   </ul>
 </div>
