@@ -23,16 +23,17 @@ then becomes a learning that can be applied across the organization. This is exa
 of *best practices* are formed. 
 
 One of the primary goals of organizational leaders and managers then is to set up an environment 
-where this learning can be applied effectively and efficiently to all work in the organization. 
+where this learning can be applied effectively and efficiently to all work in their organization. 
 
 This is the loop: (a) similar work done by different parties, (b) assessment of results, (c) learnings 
 from mistakes/ successes and (d) copying practices that led to success. 
 
-Why should this work so well? Because it mimicks the most powerful process known to man: evolution. 
+Why should this work so well? Because it replicates the most powerful force in the universe: evolution. The important 
+piece for organizations, though, is to be diligent about capturing and copying learnings (i.e. parts c and d). 
 
-The important piece is that organizations need to be diligent about the capturing learnings and copying
-parts (c and d). Biology does this automatically in the form of DNA and by way of reproduction/ replication;
-however there's no guarantee that organizations have the right processes set up to do both of these well. 
+Biology captures and copies automatically by way of natural selection. In human organizations, there's no guarantee 
+that the right processes set up to do both capturing and copying well.  
+
 This is one of the major responsibilities of leadership. 
 
 
