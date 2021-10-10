@@ -5,20 +5,16 @@ title: Analyzing
 
 <div class="home">
   <ul class="post-list">
-    {% assign files = site.static_files | reverse %}
-    {% for file in files %}
-      <li>
-        {% assign ext = file.path | slice: -12, 12 %}
-        {% if ext == "analysis.pdf" %}
-          {% assign name_size = file.path | size | minus: 23 %}
-          {% assign name = file.path | slice: 10, name_size %}
-          {% assign date = file.path | slice: 1, 8 %}
-          <span class="post-meta">{{ date }}</span>
-          <a class="post-link" href="{{ file.path | prepend: site.baseurl }}">
-              {{ name }}
+    {% for imgs in site.data.analyses %}
+        <span class="post-meta">{{ imgs.date }}</span>
+        <p><i>{{ imgs.description }}</i><p></p>
+        {% for img in imgs.paths %}
+        <li>
+          <a href="{{ img.path }}">
+            <img src="{{ img.path }}" style="width:{{ img.width }}px;height:auto;text-align:center">
           </a>
-        {% endif %}
-      </li>
+        </li>
+        {% endfor %}
     {% endfor %}
   </ul>
 </div>

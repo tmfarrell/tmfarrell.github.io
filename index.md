@@ -2,21 +2,37 @@
 layout: page
 title: About
 ---
-Biomedical data engineer and manager with interests at the intersection of bioeng/ biomedicine/ health 
-and computation/ automation. 
+Data engineer/ manager (and sometimes scientist) with interests at the intersection of medicine/ health 
+and computation/ automation.  
 
 
-Ultimately, I want to advance bioengineering/ medicine/ health by making it easier and more effective. 
-And am prepared to practice whatever skills necessary to do this. 
+I believe the application of engineering to biology and medicine is 
+the next big phase in technological progress, and will ultimately transform human health and longevity. 
+And that data and software will be critical to making that process easier and more effective. 
 
 
-I write here occasionally to make sense of what I read/ think. Feel free to [contact me](mailto:tfarrell01@gmail.com) 
-with feedback or comments. See [here]({{ site.baseurl }}/Resume-Tim_Farrell-v20210422.pdf) for my resume, 
-[here](https://www.linkedin.com/in/tim-farrell-8003bb42) for LinkedIn and [here](https://twitter.com/tfarrell01) for Twitter.
+I write here occasionally to make sense of things. Feel free to [contact me](mailto:tfarrell01@gmail.com) 
+with feedback or comments. See [here]({{ site.baseurl }}/Tim-Farrell-Resume-v20211003.pdf) for my full resume.  
+
 <br>
 <br>
 
-<br>  
 *All opinions expressed here are entirely my own and do not reflect those of affiliations.* 
+
 <br>
+
+<div class="sharebuttons">
+    <ul>
+        <li class="twitter">
+            <a href="https://twitter.com/tfarrell01">
+                {% include social/twitter.svg %}
+            </a>
+        </li>
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/in/tim-farrell-8003bb42">
+            {% include social/linkedin.svg %}
+          </a>
+        </li>
+    </ul>
+</div>
 

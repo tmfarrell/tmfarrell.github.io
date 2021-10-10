@@ -15,3 +15,29 @@ nav ul li {
     display:block;
     margin-bottom:10px
 }
+
+.sharebuttons {
+  margin: 0 auto 0 auto;
+}
+
+.sharebuttons ul {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.sharebuttons ul li {
+  display: inline;
+}
+
+.sharebuttons li {
+  margin-left: 10px;
+}
+
+.sharebuttons ul li a {
+  text-decoration: none;
+}
+
+.sharebuttons ul li svg {
+  width: 40px;
+  height: 40px;
+}
