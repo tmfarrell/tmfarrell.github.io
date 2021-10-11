@@ -9,7 +9,9 @@ title: Presenting
         <li>
             <span class="post-meta">{{ pdf.date }}</span>
             <p><i>{{ pdf.description }}</i><p></p>
-            <embed src="{{ pdf.path }}" type="application/pdf" width="100%" height="600px" />
+            <object data="{{ pdf.path }}" type="application/pdf" width="100%" height="400px">
+                <p><a href="{{ pdf.path }}"></a>link</p>
+            </object>
         </li>
     {% endfor %}
   </ul>
