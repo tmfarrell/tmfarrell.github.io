@@ -12,7 +12,7 @@ And that data and software will be critical to making that process easier and mo
 
 
 I write here occasionally to make sense of things. Feel free to [contact me](mailto:tfarrell01@gmail.com) 
-with feedback or comments. See [here]({{ site.baseurl }}/Tim-Farrell-Resume-v20211003.pdf) for my full resume.  
+with feedback or comments. See [here]({{ site.baseurl }}/Tim_Farrell_Resume.pdf) for my full resume.  
 
 <br>
 <br>
