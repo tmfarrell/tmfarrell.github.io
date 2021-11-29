@@ -2,13 +2,10 @@
 layout: page
 title: About
 ---
-Data engineer/ manager (and sometimes scientist) with interests at the intersection of medicine/ health 
-and computation/ automation.  
 
-
-I believe the application of engineering to biology and medicine is 
-the next big phase in technological progress, and will ultimately transform human health and longevity. 
-And that data and software will be critical to making that process easier and more effective. 
+I believe the application of engineering to biology and medicine is the next big phase in technological progress, 
+and will ultimately transform human health and longevity. And that data and software will be critical to making 
+that process easier and more effective. I'm here to help achieve that vision.  
 
 
 I write here occasionally to make sense of things. Feel free to [contact me](mailto:tfarrell01@gmail.com) 
