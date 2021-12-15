@@ -15,9 +15,12 @@ twitter_username: tfarrell01
 github_username:  tmfarrell
 
 # Build settings
-markdown: kramdown
+markdown:  kramdown
 #redcarpet:
 #  extensions: [footnotes]
+
+plugins:
+  - jemoji
 
 defaults:
   - scope:
