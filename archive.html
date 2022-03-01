@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Writing
+title: Archive
 ---
 
 <div class="home">
-  <ul class="post-list">
+  <ul class="post-list" style="list-style:none; margin-bottom: 10px;">
     {% for post in site.categories.writing %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -17,5 +17,5 @@ title: Writing
   </ul>
   <!--
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  --> 
+  -->
 </div>

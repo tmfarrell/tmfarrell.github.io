@@ -1,29 +1,21 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Setup
+title:               Tim Farrell
+tagline:             'health data [r]evolution'
+description:         'Thoughts on product/ engineering, computation and the coming revolution in human health. <a href="https://twitter.com/tfarrell01">@tfarrell01</a>'
+url:                 http://tmfarrell.github.io
+paginate:            5
+permalink:           pretty
 
-# Site settings
-title: 
-email: tfarrell01@gmail.com
-description: ""
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://tmfarrell.github.io" # the base hostname & protocol for your site
-twitter_username: tfarrell01
-github_username:  tmfarrell
+# About/contact
+author:
+  name:              Tim Farrell
+  url:               https://twitter.com/tfarrell01
+  email:             tfarrell01@gmail.com
 
-# Build settings
-markdown:  kramdown
-#redcarpet:
-#  extensions: [footnotes]
-
+# Gems
 plugins:
-  - jemoji
+  - jekyll-paginate
 
-defaults:
-  - scope:
-      path: "assets/img"
-    values:
-      image: true
+# Custom vars
+version:             0.1.0
+google_analytics_id: #UA-XXXX-Y
