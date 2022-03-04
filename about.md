@@ -5,7 +5,7 @@ title: About
 
 I believe the application of engineering to biology and medicine is the next big phase in technological progress, and will ultimately transform human health and longevity. I also believe that leveraging computation and data will be critical for this transformation.
 
-I'm here to help achieve this vision.
+I'm here to help achieve that vision.
 
 I write here occasionally to make sense of things. Feel free to [contact me](mailto:tfarrell01@gmail.com) with feedback or comments.
 
