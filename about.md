@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-I believe the application of engineering to biology and medicine is the next big phase in technological progress, and will ultimately transform human health and longevity. I also believe that leveraging [computation and data will be critical for this transformation](https://a16z.com/2017/06/21/jorge-conde-bio-fund/).
+I believe the application of engineering to biology and medicine is the next big phase in technological progress, and will ultimately transform human health and longevity. I also believe that leveraging [computer and data science will be critical for this transformation](https://a16z.com/2017/06/21/jorge-conde-bio-fund/).
 
 I'm here to help achieve that vision.
 
