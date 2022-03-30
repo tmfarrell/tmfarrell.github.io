@@ -24,7 +24,7 @@ This is a great reference for how to write good OKRs [https://www.whatmatters.co
     - Engineering Team: 2-8 Engineers
 - Duration: Ideally a sustained, durable team dedicated to developing a single product throughout its lifecycle.
 
-## Product Development Process
+### Product Development Process
 
 - This as a four-step cyclic, iterative process that the whole team participates in. The third step in the cycle is commonly referred to in Scrum methodology as a "sprint"[[1]](https://www.amazon.com/Scrum-Doing-Twice-Work-Half-ebook/dp/B00JI54HCU/), while the first two steps are design-focused and commonly referred to as a "design sprint"[[2]](https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/1442397683).
 - The first two steps in the process can be done at the same time, on the same rhythm as the third step, however there should be an offset where the design team/ sprint is developing designs for future/ upstream features or user stories and the engineering team/ sprint is focused on implementing those features that have already been designed in prior design sprints. The last step of the process, "validation", should ideally be done continuously and is mostly the responsibility of the PM.[[3]](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation-ebook/dp/B004J4XGN6/)
@@ -54,7 +54,7 @@ This is a great reference for how to write good OKRs [https://www.whatmatters.co
     - This phase will naturally lead back into the discovery phase if a feature didn't have the desired outcome, or if it did and there are now new objectives the team needs to prioritize and focus on accomplishing.
     - _Participants_: PM
 
-## Product Backlog
+### Product Backlog
 
 *The product backlog is important enough that it warrants its own section*
 - The product backlog is a list, ideally prioritized, of user stories (essentially features) grouped into related sets called epics (essentially high-level user stories that describe a larger component with related features) that define the vision for the end product.
