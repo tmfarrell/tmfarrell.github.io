@@ -7,7 +7,7 @@ I believe the application of engineering to biology and medicine is the next big
 
 I'm here to help achieve that vision.
 
-I post writing here, to try to make sense of things I'm thinking about. Feel free to [contact me](mailto:tfarrell01@gmail.com) with feedback or comments you might have.
+I write to try to make sense of things I'm thinking about. Feel free to [contact me](mailto:tfarrell01@gmail.com) with feedback or comments you might have.
 
 <br>
 <br>
