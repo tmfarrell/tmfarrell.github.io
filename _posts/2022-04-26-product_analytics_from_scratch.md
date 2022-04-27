@@ -79,14 +79,14 @@ Another aspect to this step is to understand how metrics differ over time betwee
 
 #### Improve
 
-In contrast to the prior step, the purpose of this step is to understand relationships between metrics, rather than examining them in isolation. Specifically, the goal is to understand how leading (or upstream) metrics impact lagging (or downstream) metrics. For example, the data product team might implement a dashboard visualizing both weekly video visitors and daily journal visitors to get a sense whether there is a correlation between the two measures.
+In contrast to the prior step, the purpose of this step is to understand relationships between metrics, rather than examining them in isolation. Specifically, the goal is to understand how leading (or upstream) metrics impact lagging (or downstream) metrics. For example, the data product team might implement a dashboard visualizing both weekly and daily visitors to get a sense whether there is a correlation between the two metrics.
 
 <img src="/assets/img/improve_1.png"
      style="display: block; margin-left: auto; margin-right: auto; width: 55%;" />
 
-This functionality can be used to understand what leading indicators are the best predictors of remission rates, the most important lagging indicator. If no current metrics serve this function, then additional metrics should be developed and tested in subsequent iterations.
+This functionality can be used to understand what leading indicators are the best predictors of revenue, the most important lagging indicator. If no current metrics serve this function, then additional metrics should be developed and tested in subsequent iterations.
 
-When a company and product team get to a certain level of maturity, another important aspect to this stage is experimentation, or A/B testing. The idea is to understand how updating the product UI/ UX might influence certain metrics. Experimentation is a nuanced process that requires coordination between product, analytics and data science teams. There are modern tools that can simplify the process a bit (e.g. Amplitude Experiment[[14]](https://amplitude.com/amplitude-experimenthttps://hightouch.io/blog/reverse-etl/)), but in general experimentation requires a large amount of cross-coordination.
+When a company and product team get to a certain level of maturity, another important aspect to this stage is experimentation, or oftentimes called A/B testing. The idea is to understand how updating the product UI/ UX might influence certain metrics. Experimentation is a nuanced process that requires coordination between product, analytics and data science teams. There are modern tools that can simplify the process a bit (e.g. Amplitude Experiment[[14]](https://amplitude.com/amplitude-experimenthttps://hightouch.io/blog/reverse-etl/)), but in general experimentation requires a large amount of cross-coordination.
 
 <img src="/assets/img/improve_2.png"
      style="display: block; margin-left: auto; margin-right: auto; width: 65%;" />
@@ -99,6 +99,6 @@ Part of this step can also involve adding additional automation to the data syst
 
 ### Conclusion
 
-To sum up, at this point the highest impact practice product teams can adopt is to map/ define, measure and analyze its users’ journeys. With that, the highest value data product is one that measures and analyzes changes in user journey metrics as they relate to each other, which can ultimately be used to increase retention and revenue. In terms of prioritization, user retention seem most likely to have the highest direct impact on revenue and so should be prioritized for experimentation and control.
+To sum up, the highest impact analytics practice product teams can adopt is to map/ define, measure and analyze its users’ journeys. With that, the highest value data product is one that measures and analyzes changes in user journey metrics as they relate to each other, which can ultimately be used to increase retention and revenue. In terms of prioritization, user retention seem most likely to have the highest direct impact on revenue and so should be prioritized for experimentation and control.
 
 In terms of data system architecture and implementation, the industry is quickly coming to a consensus that the “modern data stack” is the best approach for implementing reliable product analytics systems, especially for lean teams. As product teams progress in their effort to become more data-driven, they should adopt these tools opportunistically to facilitate and accelerate their data transformations.
