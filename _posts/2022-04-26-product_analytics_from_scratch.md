@@ -19,14 +19,14 @@ One example is product revenue, an obvious indicator of success but, by itself, 
 
 A technique commonly used to develop leading indicators in consumer applications is *user journey mapping*. The idea is to map out the steps users complete to get to a successful outcome, often depicted as a funnel (since apps should be designed to “funnel” users towards the desired outcome). An example might look like this:
 
-<img src="{{ site.baseurl }}/assets/img/user_journey_1.png"
+<img src="/assets/img/user_journey_1.png"
      style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
 ### Pirates?!
 
 One popular approach to defining the stage of a user journey is the “AARRR!” framework (also known as the Pirate metrics framework), where each letter in the acronym represents a step in the customer journey: acquisition, activation, retention, referral and revenue.[[4]](https://500hats.typepad.com/500blogs/2007/06/internet-market.html)
 
-<img src="{{ site.baseurl }}/assets/img/user_journey_2.png"
+<img src="/assets/img/user_journey_2.png"
      style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
 Using this framework, we now have a clearer, more mechanistic picture of how we can increase revenue over time. If the team adds features that increase user retention, those users will be more likely to refer other users and then eventually more likely to contribute to revenue, which ultimately will lead to positive outcomes for the product and company.
@@ -61,7 +61,7 @@ This step is performed by the data engineering/ product team, where data enginee
 
 For implementing measurements, MDS tools that could be used are: Snowplow[[7]](https://snowplowanalytics.com/) for tracking user behavior events in applications, BigQuery[[8]](https://cloud.google.com/bigquery) for storing data in a data warehouse and dbt[[9]](https://www.getdbt.com/) for data transformations. An example implementation of the “weekly visitor” metric might look like:
 
-<img src="{{ site.baseurl }}/assets/img/measure.png"
+<img src="/assets/img/measure.png"
      style="display: block; margin-left: auto; margin-right: auto; width: 65%;" />
 
 The nice part about using tools like Snowplow is they have built-in functionality for dealing with data quality issues, allowing users to define data schema and validation checks. It automatically saves records that fail these checks so data analysts can go back, analyze and diagnose why these failures might be happening.
@@ -70,7 +70,7 @@ The nice part about using tools like Snowplow is they have built-in functionalit
 
 This step is all about deeply understanding all factors that influence a metric implementation. To do this, typically a team will implement a dashboard and data visualization layer so they can observe metrics over time and begin to ask questions about them. The technologies commonly used at this layer are Looker[[10]](https://www.looker.com/) or Mode[[11]](https://mode.com/). An example implementation would look something like this:
 
-<img src="{{ site.baseurl }}/assets/img/analyze.png"
+<img src="/assets/img/analyze.png"
      style="display: block; margin-left: auto; margin-right: auto; width: 65%;" />
 
 A common occurrence at this stage is to encounter bugs or issues with the data, and to initiate a correction of error process (another best practice used at Amazon) to investigate the root cause of the issue and address that cause directly to improve quality.[[12]](https://wa.aws.amazon.com/wat.concept.coe.en.html)
@@ -81,14 +81,14 @@ Another aspect to this step is to understand how metrics differ over time betwee
 
 In contrast to the prior step, the purpose of this step is to understand relationships between metrics, rather than examining them in isolation. Specifically, the goal is to understand how leading (or upstream) metrics impact lagging (or downstream) metrics. For example, the data product team might implement a dashboard visualizing both weekly video visitors and daily journal visitors to get a sense whether there is a correlation between the two measures.
 
-<img src="{{ site.baseurl }}/assets/img/improve_1.png"
+<img src="/assets/img/improve_1.png"
      style="display: block; margin-left: auto; margin-right: auto; width: 55%;" />
 
 This functionality can be used to understand what leading indicators are the best predictors of remission rates, the most important lagging indicator. If no current metrics serve this function, then additional metrics should be developed and tested in subsequent iterations.
 
 When a company and product team get to a certain level of maturity, another important aspect to this stage is experimentation, or A/B testing. The idea is to understand how updating the product UI/ UX might influence certain metrics. Experimentation is a nuanced process that requires coordination between product, analytics and data science teams. There are modern tools that can simplify the process a bit (e.g. Amplitude Experiment[[14]](https://amplitude.com/amplitude-experimenthttps://hightouch.io/blog/reverse-etl/)), but in general experimentation requires a large amount of cross-coordination.
 
-<img src="{{ site.baseurl }}/assets/img/improve_2.png"
+<img src="/assets/img/improve_2.png"
      style="display: block; margin-left: auto; margin-right: auto; width: 65%;" />
 
 #### Control
