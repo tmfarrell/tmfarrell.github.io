@@ -1,14 +1,15 @@
 # Setup
-title:               Tim Farrell
-tagline:             'health + engineering'
-description:         'Thoughts on product/ engineering, computation and the coming revolution in human health. <a href="https://twitter.com/tfarrell01">@tfarrell01</a>'
+title:               ''
+tagline:             'engineering + product + health'
+description:         'Thoughts on how technology (engineering/ product) can facilitate the next revolution in human health. <a href="https://twitter.com/tfarrell01">@tfarrell01</a>'
 url:                 https://tmfarrell.github.io
 paginate:            5
 permalink:           pretty
+markdown:            kramdown
 
 # About/contact
 author:
-  name:              Tim Farrell
+  name:              ''
   url:               https://twitter.com/tfarrell01
   email:             tfarrell01@gmail.com
 
@@ -18,4 +19,4 @@ plugins:
 
 # Custom vars
 version:             0.2.0
-google_analytics_id: #UA-XXXX-Y
+google_analytics_id: G-SSNJPDVYRD
