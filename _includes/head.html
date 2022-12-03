@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
+    {{ site.tagline }}
   </title>
 
   {% if page.url and site.baseurl %}
@@ -37,4 +33,11 @@
     ga('send', 'pageview');
   </script>
   {% endif %}
+
+  <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" }},
+    });
+  </script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
