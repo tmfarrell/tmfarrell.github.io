@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Does Failure Gives Success?"
+title:  "Failure Is Key To Success"
 date:   2016-04-27 20:00
 categories: writing
 ---
@@ -8,7 +8,7 @@ categories: writing
 Came across [this](http://www.nature.com/naturejobs/2010/101118/pdf/nj7322-467a.pdf) today, a discussion
 of the role of failure as a scientist.
 
-This isn't the only example of failure being labelled requisite for success. For instance, MJ in his famous Nike commercial:
+This isn't the only example of failure being labelled requisite for success. For instance, Michael Jordan in his famous Nike commercial:
 
 >I've missed more than 9000 shots in my career. I've lost almost 300 games. 26 times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.
 
@@ -24,39 +24,49 @@ Then the common adage:
 
 >If at first you don't succeed... try, try again.
 
-And on and on. But how do we know that this is actually true? It could be that successful people touting their failure are just talented people who only remember their failures.
+And on and on. 
 
-I happen to *believe* these recommendations are true, and useful. But I'm more interested in if it could be proven in a more formal (i.e. probabilistic) way. This way we could use the formalization to determine what are the best ways to fail, in order to succeed. (Or at the very least build a logical/ reasonable intuition that it's a better way forward than relying strictly on talent, and/ or sticking to your comfort zone.)
+But how do we know this is actually *true*? It could be that successful people touting their failure are just talented people who only remember their failures.
+
+I happen to believe this is intuitively true, but am more interested here in how can be proven in a  formal, probabilistic way. This way we could use that knowledge to identify the best ways to fail, in order to succeed (if possible). 
 
 ## Niave Approaches
 
-At first thought it might seem pretty obvious: more trials means more opportunities to hit success. Assuming your chances of success/ failure are independent at each trial, then it follows that adding trials increases the chance of hitting success.
+At first thought, it might seem obvious: more trials leads to more opportunities to succeed. Assuming probability of success is independent for each trial, it follows that adding trials increases chances of success.
 
-More formally, this could follow a geometric distribution with success rate \\(p\\), failure rate \\((1-p)\\), where your probability of needing $$k$$ trials to hit your first success is \\((1-p)^{k-1}p\\). And so by complement the chances of your having success by the $$k$$<sup>th</sup> trial is \\(1 - (1-p)^{k-1}p\\). Clearly for \\(k\\) large, this gets closer and closer to 1.
+More formally, if we let our success rate be \\(p\\), failure rate is \\((1-p)\\) and the probability of of success follows a goemetric distribution where the chance of hitting a success after $$k$$ trials is \\((1-p)^{k-1}p\\). So, by complement, the chances of having success by the $$k$$<sup>th</sup> trial is \\(1 - (1-p)^{k-1}p\\). Clearly for large \\(k\\), this gets closer and closer to 1. 
 
-Except, this is really an over-simplification. Success isn't usually some event you need only hit once, like a lottery. Mike wasn't trying to make one shot, or win one game.
+Not bad!  
 
-Instead then maybe we model this as a binomial, which is an extension of a geometric in that it quantifies the probability of more than one success within of some number of trials. Precisely, the probability of \\(k\\) successes in \\(n\\) trials for is \\((1-p)^{n-k}p^k\\).
+Except.. this likely is an over-simplification. Success isn't a singular event you need to hit only once, like a lottery. MJ wasn't trying to make one shot, or win one game.
 
-So is this what we want? As we increase \\(n\\), the mean of the distribution (i.e. the average probability of success over all \\(k\\)) is \\(np\\). Which means indeed our average success is proportional to how many times we try.
+Instead maybe we model it as a binomial, which models the probability of more than one success within of some number of trials. Precisely, the probability of \\(k\\) successes in \\(n\\) trials is \\((1-p)^{n-k}p^k\\).
+
+Is this what we want? As we increase \\(n\\), the distribution mean (i.e. the average probability of success over all \\(k\\)) is \\(np\\). Which means average success is proportional to number of attempts.
 
 ## Dependence
 
-But this too is far from complete. This means that our average success is still proportional to \\(p\\), our individual trial success rate. So if this is small we have to try more (make \\(n\\) larger) to get the same average success than if \\(p\\) were larger. And with lower values of \\(p\\), it becomes increasingly prohibitive of larger amounts of success.
+But this also feels slightly oversimplified.  
 
-Further, we're still assuming independence of events, which isn't what we want. We want to allow \\(p\\) to change from event to event.
+This means average success is still proportional to \\(p\\), our individual trial success rate. Which means if \\(p\\) is very small we have to try more (make \\(n\\) larger) to get the same average success than if \\(p\\) were larger. And with lower values of \\(p\\), it becomes increasingly prohibitive to achieve large amounts of success.
 
-In other words, we're not interested in achieving some success level within some small amount of time; for instance, wanting to score the most points of anyone during a single game (where each shot is probably independent). We want some success level over the course of many games, where we can get better with each game (with some probability).
+Further, we're still assuming independence of events, which doesn't describe reality. We want to allow \\(p\\) to change event-to-event.
 
-So a simple binomial isn't our best bet either then. And our initial assumption of independence between trials is the issue at hand here.
+In other words, we're not interested in achieving success over a small number of trials; for instance, wanting to score the most points during a single game (where each shot is close to independent). We want to increase the likelihood success over the course of many games, getting better each game. 
 
-The quotes above argue that our probability of success is *exactly dependent* upon our previous history of trials. Namely, the more we seek and experience failure, the more we are likely to succeed _for any given trial in the future_.<sup id="a1">[1](#f1)</sup>
+## Failure is Key to Success
 
-So how would we model this? We need some process where from \\(t \to t + 1\\) our chance of success is updated \\(p\_t \to p\_{t+1}\\). And assuming we attempt a trial at \\(t\\), is improved over some distribution. And further, this degree of improvement is proportional to the degree to which we fail, or more specifically the number of failed trials, say \\(k_f\\), in some interval of our history \\( \lbrace t-h,...,t-1 \rbrace \\).
+The quotes above argue that probability of success is *exactly dependent* upon our previous history of trials. Namely, the more we seek and experience failure, the more we are likely to succeed _for any given trial in the future_.<sup id="a1">[1](#f1)</sup>
 
-There's definitely something to this and I believe it can be framed more readily as a [learning, or evolution, process](https://dash.harvard.edu/bitstream/handle/1/2643031/Valiant_Evolvability.pdf). Now this is something. This would allow for training to matter. It would make our initial probabilities (our talent) less relevant.
+We need some process where from \\(t \to t + 1\\) our chance of success is updated \\(p\_t \to p\_{t+1}\\). And assuming we attempt a trial at \\(t\\), \\(p\_{t+1}\\) is improved over some distribution. And further, this degree of improvement is proportional to the degree to which we fail, or more specifically the number of failed trials, say \\(k_f\\) over some interval of our history \\( \lbrace t-h,...,t-1 \rbrace \\).
 
-More on this to follow.
+Now this is definitely something!<sup id="a2">[2](#f2)</sup>
+
+This would allow for training to matter. It would make our initial probabilities (our talent) less relevant. 
+
+Risk more, try harder, fail bigger and get closer to success.  
+
+
 
 <br>
 <br>
@@ -78,4 +88,6 @@ And further, looking at Watson's quote, he recommends doubling your rate of fail
     Which means if your success rate is even a tad under 50/50, you'll never succeed: \\((2(0.49) - 1)\_+ \to 0 \\). [Return.](#a2)
 -->
 
-<a name="f1">1.</a> And some research has shown this, that world-class performers characteristically push themselves to a towards discomfort zones during practice, putting themselves more often in the realm of failure. See [here](http://nautil.us/issue/35/boundaries/not-all-practice-makes-perfect). [Return.](#a1)
+<a name="f1">1.</a> And [some research](http://nautil.us/issue/35/boundaries/not-all-practice-makes-perfect) has shown this, that world-class performers characteristically push themselves to a towards discomfort zones during practice, putting themselves more often in the realm of failure. 
+
+<a name="f2">2.</a> And I believe this kind of theory is supported by a more sophisticated model of [evolvability](https://dash.harvard.edu/bitstream/handle/1/2643031/Valiant_Evolvability.pdf). 
