@@ -1,7 +1,7 @@
 # Setup
 title:               ''
 tagline:             'productizing health'
-description:         'Thoughts on how technology (software + data + AI) can facilitate the next revolution in human health. <a href="https://twitter.com/tfarrell01">@tfarrell01</a>'
+description:         'Thoughts on how tech-enabled products (sofware + AI)  can facilitate the next revolution in human health. <a href="https://twitter.com/tfarrell01">@tfarrell01</a>'
 url:                 https://tmfarrell.github.io
 paginate:            5
 permalink:           pretty
@@ -18,5 +18,5 @@ plugins:
   - jekyll-paginate
 
 # Custom vars
-version:             0.2.0
+version:             0.3.0
 google_analytics_id: G-SSNJPDVYRD
