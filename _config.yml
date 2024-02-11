@@ -1,7 +1,7 @@
 # Setup
 title:               ''
-tagline:             'health X product X AI'
-description:         'Thoughts on how technology (engineering/ product) can facilitate the next revolution in human health. <a href="https://twitter.com/tfarrell01">@tfarrell01</a>'
+tagline:             'productizing health'
+description:         'Thoughts on how technology (software + data + AI) can facilitate the next revolution in human health. <a href="https://twitter.com/tfarrell01">@tfarrell01</a>'
 url:                 https://tmfarrell.github.io
 paginate:            5
 permalink:           pretty
