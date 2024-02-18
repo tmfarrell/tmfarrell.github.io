@@ -1,66 +1,63 @@
 ---
 layout: post
-title:  "Strategizing Life"
+title:  "Strategy and Science"
 date:   2024-02-10 08:00 
 categories: writing
 ---
 
 
-## Strategy Seems Complex 
+## Strategy Often Seems Complicated
 
-HBR put out an article recently--[Use Strategic Thinking to Create the Life You Want](https://hbr.org/2023/12/use-strategic-thinking-to-create-the-life-you-want)--introducing an interesting concept: how to use business strategy best practices to improve your life. 
+Harvard Business Review recently published [an interesting article](https://hbr.org/2023/12/use-strategic-thinking-to-create-the-life-you-want) exploring how business strategy principles can enhance personal life. 
 
-Article was entirely too long though, outlining a 7-step process that underlied their approach. Like why _seven_? What an odd and annoying number. Not only that but all the steps were open-ended and ill-defined.  
+However, the author's 7-step process (Why _seven_ steps? Who's got time for that?) and the article's length made it all pretty unusable. I wasn't able to finish the article, let alone apply it to my life. 
 
-Clearly, the authors erred on the side of an overly complicated, MBA-type approach.
+The authors' approach seemed overly complicated, typical of an academic perspective (i.e. MBA types). And it seems like this is the default mode strategy is approached in general. 
 
+## It Doesn't Have To Be
 
-## But It Doesn't Have to Be
-
-I believe their approach (and strategy in general, for that matter) can be simplified if you strip it down and focus on the "Benchmarking" step encapsulated in the graphic below. 
+A more simple, streamlined approach the "Benchmarking" step highlighted in the article. This simplification revolves around a powerful concept: using benchmarking to evaluate your life using specific, measurable factors.
 
 <img src="/assets/img/life_satisfaction_benchmark.png"
      style="display: block; margin-left: auto; margin-right: auto; width: 75%;" /> 
 
-What the authors didn't realize is that these survey results essentially outline a mathematical model for how life satisfaction correlates with specific, known quantities about a life (i.e. net income, how many friendships, etc.). Which means, you don't need to subjectively rank areas by what you think is important (as they suggest in the article). Benchmarking can do that for you. 
+The overlooked gem in the article is the correlation between life satisfaction and measurable life aspects (like net income, number of friendships, etc.). This correlation allows for an objective assessment of life areas, as opposed to the subjective ranking suggested in the article.
 
-Once you strip away the unnecessary complexity, underneath is the kernel of a powerful idea: benchmark your life using specific, known quantities and use that to identify areas you'd gain the most satisfaction by improving.
+By distilling the original 7 steps into 3 clear actions, you can effectively strategize your life improvement:
 
-Using this, you can simplify 7 ill-defined steps to 3 straightforward ones: 
+1. **Survey Your Life**: Conduct a multiple-choice survey on various life aspects.
+   
+2. **Benchmark Your Results**: Compare your survey results with models estimating Relative Life Satisfaction (RLS) from these factors, and gauge them against maximum possible RLS in each area.
 
-1. **Survey Your Life**: Take a survey about specific, known quantities across the areas of your life. Multiple choice rather than open-ended.  
+3. **Strategize**: Identify areas with the most potential RLS gain. Develop a focused action plan to enhance these measurable aspects.
 
-2. **Benchmark Your Results**: Use the benchmarking models to estimate your relative life satisfaction (RLS) from those specific quantities and compare that to the maximum possible RLS for each area. 
+**Note**: Check out my simple app designed to facilitate this 3-step process: [https://strategize-life.streamlit.app/](https://strategize-life.streamlit.app/).
 
-3. **Strategize**: Identify areas where you can gain the most RLS and focus on those. Use specific, known quantities to devise an action plan. 
+## The "Diagnose-Guide-Act" Strategy Framework
 
+This benchmarking-centric method also aligns well with Richard Rumelt's "Good Strategy/Bad Strategy" framework, comprising three elements:
 
-**Side note:** I've created a simple app that helps you execute this 3-step process, try it out here: [https://strategize-life.streamlit.app/](https://strategize-life.streamlit.app/).    
+- **Diagnosis**: Deeply understand the problem at hand.
+- **Guiding Policy**: Establish an overarching approach, leveraging strengths or competitive advantages.
+- **Coherent Action**: Implement practical, aligned actions to execute on this approach.
 
+Rumelt emphasizes that the 'diagnosis' phase is the most difficult and neglected, requiring thorough analysis from various perspectives to truly grasp the problem.
 
-## "Diagnose-Guide-Act" Strategy Framework
+## Benchmarking: A Tool For Strategy
 
-This emphasis on benchmarking also ties in nicely with the strategy framework outlined by Richard Rumelt in "Good Strategy/ Bad Strategy", where he argues the kernel of a good strategy has 3 elements: 
+Benchmarking offers a clear path to diagnosis by measuring key quantities and comparing them to standards, thus identifying challenges and opportunities. This is akin to how physicians diagnose their patients by comparing labs or imaging to what you'd expect in a "normal" or healthy patient.
 
-- **Diagnosis**: Identify and understand deeply the problem your strategy is meant to address.  
+Furthermore, benchmarking can also inform guiding policies, especially if it highlights strengths or potential competitive advantages. One approach would be to test different policies on a smaller scale before committing to bigger moves or larger investments.
 
-- **Guiding Policy**: Develop an overarching approach or policy to address the diagnosis. This is a high-level direction to go in, ideally leveraging some power or competitive advantage. 
+## Strategy and Science
 
-- **Coherent Action**: Outline a series of coherent steps that align with your guiding policy. These actions should be practical, achievable, and directly contribute to solving the diagnosed problem.
+Overall, it seems like strategy can be simplified through measurement and benchmarking, using known quantities for diagnosis and hypothesis validation. 
 
-According to Rumelt, "Diagnosis" is one of the most neglected elements of strategy, partly because it also the most difficult. You need to do deep analysis from many angles to really understand the problem you and/ or your organization are trying to solve. 
+And this approach isn't novel; it underpins the [Lean Startup](https://en.wikipedia.org/wiki/Lean_startup) movement, which is essentially a more scientific approach to innovation and entrepreneurship. By testing hypotheses early, measuring results of development and iterating, rather than relying on business plans or the entrepreneur's vision.
 
-## Benchmarking: A Powerful Aid for Strategy
+And this scientific approach doesn't seem to just apply to startups. In an increasingly digital/ online world, all companies want to understand how digital innovation can help them grow. 
 
-Benchmarking seems to provide a straightforward path to diagnosis: Measure important quantities, benchmark them against standards and use that to identify the causes of your biggest challenges. 
-
-Physicians do this when diagnosing a patient using imaging, biomarkers and physiological measures. They're identifying the root cause of disease. We can do this ourselves to diagnose our organizations and our lives.  
-
-Benchmarking also seems to provide a way to identify guiding policies, if you know the measures you're benchmarking can be influenced by you or your team. 
-
-Identify where you are weak and where you are strong; then determine if you can leverage your strengths to address your weaknesses. Or, an equally viable approach, double down on your strengths. Then come up with an action plan to influence and/ or leverage those measures to execute that policy. 
-
-As long as you have specific, important measures to benchmark and those are influenceable by your actions, it seems like strategy doesn't have to be as complex as it's made to be. It can follow naturally from comparing those quantities to standards and taking action to meet and exceed those standards. 
+Injecting some more science into their strategy may be just what they need.
 
   
   
