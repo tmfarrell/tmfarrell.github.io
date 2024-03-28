@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-I believe the application of engineering/ tech to biology/ medicine/ health will transform human health and longevity. I also believe that [computer/ data science will be critical to making this happen](https://a16z.com/2017/06/21/jorge-conde-bio-fund/).
+I believe the application of technology to biology/ medicine/ health will transform human health and longevity. I also believe that [computer and data science will be critical to making this happen](https://a16z.com/2017/06/21/jorge-conde-bio-fund/).
 
 I write here to try to make sense of things.
 
