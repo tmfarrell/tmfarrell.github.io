@@ -1,14 +1,13 @@
 ---
 layout: post
-title:  'Re: "Living in Data"'
+title:  'Living in Data'
 date:   2022-04-04 22:26
 categories: reading
 hidden: true
 ---
 
-| **Title** | Living in Data: A Citizen's Guide to a Better Information Future |
+| **Book** | [Living in Data: A Citizen's Guide to a Better Information Future](https://www.amazon.com/Living-Data-Citizens-Better-Information/dp/0374189900) |
 | **Author** | Jer Thorp |
-| **URL** | [Amazon](https://www.amazon.com/Living-Data-Citizens-Better-Information/dp/0374189900) |
 
 
 ### Data: a new era for the computer

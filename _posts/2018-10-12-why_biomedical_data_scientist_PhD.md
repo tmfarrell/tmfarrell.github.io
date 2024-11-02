@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "Why You Might Not Need a (Biomedical) Data Scientist with a PhD"
+title:  "Do You Need a (Biomedical) Data Scientist with a PhD?"
 date:   2019-03-11 08:00 
 categories: writing
 ---
+
+Especially 
+
 
 ## Generalists > Specialists in Data Science
 
