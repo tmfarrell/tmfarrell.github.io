@@ -2,7 +2,7 @@
 layout: post
 title:  "Resume CI/CD with Google Docs and Github Pages"
 date:   2021-10-14 07:47 
-categories: writing
+categories: 
 ---
 
 Ever get frustrated by to keep your resume up-to-date on your Github Pages

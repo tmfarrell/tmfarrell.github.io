@@ -2,7 +2,7 @@
 layout: post
 title:  "Strategy and Science"
 date:   2024-02-10 08:00 
-categories: writing
+categories: 
 ---
 
 

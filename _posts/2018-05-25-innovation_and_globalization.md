@@ -25,6 +25,7 @@ globalization, but I'm not exactly sure why.
 Let's try to see what innovation and globalization are more precisely. These
 aren't discrete categories of activity, but rather more continuous quantities: some 
 activities are more globalizing/ spreading and some are more innovating/ advancing.  
+
 But any given activity seems to have properties of both spreading and advancing.  The 
 question then is: what does this space of spreading/ advancing activities look like? 
 

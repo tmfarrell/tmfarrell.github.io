@@ -2,7 +2,7 @@
 layout: post
 title:  "A Space of Knowledge"
 date:   2016-02-21 22:25 
-categories: writing
+categories: 
 ---
 
 *This is a very informal preliminary argument about constructing a classification space of knowledge.*

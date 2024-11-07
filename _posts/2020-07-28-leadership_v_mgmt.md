@@ -35,3 +35,4 @@ It occurred to me that it might be more digestable in tabular form. The left rep
 | Variance | Bias |
 | Truth | Precision |
 | Ideas | Execution |
+| Chaotic | Ordered | 

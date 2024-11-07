@@ -2,7 +2,7 @@
 layout: post
 title:  "On Ideas/ Companies"
 date:   2018-01-07 20:00 
-categories: writing 
+categories: 
 ---
 
 First, if you haven't already heard Guy Raz's ["How I Built This"](https://www.npr.org/podcasts/510313/how-i-built-this), 

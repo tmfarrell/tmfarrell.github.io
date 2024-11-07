@@ -5,8 +5,6 @@ date:   2019-03-11 08:00
 categories: writing
 ---
 
-Especially 
-
 
 ## Generalists > Specialists in Data Science
 
@@ -19,11 +17,11 @@ Data science, he argues, differs fundamentally from other commercial endevours (
 
 ## Implications for Biomedical Science and Engineering?
 
-This all makes sense, and I buy the argument for the reasons he outlines. But I find the conclusion particularly interesting as it applies to Biomedical Science, where specialization is King and generalist-ness is generally frowned upon. 
+This all makes sense, and I buy the argument for the reasons he outlines. But I find the conclusion particularly interesting as it applies to Biomedical Science, where specialization is King and "generalist-ness" is generally frowned upon. 
 
 Traditionally speaking, pure scientists have always looked down on their more applied (i.e. more general) counterparts,<sup id="a2">[2](#f2)</sup> and this compounded by the fact that the current publishing paradigm in Science incentivizes hyper-specialization.<sup id="a3">[3](#f3)</sup> Which is *further* compounded by the fact that 21st-century Science is such a large and complicated machine, where the number of authors per scientific paper has risen 4X since 1950 (and thus per-individual scientific productivity has shrunk by that same factor).<sup id="a3">[4](#f4)</sup>
 
-Given these things together, companies/ teams that want to hire data scientists for solving modern biomedical problems are left in a slight pickle. On the one hand, you have the complexity of biology, the technical details of working with modern biological (i.e. \*omic) data (which ideally you'd like any scientist you hire to have a decent knowledge of), and finally the modern trend of large-scale, big-team, collaborative Science. On the other hand, you have Colson's recommendation that vertically-aligned generalists are the best way to build effective data science teams.
+Given these things together, companies/ teams that want to hire data scientists for solving modern biomedical problems are left in a slight pickle. On the one hand, you have the complexity of biology, the technical details of working with modern biological and clinical data (which ideally you'd like any scientist you hire to have a decent knowledge of), and finally the modern trend of large-scale, big-team, collaborative Science. On the other hand, you have Colson's recommendation that vertically-aligned generalists are the best way to build effective data science teams.
 
  How do we reconcile these? Do Colson's recommendations apply to biomedical data science teams? Do those health/ medtech/ biotech companies interested in differientiating themselves with data science really want generalists?
 

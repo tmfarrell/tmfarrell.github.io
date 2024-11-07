@@ -23,7 +23,7 @@ True now more than ever.
 
 ### Excess Meetings is a Sign of Dysfunction
 
-In an ideal world, we wouldn't need meetings and everyone could just do their job. That's the underlying atmosphere of every meeting. 
+In an ideal world, we wouldn't need meetings and everyone could just do their job. That should be the underlying atmosphere of every meeting (that it shouldn't be necessary). 
 
 > Another common time-waster is malorganization. Its symptom is an excess of meetings.
 > 

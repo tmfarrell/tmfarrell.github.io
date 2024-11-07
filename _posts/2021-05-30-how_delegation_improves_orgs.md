@@ -2,10 +2,18 @@
 layout: post
 title:  "How Delegation Improves Organizations"
 date:   2021-05-30 08:00 
-categories: writing
+categories: 
 ---
 
-Leaders/ managers are assigned a lot of work. Work that, in order get done, will have to be 
+It's pretty incredible how little leaders in civilian organization delegate. Down right criminally low. 
+
+Delegation is the parallelism of 
+
+### The Reality
+
+
+
+Being a leader/ man Leaders/ managers are assigned a lot of work. Work that, in order get done, will have to be 
 distributed across their team. This is why leaders/ managers exist, to parallelize work across
 a team. If a leader/ manager can't delegate, or doesn't do it well, that's a big issue because
 that's literally why their job exists.  
