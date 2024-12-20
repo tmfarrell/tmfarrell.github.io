@@ -1,9 +1,11 @@
 ---
 layout: page
-title: About
+title: about
 ---
 
-I believe the application of technology to biology/ medicine/ health will transform human health and longevity. I also believe that [computer and data science will be critical to making this happen](https://a16z.com/2017/06/21/jorge-conde-bio-fund/).
+
+<br>
+I believe the application of technology to medicine/ health/ biology will transform human health and longevity. I also believe that [computer and data science will be critical to making this happen](https://a16z.com/ai-at-the-intersection-the-a16z-investment-thesis-on-ai-in-bio-health/).
 
 I write here to try to make sense of things.
 
