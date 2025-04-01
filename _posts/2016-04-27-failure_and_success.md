@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Does Failure Gives Success?"
+title:  "Does Failure Breed Success?"
 date:   2016-04-27 20:00
 categories: writing
 ---
