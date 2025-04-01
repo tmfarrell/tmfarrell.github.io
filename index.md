@@ -9,11 +9,14 @@ I believe the application of technology to medicine/ health/ biology will transf
 
 I write here to try to make sense of things.
 
-Feel free to [reach out on Twitter](https://twitter.com/tfarrell01) if you have feedback. Or [LinkedIn](https://www.linkedin.com/in/tfarrell01), if that's more of your thing.
-
 <br>
+
+<p style="text-align: center;"><a href="https://twitter.com/tfarrell01">twitter</a>  &nbsp; &nbsp; |  &nbsp; &nbsp; <a href="https://www.linkedin.com/in/tfarrell01">linkedin</a>   &nbsp; &nbsp; |  &nbsp; &nbsp;   <a href="mailto:tfarrell01@gmail.com">email</a></p>
+
 <br>
 
 <div style="text-align: center;">
-  <span style="font-size:12pt"><i>All opinions expressed are my own and do not reflect those of affiliations.</i></span>
+  <span style="font-size:12pt">
+    <i>All opinions expressed are my own and do not reflect those of affiliations.</i>
+  </span>
 </div>
