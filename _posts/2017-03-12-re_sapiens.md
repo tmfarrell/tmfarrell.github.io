@@ -10,8 +10,6 @@ hidden: true
 | **Author** | Yuval Noah Harari |
 | **Published** | 2011 |
 
-## Bottomline
-
 This is undoubtedly the most elegant/ clear/ succinct, comprehensive and scientifically accurate account of
 the history of humanity __ever written__.
 

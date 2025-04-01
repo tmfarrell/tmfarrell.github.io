@@ -11,9 +11,7 @@ hidden: true
 | **Published** | January 1, 2007 |
 
 
-This was book dense with rational and highly useful frameworks for thinking. Loved it. 
-
-A couple nuggets below. 
+_This was book dense with rational and highly useful frameworks for thinking. Loved it. A couple nuggets below._
 
 ### Status Quo and Do-Nothing Syndrome
 

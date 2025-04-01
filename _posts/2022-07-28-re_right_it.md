@@ -10,7 +10,7 @@ hidden: true
 | **Author** | Alberto Savoia |
 | **Published** | February 26, 2019 |
 
-### The Law of Market Failure
+The Law of Market Failure
 
 > Here are the main takeaways from Part I, worth repeating, memorizing, and perhaps tattooing somewhere on your body as a reminder:
 > 
@@ -25,7 +25,7 @@ hidden: true
 > The most reliable way to determine if a new idea is likely to be The Right It is to collect Your Own DAta (YODA).
 
 
-### Validate First (Before Building)
+Validate first before building
 
 > Make sure you are building The Right It before you build It right.
 > 
@@ -35,7 +35,8 @@ hidden: true
 > 
 > Your only chance for success is to combine competent execution with a product that is The Right It.
 
-### Data > Opinion
+
+Data > opinion
 
 > Data beats opinions.
 > 
@@ -44,9 +45,7 @@ hidden: true
 > To count as proper YODA, your market data must come with some skin in the game.
 
 
-### Pretotypes vs Prototype
-
-Use "pretotypes" to gather your own data and validate. Pretotypes validate the idea and value, prototypes validate feasibility. 
+"Pretotypes" vs prototypes: pretotypes validate the idea and its value, prototypes validate feasibility
 
 > Pretotyping can play key role in validating our idea. 
 > 

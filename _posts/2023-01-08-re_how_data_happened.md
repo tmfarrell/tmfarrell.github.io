@@ -10,24 +10,20 @@ hidden: true
 | **Author** |  Chris Wiggins, Matthew L. Jones |
 | **Published** | March 21, 2023 |
 
-### Principles of Analysis 
+John Tukey's principles of data analysis
 
-John Tukey's principles of data analysis: 
-
-> 1. Data analysis must seek for scope and usefulness rather than security. 
+> 1. Data analysis must seek for scope and usefulness rather than security
 > 
-> 2. Data analysis must be willing to err moderately often in order that inadequate evidence shall more often suggest the right answer.
+> 2. Data analysis must be willing to err moderately often in order that inadequate evidence shall more often suggest the right answer
 > 
-> 3. Data analysis must use mathematical argument and mathematical results as bases for judgment rather than as bases for proofs or stamps of validity.
+> 3. Data analysis must use mathematical argument and mathematical results as bases for judgment rather than as bases for proofs or stamps of validity
 
 
-### History of Data Analysis
-
-Data analysis is detective work. 
+Data analysis is detective work
 
 > In the atmosphere of Bell Labs, Tukey and his collaborators created a wide variety of statistical and computational tools needed to make data analysis a reality. Sixteen years later, in a practical textbook, he explained, "exploratory data analysis" (EDA) is "detective work-numerical detective work--or counting detective work--or graphical detective work.' EDA offered some "general understandings" useful across domains of detective work. 
 
-Data visualization is incredibly important for effective data analysis.  
+Data visualization is incredibly important for effective data analysis
 
 > Tukey celebrated the creation of new tools for that craft. 
 > 
@@ -38,7 +34,7 @@ Data visualization is incredibly important for effective data analysis.
 > 
 > For humans, the use of appropriate pictures offers the possibility of great flexibility all along the scale from broad summary to fine detail, since pictures can be viewed in so many ways.
 
-### The Big Data Moment
+The "Big Data" moment
 
 > A similar observation--that large data sets gathered for one purpose may yield potential new kinds of scientific and commercial knowledge-would be made in a diversity of computational fields over the coming decades. 
 > 

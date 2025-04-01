@@ -11,22 +11,15 @@ hidden: true
 | **Published** | December 30, 2010 |
 
 
-### Notes
+_This is the best, most practical Business 101 book I've ever read. Highly recommend. Below are some nuggets, but by no means do they capture the full comprehensiveness of the book._   
 
-This is the best, most practical "Business 101" book I've ever read. Highly recommend.
 
-Below quotes are some nuggets, but doesn't capture the comprehensiveness of the book.   
-
-### Quotes
-
-#### Automation 
 
 Automation is never a fix for a broken process or value chain, but instead amplifies the properties of that process.   
 
 >The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operations will magnify the inefficiency. 
 >- Bill Gates
 
-#### Absence Blindness
 
 Be on the look out not only for great work, but also for the absense of problematic/ bad work. 
 
@@ -37,7 +30,7 @@ Be on the look out not only for great work, but also for the absense of problema
 > Make a note to remind yourself to handsomely reward the low-drama manager who quietly and effectively gets things done. It may not seem like result, their job is particularly difficult, but you'll miss them when they're gone
 
 
-#### Four Ways to Do Things
+Four ways to get things done
 
 > There are really only four ways to "do" something: completion, deletion, delegation, and deferment. 
 >
@@ -50,17 +43,15 @@ Be on the look out not only for great work, but also for the absense of problema
 >Deferment--putting the task off until later--is effective for tasks that aren't critical or time dependent. Don't feel bad about putting some things off—the best way to bog yourself down is to try to handle to many things at the same time. Saving noncritical tasks for later is a good way to keep your attention and energy focused on what's most important.
 
 
-#### A "Someday" List
-
-Have a reservoir of important, creative ideas to try to get to at some point.  
+A "Someday" list: a reservoir of important, creative ideas to try to get to at some point
 
 > In “Getting Things Done”, David Allen recommends keeping a "someday/ maybe" list of things you'd like to do someday but that aren't that important right now. 
 > 
 > Creativity researcher Scott Belsky recommends a similar approach in “Making Ideas Happen”: create a "back burner" list of tasks you want to get to eventually but that aren't a priority right now. Periodically reviewing this list when you're looking for something new or exciting to do is quite useful.
 
-#### States of Beings
 
-An interesting take on states of being, or emotional states: They should not be treated as goals but instead are inputs into your decision making and an important variable into your final results. 
+
+An interesting take on states of being, or emotional states. They should not be treated as goals but instead are inputs into your decision making and an important variable into your final results. 
 
 > A State of Being is a quality of your present experience. Emotional experiences aren't achievements because they fluctuate over time-you can be happy right now and upset an hour from now. Accordingly, "being happy" is not an achievement--it's a quality of your present experience.
 > 
