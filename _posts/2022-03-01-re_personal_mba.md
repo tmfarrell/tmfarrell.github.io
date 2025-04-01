@@ -8,6 +8,7 @@ hidden: true
 
 | **Book** | [The Personal MBA](https://www.amazon.com/Personal-MBA-10th-Anniversary/dp/0525543023/ref=sr_1_1?crid=48810WCS0OZ1&dib=eyJ2IjoiMSJ9.TbKPsAISPAZ1A71x4wEcqJ4m-yzv_dHk0mbbfyBTEdCsXKKu4LR-Wf1TBFXyFXv_uYuT4rMk2gjxeMeM_agledmJNbi4UO-1WJXI-IHmd2A1LygqWmXXM3pRfqmM5qdzld7XSsgWLnIOW4dqacDgUJYmdfkj_uhtRKu9HbyGr6pqjNpOEqloz9JqRrQWEUU5GseXmUB7r4fJkSh0H7zZx702-64w530Fg6oLYp8kFwI.jF9D4T4TuP2YgqincmVdr2X0Iffq9sv8vMscIsFAN6Y&dib_tag=se&keywords=the+personal+mba&qid=1730510853&s=books&sprefix=the+personal+mba%2Cstripbooks%2C81&sr=1-1)  |
 | **Author** | Josh Kaufman |
+| **Published** | December 30, 2010 |
 
 
 ### Notes

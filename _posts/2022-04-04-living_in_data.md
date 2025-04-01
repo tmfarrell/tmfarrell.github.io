@@ -8,6 +8,7 @@ hidden: true
 
 | **Book** | [Living in Data: A Citizen's Guide to a Better Information Future](https://www.amazon.com/Living-Data-Citizens-Better-Information/dp/0374189900) |
 | **Author** | Jer Thorp |
+| **Published** | May 4, 2021 |
 
 
 ### Data: a new era for the computer

@@ -8,6 +8,7 @@ hidden: true
 
 | **Book** | [The Right It: Why So Many Ideas Fail and How to Make Sure Yours Succeed](https://www.amazon.com/The-Right-It-Alberto-Savoia-audiobook/dp/B07MWD2GKL/ref=sr_1_1?crid=2I4QFDZIWI0Q6&dib=eyJ2IjoiMSJ9.Sh14B-c85AEPtdwShl-6kbEWdLD-w1dgt5_ns0TJNZq3Z74llRx3QPhBoMUW6u5I1WrJBssZkAZNTT13FksKErrzf8I2enlytJFMJcWAcOq6ZY0uD8EF2G9_tG3_Jxu2yi8BbNsKNG6w06ryCcbS-S9CrvMSkbggsAyTczNa9RxLWbqbgsjd3t7hMphNi9oLiyDImribP9QL3JgVgZ3G0NN7baTcclBmyY12gwCSvxQ.g0M5c93HdxCLhdlFNPHWiMXSXGujQLhJuBle449BABM&dib_tag=se&keywords=the+right+it&qid=1730513306&s=books&sprefix=the+right+it%2Cstripbooks%2C73&sr=1-1) |
 | **Author** | Alberto Savoia |
+| **Published** | February 26, 2019 |
 
 ### The Law of Market Failure
 

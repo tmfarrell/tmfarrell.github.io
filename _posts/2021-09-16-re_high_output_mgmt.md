@@ -8,12 +8,10 @@ hidden: true
 
 | **Book** | [High Output Management](https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884) |
 | **Author** | Andrew Grove |
+| **Published** | 1983 | 
 
 
-### Quotes 
-
-
-#### Teams and Leverage
+### Teams and Leverage
 
 High output work fundamentally depends on teams. And the output of a team depends on the effectiveness of the team manager, in the sense that they can influence them to increase output.  
 
@@ -28,7 +26,7 @@ Leverage is the measure of a manager's impact that is produced by their team.
 >The question then becomes, what can or managers do to increase the output of their teams? Put another way, what specifically should they be doing during the day when a virtually limitless number of possible tasks calls for their attention? To give you a way to answer this question, I introduce the concept of **leverage**, which measures the impact of what managers do to increase the output of their teams. High output teams depend largely on managerial productivity and on high leverage. 
 
 
-#### Production Flows
+### Production Flows
 
 
 "Production flows" (or value chains) are process that increase value from left to right, input to output.  
@@ -39,14 +37,14 @@ It's important to fix problems as upstream as possible in any production flow or
 
 > A common rule we should always try to heed is to detect and fix any problem in a production process at the lowest-value stage possible. Thus, we should find and reject the rotten egg as it's being delivered from our supplier rather than permitting the customer to find it. Likewise, if we can decide that we don't want a college candidate at the time of the campus interview rather than during the course of a plant visit, we save the cost of the trip and the time of both the candidate and the interviewers. And we should also try to find any performance problem at the time of the unit test of the pieces that make up a compiler rather than in the course of the test of the final product itself.
 
-#### Communication
+### Communication
 
 Don't care about sounding dumb. Speak up. 
 
 > One thing that paralyzes both knowledge and position power possessors is the fear of simply sounding dumb. For the senior person, this is likely to keep him from asking the questions he should ask. The same fear will make other participants merely think their thoughts privately rather than articulate them for all to hear; at best they will whisper what they have to say to a neighbor. As a manager, you should remind yourself that each time an insight or fact is withheld and an appropriate question is suppressed, the decision-making process is less good than it might have been.
 
 
-### Notes
+### Summary
 
 Output is the clear, hard, physical and quantifiable things we produce. 
 

@@ -8,6 +8,7 @@ hidden: true
 
 | **Book** | [How Data Happened: A History from the Age of Reason to the Age of Algorithms](https://www.amazon.com/How-Data-Happened-History-Algorithms/dp/1324006730/ref=sr_1_1?crid=172NRDWCQNM0O&dib=eyJ2IjoiMSJ9.WK8sMtXeBgkmL03BgjIJvOF_mNJwVp6QK_YbJ6KaOtb5SuA6cbTkzaKhgZuFd9Y1bgAk2X_taPvZsc4IW6LVSd5Lj0JEMha7wjLhLuXchCEzVL4DLicIGLKcbisj_7CBOMgtoj4c6UVje3nsAM60LbmWg2PzUA729TVg1Rh6jZx3j_kpfczCSP-dGvErgtqMqBg9CrXQ42aLYlP3NX7hSQ_CkFa32t9obEvHOtfY92I.CkqwlTzJStSDP82eVHBS1eThaIwwPXuti4r0yyj1lU0&dib_tag=se&keywords=how+data+happened&qid=1730513762&s=books&sprefix=how+data+happened%2Cstripbooks%2C89&sr=1-1) |
 | **Author** |  Chris Wiggins, Matthew L. Jones |
+| **Published** | March 21, 2023 |
 
 ### Principles of Analysis 
 

@@ -8,6 +8,7 @@ hidden: true
 
 | **Book** | [Seeking Wisdom: From Darwin to Munger](https://www.amazon.com/Seeking-Wisdom-Darwin-Munger-3rd/dp/1578644283) |
 | **Author** |  Peter Bevelin |
+| **Published** | January 1, 2007 |
 
 
 This was book dense with rational and highly useful frameworks for thinking. Loved it. 
