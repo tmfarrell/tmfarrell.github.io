@@ -2,7 +2,7 @@
 layout: post
 title:  "Do You Need a (Biomedical) Data Scientist with a PhD?"
 date:   2019-03-11 08:00 
-categories: writing
+categories: 
 ---
 
 
