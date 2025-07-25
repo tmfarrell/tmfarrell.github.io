@@ -1,0 +1,19 @@
+---
+layout: default
+title: Presenting
+---
+
+<div class="home">
+
+  <h1 class="post-title">&nbsp; &nbsp; presenting</h1>
+  </br>
+
+  <ul class="post-list" style="list-style:none">
+    {% for pdf in site.data.talks %}
+        <li>
+          <span class="post-meta">{{ pdf.date | date: "%b %-d, %Y" }}</span>
+          <a href="{{ pdf.path }}">{{ pdf.description }}</a> 
+        </li>
+    {% endfor %}
+  </ul>
+</div>
