@@ -13,7 +13,7 @@ title: Presenting
         <li>
             <span class="post-meta">{{ item.date | date: "%b %Y" }}</span>
             <a href="{{ item.link }}">{{ item.title }}</a>
-          <p style="font-size: medium; color: grey;">{{ item.description }}</p> 
+          <p class="portfolio-description">{{ item.description }}</p>
         </li>
     {% endfor %}
   </ul>
