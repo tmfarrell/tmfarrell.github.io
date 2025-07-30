@@ -1,0 +1,30 @@
+- id: om1-2
+  title: "PhenOM Patient Risk Panel [OM1]"
+  description: "Allows providers and health plans to more effectively triage patients based on future risk phenotypes"
+  link:  https://github.com/tmfarrell/phenom-risk-mgmt
+  date: 2025-04-01
+- id: om1-1
+  title: "Insights Platform [OM1]"
+  description: "Allows epidemiologists and analysts to more rapidly discover insights and generate evidence from real-world healthcare datasets"
+  link:  /assets/pdf/insights_platform.pdf
+  date: 2024-11-01
+- id: om1-0
+  title: "Data Studio [OM1]"
+  description: "Browser-native, notebook-based data analysis environment"
+  link:  /assets/pdf/om1_data_studio.pdf
+  date: 2024-02-01
+- id: dzd-1
+  title: "epiXact [DZD]"
+  description: "Outbreak detection service for hospital systems"
+  link: /assets/pdf/epixact.pdf
+  date: 2020-11-01
+- id: dzd-0
+  title: "MicrohmDB [DZD]"
+  description: "Large database for antibiotic susceptibility phenotype prediction from genomic data"
+  link: /assets/pdf/microhmdb.pdf
+  date: 2020-01-01
+- id: broad-0
+  title: "Malaria Genomics FireCloud [Broad]"
+  description: "Scalable data processing and analysis pipelines for malarial genomics"
+  link: https://github.com/tmfarrell/broad_malaria_firecloud
+  date: 2018-01-01

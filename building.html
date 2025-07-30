@@ -1,0 +1,24 @@
+---
+layout: default
+title: Presenting
+---
+
+<div class="home">
+
+  <h1 class="post-title">&nbsp; &nbsp; building</h1>
+  </br>
+
+  <ul class="post-list" style="list-style:none">
+    {% for item in site.data.portfolio %}
+        <li>
+            <span class="post-meta">{{ item.date | date: "%b %Y" }}</span>
+            <a href="{{ item.link }}">{{ item.title }}</a>
+          <p style="font-size: medium; color: grey;">{{ item.description }}</p> 
+        </li>
+    {% endfor %}
+  </ul>
+  </br> 
+  </br> 
+  <p style="text-align: center;"><a href="https://www.github.com/tmfarrell">github</a> 
+</div>
+
