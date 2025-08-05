@@ -46,16 +46,15 @@ Remote patient monitoring is gaining traction.
 
 Wearables like Apple Watch, Oura Ring, and Whoop are also adding to and accelerating this trend. (The consumerization of healthcare is a related trend that I'll leave for another post.)
 
-Those devices will get more "clinical." Clinical and medical devices will get more "consumerized." 
-
-And hopefully we all get healthier. 
-
 <img src="/assets/img/apple_watch.png"
 	style="display: block; margin-left: auto; margin-right: auto; width: 80%; border:1px solid #D3D3D3" />
 
 <img src="/assets/img/oura_v_whoop.png"
 	style="display: block; margin-left: auto; margin-right: auto; width: 80%; border:1px solid #D3D3D3" />
 
+These devices will get more "clinical." Clinical and medical devices will get more "consumerized." 
+
+And hopefully we all get healthier. 
 
 ## The future of healthcare is <span style="color:#ac4142">predictive</span>
 
@@ -72,11 +71,11 @@ Last year, Eric Topol reviewed and highlighted the many ways data and AI are alr
 
 >[A recent study using machine learning was able to predict Alzheimer’s disease up to 7 years](https://www.nature.com/articles/s43587-024-00573-8) before diagnosis by integrating electronic health record data for cholesterol, blood pressure, vitamin D, and sex-specific features such as osteoporosis in women or erectile dysfunction and prostatic hypertrophy in men.
 
-Incredible. Imagine the amount of prevention that could happen with 7-year lead time on knowing you're high risk for a disease. 
+Incredible. Imagine the amount of prevention that can happen with _7-year_ lead time knowing you're high risk for a disease. 
 
 The future is here, it's just not even distributed. 
 
-And no doubt the future of healthcare will be <span style="color:#ac4142">predictive</span>.
+And no doubt the future of healthcare will be **predictive**.
 
 
 
