@@ -2,7 +2,7 @@
   title: "PhenOM Patient Risk Panel"
   org: OM1
   description: "Allows providers and health plans to more effectively triage patients based on future risk phenotypes"
-  link:  https://github.com/tmfarrell/phenom-risk-mgmt
+  link:  /assets/pdf/phenom_risk_panel.pdf
   date: 2025-04-01
 - id: om1-1
   title: "Insights Platform"
