@@ -1,7 +1,3 @@
-- id: om1-1
-  description: "Roadmap planning for OM1 Platform"
-  path:  "/assets/pdf/OM1 Platform - Planning 2025.pdf"
-  date: 2025-01-16
 - id: om1-0
   description: "Interview talk for OM1"
   path:  /assets/pdf/20220330-OM1_Interview_Talk.pdf
