@@ -1,19 +1,19 @@
 - id: om1-2
   title: "PhenOM Patient Risk Panel"
   org: OM1
-  description: "Allows providers and health plans to more effectively triage patients based on future risk phenotypes"
+  description: "Application for providers and health plans to more effectively triage patients using risk phenotypes predicted from patient clinical histories"
   link:  /assets/pdf/phenom_risk_panel.pdf
   date: 2025-04-01
 - id: om1-1
   title: "Insights Platform"
   org: OM1
-  description: "Allows epidemiologists and analysts to more rapidly discover insights and generate evidence from real-world healthcare datasets"
+  description: "Digital platform for epidemiologists and analysts to more rapidly discover insights and generate evidence from real-world healthcare datasets"
   link:  /assets/pdf/insights_platform.pdf
   date: 2024-11-01
 - id: om1-0
   title: "Data Studio"
   org: OM1
-  description: "Browser-native, notebook-based data analysis environment"
+  description: "Browser-native, notebook-based data analysis environment (partnership with Hex)"
   link:  /assets/pdf/om1_data_studio.pdf
   date: 2024-02-01
 - id: dzd-1
@@ -31,37 +31,37 @@
 - id: broad-1
   title: "Scalable genomics pipelines for malaria genomics"
   org: Broad Institute of Harvard and MIT
-  description: "Fast data processing and analysis pipelines deployed to Firecloud for malarial genomics"
+  description: "Fast data processing and analysis pipelines for malarial genomics"
   link: https://github.com/tmfarrell/broad_malaria_firecloud
   date: 2018-08-01
 - id: broad-0
   title: "Amplicon error correction for malaria genomics"
   org: Broad Institute
-  description: "Research project for improving amplicon sequencing error correction for malaria genomics"
+  description: "Research project on improving amplicon sequencing error correction to support a phase VI clinical trial for malaria vaccine"
   link: /assets/pdf/20180801-Malaria_amplicon_error_correction.pdf
   date: 2018-03-01
 - id: personal-1
   title: "ML for nuclei detection"
   org: Personal
-  description: "Personal ML project for data science competition that applies Mask-RCNN for nuclei detection in cellular imaging"
+  description: "Data science competition project on applying Mask-RCNN to nuclei detection in cellular imaging"
   link: https://github.com/tmfarrell/data-science-bowl-2018
   date: 2018-02-01
 - id: personal-0
   title: "Genomics + ML for antigen phenotype prediction"
   org: Harvard Medical School + Brigham Women's Hospital
-  description: "Enables pathologist to predict Rh antigen phenotypes from genomic data"
+  description: "Research project on predicting Rh antigen phenotypes from Oxford Nanopore (ONT) genomic data"
   link: https://github.com/tmfarrell/LPM/blob/master/docs/20160410-BU%20Data%20Science%20Day%202016%20Poster-talk.pdf
   date: 2016-04-01
 - id: neb-1
-  title: "Data pipeline for Oxford Nanopore (ONT) sequencing data"
+  title: "ONT sequencing data pipeline"
   org: New England Biolabs (NEB)
-  description: "Enables ONT sequencer users to more easily analyze their data"
+  description: "Data processing and analysis pipeline for ONT sequencing data"
   link: https://github.com/tmfarrell/ont_dap
   date: 2015-09-01
 - id: neb-0
   title: "Error correction for ONT sequencing data"
   org: NEB
-  description: "Research project for developing error mitigation techniques for ONT sequencing data"
+  description: "Research project on developing error mitigation techniques for ONT sequencing data"
   link: /assets/pdf/20150804-NEB_Intership_Talk.pdf
   date: 2015-08-04
   
