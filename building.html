@@ -11,12 +11,13 @@ title: Presenting
   <ul class="post-list" style="list-style:none">
     {% for item in site.data.portfolio %}
         <li>
-            <a href="{{ item.link }}">{{ item.title }}</a>
+            <a href="{{ item.link }}"><span style="font-weight: bold;">{{ item.title }}</span></a>
             <br />
-            <span class="post-meta">{{ item.date | date: "%b %Y" }}</span>
-            / <span style="color: grey;">{{ item.org }}</span>
+            <span class="post-meta" style="color: darkgrey;">
+              {{ item.date | date: "%b %Y" }} / {{ item.org }}
+            </span>
           <p class="portfolio-description">
-            {{ item.description }}    
+            <span style="color: grey">{{ item.description }}</span>    
           </p>
         </li>
     {% endfor %}

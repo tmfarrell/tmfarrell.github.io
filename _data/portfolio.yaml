@@ -18,7 +18,7 @@
   date: 2024-02-01
 - id: dzd-1
   title: "epiXact"
-  org: DZD
+  org: Day Zero Diagnostics (DZD)
   description: "Outbreak detection service for hospital systems"
   link: /assets/pdf/epixact.pdf
   date: 2020-11-01
@@ -28,9 +28,40 @@
   description: "Large database for antibiotic susceptibility phenotype prediction from genomic data"
   link: /assets/pdf/microhmdb.pdf
   date: 2020-01-01
-- id: broad-0
-  title: "Malaria Genomics FireCloud"
-  org: Broad
-  description: "Scalable data processing and analysis pipelines for malarial genomics"
+- id: broad-1
+  title: "Scalable genomics pipelines for malaria genomics"
+  org: Broad Institute of Harvard and MIT
+  description: "Fast data processing and analysis pipelines deployed to Firecloud for malarial genomics"
   link: https://github.com/tmfarrell/broad_malaria_firecloud
-  date: 2018-01-01
+  date: 2018-08-01
+- id: broad-0
+  title: "Amplicon error correction for malaria genomics"
+  org: Broad Institute
+  description: "Research project for improving amplicon sequencing error correction for malaria genomics"
+  link: /assets/pdf/20180801-Malaria_amplicon_error_correction.pdf
+  date: 2018-03-01
+- id: personal-1
+  title: "ML for nuclei detection"
+  org: Personal
+  description: "Personal ML project for data science competition that applies Mask-RCNN for nuclei detection in cellular imaging"
+  link: https://github.com/tmfarrell/data-science-bowl-2018
+  date: 2018-02-01
+- id: personal-0
+  title: "Genomics + ML for antigen phenotype prediction"
+  org: Harvard Medical School + Brigham Women's Hospital
+  description: "Enables pathologist to predict Rh antigen phenotypes from genomic data"
+  link: https://github.com/tmfarrell/LPM/blob/master/docs/20160410-BU%20Data%20Science%20Day%202016%20Poster-talk.pdf
+  date: 2016-04-01
+- id: neb-1
+  title: "Data pipeline for Oxford Nanopore (ONT) sequencing data"
+  org: New England Biolabs (NEB)
+  description: "Enables ONT sequencer users to more easily analyze their data"
+  link: https://github.com/tmfarrell/ont_dap
+  date: 2015-09-01
+- id: neb-0
+  title: "Error correction for ONT sequencing data"
+  org: NEB
+  description: "Research project for developing error mitigation techniques for ONT sequencing data"
+  link: /assets/pdf/20150804-NEB_Intership_Talk.pdf
+  date: 2015-08-04
+  
