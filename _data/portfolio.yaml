@@ -46,10 +46,16 @@
   description: "Data science competition project on applying Mask-RCNN to nuclei detection in cellular imaging"
   link: https://github.com/tmfarrell/data-science-bowl-2018
   date: 2018-02-01
-- id: personal-0
+- id: bu-1
+  title: "Data pipeline for fMRI data"
+  org: Boston University
+  description: "Preprocessing pipeline for fMRI data from the Human Connectome Project (completed as part of paid role in neuroscience lab)"
+  link: https://github.com/tmfarrell/HCP
+  date: 2016-06-01
+- id: bu-0
   title: "Genomics + ML for antigen phenotype prediction"
   org: Harvard Medical School + Brigham Women's Hospital
-  description: "Research project on predicting Rh antigen phenotypes from Oxford Nanopore (ONT) genomic data"
+  description: "Research project on predicting Rh antigen phenotypes from Oxford Nanopore (ONT) genomic data (completed as part of unpaid internship)"
   link: https://github.com/tmfarrell/LPM/blob/master/docs/20160410-BU%20Data%20Science%20Day%202016%20Poster-talk.pdf
   date: 2016-04-01
 - id: neb-1
@@ -61,7 +67,7 @@
 - id: neb-0
   title: "Error correction for ONT sequencing data"
   org: NEB
-  description: "Research project on developing error mitigation techniques for ONT sequencing data"
+  description: "Research project on developing error mitigation techniques for ONT sequencing data (completed as part of paid internship)"
   link: /assets/pdf/20150804-NEB_Intership_Talk.pdf
   date: 2015-08-04
   
