@@ -11,7 +11,7 @@ I write <a href="/archive">here</a> to try to make sense of things. I also post 
 
 <br>
 
-<p style="text-align: center;"><a href="/building">portfolio</a>   &nbsp; &nbsp; |  &nbsp; &nbsp; <a href="https://www.linkedin.com/in/tfarrell01">linkedin</a>   &nbsp; &nbsp; |  &nbsp; &nbsp; <a href="/assets/pdf/Resume-Tim_Farrell.pdf">resume</a>  &nbsp; &nbsp; |  &nbsp; &nbsp;    <a href="mailto:tfarrell01@gmail.com">email</a>  &nbsp; &nbsp; |  &nbsp; &nbsp;   <a href="https://twitter.com/tfarrell01">twitter</a>  &nbsp; &nbsp; </p>
+<p style="text-align: center;"><a href="/building">portfolio</a>   &nbsp; &nbsp; |  &nbsp; &nbsp; <a href="https://www.linkedin.com/in/tfarrell01">linkedin</a>   &nbsp; &nbsp; |  &nbsp; &nbsp;   <a href="https://twitter.com/tfarrell01">twitter</a>  &nbsp; &nbsp; |  &nbsp; &nbsp; <a href="/assets/pdf/Resume-Tim_Farrell.pdf">resume</a>  &nbsp; &nbsp; |  &nbsp; &nbsp;    <a href="mailto:tfarrell01@gmail.com">email</a> </p>
 
 <br>
 
