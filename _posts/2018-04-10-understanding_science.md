@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Understanding Science (and Computer Programs)"
 date:   2018-04-10 17:00 

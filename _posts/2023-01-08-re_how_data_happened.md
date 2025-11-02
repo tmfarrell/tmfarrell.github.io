@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'How Data Happened'
 date:   2023-01-08 20:00

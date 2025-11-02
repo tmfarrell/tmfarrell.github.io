@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Resume CI/CD with Google Docs and Github Pages"
 date:   2021-10-14 07:47 

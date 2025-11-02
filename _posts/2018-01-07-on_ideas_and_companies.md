@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "On Ideas/ Companies"
 date:   2018-01-07 20:00 

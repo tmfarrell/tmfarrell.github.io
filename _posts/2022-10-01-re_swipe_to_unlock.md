@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'Swipe to Unlock'
 date:   2022-10-01 08:00

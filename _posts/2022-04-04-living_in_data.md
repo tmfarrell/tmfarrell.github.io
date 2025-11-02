@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'Living in Data'
 date:   2022-04-04 22:26

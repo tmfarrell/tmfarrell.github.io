@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Why Right Is Harder Than Wrong"
 date:   2016-12-20 00:00 

@@ -11,9 +11,9 @@ title: Presenting
   <ul class="post-list" style="list-style:none">
     {% for item in site.data.portfolio %}
         <li>
-            <a href="{{ item.link }}"><span style="">{{ item.title }}</span></a>
+            <a href="{{ item.link }}"><span style="font-size: large;">{{ item.title }}</span></a>
             <br />
-            <span class="post-meta" style="color: darkgrey;">
+            <span style="color: darkgrey;">
               {{ item.date | date: "%b %Y" }} / {{ item.org }}
             </span>
           <p class="portfolio-description">

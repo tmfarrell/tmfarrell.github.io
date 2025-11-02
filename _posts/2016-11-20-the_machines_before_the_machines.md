@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Machines Before The Machines"
 date:   2016-06-03 00:00 

@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "The Future of Healthcare is Predictive"
 date:   2025-04-06 07:00

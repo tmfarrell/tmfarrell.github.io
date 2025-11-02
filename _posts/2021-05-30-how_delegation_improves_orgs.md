@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "How Delegation Improves Organizations"
 date:   2021-05-30 08:00 

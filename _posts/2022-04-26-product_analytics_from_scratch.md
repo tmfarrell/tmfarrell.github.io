@@ -1,8 +1,10 @@
 ---
+toc: true
 layout: post
 title:  "Product Analytics from Scratch"
 date:   2022-04-26 19:00
 categories: writing
+toc: true 
 ---
 
 ### Becoming Data-driven

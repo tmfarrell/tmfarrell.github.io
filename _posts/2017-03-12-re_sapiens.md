@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'Sapiens'
 date:   2017-03-20 20:00

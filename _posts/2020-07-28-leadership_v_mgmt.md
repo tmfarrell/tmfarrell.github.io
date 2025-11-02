@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Leadership and Management"
 date:   2020-07-28 07:00

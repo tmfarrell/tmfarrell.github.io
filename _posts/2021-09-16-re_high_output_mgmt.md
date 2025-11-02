@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'High Output Management'
 date:   2021-09-16 20:00

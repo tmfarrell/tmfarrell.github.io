@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Does Failure Breed Success?"
 date:   2016-04-27 20:00

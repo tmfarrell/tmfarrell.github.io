@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Hardware Is Harder Than Software. Period."
 date:   2018-09-10 08:00 

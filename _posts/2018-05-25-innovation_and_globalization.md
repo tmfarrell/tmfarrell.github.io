@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Innovation and Globalization"
 date:   2018-05-25 16:00 

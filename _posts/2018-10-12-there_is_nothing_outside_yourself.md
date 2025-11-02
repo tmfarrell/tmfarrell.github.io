@@ -1,8 +1,10 @@
 ---
+toc: true
 layout: post
 title:  "There Is Nothing Outside Your Self"
 date:   2018-10-11 20:00 
 categories: writing
+hidden: true
 --- 
 
 > Ne te quaesiveris extra. 

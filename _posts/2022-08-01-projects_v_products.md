@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Projects are about Time, Products about Value"
 date:   2022-12-03 08:00 

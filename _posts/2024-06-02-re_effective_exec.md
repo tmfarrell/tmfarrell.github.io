@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'The Effective Executive'
 date:   2024-06-02 20:00

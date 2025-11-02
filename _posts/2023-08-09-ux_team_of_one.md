@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'The User Experience Team of One'
 date:   2023-08-09 20:00

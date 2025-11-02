@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'The Psychology of Money'
 date:   2023-06-01 08:00

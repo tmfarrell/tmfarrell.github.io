@@ -2,10 +2,41 @@
 layout: default
 ---
 
+<!-- Reading Progress Bar -->
+<div class="reading-progress-container">
+  <div class="reading-progress" id="reading-progress"></div>
+</div>
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+  
+  <!-- Post Meta Information -->
+  <div class="post-meta">
+    <span>{{ page.date | date_to_string }}</span>
+    <span class="separator">|</span>
+    <span class="reading-time">
+      {% assign words = content | strip_html | number_of_words %}
+      {% assign reading_time = words | divided_by: 200 %}
+      {% if reading_time == 0 %}
+        1 min read
+      {% else %}
+        {{ reading_time }} min read
+      {% endif %}
+    </span>
+  </div>
+
+  <!-- Post Content -->
+  <article class="post-content">
+    <!-- Table of Contents (for posts with toc enabled) -->
+    {% if page.toc %}
+    <nav class="toc" id="toc">
+      <h3><i>Table of Contents</i></h3>
+      <ul id="toc-list"></ul>
+    </nav>
+    {% endif %}
+
+    {{ content }}
+  </article>
 </div>
 
 {% if site.related_posts.size >= 1 %}

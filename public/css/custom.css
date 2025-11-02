@@ -27,3 +27,120 @@
 li {
   margin: 10px 0;
 }
+
+/* Reading Progress Bar */
+.reading-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #f0f0f0;
+  z-index: 9999;
+}
+
+.reading-progress {
+  height: 100%;
+  background-color: #ac4142; /* Using your theme color */
+  width: 0%;
+  transition: width 0.2s ease-out;
+}
+
+/* Post Meta Information */
+.post-meta {
+  color: #9a9a9a;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.post-meta .separator {
+  color: #d0d0d0;
+  font-weight: 300;
+}
+
+.post-meta .reading-time {
+  color: #9a9a9a;
+  font-style: italic;
+}
+
+/* Table of Contents */
+.toc {
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+.toc h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e5e5;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .toc {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+}
+
+#toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#toc-list li {
+  margin: 0.25rem 0;
+}
+
+#toc-list .toc-h3 {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+#toc-list a {
+  text-decoration: none;
+  color: #303030;
+  transition: color 0.2s ease;
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+#toc-list a:hover {
+  color: #ac4142;
+  background-color: #f0f0f0;
+}
+
+#toc-list a.active {
+  color: #ac4142;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Post Content Improvements */
+.post-content {
+  line-height: 1.7;
+}
+
+.post-content h2,
+.post-content h3 {
+  scroll-margin-top: 80px; /* Offset for fixed elements */
+}

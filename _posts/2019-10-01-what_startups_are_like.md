@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "What Working at a Startup Is Like"
 date:   2019-09-15 08:00 

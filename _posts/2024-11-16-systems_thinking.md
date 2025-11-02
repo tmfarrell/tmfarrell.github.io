@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'Thinking In Systems'
 date:   2024-11-16 08:00

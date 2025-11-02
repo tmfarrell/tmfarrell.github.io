@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Competence > Comprehension"
 date:   2019-11-16 08:00 

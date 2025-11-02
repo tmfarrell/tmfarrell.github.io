@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "A Measure of Physiological/ Performance Measures"
 date:   2017-04-28 18:00 

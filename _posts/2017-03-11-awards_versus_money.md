@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Awards Versus Money"
 date:   2017-03-11 15:55 

@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "Vagueness, Verification and Modern Systems"
 date:   2019-10-05 08:00 

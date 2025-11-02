@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'First Things First'
 date:   2022-03-26 20:00

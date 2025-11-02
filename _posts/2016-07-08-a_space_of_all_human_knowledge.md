@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  "A Space of Knowledge"
 date:   2016-02-21 22:25 

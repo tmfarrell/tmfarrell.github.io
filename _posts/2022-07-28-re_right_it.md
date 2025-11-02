@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'The Right It'
 date:   2022-07-28 20:00

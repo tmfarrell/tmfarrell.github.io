@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'The Personal MBA'
 date:   2022-03-01 20:00

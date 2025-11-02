@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'Seeking Wisdom'
 date:   2022-03-15 20:00

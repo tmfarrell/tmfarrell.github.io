@@ -1,4 +1,5 @@
 ---
+toc: true
 layout: post
 title:  'Continuous Discovery Habits'
 date:   2024-03-21 20:00
