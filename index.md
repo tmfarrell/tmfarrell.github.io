@@ -1,8 +1,7 @@
 ---
 layout: page
-title: about
+title: About
 ---
-
 
 <br>
 I believe the application of technology to medicine/ health/ biology will transform human health and longevity. I also believe that [computer and data science will be critical to making this happen](https://a16z.com/ai-at-the-intersection-the-a16z-investment-thesis-on-ai-in-bio-health/).

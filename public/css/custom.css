@@ -144,3 +144,27 @@ html {
 .post-content h3 {
   scroll-margin-top: 80px; /* Offset for fixed elements */
 }
+
+/* Small caps styling for archive page titles */
+.home h1.post-list-title {
+  /*font-variant: small-caps !important;*/ 
+  text-transform: none !important;
+  font-size: 32px;
+  display: block !important;
+  width: 100% !important;
+  /*font-family: Cambria,  serif;*/ 
+  padding-left: 38px ; 
+  margin-bottom: -10px;
+  padding-top: 10px;
+}
+
+/* Small caps styling for archive page titles */
+.page h1.post-list-title {
+  /* font-variant: small-caps !important;
+  font-family: Cambria,  serif; */ 
+  text-transform: none !important;
+  font-size: 32px;
+  display: block !important;
+  width: 100% !important;
+  
+}
