@@ -64,27 +64,7 @@
       }
     });
 
-    // Highlight current section in TOC
-    var tocLinks = toc.querySelectorAll('a');
-    
-    function highlightTOC() {
-      var scrollPosition = window.scrollY + window.innerHeight / 3; // More forgiving scroll detection
 
-      headings.forEach(function(heading, index) {
-        var headingTop = heading.offsetTop;
-        var headingBottom = headingTop + heading.offsetHeight;
-        
-        if (scrollPosition >= headingTop && scrollPosition < headingBottom) {
-          tocLinks.forEach(function(link) { link.classList.remove('active'); });
-          if (tocLinks[index]) {
-            tocLinks[index].classList.add('active');
-          }
-        }
-      });
-    }
-
-    window.addEventListener('scroll', highlightTOC);
-    highlightTOC(); // Initial highlight
   }
 
   // Initialize features when DOM is loaded

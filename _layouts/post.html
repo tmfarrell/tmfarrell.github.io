@@ -7,6 +7,19 @@ layout: default
   <div class="reading-progress" id="reading-progress"></div>
 </div>
 
+<!-- Smart Back Button -->
+<div class="back-button-container">
+  {% if page.categories contains 'reading' %}
+    <a href="{{ site.baseurl }}/reading/">
+      <span class="back-arrow">←</span> Back
+    </a>
+  {% elsif page.categories contains 'writing' %}
+    <a href="{{ site.baseurl }}/archive/">
+      <span class="back-arrow">←</span> Back
+    </a>
+  {% endif %}
+</div>
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   
@@ -30,7 +43,6 @@ layout: default
     <!-- Table of Contents (for posts with toc enabled) -->
     {% if page.toc %}
     <nav class="toc" id="toc">
-      <h3><i>Table of Contents</i></h3>
       <ul id="toc-list"></ul>
     </nav>
     {% endif %}

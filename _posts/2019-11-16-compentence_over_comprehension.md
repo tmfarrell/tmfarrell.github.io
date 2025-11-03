@@ -14,21 +14,20 @@ they have. Understanding is another whole level above being competent at somethi
 an unnecessary part. 
 
 Birds evolved the capacity for flight (competency), which comes with all types of evolutionary 
-advantages (for capturing prey, for evading predators, etc.), but they didn't evolve the ability to
+advantages (capturing prey, evading predators, etc.), but they didn't evolve the ability to
 to understand why flight is useful or why they evolved the ability in the first place (comprehension). 
 The capacity for understanding an ability is totally separate from the ability itself. At the very 
 least, they are orthogonal, and more likely they're in slight opposition. 
 
 Arguably, humans have great capacity for understanding. Arguably, we don't need competency for 
 abilities, like flight, where if we just understand them enough we can just engineer and/ or 
-manufacture them from our understanding. Some might argue this is why we now have the ability for 
-flight, augmented by machines we've engineered and/ or manufactured. 
+manufacture them from our understanding. 
 
-## Competence > Comprehension 
+## Competence Precedes Comprehension
 
-Except that's now how the technology for flight originally developed, and that's not how technology 
-generally develops. Aviation technology didn't develop by taking the laws of aerodynamics and 
-building a machine that harnesses them in a clever way to produce flight. That's not how it worked,
+Except that's not how the technology for flight originally developed, and that's not how technology develops in general. 
+
+Aviation technology didn't develop by taking the laws of aerodynamics and building a machine that harnesses them in a clever way to produce flight. That's not how it worked,
 the first great breakthrough in human flight didn't come from physicists or scientists. The first 
 great breakthrough came from 2 brothers who were bicycle mechanics, experimenting, iterating and 
 imitating what they thought worked for birds. Their genius wasn't from understanding, it came from 
@@ -36,12 +35,10 @@ mechanical competence and application of that competence. The understanding of w
 came later, the science trailed the engineering. 
 
 And, believe it or not, this is the dominant pattern in human technological development. We don't 
-understand how many drugs that we know work well, and use daily, actually work (e.g. aspirin's mechanism
-of action is still unknown). The inventions of written human language and the telegraph preceded 
-information theory. We still don't have a good understanding for why deep neural networks work as 
-well as they do. And then, the biggest kicker of them all, there's the machine/ organ we rely on for 
-literally everything---that which you trust to determine what to trust---our brains, the interworkings 
-of which we still only have a cursory understanding of. 
+understand how many drugs that we know work well, and use daily, actually work (e.g. aspirin's mechanism of action is still unknown). The inventions of written human language and the telegraph preceded information theory. We still don't have a good understanding for why deep neural networks work as well as they do. 
+
+And then, the biggest kicker of them all, there's the machine/ organ we rely on for 
+literally everything---that which you trust to determine what to trust---our brains, the interworkings of which we still only have a cursory understanding of. 
 
 With all of the talk of the danger of black boxes in machine learning and scientific research, it's 
 amazing how little white boxes--things where we understand and can explain their mechanics--there
@@ -51,35 +48,27 @@ things which we undestand as a society, but individuals take for granted and eff
 black boxes (e.g. cars, again your own brain, etc.). 
 
 And I don't think this is such a bad thing. My point here is this: when it comes down to it, what 
-matters most is competency, that things work. Not how they work, or understanding why they work. 
-This is why compentence is better than comprehension 100% of the time. If you need your car fixed, 
-you hire a mechanic, not a physicist. 
+matters most is competency, that things work. Not how they work, or understanding why they work. If you need your car fixed, you hire a mechanic, not a physicist. 
 
-## Value Added By Comprehension Requires Competence
+## Comprehension Requires Competence 
 
-That's not to completely do away with comprehension, that would be silly. Science is comprehension
-and obviously that's not something we want to do away with. Comprehension does a lot to offer as 
-well, but it's at higher levels of value, it's more difficult and importantly it requires competence. 
+That doesn't mean we should completely do away with comprehension. 
 
-Part of the reason why great athletes or artists aren't always the best coaches or teachers is because
-they're too steeped in competence, too reliant on their intuition and can't seem to develop (because
-they never needed to develop) good ways of communicating that competence to others. The best coaches 
-many times come from subpar athletes that love the game and dedicate time to *studying* it, rather 
-than *playing* it. 
+Science is comprehension and that's obviously not something we want to do away with at all. Comprehension can be very valuable, even though it's more difficult. Once we've developed a new technology, we gain a deeper understanding to optimize and take it to the next level.     
 
-Great coaches make for great teams, and dynasties. There would be no Patriots without Belichick
-(comprehension). However, equally true, there would also be no Patriots without Brady (competence). 
-You can't play the game without the players, the coaches just add another level at which to be great. 
+One thing to remember though: competence is a typically a prerequisite for understanding. 
 
-Which brings us to what competence is: competence is execution, is the physical work or product 
-produced. The quality of the output, which using metrics over time can be quantified, is the mark 
-of the level of competency. Competency speaks in concrete terms by way of capability (physical, in 
-the case of sport) and in results. Comprehension doesn't speak concretely, it speaks in abstractions.   
+Part of the reason why great athletes/ artists aren't always the best coaches/ teachers is because
+they're too steeped in competence, too reliant on their intuition and never needed to develop ways of communicating that competence to others. The best coaches many times come from subpar athletes that love the game and dedicate time to *studying* it, rather than *playing* it. 
 
-Given these facts, although comprehension can add value at higher levels--think great coach building
-a great team--preference goes to competence. There would be no game without players playing 
-it, part of a great coach's job is ensuring the team's competence. At the highest levels of
-performance, strong conprehension is necessary but it simply can't exist without competency. 
+No doubt great coaches make great teams. There would be no Patriots dynasty without Belichick
+(comprehension). However, even more true, there would also be no Patriots dynasty without Brady (competence). Competence is execution; comprehension is strategy. 
+
+This is why competence > comprehension. You can't play the game without the players. You can't win without executing.  
+
+Competency speaks in concrete terms, in execution and in results. Comprehension doesn't speak concretely, it speaks in abstractions. 
+
+It can't actually play the game. 
 
 
 
