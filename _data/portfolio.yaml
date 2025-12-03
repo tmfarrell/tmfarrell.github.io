@@ -1,13 +1,13 @@
 - id: om1-2
   title: "PhenOM Patient Risk Panel"
   org: OM1
-  description: "Application for providers and health plans to more effectively triage patients using risk phenotypes predicted from patient clinical histories"
+  description: "Application for providers/ health plans to more effectively triage patients using risks predicted from clinical histories"
   link:  /assets/pdf/phenom_risk_panel.pdf
   date: 2025-04-01
 - id: om1-1
   title: "Insights Platform"
   org: OM1
-  description: "Digital platform for epidemiologists and analysts to more rapidly discover insights and generate evidence from real-world healthcare datasets"
+  description: "Digital platform for epidemiologists/ analysts to more rapidly analyze and generate evidence from real-world healthcare datasets"
   link:  /assets/pdf/insights_platform.pdf
   date: 2024-11-01
 - id: om1-0
