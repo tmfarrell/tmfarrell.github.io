@@ -5,22 +5,130 @@ title: Building
 
 <div class="home">
 
-  <h1 class="post-list-title"></h1>
-  </br>
+  {% include breadcrumb.html %}
 
-  <ul class="post-list" style="list-style:none">
-    {% for item in site.data.portfolio %}
-        <li>
-            <a href="{{ item.link }}"><span style="font-size: large;">{{ item.title }}</span></a>
-            <br />
-            <span style="color: darkgrey;">
-              {{ item.date | date: "%b %Y" }} / {{ item.org }}
-            </span>
-          <p class="portfolio-description">
-            <span style="color: grey">{{ item.description }}</span>    
-          </p>
-        </li>
+  {% comment %} Create a custom sorted array based on the newest date in each org {% endcomment %}
+  {% assign all_orgs = site.data.portfolio | group_by: "org" %}
+  {% assign org_max_dates = "" | split: "," %}
+  
+  {% for org_group in all_orgs %}
+    {% assign max_date = "1900-01-01" | date: "%Y-%m-%d" %}
+    {% for item in org_group.items %}
+      {% assign item_date = item.date | date: "%Y-%m-%d" %}
+      {% if item_date > max_date %}
+        {% assign max_date = item_date %}
+      {% endif %}
     {% endfor %}
-  </ul>
+    {% assign org_info = max_date | append: "|||" | append: org_group.name %}
+    {% assign org_max_dates = org_max_dates | push: org_info %}
+  {% endfor %}
+  
+  {% assign sorted_org_info = org_max_dates | sort | reverse %}
+
+  {% for org_info in sorted_org_info %}
+    {% assign org_parts = org_info | split: "|||" %}
+    {% assign current_org_name = org_parts[1] %}
+    {% assign current_org_group = all_orgs | where: "name", current_org_name | first %}
+    
+    <details class="org-group">
+      <summary class="org-header">
+        <h3> {{ current_org_group.name }}</h3>
+      </summary>
+      
+      <ul class="post-list" style="list-style:none;">
+        {% assign sorted_items = current_org_group.items | sort: "date" | reverse %}
+        {% for item in sorted_items %}
+          <li>
+            <a href="{{ item.link }}"><span style="font-size: medium;">{{ item.title }}</span></a>
+            <br />
+            <span style="color: darkgrey; font-size: medium;">
+              {{ item.date | date: "%b %Y" }}
+            </span>
+            <p class="portfolio-description">
+              <span style="color: grey">{{ item.description }}</span>    
+            </p>
+          </li>
+        {% endfor %}
+      </ul>
+    </details>
+  {% endfor %}
 </div>
 
+<style>
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.org-group {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.org-header {
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+  user-select: none;
+  padding-left: 60px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.org-header:hover h3 {
+  color: #ac4142;
+}
+
+.org-header h3 {
+  margin: 0;
+  display: inline-block;
+  font-size: large;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #828282;
+}
+
+.item-count {
+  font-weight: 400;
+  color: #828282;
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+.org-group[open] .org-header {
+  border-bottom: none;
+  margin-bottom: 20px;
+  /*background-color: #f6f6f6;
+  padding-top: 10px;
+  padding-bottom: 1px;*/ 
+  color: #ac4142;
+}
+
+.org-group[open] .org-header h3 {
+  color: #ac4142;
+  font-weight: 500;
+  /*background-color: rgb(234, 234, 234);*/
+}
+
+.org-group .post-list {
+  padding: 0;
+  padding-left: 60px;
+  margin-top: 0;
+}
+
+.org-group .post-list li {
+  /*padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f5f5f5;*/ 
+  margin-bottom: 1.5rem;
+  font-size: medium ;
+}
+
+.org-group .post-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+</style>
