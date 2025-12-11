@@ -42,7 +42,7 @@
   date: 2018-03-01
 - id: personal-1
   title: "ML for nuclei detection"
-  org: Personal
+  org: Side Projects
   description: "Data science competition project on applying Mask-RCNN to nuclei detection in cellular imaging"
   link: https://github.com/tmfarrell/data-science-bowl-2018
   date: 2018-02-01
