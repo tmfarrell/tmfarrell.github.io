@@ -6,7 +6,7 @@ title:
 <br>
 I believe that applying technology to medicine/ health/ biology will transform human health and longevity. I also believe that [computer/ data science will be critical to making this happen](https://a16z.com/ai-at-the-intersection-the-a16z-investment-thesis-on-ai-in-bio-health/).
 
-I write here to try to make sense of things, as well as to organize/ showcase projects I've worked on.
+I write here to try to make sense of things, as well as to organize/ showcase projects I've worked on. 
 
 <p style="text-align: center; padding-top: 25px;"><a href="/building">portfolio</a>   &nbsp; &nbsp; |  &nbsp; &nbsp; <a href="/archive">writing</a>  &nbsp; &nbsp; |  &nbsp; &nbsp; <a href="/reading">reading</a> </p>
 

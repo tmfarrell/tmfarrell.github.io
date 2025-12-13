@@ -1,3 +1,9 @@
+- id: om1-3
+  title: "Enrichment Copilot"
+  org: OM1
+  description: "Agentic application to accelerate unstructured data search, extraction and enrichment"
+  link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
+  date: 2025-11-01
 - id: om1-2
   title: "PhenOM Patient Risk Panel"
   org: OM1
