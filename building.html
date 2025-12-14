@@ -40,9 +40,8 @@ title: Building
         {% for item in sorted_items %}
           <li>
             <a href="{{ item.link }}"><span style="font-size: medium;">{{ item.title }}</span></a>
-            <br />
             <span style="color: darkgrey; font-size: medium;">
-              {{ item.date | date: "%b %Y" }}
+              / {{ item.date | date: "%b %Y" }}
             </span>
             <p class="portfolio-description">
               <span style="color: grey">{{ item.description }}</span>    

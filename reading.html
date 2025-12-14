@@ -9,12 +9,13 @@ title: Reading
 
   <ul class="post-list" style="list-style:none; margin-bottom: 10px;">
     {% for post in site.categories.reading %}
-      <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" style="margin-bottom:5pt" href="{{ post.url | prepend: site.baseurl }}">
+      <li style="margin-bottom: 8px;">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
         </a>
-        <span class="post-subtitle">{{ post.subtitle }}</span>
+        <span class="post-subtitle" style="color: darkgrey; font-size: medium;">
+          / {{ post.date | date: "%b %Y" }}
+        </span>
       </li>
     {% endfor %}
   </ul>
