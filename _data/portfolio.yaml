@@ -1,15 +1,15 @@
+- id: om1-2
+  title: "PhenOM Patient Risk Panel"
+  org: OM1
+  description: "Application for providers/ health plans to more effectively triage patients using clinical risks predicted from medical history"
+  link:  /assets/pdf/phenom_risk_panel.pdf
+  date: 2025-07-01
 - id: om1-3
   title: "Enrichment Copilot"
   org: OM1
   description: "Agentic application to accelerate unstructured data search, extraction and enrichment"
   link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
-  date: 2025-11-01
-- id: om1-2
-  title: "PhenOM Patient Risk Panel"
-  org: OM1
-  description: "Application for providers/ health plans to more effectively triage patients using risks predicted from clinical histories"
-  link:  /assets/pdf/phenom_risk_panel.pdf
-  date: 2025-04-01
+  date: 2025-06-01
 - id: om1-1
   title: "Insights Platform"
   org: OM1

@@ -241,14 +241,17 @@ html {
   margin-bottom: 30px;
 }
 
-.breadcrumb-link {
-  color: #c37b8e;
+.breadcrumb a.breadcrumb-link,
+a.breadcrumb-link {
+  color: #d99aa5;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.breadcrumb-link:hover {
-  color: #ac4142;
+.breadcrumb a.breadcrumb-link:hover,
+a.breadcrumb-link:hover {
+  color: #c37b8e;
+  text-decoration: none;
 }
 
 .breadcrumb-separator {
