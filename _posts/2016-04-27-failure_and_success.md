@@ -6,8 +6,7 @@ date:   2016-04-27 20:00
 categories: writing
 ---
 
-Came across [this](http://www.nature.com/naturejobs/2010/101118/pdf/nj7322-467a.pdf) today, a discussion
-of the role of failure as a scientist.
+Recently came across a discussion of the important role of failure as a scientist in Nature (link [here](http://www.nature.com/naturejobs/2010/101118/pdf/nj7322-467a.pdf) seems broken though).
 
 This isn't the only example of failure being labelled requisite for success. For instance, MJ in his famous Nike commercial:
 
@@ -17,7 +16,7 @@ And later:
 
 >I can accept failure, everyone fails at something. But I can't accept not trying.
 
-Then there's Thomas J. Watson (IBM):
+Then there's Thomas J. Watson (CEO of IBM in early 20th century):
 
 >Would you like me to give you a formula for success? It's quite simple, really: double your rate of failure.
 

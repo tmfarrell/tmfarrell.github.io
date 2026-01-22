@@ -6,7 +6,7 @@ date:   2021-12-14 20:00
 categories: writing
 ---
 
-### The AI Cold Start Problem
+## The AI Cold Start Problem
 
 Here's the scenario. You want to be fancy and build a product that leverages some of the latest and greatest in AI to satisy and delight your (future) users.
 
@@ -22,7 +22,7 @@ You realize the Wikipedia article could have articulated the problem in a more g
 
 By now you realize you have to build value and start solving your users' problems up front, so you can entice them to your app in return for their data. You realize you'll need to build something like a "marketplace", a "[platform](https://sloanreview.mit.edu/article/the-future-of-platforms/)" or even a regular ol' app.
 
-### Apps Before AI
+## Apps Before AI
 
 Bottom-line: many might think that AI can be leveraged as a core, and potentially killer, feature for a product that satisfies and delights its users. In others words, `AI -> App`.
 

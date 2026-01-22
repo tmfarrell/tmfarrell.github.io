@@ -68,8 +68,8 @@ li {
 
 /* Table of Contents */
 .toc {
-  background-color: #f9f9f9;
-  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  border: 1px solid #e9e7e7;
   border-radius: 4px;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -229,5 +229,66 @@ html {
   .back-button {
     padding: 0.6rem 1rem;
     font-size: 0.85rem;
+  }
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+  font-size: 16px;
+  color: #999;
+  font-weight: 300;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+.breadcrumb-link {
+  color: #c37b8e;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-link:hover {
+  color: #ac4142;
+}
+
+.breadcrumb-separator {
+  margin: 0 6px;
+  color: #ddd;
+}
+
+.breadcrumb-current {
+  color: #9c9c9c;
+}
+
+/* Responsive breadcrumbs */
+@media screen and (max-width: 900px) {
+  .breadcrumb {
+    font-size: 15px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .breadcrumb {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 4px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .breadcrumb {
+    font-size: 13px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 3px;
   }
 }

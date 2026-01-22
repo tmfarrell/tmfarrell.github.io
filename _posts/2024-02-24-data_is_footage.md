@@ -16,7 +16,7 @@ But here's the thing: **no one wants footage, they want films**.
 
 People want stories, and respond to them better than raw, unedited facts.
 
-### Pre-Production
+## Pre-Production
 
 Just like making a film from footage, data can only be made compelling when it is _produced_. [Pre-production to distribution](https://en.wikipedia.org/wiki/Filmmaking).
 
@@ -24,7 +24,7 @@ At pre-production, there should already be an interesting story to tell. Scenes 
 
 There should be some end in mind at the beginning. Like a script and story boards in film. Or design and mockups in software.
 
-### Production
+## Production
 
 At production, a team needs to make sure quality footage is being recorded, just like a film crew. A device (often a piece of software) needs to be set up to do the recording. It has to have the right resolution and frame rate. Checks have to be put in place to prevent errors.
 
@@ -32,7 +32,7 @@ If the data is meant to _convey truth_--most commonly the case, and, in filmakin
 
 To _establish truth_, data has to generalize to other scenes (i.e. other people, places, events) at other times. Which is only possible when you sample broadly across scenes and times. The degree to which data is sampled broadly is the degree to which it is true.
 
-### Post-Production
+## Post-Production
 
 At post-production, just like footage, data must also be edited (which may seem surprising). Blemishes need removing. Noise needs to be filtered to isolate the signal. People can't focus on the story if there's static.
 
@@ -42,7 +42,7 @@ This is especially important when data is compiled from multiple disparate sourc
 
 Data should also be joined to other data, like video is to audio. In some cases, this is critical for the final output, like audio dialogue is for a film. In other cases, it enriches the experience, like setting scenes to music.
 
-### Distribution
+## Distribution
 
 Finally, and maybe most importantly, the final product must be broadcast and distributed to viewers. Films need to be shown in movie theaters and on streaming platforms. Data needs to be consumed similarly through a compelling visual interface.
 

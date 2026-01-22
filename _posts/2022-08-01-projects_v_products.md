@@ -112,7 +112,7 @@ If the primary concern is _value_, think about cyclic iteration working towards 
 <br />
 <br />
 
-## **Side Note:** Product Development and Evolution
+**_Side Note:_ Product Development and Evolution**
 
 Another important aspect about products: there are a lot of similarities between the process of product development and evolution. The space and dynamics of valuable products and businesses–what we call _markets_–closely resemble the competition and dynamics of biological ecosystems. 
 

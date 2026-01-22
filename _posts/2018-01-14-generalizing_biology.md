@@ -6,7 +6,7 @@ date:   2018-01-14 20:00
 categories: writing
 ---
 
-### Specificity and Biology
+## Specificity and Biology
 
 Generality has never been medicine or biology's forte. 
 
@@ -20,7 +20,7 @@ Similarly, it seems physicians have always been more concerned with the specific
 specific techniques for specific cases. Studying "interesting" patients, diseases or disorders.
 Finding rare genetic mutations. 
 
-### Generality and Physics/ Math
+## Generality and Physics/ Math
 
 On the other hand, the harder, more formal sciences---math, physics, computer science, statistics---seem 
 to do the opposite. The more general your contribution, the more widely respected. The more general, 
@@ -33,7 +33,7 @@ generalizability is actually proportional to utility. By definition, the more ge
 greater the number of specific facts it applies to. And it's reasonable that the more 
 specific facts a statement applies to, the more useful.<sup id="a1">[1](#f1)</sup>
 
-### Biology vs Physics/ Math
+## Biology vs Physics/ Math
 
 But why this difference between the "hard" sciences and biology? 
 
@@ -44,7 +44,7 @@ though.
 
 The most obvious example is the discovery of the central dogma: DNA \\(\Rightarrow\\) RNA \\(\Rightarrow\\) Protein. The exact reason this was exciting was because it applied (i.e. generalized) to **all organisms on the tree of life**. The central dogma is the very basis for biological life. 
 
-### Towards a Generalized Biology/ Medicine
+## Towards a Generalized Biology/ Medicine
 
 So it is in fact possible to achieve generality in biology. 
 

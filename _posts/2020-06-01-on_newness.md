@@ -6,7 +6,7 @@ date:   2020-06-01 22:25
 categories: writing
 ---
 
-### No News is Good News
+## No News is Good News
 
 Ever hear this quote? 
 
@@ -20,7 +20,7 @@ This is why you may want to read only older books that are "good" because they'v
 
 This is also the reason to **not** follow the news. Much of daily news will be found to be inconsequential, and some of it flat-out wrong. The most critical, important pieces of information will survive and find you through channels you trust.
 
-### New Ideas and Technologies
+## New Ideas and Technologies
 
 To be fair, good and bad are also blanket terms that aren't very helpful when describing something new, since new things are usually unique and harder to categorize. Some aspects may be good, some may be bad, but all of that is not yet understood.
 
@@ -30,7 +30,7 @@ The ultimate test of something new is the market. Whether something new survives
 
 Take, for example, the venture capital (VCs) market. 90%+ of startups evenutally fail, so it's extremely hard to pick ones early on that do ultimately win. That's basically proof that new ideas are unlikely to be good ones. 
 
-### Technology and Progress
+## Technology and Progress
 
 Consider that technology hasn’t necessarily made us happier, even though it's made us vastly more productive. For example, farming allowed us to make much more food per capita than ever before; but it's also made us more sedentary, which has had a negative impact on our health.
 
@@ -42,7 +42,7 @@ The bottomline is that Slack is **new**. In some ways it's better and then later
 
 There are countless other examples where later on we've realized unexpected ways a technology has made us worse: cars and climate change, social media and misinformation, automation and underemployment, etc. (Jury's still out on that last one though.)
 
-### Newness and Risk
+## Newness and Risk
 
 These facts about technology should inform our view of things that are new in general. New things always have the risk of side effects, which can often be unforeseen. 
 
