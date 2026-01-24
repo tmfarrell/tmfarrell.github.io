@@ -62,7 +62,7 @@ Here are some of the parallels (although obviously not a perfect analogy):
 
 ## Implications/ Predictions
 
-We can use this framework to make some predictions: 
+Ok, this is all well and good, but so what? We can use this framework to make some predictions: 
 
 - **Data rich domains will be the first to be transformed by AI.** Particularly domains that with lots of unstructured data that was previously much harder to transform and operationalize. This is why there's so much excitement about AI for healthcare and bio: both are dominated by unstructured data and workflows, which make it difficult for traditional/ deterministic software solutions to succeed.  
 
@@ -75,14 +75,8 @@ We can use this framework to make some predictions:
 
 ## Final Takeaway
 
-The most important takeaway? Stop treating AI like it's completely different from your existing data work. AI isn't revolutionary—it's evolutionary.
-
-**Fix your data flows first.** AI will only be as good as what it learns from and what is fed into it at inference time. Garbage in, garbage out still applies.
-
-**Follow the same playbook as data/ analytics projects.** Clear objectives, stakeholder buy-in, robust infrastructure, ongoing monitoring. Nothing changes.
-
-**Prepare for the full cycle.** Like any analytics project, you need measurement, feedback loops, and iteration.
+The most important takeaway? Fundamentally, AI isn't very different from data and analytics work. It's a next phase of evolution.
 
 Orgs that treat AI as completely separate from existing data capabilities struggle. Those that see it as the next step in analytical maturity succeed.
 
-Fundamentally, AI is still about turning data into action and real value. The compression is more sophisticated, but the challenge is the same.
+Fundamentally, AI is still about turning data into action and real value. The compression is more sophisticated, but the challenges are the same.

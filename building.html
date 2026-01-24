@@ -39,13 +39,9 @@ title: Building
         {% assign sorted_items = current_org_group.items | sort: "date" | reverse %}
         {% for item in sorted_items %}
           <li>
-            <a href="{{ item.link }}"><span style="font-size: medium;">{{ item.title }}</span></a>
-            <span style="color: darkgrey; font-size: medium;">
-              / {{ item.date | date: "%Y" }}
-            </span>
-            <p class="portfolio-description">
-              <span style="color: grey">{{ item.description }}</span>    
-            </p>
+            <a href="{{ item.link }}" class="portfolio-link">{{ item.title }}</a>
+            <span class="portfolio-date"> / {{ item.date | date: "%Y" }}</span>
+            <p class="portfolio-description">{{ item.description }}</p>
           </li>
         {% endfor %}
       </ul>
@@ -62,7 +58,7 @@ details > summary::-webkit-details-marker {
 }
 
 .org-group {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #e8e8e8;
 }
 
@@ -74,7 +70,7 @@ details > summary::-webkit-details-marker {
   user-select: none;
   padding-left: 60px;
   border: none;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .org-header:hover h3 {
@@ -84,7 +80,7 @@ details > summary::-webkit-details-marker {
 .org-header h3 {
   margin: 0;
   display: inline-block;
-  font-size: large;
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #828282;
@@ -99,17 +95,13 @@ details > summary::-webkit-details-marker {
 
 .org-group[open] .org-header {
   border-bottom: none;
-  margin-bottom: 20px;
-  /*background-color: #f6f6f6;
-  padding-top: 10px;
-  padding-bottom: 1px;*/ 
+  margin-bottom: 1.25rem;
   color: #ac4142;
 }
 
 .org-group[open] .org-header h3 {
   color: #ac4142;
   font-weight: 500;
-  /*background-color: rgb(234, 234, 234);*/
 }
 
 .org-group .post-list {
@@ -119,15 +111,173 @@ details > summary::-webkit-details-marker {
 }
 
 .org-group .post-list li {
-  /*padding-bottom: 1.5rem;
-  border-bottom: 1px solid #f5f5f5;*/ 
-  margin-bottom: 1.5rem;
-  font-size: medium ;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
 }
 
 .org-group .post-list li:last-child {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.portfolio-description {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  color: #666;
+  line-height: 1.4;
+  font-size: 0.85rem;
+}
+
+.portfolio-link {
+  font-size: 0.9rem;
+}
+
+.portfolio-date {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .org-group {
+    margin-bottom: 1.25rem;
+  }
+  
+  .org-header {
+    padding-left: 30px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .org-header h3 {
+    font-size: 1rem;
+  }
+  
+  .org-group[open] .org-header {
+    margin-bottom: 1rem;
+  }
+  
+  .org-group .post-list {
+    padding-left: 30px;
+  }
+  
+  .org-group .post-list li {
+    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .portfolio-description {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+  
+  .portfolio-link {
+    font-size: 0.85rem;
+  }
+  
+  .portfolio-date {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .org-group {
+    margin-bottom: 1rem;
+  }
+  
+  .org-header {
+    padding-left: 15px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .org-header h3 {
+    font-size: 0.95rem;
+  }
+  
+  .org-group[open] .org-header {
+    margin-bottom: 0.75rem;
+  }
+  
+  .org-group .post-list {
+    padding-left: 15px;
+  }
+  
+  .org-group .post-list li {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .portfolio-description {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    margin-top: 0.15rem;
+  }
+  
+  .portfolio-link {
+    font-size: 0.8rem;
+  }
+  
+  .portfolio-date {
+    font-size: 0.75rem;
+  }
+}
+
+/* Additional responsive adjustments for very small screens */
+@media (max-width: 360px) {
+  .org-group {
+    margin-bottom: 0.75rem;
+  }
+  
+  .org-header {
+    padding-left: 10px;
+    margin-bottom: 0.4rem;
+  }
+  
+  .org-group[open] .org-header {
+    margin-bottom: 0.5rem;
+  }
+  
+  .org-group .post-list {
+    padding-left: 10px;
+  }
+  
+  .org-group .post-list li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .portfolio-link {
+    font-size: 0.75rem;
+  }
+  
+  .portfolio-date {
+    font-size: 0.7rem;
+  }
+  
+  .portfolio-description {
+    font-size: 0.7rem;
+    margin-top: 0.1rem;
+  }
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  .org-header {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .portfolio-link {
+    display: inline-block;
+    padding: 0.25rem 0;
+  }
+}
+
+/* Better text wrapping on small screens */
+@media (max-width: 480px) {
+  .org-header h3, .portfolio-link, .portfolio-date, .portfolio-description {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }
 </style>
