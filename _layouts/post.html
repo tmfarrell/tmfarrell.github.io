@@ -7,40 +7,31 @@ layout: default
   <div class="reading-progress" id="reading-progress"></div>
 </div>
 
-<!-- Smart Back Button -->
+<!-- Back Button -->
 <div class="back-button-container">
   {% if page.categories contains 'reading' %}
-    <a href="{{ site.baseurl }}/reading/">
-      <span class="back-arrow">←</span> Back
-    </a>
+    <a href="{{ '/reading/' | relative_url }}">← Back</a>
   {% elsif page.categories contains 'writing' %}
-    <a href="{{ site.baseurl }}/archive/">
-      <span class="back-arrow">←</span> Back
-    </a>
+    <a href="{{ '/archive/' | relative_url }}">← Back</a>
+  {% else %}
+    <a href="{{ '/' | relative_url }}">← Back</a>
   {% endif %}
 </div>
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  
-  <!-- Post Meta Information -->
+
   <div class="post-meta">
-    <span>{{ page.date | date_to_string }}</span>
+    <span>{{ page.date | date: site.theme_config.date_format }}</span>
     <span class="separator">|</span>
     <span class="reading-time">
       {% assign words = content | strip_html | number_of_words %}
       {% assign reading_time = words | divided_by: 200 %}
-      {% if reading_time == 0 %}
-        1 min read
-      {% else %}
-        {{ reading_time }} min read
-      {% endif %}
+      {% if reading_time == 0 %}1 min read{% else %}{{ reading_time }} min read{% endif %}
     </span>
   </div>
 
-  <!-- Post Content -->
   <article class="post-content">
-    <!-- Table of Contents (for posts with toc enabled) -->
     {% if page.toc %}
     <nav class="toc" id="toc">
       <ul id="toc-list"></ul>
@@ -56,15 +47,15 @@ layout: default
   <h2>Related posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+        <small>{{ post.date | date: site.theme_config.date_format }}</small>
+      </a>
+    </li>
     {% endfor %}
   </ul>
 </div>
 {% endif %}
+
+<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
