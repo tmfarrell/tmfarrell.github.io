@@ -1,21 +1,34 @@
 # Setup
-title:               ''
-tagline:             ''
-description:         'bio/ health x data/ AI <br/> <a href="https://twitter.com/tfarrell01">@tfarrell01</a>'
+title:               Tim Farrell
+tagline:             bio/ health &nbsp; x &nbsp; data/ AI
+description:         bio/ health &nbsp; x &nbsp; data/ AI
 url:                 https://tmfarrell.github.io
-paginate:            5
+baseurl:             ''
+# paginate: 5  # Using show-more pattern; uncomment for index pagination
 permalink:           pretty
 markdown:            kramdown
 
+# Theme
+remote_theme:        riggraz/no-style-please
+
+# Theme config (no-style-please)
+theme_config:
+  appearance:        "light"
+  back_home_text:    ".."
+  date_format:       "%Y-%m"
+  show_description:  false
+  lowercase_titles:  false
+
 # About/contact
 author:
-  name:              ''
+  name:              Tim Farrell
   url:               https://twitter.com/tfarrell01
   email:             tfarrell01@gmail.com
 
-# Gems
+# Plugins
 plugins:
-  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Custom vars
 version:             1.0.0

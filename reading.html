@@ -1,25 +1,21 @@
 ---
 layout: default
-title: Reading
+title: read
 ---
 
-<div class="home">
+<div style="text-align: center;">
+  <h1 style="margin-bottom: 0.3rem; font-size: 2rem;">{{ site.title }}</h1>
+  <p style="margin-top: 0; color: #666;">{{ site.tagline }}</p>
 
-  {% include breadcrumb.html %}
-
-  <ul class="post-list" style="list-style:none; margin-bottom: 10px;">
-    {% for post in site.categories.reading %}
-      <li style="margin-bottom: 8px;">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-        </a>
-        <span class="post-subtitle" style="color: darkgrey;">
-          / {{ post.date | date: "%b %Y" }}
-        </span>
-      </li>
-    {% endfor %}
-  </ul>
-  <!--
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  -->
+  <nav class="tab-nav">
+    <a href="{{ '/reading/' | relative_url }}" class="active">read</a>
+    <span> | </span>
+    <a href="{{ '/' | relative_url }}">write</a>
+    <span> | </span>
+    <a href="{{ '/building/' | relative_url }}">build</a>
+  </nav>
 </div>
+
+<hr data-content="">
+
+{% include post_list.html category="reading" limit=5 show_more=true show_more_url="/reading/archive/" show_more_text="More.." %}

@@ -1,21 +1,30 @@
 ---
 layout: default
-title: Presenting
+title: presenting
 ---
 
-<div class="home">
+<div style="text-align: center;">
+  <h1 style="margin-bottom: 0.25rem; font-size: 2rem;">{{ site.title }}</h1>
+  <p style="margin-top: 0; color: #666;">{{ site.tagline }}</p>
 
-  {% include breadcrumb.html %}
-
-  <h1 class="post-title">&nbsp; &nbsp; presenting</h1>
-  </br>
-
-  <ul class="post-list" style="list-style:none">
-    {% for pdf in site.data.talks %}
-        <li>
-          <span class="post-meta">{{ pdf.date | date: "%b %-d, %Y" }}</span>
-          <a href="{{ pdf.path }}">{{ pdf.description }}</a> 
-        </li>
-    {% endfor %}
-  </ul>
+  <nav class="tab-nav">
+    <a href="{{ '/reading/' | relative_url }}">read</a>
+    <span> | </span>
+    <a href="{{ '/' | relative_url }}">write</a>
+    <span> | </span>
+    <a href="{{ '/building/' | relative_url }}">build</a>
+  </nav>
 </div>
+
+<hr data-content="">
+
+<h2>presenting</h2>
+
+<ul class="post-list" style="list-style:none; padding-left:0;">
+  {% for pdf in site.data.talks %}
+  <li>
+    <span class="post-meta">{{ pdf.date | date: "%b %-d, %Y" }}</span>
+    <a href="{{ pdf.path }}">{{ pdf.description }}</a>
+  </li>
+  {% endfor %}
+</ul>
