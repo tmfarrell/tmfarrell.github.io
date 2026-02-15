@@ -1,0 +1,22 @@
+---
+layout: default
+title: build (all)
+permalink: /building/archive/
+---
+
+<div style="text-align: center;">
+  <h1 style="margin-bottom: 0.25rem; font-size: 2.5rem; font-weight: 400;">{{ site.title }}</h1>
+  <p style="margin-top: 0; color: #666;">{{ site.tagline }}</p>
+
+  <nav class="tab-nav">
+    <a href="{{ '/reading/' | relative_url }}">read</a>
+    <span> | </span>
+    <a href="{{ '/' | relative_url }}">write</a>
+    <span> | </span>
+    <a href="{{ '/building/' | relative_url }}" class="active">build</a>
+  </nav>
+</div>
+
+<hr data-content="">
+
+{% include portfolio_list.html %}

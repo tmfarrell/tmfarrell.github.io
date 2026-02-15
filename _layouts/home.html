@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div style="text-align: center;">
+  <h1 style="margin-bottom: 0.3rem; font-size: 2rem;">{{ site.title }}</h1>
+  <p style="margin-top: 0; color: #666;">{{ site.tagline }}</p>
+
+  <nav class="tab-nav">
+    <a href="{{ '/reading/' | relative_url }}">read</a>
+    <span> | </span>
+    <a href="{{ '/' | relative_url }}" class="active">write</a>
+    <span> | </span>
+    <a href="{{ '/building/' | relative_url }}">build</a>
+  </nav>
+</div>
+
+<hr data-content="">
+
+
+{%- assign writing_posts = site.categories.writing -%}
+{%- if writing_posts.size > 5 -%}
+  {%- assign limit = 5 -%}
+  {%- assign show_more = true -%}
+{%- else -%}
+  {%- assign limit = writing_posts.size -%}
+  {%- assign show_more = false -%}
+{%- endif -%}
+
+{% include post_list.html category="writing" limit=limit show_more=show_more show_more_url="/archive/" show_more_text="More..." %}
+
+{{ content }}

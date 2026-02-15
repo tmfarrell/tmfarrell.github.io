@@ -1,0 +1,24 @@
+{%- assign portfolio = site.data.portfolio | sort: "date" | reverse -%}
+{%- if include.limit and portfolio.size > include.limit -%}
+  {%- assign limit_exceeded = true -%}
+{%- else -%}
+  {%- assign limit_exceeded = false -%}
+{%- endif -%}
+
+{%- if portfolio.size > 0 -%}
+<ul class="portfolio-list" style="list-style:none;">
+  {%- for item in portfolio limit: include.limit -%}
+  <li class="portfolio-list-item">
+    {{- item.date | date: "%Y-%m " -}}
+    {%- if item.link contains "http" -%}
+    <a href="{{ item.link }}"> {{ item.title }}</a>
+    {%- else -%}
+    <a href="{{ item.link | relative_url }}"> {{ item.title }}</a>
+    {%- endif -%}
+  </li>
+  {%- endfor -%}
+  {%- if include.show_more and limit_exceeded -%}
+  <li><a href="{{ include.show_more_url | default: '/building/archive/' | relative_url }}">{{ include.show_more_text | default: "See more..." }}</a></li>
+  {%- endif -%}
+</ul>
+{%- endif -%}
