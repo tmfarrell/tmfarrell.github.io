@@ -12,6 +12,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #313131 !important;
 }
 
+/* Site title font override */
+.site-title {
+  font-family: "Roboto", "PT Sans", Helvetica, Arial, sans-serif !important;
+  /*font-family: "Montserrat", "PT Sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Overpass", "PT Sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Inter", "PT Sans", Helvetica, Arial, sans-serif !important;
+  */ 
+  font-weight: 400;
+  margin-bottom: 0.3rem; 
+  font-size: 2rem; 
+  /*font-variant: small-caps;*/ 
+}
+
 /* Inline and block code - light grey background, black text */
 code {
   background-color: #e8e8e8;
