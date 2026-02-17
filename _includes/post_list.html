@@ -1,0 +1,63 @@
+{%- assign posts = site.categories[include.category] | sort: "date" | reverse -%}
+{%- if include.limit and posts.size > include.limit -%}
+  {%- assign limited_posts = posts | slice: 0, include.limit -%}
+  {%- assign limit_exceeded = true -%}
+{%- else -%}
+  {%- assign limited_posts = posts -%}
+  {%- assign limit_exceeded = false -%}
+{%- endif -%}
+
+{%- if posts.size > 0 -%}
+
+<!-- Filter Toggle Button -->
+<button class="filter-toggle" id="filter-toggle-{{include.category}}">
+  <svg class="filter-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+  </svg>
+</button>
+
+<!-- Filter Container (Hidden by default) -->
+<div class="filter-container" id="filter-container-{{include.category}}">
+  <div class="filter-controls">
+    <div class="tag-cloud" id="tag-cloud-{{include.category}}"></div>
+    <div class="filter-actions">
+      <button id="clear-filter-{{include.category}}">Clear</button>
+    </div>
+  </div>
+</div>
+
+<ul class="post-list" id="post-list-{{include.category}}" data-category="{{include.category}}">
+  {%- for post in limited_posts -%}
+  <li class="post-list-item preview-item" data-tags="{% if post.tags %}{{ post.tags | join: ',' }}{% endif %}" data-date="{{ post.date | date: '%Y-%m-%d' }}">
+    {{ post.date | date: "%Y-%m " }}
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.tags and post.tags.size > 0 %}
+      <span class="post-tags">
+        {% for tag in post.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </span>
+    {% endif %}
+  </li>
+  {%- endfor -%}
+  {%- if limit_exceeded -%}
+    {%- assign remaining_posts = posts | slice: include.limit, posts.size -%}
+    {%- for post in remaining_posts -%}
+    <li class="post-list-item additional-item" data-tags="{% if post.tags %}{{ post.tags | join: ',' }}{% endif %}" data-date="{{ post.date | date: '%Y-%m-%d' }}">
+      {{ post.date | date: "%Y-%m " }}
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.tags and post.tags.size > 0 %}
+        <span class="post-tags">
+          {% for tag in post.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </span>
+      {% endif %}
+    </li>
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if include.show_more and limit_exceeded -%}
+  <li class="show-more-item"><a href="{{ include.show_more_url | relative_url }}">{{ include.show_more_text | default: "See more..." }}</a></li>
+  {%- endif -%}
+</ul>
+{%- endif -%}

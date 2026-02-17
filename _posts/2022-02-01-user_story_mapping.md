@@ -5,6 +5,7 @@ title:  'User Story Mapping'
 date:   2022-02-01 20:00
 categories: reading
 hidden: true
+tags: [design]
 ---
 
 | **Book** | [User Story Mapping: Discover the Whole Story, Build the Right Product](https://www.amazon.com/dp/B094PVB97X) |

@@ -5,6 +5,7 @@ title:  'First Things First'
 date:   2022-03-26 20:00
 categories: reading
 hidden: true
+tags: [business, leadership/ management]
 ---
 
 | **Book** | [First Things First](https://www.amazon.com/dp/B00V1XGKJK) |

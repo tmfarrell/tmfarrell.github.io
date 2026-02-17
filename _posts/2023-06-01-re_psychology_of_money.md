@@ -4,6 +4,7 @@ layout: post
 title:  'The Psychology of Money'
 date:   2023-06-01 08:00
 categories: reading
+tags: [business]
 ---
 
 | **Book** | [The Psychology of Money: Timeless lessons on wealth, greed and happiness](https://www.amazon.com/Psychology-Money-Timeless-lessons-happiness/dp/0857197681) |

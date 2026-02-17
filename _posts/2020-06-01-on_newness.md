@@ -4,6 +4,7 @@ layout: post
 title:  "On Newness"
 date:   2020-06-01 22:25
 categories: writing
+tags: [forecasting]
 ---
 
 ## No News is Good News

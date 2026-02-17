@@ -5,6 +5,7 @@ title:  'Thinking In Systems'
 date:   2024-11-16 08:00
 categories: reading
 hidden: true
+tags: [design, execution]
 ---
 
 | **Book** | [Thinking In Systems](https://www.amazon.com/dp/B005VSRFEA) |

@@ -4,6 +4,7 @@ layout: post
 title:  "Generalizing Biology/ Medicine"
 date:   2018-01-14 20:00 
 categories: writing
+tags: [bio/ health]
 ---
 
 ## Specificity and Biology

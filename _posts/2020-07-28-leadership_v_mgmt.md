@@ -4,6 +4,7 @@ layout: post
 title:  "Leadership and Management"
 date:   2020-07-28 07:00
 categories: writing
+tags: [leadership/ management]
 ---
 
 Much ink has been spilled over the relationship or dichotomy between management and leadership. But even still there are managers and leaders who don’t appreciate the difference or haven’t taken the time to.

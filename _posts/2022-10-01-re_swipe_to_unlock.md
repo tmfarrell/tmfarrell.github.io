@@ -4,6 +4,7 @@ layout: post
 title:  'Swipe to Unlock'
 date:   2022-10-01 08:00
 categories: reading
+tags: [business, product]
 ---
 
 | **Book** | [Swipe to Unlock: The Primer on Technology and Business Strategy](https://www.amazon.com/Swipe-Unlock-Technology-Business-Strategy-ebook/dp/B0756MTX6K) |

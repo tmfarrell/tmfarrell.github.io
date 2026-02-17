@@ -5,6 +5,7 @@ title:  'High Output Management'
 date:   2021-09-16 20:00
 categories: reading
 hidden: true
+tags: [business, leadership/ management]
 ---
 
 | **Book** | [High Output Management](https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884) |

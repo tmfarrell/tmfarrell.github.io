@@ -5,6 +5,7 @@ title:  'The Effective Executive'
 date:   2024-06-02 20:00
 categories: reading
 hidden: true
+tags: [business, leadership/ management]
 ---
 
 | **Book** | [The Effective Executive: The Definitive Guide to Getting the Right Things Done](https://www.amazon.com/The-Effective-Executive-audiobook/dp/B01N51TCT1/ref=sr_1_1?crid=2BLPZ26ZRXHX3&dib=eyJ2IjoiMSJ9.XMVlbcF1hskqkRCiT4_k4iW0Rd5Szga_lfhNmvxwqgylU7PaRRTXQLCxsYY1-sZkLIvM4lQIdTVsB5LmU0x29fu8yKEATsJZB2JQaYCm-tkNFsSP5u1vQNezV-Qqsco-JUG6ZCwigS3DaEhmon-1QMCQAhCjFy3ogBvwdsLbZ75y9iaEJamhFlZvigcORifPuvobYNV7F5MoniBqCWL6g3ZNYOihaKZKXqD6Ed1d7Zo.UxvYQqXyKWcKKOJQMpECZCffRzVcp6GA9y5gGsVGK-8&dib_tag=se&keywords=effective+executive+peter+drucker&qid=1730515097&s=books&sprefix=effective+exe%2Cstripbooks%2C94&sr=1-1) |

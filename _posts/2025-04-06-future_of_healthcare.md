@@ -4,6 +4,7 @@ layout: post
 title:  "The Future of Healthcare is Predictive"
 date:   2025-04-06 07:00
 categories: writing
+tags: [bio/ health, strategy, forecasting]
 ---
 
 Bio/ healthtech is notoriously a volatile and uncertain industry. 

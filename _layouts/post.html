@@ -50,8 +50,8 @@ layout: default
     <li>
       <a href="{{ post.url | relative_url }}">
         {{ post.title }}
-        <small>{{ post.date | date: site.theme_config.date_format }}</small>
-      </a>
+      </a> &nbsp;
+      <span style="color: grey"><small>{{ post.date | date: site.theme_config.date_format }}</small></span>
     </li>
     {% endfor %}
   </ul>
