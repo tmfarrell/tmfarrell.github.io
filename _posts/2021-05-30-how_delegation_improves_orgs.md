@@ -6,7 +6,7 @@ date:   2021-05-30 08:00
 categories: 
 ---
 
-It's pretty incredible how little leaders in civilian organization delegate. Down right criminally low. 
+It's pretty incredible how little leaders in civilian organization delegate. Down right criminal. 
 
 Delegation is the parallelism of 
 

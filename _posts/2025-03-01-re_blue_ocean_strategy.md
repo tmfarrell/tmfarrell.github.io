@@ -4,6 +4,7 @@ title:  'Blue Ocean Strategy'
 date:   2025-03-01 10:00
 categories: reading
 hidden: true
+tags: [business, strategy]
 ---
 
 | **Title** | [Blue Ocean Strategy](https://www.amazon.com/Blue-Ocean-Strategy-Expanded-Uncontested/dp/1625274491) |

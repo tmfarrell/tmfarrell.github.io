@@ -4,6 +4,7 @@ layout: post
 title: 'The Central Dogma of AI'
 date: 2026-01-05 08:00
 categories: writing
+tags: [AI/ ML, data/ analytics, strategy, forecasting]
 ---
 
 ## Being Data-Pilled

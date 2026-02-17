@@ -4,6 +4,7 @@ layout: post
 title:  "Data is Not Oil or Butter, It's Footage"
 date:   2024-02-24 08:00
 categories: writing
+tags: [data/ analytics, product]
 ---
 
 Data is footage.

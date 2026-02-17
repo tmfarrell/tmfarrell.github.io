@@ -18,8 +18,7 @@ it still seems uncompelling.
 
 He had a few other arguments for why innovation > globalization, but I don't recall
 him giving a simple, clear argument that was obviously true.  To be clear, 
-I think he is right.  It does seem that innovation is more important than 
-globalization, but I'm not exactly sure why.   
+I do think he's right.  It does seem that innovation is more important than globalization, but I guess I'm not sure why.   
 
 ## A Rough Estimate  
 

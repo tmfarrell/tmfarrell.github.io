@@ -4,6 +4,7 @@ layout: post
 title:  "A Measure of Physiological/ Performance Measures"
 date:   2017-04-28 18:00 
 categories: writing
+tags: [bio/ health]
 ---
 
 Recently read [this piece](http://waitbutwhy.com/2017/04/neuralink.html) on Elon Musk's 

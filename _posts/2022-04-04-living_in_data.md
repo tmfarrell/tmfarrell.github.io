@@ -5,6 +5,7 @@ title:  'Living in Data'
 date:   2022-04-04 22:26
 categories: reading
 hidden: true
+tags: [data/ analytics]
 ---
 
 | **Book** | [Living in Data: A Citizen's Guide to a Better Information Future](https://www.amazon.com/Living-Data-Citizens-Better-Information/dp/0374189900) |

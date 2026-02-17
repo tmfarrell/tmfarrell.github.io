@@ -5,6 +5,7 @@ title:  'Continuous Discovery Habits'
 date:   2024-03-21 20:00
 categories: reading
 hidden: true
+tags: [design, product, execution]
 ---
 
 | **Book** | [Continuous Discovery Habits: Discover Products that Create Customer Value and Business Value](https://www.amazon.com/dp/B094PVB97X) |

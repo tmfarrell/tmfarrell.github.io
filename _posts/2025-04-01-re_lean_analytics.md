@@ -4,6 +4,7 @@ title:  'Lean Analytics'
 date:   2025-04-01 10:00
 categories: reading
 hidden: true
+tags: [product, data/ analytics, strategy]
 ---
 
 | **Title** | [Lean Analytics](https://www.amazon.com/Lean-Analytics-Better-Startup-Faster/dp/1449335675) |
