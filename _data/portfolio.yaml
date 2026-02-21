@@ -1,10 +1,10 @@
-- id: om1-2
-  title: "PhenOM Patient Risk Panel"
+- id: om1-4
+  title: "PhenOM API"
   org: OM1
-  description: "Application for providers/ health plans to more effectively triage patients using clinical risks predicted from medical history"
-  link:  /assets/pdf/phenom_risk_panel.pdf
-  date: 2025-07-01
-  tags: [healthtech, AI/ ML, real-world data]
+  description: "API that allows payers and health systems to predict risk, screen patients and triage across a wide range of clinical outcomes"
+  link:  https://phenom-docs.om1.com/
+  date: 2026-01-01
+  tags: [healthtech, AI/ ML, real-world data, platform]
 - id: om1-3
   title: "Enrichment Copilot"
   org: OM1
@@ -12,6 +12,13 @@
   link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
   date: 2025-06-01
   tags: [platform, AI/ ML, real-world data]
+- id: om1-2
+  title: "Patient Risk Panel"
+  org: OM1
+  description: "Application for providers/ health plans to more effectively triage patients using clinical risks predicted from medical history"
+  link:  /assets/pdf/phenom_risk_panel.pdf
+  date: 2025-01-01
+  tags: [healthtech, AI/ ML, real-world data]
 - id: om1-1
   title: "Insights Platform"
   org: OM1
