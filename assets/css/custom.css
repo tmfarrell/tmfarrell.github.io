@@ -595,3 +595,40 @@ ul.post-list,
     margin: 0 auto;
   }
 }
+
+/* Mobile: Center post/portfolio lists with consistent margins */
+@media (max-width: 768px) {
+  /* Minimal container padding */
+  .w {
+    padding: 1.25rem 0.5rem;
+  }
+  
+  /* Center and space list content evenly */
+  .w > ul {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    max-width: calc(100% - 1rem); /* Leave small margin on sides */
+    text-align: center;
+  }
+  
+  /* Center list items with consistent spacing */
+  .w > ul li,
+  .post-list-item,
+  .portfolio-list-item {
+    text-align: left;
+    margin: 0.3rem auto;
+    padding: 0;
+    padding-left: 20px; 
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .w {
+    padding: 2rem 0.25rem; /* Very minimal side padding */
+  }
+  
+  .w > ul {
+    max-width: calc(100% - 0.5rem);
+  }
+}

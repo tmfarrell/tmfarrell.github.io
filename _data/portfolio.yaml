@@ -39,14 +39,14 @@
   description: "Large database for antibiotic susceptibility prediction from genomic data"
   link: /assets/pdf/microhmdb.pdf
   date: 2020-01-01
-  tags: [genomics, AI/ ML, biotech]
+  tags: [genomics, AI/ ML, platform, biotech]
 - id: broad-1
   title: "Scalable pipelines for malaria genomics"
   org: Broad Institute of Harvard and MIT
   description: "Fast data processing and analysis pipelines for malarial genomics"
   link: https://github.com/tmfarrell/broad_malaria_firecloud
   date: 2018-08-01
-  tags: [genomics, research, data/ analytics]
+  tags: [genomics, research, data/ analytics, platform]
 - id: broad-0
   title: "Amplicon error correction for malaria genomics"
   org: Broad Institute of Harvard and MIT
