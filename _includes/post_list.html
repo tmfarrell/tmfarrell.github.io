@@ -29,23 +29,11 @@
 <ul class="post-list" id="post-list-{{include.category}}" data-category="{{include.category}}">
   {%- for post in limited_posts -%}
   <li class="post-list-item preview-item" data-tags="{% if post.tags %}{{ post.tags | join: ',' }}{% endif %}" data-date="{{ post.date | date: '%Y-%m-%d' }}">
-    {{ post.date | date: "%Y-%m " }}
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    {% if post.tags and post.tags.size > 0 %}
-      <span class="post-tags">
-        {% for tag in post.tags %}
-          <span class="tag">{{ tag }}</span>
-        {% endfor %}
+    <div class="post-item-header">
+      <span class="post-date">{{ post.date | date: "%Y-%m " }}</span>
+      <span class="post-title-section">
+        <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
       </span>
-    {% endif %}
-  </li>
-  {%- endfor -%}
-  {%- if limit_exceeded -%}
-    {%- assign remaining_posts = posts | slice: include.limit, posts.size -%}
-    {%- for post in remaining_posts -%}
-    <li class="post-list-item additional-item" data-tags="{% if post.tags %}{{ post.tags | join: ',' }}{% endif %}" data-date="{{ post.date | date: '%Y-%m-%d' }}">
-      {{ post.date | date: "%Y-%m " }}
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       {% if post.tags and post.tags.size > 0 %}
         <span class="post-tags">
           {% for tag in post.tags %}
@@ -53,6 +41,26 @@
           {% endfor %}
         </span>
       {% endif %}
+    </div>
+  </li>
+  {%- endfor -%}
+  {%- if limit_exceeded -%}
+    {%- assign remaining_posts = posts | slice: include.limit, posts.size -%}
+    {%- for post in remaining_posts -%}
+    <li class="post-list-item additional-item" data-tags="{% if post.tags %}{{ post.tags | join: ',' }}{% endif %}" data-date="{{ post.date | date: '%Y-%m-%d' }}">
+      <div class="post-item-header">
+        <span class="post-date">{{ post.date | date: "%Y-%m " }}</span>
+        <span class="post-title-section">
+          <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
+        </span>
+        {% if post.tags and post.tags.size > 0 %}
+          <span class="post-tags">
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </div>
     </li>
     {%- endfor -%}
   {%- endif -%}

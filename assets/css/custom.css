@@ -338,8 +338,10 @@ ul.post-list,
   color: #8c8c8c;
 }
 
-/* Show tags only when filtering is active */
-.filtering-active .post-tags {
+/* Show tags when filtering is active OR when portfolio item is expanded OR always for post items */
+.filtering-active .post-tags,
+.portfolio-item-header[aria-expanded="true"] .post-tags,
+.post-item-header .post-tags {
   display: inline;
 }
 
@@ -399,6 +401,91 @@ ul.post-list,
 .post-content h2 {
   margin-top: 1.75rem;
 }
+
+/* Portfolio and Post List Styles */
+.portfolio-item-header,
+.post-item-header {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  outline: none;
+}
+
+.portfolio-item-header {
+  cursor: pointer;
+}
+
+.portfolio-item-header:hover {
+  background-color: #f8f8f8;
+}
+
+.portfolio-item-header:focus {
+  /*outline: 2px solid #ac4142;
+  outline-offset: -2px; */ 
+  background-color: #f8f8f8;
+}
+
+.portfolio-item-header[aria-expanded="true"] {
+  background-color: #f8f8f8;
+}
+
+.portfolio-date,
+.post-date {
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+.portfolio-title-section,
+.post-title-section {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.portfolio-link,
+.post-link {
+  /* Ensure link doesn't expand click area */
+  display: inline;
+}
+
+/* Expandable content */
+.portfolio-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.15s ease-out, padding 0.15s ease-out;
+  background-color: #fafafa;
+  border-radius: 0 0 4px 4px;
+}
+
+.portfolio-item-content[aria-hidden="false"] {
+  max-height: 200px; /* Adjust based on content needs */
+  padding: 1rem;
+}
+
+.portfolio-details {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.portfolio-org,
+.portfolio-description {
+  margin-bottom: 0.75rem;
+}
+
+.portfolio-org:last-child,
+.portfolio-description:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-org strong,
+.portfolio-description strong {
+  color: #333;
+  font-weight: 600;
+}
+
+
 
 
 /* Mobile responsive */
@@ -501,6 +588,28 @@ ul.post-list,
   /* Spacing adjustments */
   .w {
     padding: 1.25rem;
+  }
+
+  /* Portfolio and post expansion mobile styles */
+  .portfolio-item-header,
+  .post-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  
+  .portfolio-title-section,
+  .post-title-section {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .portfolio-item-content[aria-hidden="false"] {
+    padding: 0.75rem;
+  }
+  
+  .portfolio-details {
+    font-size: 0.85rem;
   }
 }
 
@@ -634,5 +743,10 @@ ul.post-list,
   
   .w > ul {
     max-width: calc(100% - 0.5rem);
+  }
+
+  /* Portfolio expansion small mobile styles */
+  .portfolio-item-content[aria-hidden="false"] {
+    max-height: 250px; /* More space for smaller screens */
   }
 }
