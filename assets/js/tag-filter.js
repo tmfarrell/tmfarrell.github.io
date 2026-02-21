@@ -213,6 +213,73 @@ class TagFilter {
   }
 }
 
+// Portfolio Expander Class
+class PortfolioExpander {
+  constructor() {
+    this.init();
+  }
+
+  init() {
+    this.bindEvents();
+  }
+
+  bindEvents() {
+    // Handle clicks on portfolio item headers
+    document.addEventListener('click', (e) => {
+      const header = e.target.closest('.portfolio-item-header');
+      if (header) {
+        this.toggleExpansion(header);
+      }
+    });
+
+    // Handle keyboard navigation (Enter and Space)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        const header = e.target.closest('.portfolio-item-header');
+        if (header) {
+          e.preventDefault();
+          this.toggleExpansion(header);
+        }
+      }
+    });
+  }
+
+  toggleExpansion(header) {
+    const content = header.nextElementSibling;
+    const isExpanded = header.getAttribute('aria-expanded') === 'true';
+    
+    if (isExpanded) {
+      this.collapseItem(header, content);
+    } else {
+      this.expandItem(header, content);
+    }
+  }
+
+  expandItem(header, content) {
+    // Update ARIA attributes
+    header.setAttribute('aria-expanded', 'true');
+    content.setAttribute('aria-hidden', 'false');
+    
+    // Add visual feedback
+    header.classList.add('expanded');
+    
+    // Focus management - keep focus on header for keyboard users
+    header.focus();
+  }
+
+  collapseItem(header, content) {
+    // Update ARIA attributes
+    header.setAttribute('aria-expanded', 'false');
+    content.setAttribute('aria-hidden', 'true');
+    
+    // Remove visual feedback
+    header.classList.remove('expanded');
+    
+    // Focus management
+    header.focus();
+  }
+}
+
 // Initialize filters when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
   // Check which page we're on and initialize appropriate filter
@@ -226,5 +293,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (document.getElementById('filter-toggle-portfolio')) {
     new TagFilter('portfolio');
+  }
+
+  // Initialize portfolio expander
+  if (document.querySelector('.portfolio-list')) {
+    new PortfolioExpander();
   }
 });

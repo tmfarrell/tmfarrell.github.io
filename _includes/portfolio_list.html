@@ -28,32 +28,18 @@
 
 <ul class="portfolio-list" style="list-style:none;" id="portfolio-list" data-category="portfolio">
   {%- for item in limited_portfolio -%}
-  <li class="portfolio-list-item preview-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}">
-    {{ item.date | date: "%Y-%m " }}
-    {%- if item.link contains "http" -%}
-    <a href="{{ item.link }}"> {{ item.title }}</a>
-    {%- else -%}
-    <a href="{{ item.link | relative_url }}"> {{ item.title }}</a>
-    {%- endif -%}
-    {% if item.tags and item.tags.size > 0 %}
-      <span class="post-tags">
-        {% for tag in item.tags %}
-          <span class="tag">{{ tag }}</span>
-        {% endfor %}
+  <li class="portfolio-list-item preview-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}" data-portfolio-id="{{ item.id }}">
+    
+    <!-- Main portfolio item row - expandable area -->
+    <div class="portfolio-item-header" role="button" tabindex="0" aria-expanded="false">
+      <span class="portfolio-date">{{ item.date | date: "%Y-%m " }}</span>
+      <span class="portfolio-title-section">
+        {%- if item.link contains "http" -%}
+        <a href="{{ item.link }}" class="portfolio-link" onclick="event.stopPropagation()">{{ item.title }}</a>
+        {%- else -%}
+        <a href="{{ item.link | relative_url }}" class="portfolio-link" onclick="event.stopPropagation()">{{ item.title }}</a>
+        {%- endif -%}
       </span>
-    {% endif %}
-  </li>
-  {%- endfor -%}
-  {%- if limit_exceeded -%}
-    {%- assign remaining_portfolio = portfolio | slice: include.limit, portfolio.size -%}
-    {%- for item in remaining_portfolio -%}
-    <li class="portfolio-list-item additional-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}">
-      {{ item.date | date: "%Y-%m " }}
-      {%- if item.link contains "http" -%}
-      <a href="{{ item.link }}"> {{ item.title }}</a>
-      {%- else -%}
-      <a href="{{ item.link | relative_url }}"> {{ item.title }}</a>
-      {%- endif -%}
       {% if item.tags and item.tags.size > 0 %}
         <span class="post-tags">
           {% for tag in item.tags %}
@@ -61,6 +47,52 @@
           {% endfor %}
         </span>
       {% endif %}
+    </div>
+
+    <!-- Expandable content area -->
+    <div class="portfolio-item-content" aria-hidden="true">
+      <div class="portfolio-details">
+        <div class="portfolio-description">
+          {{ item.description }}
+        </div>
+
+      </div>
+    </div>
+  </li>
+  {%- endfor -%}
+  {%- if limit_exceeded -%}
+    {%- assign remaining_portfolio = portfolio | slice: include.limit, portfolio.size -%}
+    {%- for item in remaining_portfolio -%}
+    <li class="portfolio-list-item additional-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}" data-portfolio-id="{{ item.id }}">
+      
+      <!-- Main portfolio item row - expandable area -->
+      <div class="portfolio-item-header" role="button" tabindex="0" aria-expanded="false">
+        <span class="portfolio-date">{{ item.date | date: "%Y-%m " }}</span>
+        <span class="portfolio-title-section">
+          {%- if item.link contains "http" -%}
+          <a href="{{ item.link }}" class="portfolio-link" onclick="event.stopPropagation()">{{ item.title }}</a>
+          {%- else -%}
+          <a href="{{ item.link | relative_url }}" class="portfolio-link" onclick="event.stopPropagation()">{{ item.title }}</a>
+          {%- endif -%}
+        </span>
+        {% if item.tags and item.tags.size > 0 %}
+          <span class="post-tags">
+            {% for tag in item.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </div>
+
+      <!-- Expandable content area -->
+      <div class="portfolio-item-content" aria-hidden="true">
+        <div class="portfolio-details">
+          <div class="portfolio-description">
+            {{ item.description }}
+          </div>
+
+        </div>
+      </div>
     </li>
     {%- endfor -%}
   {%- endif -%}

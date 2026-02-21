@@ -1,6 +1,7 @@
 - id: om1-4
   title: "PhenOM API"
   org: OM1
+  org_link: https://www.om1.com
   description: "API that allows payers and health systems to predict risk, screen patients and triage across a wide range of clinical outcomes"
   link:  https://phenom-docs.om1.com/
   date: 2026-01-01
@@ -8,6 +9,7 @@
 - id: om1-3
   title: "Enrichment Copilot"
   org: OM1
+  org_link: https://www.om1.com
   description: "Agentic application to accelerate unstructured data search, extraction and enrichment"
   link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
   date: 2025-06-01
@@ -15,6 +17,7 @@
 - id: om1-2
   title: "Patient Risk Panel"
   org: OM1
+  org_link: https://www.om1.com
   description: "Application for providers/ health plans to more effectively triage patients using clinical risks predicted from medical history"
   link:  /assets/pdf/phenom_risk_panel.pdf
   date: 2025-01-01
@@ -22,6 +25,7 @@
 - id: om1-1
   title: "Insights Platform"
   org: OM1
+  org_link: https://www.om1.com
   description: "Digital platform for epidemiologists/ analysts to more rapidly analyze and generate evidence from real-world healthcare datasets"
   link:  /assets/pdf/insights_platform.pdf
   date: 2024-11-01
@@ -29,6 +33,7 @@
 - id: om1-0
   title: "Data Studio"
   org: OM1
+  org_link: https://www.om1.com
   description: "Browser-native, notebook-based data analysis environment (partnership with Hex)"
   link:  /assets/pdf/om1_data_studio.pdf
   date: 2024-02-01
@@ -36,6 +41,7 @@
 - id: dzd-1
   title: "epiXact"
   org: Day Zero Diagnostics (DZD)
+  org_link: http://www.dayzerodiagnostics.com/
   description: "Outbreak detection service for hospital systems"
   link: /assets/pdf/epixact.pdf
   date: 2020-11-01
@@ -43,6 +49,7 @@
 - id: dzd-0
   title: "MicrohmDB"
   org: Day Zero Diagnostics (DZD)
+  org_link: http://www.dayzerodiagnostics.com/
   description: "Large database for antibiotic susceptibility prediction from genomic data"
   link: /assets/pdf/microhmdb.pdf
   date: 2020-01-01
@@ -50,6 +57,7 @@
 - id: broad-1
   title: "Scalable pipelines for malaria genomics"
   org: Broad Institute of Harvard and MIT
+  org_link: https://www.broadinstitute.org/
   description: "Fast data processing and analysis pipelines for malarial genomics"
   link: https://github.com/tmfarrell/broad_malaria_firecloud
   date: 2018-08-01
@@ -57,13 +65,13 @@
 - id: broad-0
   title: "Amplicon error correction for malaria genomics"
   org: Broad Institute of Harvard and MIT
+  org_link: https://www.broadinstitute.org/
   description: "Research project on improving amplicon sequencing error correction to support a phase VI clinical trial for malaria vaccine"
   link: /assets/pdf/20180801-Malaria_amplicon_error_correction.pdf
   date: 2018-03-01
   tags: [genomics, research]
 - id: personal-1
   title: "ML for nuclei detection"
-  org: Side Projects
   description: "Data science competition project on applying Mask-RCNN to nuclei detection in cellular imaging"
   link: https://github.com/tmfarrell/data-science-bowl-2018
   date: 2018-02-01
@@ -85,6 +93,7 @@
 - id: neb-1
   title: "ONT sequencing data pipeline"
   org: New England Biolabs (NEB)
+  org_link: https://www.neb.com/en-us
   description: "Data processing and analysis pipeline for ONT sequencing data"
   link: https://github.com/tmfarrell/ont_dap
   date: 2015-09-01
@@ -92,6 +101,7 @@
 - id: neb-0
   title: "Error correction for ONT sequencing data"
   org: New England Biolabs (NEB)
+  org_link: https://www.neb.com/en-us
   description: "Research project on developing error mitigation techniques for ONT sequencing data (completed as part of paid internship)"
   link: /assets/pdf/20150804-NEB_Intership_Talk.pdf
   date: 2015-08-04
