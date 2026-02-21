@@ -69,6 +69,10 @@ a:focus {
   transition: width 0.2s ease-out;
 }
 
+blockquote {
+  border: none; 
+}
+
 /* Post Meta */
 .post-meta {
   color: #9a9a9a;
