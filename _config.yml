@@ -32,3 +32,9 @@ plugins:
 
 # Custom vars
 version:             1.0.0
+
+exclude: [
+  "docs/", ".well-known/", ".github/",  "indexer/", ".claude/", ".cursor/", "scripts/",
+   ".env", "README.md", "LICENSE.md", "Makefile", "_data/talks.yaml", "_data/analyses.yaml", 
+   "tmfarrell-github-io.conda_env.yml", "opencode.json",  "token.json"
+]
