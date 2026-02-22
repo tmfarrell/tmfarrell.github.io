@@ -338,10 +338,9 @@ ul.post-list,
   color: #8c8c8c;
 }
 
-/* Show tags when filtering is active OR when portfolio item is expanded OR always for post items */
+/* Show tags when filtering is active OR when portfolio item is expanded */
 .filtering-active .post-tags,
-.portfolio-item-header[aria-expanded="true"] .post-tags,
-.post-item-header .post-tags {
+.portfolio-item-header[aria-expanded="true"] .post-tags {
   display: inline;
 }
 
@@ -505,6 +504,23 @@ ul.post-list,
     font-size: 1.3rem; /* Increased from 1.2rem */
   }
 
+  /* Post pages - add comfortable padding on mobile */
+  .post {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  .post-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Back button container - align with post padding */
+  .back-button-container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   /* Tab navigation */
   .tab-nav {
     margin: 1rem 0;
@@ -650,6 +666,18 @@ ul.post-list,
   
   body {
     font-size: 0.8rem; /* Increased from 0.85rem */
+  }
+
+  /* Post pages - maintain padding on small mobile */
+  .post {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Back button container - align with post padding on small mobile */
+  .back-button-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .tab-nav a {
