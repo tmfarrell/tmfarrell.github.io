@@ -527,7 +527,12 @@ ul.post-list,
   }
   
   .tab-nav a {
-    font-size: 0.95rem; /* Increased from 0.9rem */
+    font-size: 1rem; /* Increased from 0.9rem */
+    margin: 0 0.3rem;
+  }
+
+  .site-footer a {
+    font-size: 1rem; /* Increased from 0.9rem */
     margin: 0 0.3rem;
   }
 
@@ -645,7 +650,11 @@ ul.post-list,
   }
 
   .tab-nav a {
-    font-size: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .site-footer a {
+    font-size: 1.05rem;
   }
 
   .tag-cloud .tag-button {
@@ -681,7 +690,11 @@ ul.post-list,
   }
 
   .tab-nav a {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .site-footer a {
+    font-size: 0.95rem;
   }
 
   .post-list-item,

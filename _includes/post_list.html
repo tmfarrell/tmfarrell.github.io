@@ -65,7 +65,7 @@
     {%- endfor -%}
   {%- endif -%}
   {%- if include.show_more and limit_exceeded -%}
-  <li class="show-more-item"><a href="{{ include.show_more_url | relative_url }}">{{ include.show_more_text | default: "See more..." }}</a></li>
+  <li class="post-list-item"><a href="{{ include.show_more_url | relative_url }}">{{ include.show_more_text | default: "More..." }}</a></li>
   {%- endif -%}
 </ul>
 {%- endif -%}
