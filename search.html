@@ -1,0 +1,38 @@
+---
+layout: default
+title: AI-Powered Search
+permalink: /search/
+---
+
+<div class="search-page">
+  <div class="back-button-container">
+    <a href="{{ '/' | relative_url }}" class="back-button">← Back to Home</a>
+  </div>
+  
+  <div class="search-container">
+    <h1>Ask About My Writing</h1>
+    <p class="search-description">Search through all my posts using natural language. Ask questions like "What did you write about product management?" or "Tell me about data science."</p>
+    
+    <form id="search-form" class="search-form">
+      <div class="search-input-container">
+        <input 
+          type="text" 
+          id="search-query" 
+          placeholder="What would you like to know about?"
+          maxlength="200"
+          required
+        />
+        <button type="submit" id="search-btn" class="search-btn">
+          <span class="search-btn-text">Search</span>
+          <span class="search-btn-loading" style="display: none;">Searching...</span>
+        </button>
+      </div>
+    </form>
+    
+    <div id="query-counter" class="query-counter"></div>
+    
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/search.js' | relative_url }}"></script>
