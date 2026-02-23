@@ -15,7 +15,7 @@ class JekyllPineconeIndexer {
     // Configuration
     this.contentPath = process.env.CONTENT_PATH || '../_site/content.json';
     this.contentUrl = process.env.CONTENT_URL || 'https://tmfarrell.github.io/content.json';
-    this.namespace = process.env.PINECONE_NAMESPACE || 'jekyll-blog';
+    this.namespace = process.env.PINECONE_NAMESPACE || '__default__';
   }
 
   /**

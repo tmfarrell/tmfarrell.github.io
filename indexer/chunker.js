@@ -3,7 +3,7 @@ const { encoding_for_model } = require('tiktoken');
 class TextChunker {
   constructor() {
     this.encoding = encoding_for_model('text-embedding-3-small');
-    this.maxTokens = 800;
+    this.maxTokens = 1000;
     this.minTokens = 500;
     this.overlap = 100;
   }
@@ -85,14 +85,26 @@ class TextChunker {
    * Create a chunk object with metadata
    */
   createChunk(content, title, url, index, originalMetadata = {}) {
+    // Extract category and tags for searchable text
+    const { category, tags, ...metaWithoutCategoryTags } = originalMetadata;
+    
+    // Build searchable content with category and tags prepended to each chunk
+    let searchableContent = content;
+    if (category) {
+      searchableContent = `[Category: ${category}] ${searchableContent}`;
+    }
+    if (tags && Array.isArray(tags) && tags.length > 0) {
+      searchableContent = `[Tags: ${tags.join(', ')}] ${searchableContent}`;
+    }
+
     // Create deterministic ID
     const slug = this.createSlug(title, url);
     const id = `${slug}_chunk_${index}`;
     
     // Create content excerpt (first 150 characters)
-    const excerpt = content.length > 150 
-      ? content.substring(0, 147) + '...'
-      : content;
+    const excerpt = searchableContent.length > 150 
+      ? searchableContent.substring(0, 147) + '...'
+      : searchableContent;
 
     // Filter out null/undefined values from metadata
     const cleanMetadata = this.filterNullValues({
@@ -100,14 +112,14 @@ class TextChunker {
       url,
       content_excerpt: excerpt,
       chunk_index: index,
-      token_count: this.countTokens(content),
+      token_count: this.countTokens(searchableContent),
       // Include all original metadata from content.json
       ...originalMetadata
     });
 
     return {
       id,
-      content,
+      content: searchableContent,
       metadata: cleanMetadata
     };
   }
@@ -158,7 +170,7 @@ class TextChunker {
       // Extract original metadata (exclude title, url, content as they're handled separately)
       const { title, url, content, ...originalMetadata } = post;
       
-      const chunks = this.chunkText(post.content, post.title, post.url, originalMetadata);
+      const chunks = this.chunkText(content, post.title, post.url, originalMetadata);
       allChunks.push(...chunks);
     }
 
