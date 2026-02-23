@@ -2,11 +2,40 @@ class SemanticSearch {
     constructor() {
         this.maxQueriesPerDay = 3;
         this.apiBaseUrl = 'https://api-tmfarrell.netlify.app';
+        this.useMockData = new URLSearchParams(window.location.search).get('mock') === 'true';
         this.init();
     }
 
+    getMockResults() {
+        return [
+            {
+                url: '/writing/some-post/',
+                title: 'How I Built My Personal Website',
+                date: '2024-01-15',
+                category: 'writing',
+                score: 0.92,
+                excerpt: 'A deep dive into the technical decisions behind building this site using Jekyll and GitHub Pages. I cover the design system, performance optimizations, and deployment workflow.'
+            },
+            {
+                url: '/building/fib/',
+                title: 'Side Project: futurein.bio',
+                date: '2023-09-05',
+                category: 'building',
+                score: 0.81,
+                excerpt: 'A weekly visual newsletter on bio/ health and tech/ AI'
+            },
+            {
+                url: '/writing/another-post/',
+                title: 'Another Post: Title  Here',
+                date: '2024-02-01',
+                category: 'writing',
+                score: 0.75,
+                excerpt: 'Some example text here'
+            }
+        ];
+    }
+
     init() {
-        this.updateQueryCounter();
         const form = document.getElementById('search-form');
         if (form) {
             form.addEventListener('submit', (e) => this.handleSearch(e));
@@ -36,6 +65,12 @@ class SemanticSearch {
         const queryData = this.getQueryCount();
         queryData.count += 1;
         localStorage.setItem('search_queries', JSON.stringify(queryData));
+        
+        const counterEl = document.getElementById('query-counter');
+        if (counterEl) {
+            counterEl.classList.remove('hidden');
+        }
+        
         this.updateQueryCounter();
     }
 
@@ -59,8 +94,8 @@ class SemanticSearch {
         e.preventDefault();
         
         const { count } = this.getQueryCount();
-        if (count >= this.maxQueriesPerDay) {
-            this.showError("You've hit your limit for the day. Please email tfarrell01@gmail.com with any other questions you might have!");
+        if (count >= this.maxQueriesPerDay && !this.useMockData) {
+            this.showError("You've hit your limit for the day. Feel free to email tfarrell01@gmail.com with any other questions you might have!");
             return;
         }
 
@@ -69,6 +104,14 @@ class SemanticSearch {
 
         this.setLoading(true);
         this.clearResults();
+        
+        if (this.useMockData) {
+            this.incrementQueryCount();
+            await new Promise(resolve => setTimeout(resolve, 500));
+            this.displayResults(this.getMockResults(), query);
+            this.setLoading(false);
+            return;
+        }
         
         try {
             const response = await fetch(`${this.apiBaseUrl}/.netlify/functions/search`, {
@@ -88,7 +131,7 @@ class SemanticSearch {
 
             if (!response.ok) {
                 if (response.status === 429) {
-                    this.showError("Too many users have been using this feature and we've hit the limit of our free-tier backend services! Please take a break and try this feature again soon, or email tfarrell01@gmail.com with any other questions you might have.");
+                    this.showError("Too many users have been using this feature and we've hit the limit of our free-tier backend service! Please take a break and try this feature again soon, or email tfarrell01@gmail.com with other questions you might have.");
                 } else {
                     this.showError(data.message || data.error || 'An error occurred while searching.');
                 }

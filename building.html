@@ -3,17 +3,23 @@ layout: default
 title: build
 ---
 
-<div style="text-align: center;">
-  <h1 class="site-title" style="margin-bottom: 0.3rem;">{{ site.title }}</h1>
-  <p style="margin-top: 0; color: #666;">{{ site.tagline }}</p>
+<div class="header-container">
+  <div class="ai-mode-container">
+    <a href="{{ '/search/' | relative_url }}" class="ai-mode-btn">AI Mode</a>
+  </div>
+  
+  <div style="text-align: center;">
+    <h1 class="site-title" style="margin-bottom: 0.3rem;">{{ site.title }}</h1>
+    <p style="margin-top: 0; color: #666;">{{ site.tagline }}</p>
 
-  <nav class="tab-nav">
-    <a href="{{ '/reading/' | relative_url }}">read</a>
-    <span> | </span>
-    <a href="{{ '/' | relative_url }}">write</a>
-    <span> | </span>
-    <a href="{{ '/building/' | relative_url }}" class="active">build</a>
-  </nav>
+    <nav class="tab-nav">
+      <a href="{{ '/reading/' | relative_url }}">read</a>
+      <span> | </span>
+      <a href="{{ '/' | relative_url }}">write</a>
+      <span> | </span>
+      <a href="{{ '/building/' | relative_url }}" class="active">build</a>
+    </nav>
+  </div>
 </div>
 
 <hr data-content="">

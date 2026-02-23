@@ -6,19 +6,19 @@ permalink: /search/
 
 <div class="search-page">
   <div class="back-button-container">
-    <a href="{{ '/' | relative_url }}" class="back-button">← Back to Home</a>
+    <a href="{{ '/' | relative_url }}" class="back-button">← Back</a>
   </div>
   
   <div class="search-container">
-    <h1>Ask About My Writing</h1>
-    <p class="search-description">Search through all my posts using natural language. Ask questions like "What did you write about product management?" or "Tell me about data science."</p>
+    <h1 style="font-weight: 300">AI Mode</h1>
+    <p class="search-description">Ask about any products I've worked on or things I've written</p>
     
     <form id="search-form" class="search-form">
       <div class="search-input-container">
         <input 
           type="text" 
           id="search-query" 
-          placeholder="What would you like to know about?"
+          placeholder="Ask anything about me..."
           maxlength="200"
           required
         />
@@ -29,7 +29,7 @@ permalink: /search/
       </div>
     </form>
     
-    <div id="query-counter" class="query-counter"></div>
+    <div id="query-counter" class="query-counter hidden"></div>
     
     <div id="search-results" class="search-results"></div>
   </div>
