@@ -2,21 +2,26 @@
 layout: default
 ---
 
-<div style="text-align: center;">
-  <h1 class="site-title">{{ site.title }}</h1>
-  <p style="margin-top: 0; color: #666;">{{ site.tagline }}</p>
+<div class="header-container">
+  <div class="ai-mode-container">
+    <a href="{{ '/ai-mode/' | relative_url }}" class="ai-mode-btn">AI Mode</a>
+  </div>
+  
+  <div style="text-align: center;">
+    <h1 class="site-title">{{ site.title }}</h1>
+    <p style="margin-top: 0; color: #666;">{{ site.tagline }}</p>
 
-  <nav class="tab-nav">
-    <a href="{{ '/reading/' | relative_url }}">read</a>
-    <span> | </span>
-    <a href="{{ '/' | relative_url }}" class="active">write</a>
-    <span> | </span>
-    <a href="{{ '/building/' | relative_url }}">build</a>
-  </nav>
+    <nav class="tab-nav">
+      <a href="{{ '/reading/' | relative_url }}">read</a>
+      <span> | </span>
+      <a href="{{ '/' | relative_url }}" class="active">write</a>
+      <span> | </span>
+      <a href="{{ '/building/' | relative_url }}">build</a>
+    </nav>
+  </div>
 </div>
 
 <hr data-content="">
-
 
 {%- assign writing_posts = site.categories.writing -%}
 {%- if writing_posts.size > 5 -%}
