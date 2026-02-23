@@ -13,6 +13,7 @@ class SemanticSearch {
                 title: 'How I Built My Personal Website',
                 date: '2024-01-15',
                 category: 'writing',
+                tags: ['product', 'AI/ ML', 'strategy'],
                 score: 0.92,
                 excerpt: 'A deep dive into the technical decisions behind building this site using Jekyll and GitHub Pages. I cover the design system, performance optimizations, and deployment workflow.'
             },
@@ -21,6 +22,7 @@ class SemanticSearch {
                 title: 'Side Project: futurein.bio',
                 date: '2023-09-05',
                 category: 'building',
+                tags: ['bio/ health', 'newsletter'],
                 score: 0.81,
                 excerpt: 'A weekly visual newsletter on bio/ health and tech/ AI'
             },
@@ -29,6 +31,7 @@ class SemanticSearch {
                 title: 'Another Post: Title  Here',
                 date: '2024-02-01',
                 category: 'writing',
+                tags: ['execution'],
                 score: 0.75,
                 excerpt: 'Some example text here'
             }
@@ -95,7 +98,7 @@ class SemanticSearch {
         
         const { count } = this.getQueryCount();
         if (count >= this.maxQueriesPerDay && !this.useMockData) {
-            this.showError("You've hit your limit for the day. Feel free to email tfarrell01@gmail.com with any other questions you might have!");
+            this.showError("You've hit your limit for the day.<br>Feel free to email tfarrell01@gmail.com with any other questions you might have!");
             return;
         }
 
@@ -182,7 +185,7 @@ class SemanticSearch {
             container.innerHTML = `
                 <div class="no-results">
                     <h3>No results found</h3>
-                    <p>Try rephrasing your question or using different keywords. The search looks through all my writing, reading notes, and project descriptions.</p>
+                    <p>Try rephrasing your question or using different keywords. The search looks through all my writing, reading notes, and portfolio projects.</p>
                 </div>
             `;
             return;
@@ -196,7 +199,7 @@ class SemanticSearch {
                     <div class="result-meta">
                         ${result.date ? `<span class="result-date">${this.escapeHtml(result.date)}</span>` : ''}
                         ${result.category ? `<span class="result-category">${this.escapeHtml(result.category)}</span>` : ''}
-                        <span class="result-score">Match: ${Math.round(result.score * 100)}%</span>
+                        ${result.tags && result.tags.length > 0 ? `<span class="result-tags">${result.tags.map(tag => `<span class="tag">${this.escapeHtml(tag)}</span>`).join('')}</span>` : ''}
                     </div>
                     <p class="result-excerpt">${this.escapeHtml(result.excerpt)}</p>
                 </div>
@@ -206,7 +209,7 @@ class SemanticSearch {
         container.innerHTML = `
             <div class="results-header">
                 <h2>Search Results</h2>
-                <p>Found ${results.length} relevant post${results.length === 1 ? '' : 's'} for: <em>"${this.escapeHtml(query)}"</em></p>
+                <p>Relevant content for: <em>"${this.escapeHtml(query)}"</em></p>
             </div>
             <div class="results-list">
                 ${resultHtml}
@@ -221,7 +224,7 @@ class SemanticSearch {
         container.innerHTML = `
             <div class="error-message">
                 <h3>Oops!</h3>
-                <p>${this.escapeHtml(message)}</p>
+                <p>${message}</p>
             </div>
         `;
     }

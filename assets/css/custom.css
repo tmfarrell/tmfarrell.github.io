@@ -344,6 +344,11 @@ ul.post-list,
   display: inline;
 }
 
+/* Search results always show tags */
+.result-card .post-tags {
+  display: inline;
+}
+
 .post-list-item.hidden,
 .portfolio-list-item.hidden {
   display: none;
@@ -995,10 +1000,31 @@ ul.post-list,
   margin-bottom: 0.75rem;
   font-size: 0.9rem;
   color: #666;
+  flex-wrap: wrap;
 }
 
-.result-score {
-  color: #ac4142;
+.result-meta .tag {
+  background-color: #f3f3f3;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  margin-right: 0.05rem;
+  color: #8c8c8c;
+  font-size: 0.75rem;
+}
+
+.result-meta .result-tags {
+  display: inline;
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+.result-meta .result-tags .tag {
+  background-color: #e8e8e8;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 0.25rem;
+  color: #555;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -1006,6 +1032,8 @@ ul.post-list,
   color: #555;
   line-height: 1.6;
   margin: 0;
+  margin-top: 6px;
+  padding-top: 6px; 
 }
 
 /* Error and No Results */
