@@ -1,32 +1,30 @@
 ---
 toc: true
 layout: post
-title:  "How Delegation Improves Organizations"
+title:  "Why Delegation and Competition Improves Organizations"
 date:   2021-05-30 08:00 
 categories: 
 ---
 
 It's pretty incredible how little leaders in civilian organization delegate. Down right criminal. 
 
-Delegation is the parallelism of 
+Delegation not only increases leverage for your highest value people (hopefully those on your leadership team), but is also the only way your organization learns and evolves. Delegation helps you complete more work in less time using parallelism, while also enabling your org to evolve. Win-win all around. 
 
-### The Reality
+### The Reality: So Much Work, So Little Time
 
-
-
-Being a leader/ man Leaders/ managers are assigned a lot of work. Work that, in order get done, will have to be 
-distributed across their team. This is why leaders/ managers exist, to parallelize work across
-a team. If a leader/ manager can't delegate, or doesn't do it well, that's a big issue because
-that's literally why their job exists.  
+Being a leader/ man Leaders/ managers are assigned a lot of work. Work that to get done will have to be 
+distributed across their team. This one of the reasons why leaders/ managers exist, to parallelize work across
+a team. If a leader/ manager can't delegate, or doesn't do it well, that's a huge issue because
+that's one of the main reasons their job exists.  
 
 Another important part of delegation, which is a follow-on consequence of doing it well: work is not 
 only parallelized across individuals, but also allows some degree of variation in how it gets done across
-team members. Everyone does things a little bit (or a lot) differently.
+those individuals. Everyone does things a little bit (or a lot) differently.
 
 This variation involves some risk, because some reports will do tasks better than others, and generally 
-most reports will do tasks worse than their manager. This is one of the fundamental challenges of the manager: 
-delegate a task or do it yourself? Doing tasks yourself is less risky in the short run, but more risky in
-the long run because of the opportunity cost of a team not learning and growing. 
+most reports will do tasks worse than their manager. 
+
+This is one of the fundamental challenges of the manager: delegate a task or do it yourself? Doing tasks yourself is less risky in the short run, but more risky in the long run because of the opportunity cost of a team not learning and growing. 
 
 Over the long run, the risk of delegation should be worth taking because, even if the task at hand is critical to 
 the organization's success, it's a chance for learning and growth. After all is said and done, reports 

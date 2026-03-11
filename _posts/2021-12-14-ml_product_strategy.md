@@ -4,7 +4,7 @@ layout: post
 title:  "Building AI Products"
 date:   2021-12-14 20:00
 categories: writing
-tags: [AI/ ML, product]
+tags: [AI/ ML, product, strategy]
 ---
 
 ## The AI Cold Start Problem

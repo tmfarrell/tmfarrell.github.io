@@ -45,7 +45,11 @@ class JekyllPineconeIndexer {
       console.log('🌲 Connecting to Pinecone...');
       await this.pinecone.initialize();
 
-      // Step 5: Upsert to Pinecone (with native embedding)
+      // Step 5: Delete existing records in namespace (full rebuild)
+      console.log('🗑️  Clearing existing records in namespace...');
+      await this.pinecone.deleteAllRecords(this.namespace);
+
+      // Step 6: Upsert to Pinecone (with native embedding)
       console.log('💾 Uploading records to Pinecone with native embedding...');
       const result = await this.pinecone.upsertRecords(chunks, this.namespace);
       

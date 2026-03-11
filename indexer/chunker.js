@@ -6,6 +6,7 @@ class TextChunker {
     this.maxTokens = 1000;
     this.minTokens = 500;
     this.overlap = 100;
+    this.excerptLength = 250;
   }
 
   /**
@@ -88,6 +89,11 @@ class TextChunker {
     // Extract category and tags for searchable text
     const { category, tags, ...metaWithoutCategoryTags } = originalMetadata;
     
+    // Create content excerpt
+    const excerpt = content.length > this.excerptLength 
+      ? content.substring(0, this.excerptLength - 3) + '...'
+      : content;
+
     // Build searchable content with category and tags prepended to each chunk
     let searchableContent = `[title: ${title}] ${content}`;
     if (category) {
@@ -100,11 +106,6 @@ class TextChunker {
     // Create deterministic ID
     const slug = this.createSlug(title, url);
     const id = `${slug}_chunk_${index}`;
-    
-    // Create content excerpt (first 150 characters)
-    const excerpt = searchableContent.length > 150 
-      ? searchableContent.substring(0, 147) + '...'
-      : searchableContent;
 
     // Filter out null/undefined values from metadata
     const cleanMetadata = this.filterNullValues({

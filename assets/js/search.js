@@ -3,6 +3,8 @@ class SemanticSearch {
         this.maxQueriesPerDay = 3;
         this.apiBaseUrl = 'https://api-tmfarrell.netlify.app';
         this.useMockData = new URLSearchParams(window.location.search).get('mock') === 'true';
+        this.testMode = new URLSearchParams(window.location.search).get('test') === 'true';
+        this.isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
         this.init();
     }
 
@@ -24,7 +26,7 @@ class SemanticSearch {
                 category: 'building',
                 tags: ['bio/ health', 'newsletter'],
                 score: 0.81,
-                excerpt: 'A weekly visual newsletter on bio/ health and tech/ AI'
+                excerpt: 'A weekly visual newsletter on bio/ health and tech/ AI. https://futurein.bio'
             },
             {
                 url: '/writing/another-post/',
@@ -96,8 +98,9 @@ class SemanticSearch {
     async handleSearch(e) {
         e.preventDefault();
         
+        const isUnlimited = this.useMockData || (this.testMode && this.isLocalhost);
         const { count } = this.getQueryCount();
-        if (count >= this.maxQueriesPerDay && !this.useMockData) {
+        if (count >= this.maxQueriesPerDay && !isUnlimited) {
             this.showError("You've hit your limit for the day.<br>Feel free to email tfarrell01@gmail.com with any other questions you might have!");
             return;
         }
@@ -109,7 +112,9 @@ class SemanticSearch {
         this.clearResults();
         
         if (this.useMockData) {
-            this.incrementQueryCount();
+            if (!this.testMode) {
+                this.incrementQueryCount();
+            }
             await new Promise(resolve => setTimeout(resolve, 500));
             this.displayResults(this.getMockResults(), query);
             this.setLoading(false);
@@ -142,7 +147,9 @@ class SemanticSearch {
             }
 
             // Successfully got results
-            this.incrementQueryCount();
+            if (!isUnlimited) {
+                this.incrementQueryCount();
+            }
             this.displayResults(data.results, query);
 
         } catch (error) {
@@ -201,7 +208,7 @@ class SemanticSearch {
                         ${result.category ? `<span class="result-category">${this.escapeHtml(result.category)}</span>` : ''}
                         ${result.tags && result.tags.length > 0 ? `<span class="result-tags">${result.tags.map(tag => `<span class="tag">${this.escapeHtml(tag)}</span>`).join('')}</span>` : ''}
                     </div>
-                    <p class="result-excerpt">${this.escapeHtml(result.excerpt)}</p>
+                    <p class="result-excerpt">${this.convertUrlsToLinks(this.escapeHtml(result.excerpt))}</p>
                 </div>
             </div>
         `).join('');
@@ -234,6 +241,12 @@ class SemanticSearch {
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
+    }
+
+    convertUrlsToLinks(text) {
+        if (!text) return '';
+        const urlRegex = /(https?:\/\/[^\s,]+)/g;
+        return text.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener">$1</a>');
     }
 }
 

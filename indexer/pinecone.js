@@ -161,6 +161,22 @@ class PineconeManager {
   }
 
   /**
+   * Delete all records in a namespace
+   */
+  async deleteAllRecords(namespace = 'default') {
+    if (!this.index) {
+      throw new Error('Pinecone index not initialized. Call initialize() first.');
+    }
+
+    try {
+      await this.index.namespace(namespace).deleteAll();
+      console.log(`Deleted all records from namespace: ${namespace}`);
+    } catch (error) {
+      throw new Error(`Failed to delete all records: ${error.message}`);
+    }
+  }
+
+  /**
    * Delete records by IDs
    */
   async deleteRecords(ids, namespace = 'default') {

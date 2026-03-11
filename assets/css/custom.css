@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #313131 !important;
 }
 
+.post-content h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
 /* Site title font override */
 .site-title {
   font-family: "Roboto", "PT Sans", Helvetica, Arial, sans-serif !important;
