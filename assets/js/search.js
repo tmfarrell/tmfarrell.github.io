@@ -1,11 +1,18 @@
 class SemanticSearch {
+
     constructor() {
         this.maxQueriesPerDay = 3;
-        this.apiBaseUrl = 'https://api-tmfarrell.netlify.app';
-        this.useMockData = new URLSearchParams(window.location.search).get('mock') === 'true';
-        this.testMode = new URLSearchParams(window.location.search).get('test') === 'true';
         this.isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        this.init();
+        this.useMockData = new URLSearchParams(window.location.search).get('mock') === 'true';
+        this.useLocal = new URLSearchParams(window.location.search).get('local') === 'true';
+        this.apiBaseUrl = this.useLocal 
+            ? 'http://localhost:8888' 
+            : 'https://api-tmfarrell.netlify.app';
+        
+        const form = document.getElementById('search-form');
+        if (form) {
+            form.addEventListener('submit', (e) => this.handleSearch(e));
+        }
     }
 
     getMockResults() {
@@ -40,13 +47,6 @@ class SemanticSearch {
         ];
     }
 
-    init() {
-        const form = document.getElementById('search-form');
-        if (form) {
-            form.addEventListener('submit', (e) => this.handleSearch(e));
-        }
-    }
-
     getQueryCount() {
         const today = new Date().toDateString();
         const stored = localStorage.getItem('search_queries');
@@ -56,13 +56,25 @@ class SemanticSearch {
         try {
             const data = JSON.parse(stored);
             if (data.date !== today) {
-                // New day, reset counter
                 return { date: today, count: 0 };
             }
             return data;
         } catch (error) {
-            // Invalid stored data, reset
             return { date: today, count: 0 };
+        }
+    }
+
+    hideSuggestions() {
+        const wrapper = document.getElementById('suggestions-wrapper');
+        const toggle = document.getElementById('suggestions-toggle');
+        
+        if (wrapper) {
+            wrapper.classList.remove('visible');
+            wrapper.style.display = 'none';
+        }
+        if (toggle) {
+            toggle.classList.remove('active');
+            toggle.style.display = 'none';
         }
     }
 
@@ -87,7 +99,7 @@ class SemanticSearch {
         if (!counterEl) return;
         
         if (remaining > 0) {
-            counterEl.textContent = `${remaining} search${remaining === 1 ? '' : 'es'} remaining today`;
+            counterEl.textContent = `${remaining} quer${remaining === 1 ? 'y' : 'ies'} remaining today`;
             counterEl.className = 'query-counter';
         } else {
             counterEl.textContent = 'Daily search limit reached';
@@ -98,7 +110,7 @@ class SemanticSearch {
     async handleSearch(e) {
         e.preventDefault();
         
-        const isUnlimited = this.useMockData || (this.testMode && this.isLocalhost);
+        const isUnlimited = this.useMockData || this.useLocal;
         const { count } = this.getQueryCount();
         if (count >= this.maxQueriesPerDay && !isUnlimited) {
             this.showError("You've hit your limit for the day.<br>Feel free to email tfarrell01@gmail.com with any other questions you might have!");
@@ -109,12 +121,11 @@ class SemanticSearch {
         if (!query) return;
 
         this.setLoading(true);
+        this.hideSuggestions();
         this.clearResults();
         
         if (this.useMockData) {
-            if (!this.testMode) {
-                this.incrementQueryCount();
-            }
+            this.incrementQueryCount();
             await new Promise(resolve => setTimeout(resolve, 500));
             this.displayResults(this.getMockResults(), query);
             this.setLoading(false);
@@ -146,7 +157,6 @@ class SemanticSearch {
                 return;
             }
 
-            // Successfully got results
             if (!isUnlimited) {
                 this.incrementQueryCount();
             }
@@ -166,9 +176,9 @@ class SemanticSearch {
     }
 
     setLoading(loading) {
-        const btn = document.getElementById('search-btn');
-        const text = btn?.querySelector('.search-btn-text');
-        const spinner = btn?.querySelector('.search-btn-loading');
+        const btn = document.querySelector('.ai-btn');
+        const text = btn?.querySelector('.ai-btn-text');
+        const spinner = btn?.querySelector('.ai-btn-loading');
         const input = document.getElementById('search-query');
         
         if (btn) btn.disabled = loading;
@@ -187,6 +197,8 @@ class SemanticSearch {
     displayResults(results, query) {
         const container = document.getElementById('search-results');
         if (!container) return;
+        
+        container.classList.remove('hidden');
         
         if (!results || results.length === 0) {
             container.innerHTML = `
@@ -250,17 +262,16 @@ class SemanticSearch {
     }
 }
 
-// Initialize when DOM is loaded
+let searchInstance = null;
+
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
-        // Only initialize on the search page
         if (document.getElementById('search-form')) {
-            new SemanticSearch();
+            searchInstance = new SemanticSearch();
         }
     });
 } else {
-    // DOM already loaded
     if (document.getElementById('search-form')) {
-        new SemanticSearch();
+        searchInstance = new SemanticSearch();
     }
 }
