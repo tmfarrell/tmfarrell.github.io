@@ -140,18 +140,9 @@ Understanding which mode you're in (and which one you *should* be in) is a meta-
 
 ---
 
-## How It All Fits Together
+## Fitting It All Together
 
-All of these layers — phases, steps, activities, and modes — aren't separate systems. They nest and interact.
-
-**Steps & Activities**: 
-
-I think of these as two concentric circles, slightly offset.
-
-- **Strategy** = **learning** (understanding the market) + **hypothesizing** (positioning)
-- **Design** = **hypothesizing** (forming the concept) + **building** (prototyping it)
-- **Development** = **building** (engineering the solution) + **launching** (making it available)
-- **Growth** = **launching** (marketing and sales) + **learning** (measuring value delivered)
+All of these layers — phases, steps, activities, and modes — aren't separate and distinct layers. They nest and interact.
 
 **Phases & Steps**
 
@@ -160,6 +151,25 @@ Different steps get emphasized in different phases.
 In the *Discovery* phase, you should be heavy on strategy and design, light on full development. Build only enough to validate — mockups and prototypes over production code. GTM activities at this stage are mostly about finding and validating customer segments, not scaling revenue.
 
 In the *Growth* phase, development and GTM take center stage. You've validated the core; now it's about building faster, shipping more reliably, and distributing more broadly.
+
+**Steps & Activities**: 
+
+I think of these as two concentric cycles, slightly offset.
+
+- **Strategy** = **learning** (understanding the market) + **hypothesizing** (positioning)
+- **Design** = **hypothesizing** (forming the concept) + **building** (prototyping it)
+- **Development** = **building** (engineering the solution) + **launching** (making it available)
+- **Growth** = **launching** (marketing and sales) + **learning** (measuring value delivered)
+
+**Actitivies & Modes**
+
+Every activity involves all modes, however, inherently some activities bias more towards certain modes than others. 
+
+Learning and hypothesizing by their very nature require much more _thinking_ than _doing_. You also want to make sure to be _communicating_ your learnings and updated strategy/ hypotheses prior to investing in more development.  
+
+Building often requires more _doing_ than _thinking_, although for highly technical products with high feasibility risk there may be a fair amount of thought involved. It also requires more _doing_ than _communicating_, but it is obviously very important to communicate changes to timeline, scope, etc. as development intiatives progress. 
+
+Launching is inherently a _communicating_ activity--effectively you are communicating your solution to the market--so requires less _thinking_ and _doing_ in the "heads down" sense.  
 
 --- 
 
