@@ -2,7 +2,7 @@
   title: "PhenOM API"
   org: OM1
   org_link: https://www.om1.com
-  description: "API that allows payers and health systems to predict risk, screen patients and triage across a wide range of clinical outcomes"
+  description: "API for a generative AI medical event model that allows health systems and plans to predict risk, screen patients and triage across a wide range of clinical outcomes"
   link:  https://phenom-docs.om1.com/
   date: 2026-01-01
   tags: [healthtech, AI/ ML, real-world data, platform]
@@ -10,7 +10,7 @@
   title: "Enrichment Copilot"
   org: OM1
   org_link: https://www.om1.com
-  description: "Agentic application to accelerate unstructured data search, extraction and enrichment"
+  description: "Agentic AI application to accelerate unstructured data search, extraction and enrichment"
   link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
   date: 2025-06-01
   tags: [platform, AI/ ML, real-world data]
