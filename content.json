@@ -18,9 +18,163 @@ layout: null
 },
 {
   "title": "Contact Info",
-  "url": "https://tmfarrell.github.io",
+  "url": "/",
   "content": "Contact me on Twitter at https://twitter.com/tmfarrell01, LinkedIn at https://www.linkedin.com/in/tfarrell01 or email at tfarrell01@gmail.com",
   "category": "about",
+  "date": "2026-01-01"
+}, 
+{
+  "title": "MS Bioinformatics - Boston University",
+  "url": "https://www.bu.edu/",
+  "content": "Master of Science in Bioinformatics from Boston University (2014-2016). Software engineering and data science focus.",
+  "category": "background/ education",
+  "date": "2016-01-01"
+},
+{
+  "title": "BS Biomedical Engineering - Rutgers University",
+  "url": "https://www.rutgers.edu/",
+  "content": "Bachelor of Science in Biomedical Engineering from Rutgers University (2008-2012). Bioengineering focus. Activities: Army ROTC (top 10%).",
+  "category": "background/ education",
+  "date": "2012-01-01"
+},
+{
+  "title": "Senior Product Manager at OM1",
+  "url": "https://www.om1.com/",
+  "content": "Leading development of a medical event risk prediction solution powered by a proprietary generative AI model. Conduct prototyping and product discovery to validate and launch new products. Manage analytics platform improving product discoverability and reducing delivery costs by 80%. Lead development of AI agents to accelerate development and delivery. Manage and mentor a junior product manager and improve roadmap and planning processes.",
+  "category": "experience",
+  "date": "2024-01-01"
+},
+{
+  "title": "Product Manager at OM1",
+  "url": "https://www.om1.com/",
+  "content": "Delivered a data analytics platform using a partnership-driven approach, resulting in $1.75M in total contract value. Managed a real-world data platform covering 350M+ patients and drove 50% year-over-year revenue growth. Oversaw machine learning and AI model development, increasing observations by more than 4x.",
+  "category": "experience",
+  "date": "2022-01-01"
+},
+{
+  "title": "Product Manager at Day Zero Diagnostics",
+  "url": "https://www.dayzerodiagnostics.com/",
+  "content": "Led product development for the company’s first commercial offering: an outbreak detection sequencing solution for hospital systems. Facilitated CLIA certification enabling the product to be offered as a lab test. Scaled business from one deal per quarter to 1-2 deals per month.",
+  "category": "experience",
+  "date": "2021-01-01"
+},
+{
+  "title": "Manager, Bioinformatics Engineering at Day Zero Diagnostics",
+  "url": "https://www.dayzerodiagnostics.com/",
+  "content": "Developed a data platform supporting machine learning model training and development. Grew data assets by 35% year-over-year through partnerships and public data sources, resulting in one of the largest datasets of its kind. Contributed to technology that was later acquired by bioMérieux.",
+  "category": "experience",
+  "date": "2020-01-01"
+},
+{
+  "title": "Bioinformatics Engineer at Day Zero Diagnostics",
+  "url": "https://www.dayzerodiagnostics.com/",
+  "content": "Worked as a bioinformatics engineer contributing to data platform and model development initiatives supporting infectious disease diagnostics.",
+  "category": "experience",
+  "date": "2019-01-01"
+},
+{
+  "title": "Computational Biologist at Broad Institute",
+  "url": "https://www.broadinstitute.org/",
+  "content": "Built a cloud-based data system for malaria genomics. Performed analysis for a phase IV vaccine clinical trial. Conducted research on amplicon sequencing error correction.",
+  "category": "experience",
+  "date": "2017-01-01"
+},
+{
+  "title": "Research Assistant at Boston University Department of Health",
+  "url": "https://github.com/tmfarrell/HCP/tree/master",
+  "content": "Built a pre-processing pipeline for an fMRI connectivity study using Human Connectome data.",
+  "category": "experience",
+  "date": "2016-05-01"
+},
+{
+  "title": "Research Assistant at Boston University School of Medicine",
+  "url": "https://github.com/tmfarrell/PCRL_Logbook",
+  "content": "Developed a data management and analysis system for a 24-primate study on metabolism.",
+  "category": "experience",
+  "date": "2015-12-01"
+},
+{
+  "title": "Biomedical Informatics Intern at Harvard Medical School",
+  "url": "/assets/pdf/20151211_Phenotype%20prediction%20from%20highly-polymorphic%20structurally-variant%20genotypes_talk.pdf",
+  "content": "Developed a genomics-based classifier for predicting antigenic phenotypes from third-generation sequencing (3GS) data.",
+  "category": "experience",
+  "date": "2016-05-01"
+},
+{
+  "title": "Bioinformatics Intern at New England Biolabs",
+  "url": "/assets/pdf/20150804-NEB_Intership_Talk.pdf",
+  "content": "Developed error mitigation and correction methods for third-generation sequencing technologies.",
+  "category": "experience",
+  "date": "2015-08-01"
+},
+{
+  "title": "Operations Officer at US Army Reserve",
+  "url": "https://www.goarmy.com/reserve.html",
+  "content": "Served as a part-time military leader managing operations for 100+ soldiers. Commitment included 2 days per month and 4 weeks per year. Deployed in 2016-2017 (Operation Freedom's Sentinel) and April-June 2020 for COVID-19 federal response in NYC.",
+  "category": "experience",
+  "date": "2012-01-01"
+},
+{
+  "title": "Product Management Skills",
+  "url": "",
+  "content": "Roadmap planning | Agile methods | Release management | Lean startup principles | Go-to-market strategy",
+  "category": "skills",
+  "date": "2026-01-01"
+},
+{
+  "title": "Data and AI Skills",
+  "url": "",
+  "content": "Platform development | Data sourcing and labeling | Model evaluation | Full ML/ AI lifecycle management",
+  "category": "skills",
+  "date": "2026-01-01"
+},
+{
+  "title": "Domain Expertise",
+  "url": "",
+  "content": "Real-world healthcare data including EMR/ EHR and claims | Genomics | Clinical trials",
+  "category": "skills",
+  "date": "2026-01-01"
+},
+{
+  "title": "Cloud Platforms",
+  "url": "",
+  "content": "Google Cloud Platform (GCP) | Amazon Web Services (AWS).",
+  "category": "skills",
+  "date": "2026-01-01"
+},
+{
+  "title": "Data Analysis Tools",
+  "url": "",
+  "content": "Jupyter notebooks | SQL | Python | R",
+  "category": "skills",
+  "date": "2026-01-01"
+},
+{
+  "title": "Data Technologies",
+  "url": "",
+  "content": "Snowflake | Databricks | Hex | dbt | BigQuery",
+  "category": "skills",
+  "date": "2026-01-01"
+},
+{
+  "title": "Design Tools",
+  "url": "",
+  "content": "Figma | Canva",
+  "category": "skills",
+  "date": "2026-01-01"
+},
+{
+  "title": "Programming and Prototyping",
+  "url": "",
+  "content": "Cursor | Lovable | Claude Code | Python | JavaScript/ React",
+  "category": "skills",
+  "date": "2026-01-01"
+},
+{
+  "title": "Work Management Tools",
+  "url": "",
+  "content": "Claude | Jira/ Confluence | Slack | Google Workspace",
+  "category": "skills",
   "date": "2026-01-01"
 }
 {%- if site.data.portfolio.size > 0 -%}

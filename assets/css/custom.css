@@ -945,6 +945,7 @@ ul.post-list,
 
   .chat-messages {
     max-height: 150px;
+    overflow-y: auto;
   }
 
   .chat-message.user {
@@ -962,6 +963,10 @@ ul.post-list,
 
   .ai-btn {
     min-width: auto;
+  }
+
+  .ai-input-area {
+    margin-top: 2rem;
   }
 }
   

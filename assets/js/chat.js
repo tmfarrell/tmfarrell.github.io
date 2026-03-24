@@ -26,6 +26,7 @@ class AIChat {
         this.bindSuggestionsToggle();
         this.showSuggestions();
         this.showSuggestionsToggle();
+        this.updateChatCounter();
     }
 
     bindModeToggle() {
@@ -70,6 +71,7 @@ class AIChat {
             chatMessages?.classList.remove('hidden');
             searchResults?.classList.add('hidden');
             queryCounter?.classList.add('hidden');
+            this.updateChatCounter();
         };
 
         searchBtn?.addEventListener('click', activateSearch);
@@ -159,6 +161,8 @@ class AIChat {
             counterEl.textContent = 'Daily chat limit reached';
             counterEl.className = 'query-counter limit-reached';
         }
+        
+        counterEl.classList.remove('hidden');
     }
 
     showSuggestions() {
