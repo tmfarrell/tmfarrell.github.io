@@ -127,9 +127,9 @@ Growth is about getting your product into the hands of the market and measuring 
 The big strategic choice here is **sales-led vs. product-led** growth. Product-led (PLG) works when your product can demonstrate value on its own, without a salesperson in the loop. Sales-led works when the deal complexity, relationship requirements, or enterprise buying dynamics require a human. Many B2B companies operate some hybrid — product-led adoption up to a threshold, then sales-led for expansion.
 
 
-## Four Activities
+## Four Actions
 
-Regardless of phase or step, I think about day-to-day product work as cycling through four activities:
+Regardless of phase or step, I think about day-to-day product work as cycling through four actions/ activities:
 
 1. **Hypothesizing** — forming a premise about a problem and how your solution will solve it
 2. **Building** — constructing the solution, or a representation of it good enough to test
@@ -157,7 +157,7 @@ Understanding which mode you're in (and which one you *should* be in) is a meta-
 
 ## Fitting It All Together
 
-All of these layers — phases, steps, activities, and modes — aren't separate and distinct layers. They nest and interact.
+All of these layers — phases, steps, actions and modes — aren't separate and distinct layers. They nest and interact.
 
 **Phases & Steps**
 
@@ -167,7 +167,7 @@ In the *Discovery* phase, you should be heavy on strategy and design, light on f
 
 In the *Growth* phase, development and GTM take center stage. You've validated the core; now it's about building faster, shipping more reliably, and distributing more broadly.
 
-**Steps & Activities**: 
+**Steps & Actions**: 
 
 I think of these as two concentric cycles, slightly offset.
 
@@ -176,9 +176,9 @@ I think of these as two concentric cycles, slightly offset.
 - **Development** = **building** (engineering the solution) + **launching** (making it available)
 - **Growth** = **launching** (marketing and sales) + **learning** (measuring value delivered)
 
-**Actitivies & Modes**
+**Actions & Modes**
 
-Every activity involves all modes, however, inherently some activities bias more towards certain modes than others. 
+Every action involves all modes, however, inherently some bias more towards certain modes than others. 
 
 Learning and hypothesizing by their very nature require much more _thinking_ than _doing_. You also want to make sure to be _communicating_ your learnings and updated strategy/ hypotheses prior to investing in more development.  
 
@@ -190,9 +190,9 @@ Launching is inherently a _communicating_ activity--effectively you're communica
 
 Don't forget about speed! 
 
-Speed will help you compensate for any imperfection in the steps above, so don't get wrapped up in the details. 
+Speed will help you compensate for any imperfection at any given step, so don't get wrapped up in the details. 
 
-Speed is possibly the only path to winning in today's AI-powered/ accelerated world. 
+Speed is now also possibly the only path to winning in today's AI-powered/ accelerated world. 
 
 --- 
 
