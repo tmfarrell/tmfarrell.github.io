@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-title: 'My Product Principles (So Far)'
+title: 'How I Think About Product (So Far)'
 date: 2026-03-01 08:00
 categories: writing
 tags: [product, strategy]
@@ -10,6 +10,21 @@ tags: [product, strategy]
 I've been building and thinking about products for a while now, and this post is my attempt to synthesize the frameworks and mental models I keep coming back to. 
 
 This isn't meant to be exhaustive or original — most of it stands on the shoulders of people who've thought longer and harder about this than I have. But putting it in one place forces clarity and helps me be consistent about how I operate. 
+
+Overall, I think about product development as a set of cycles layered within each other. Represented visually, it might look like this: 
+
+<img src="/assets/img/product_layers.png"
+	style="display: block; margin-left: auto; margin-right: auto; width: 80%;" />
+
+## Cycling and Speed
+
+Before I describe all of the cycles/ layers, I believe that more important than what you do at each individual step is **how fast you cycle through the process.**
+
+I'm very much a fan of [Certain To Win](https://www.amazon.com/Certain-Win-Strategy-Applied-Business/dp/1413453767), which describes how speed of execution and specifically having a fast "OODA loop" (Observe, Orient, Decide and Act) allows you to control the narrative and keep your enemy/ competitors on their back foot.   
+
+Especially in the current technology macrocycle that we're in--where AI is accelerating work beyond what we thought possible--this is probably the only viable approach. 
+
+Simply put, don't get wrapped up in all the details. Speed is king. 
 
 ## Two Phases
 
@@ -124,19 +139,19 @@ Regardless of phase or step, I think about day-to-day product work as cycling th
 This cycle applies at every level of granularity — from a new feature to a whole product line. The key is that each activity should feed the next. Learning informs the next hypothesis. A good hypothesis makes building more focused. A focused build makes for a cleaner launch. And a clean launch generates cleaner learning.
 
 
-## Three Modes
+## Three Modes (Bonus)
 
-One more layer: beyond activities, I think about the *mode* you're operating in at any given time.
+Even one layer deeper: I think about the *mode* you and your team are operating in during any given activity. (Although, admittedly, this is a bit of a bonus layer, in that you only really need to understand the above sections.)
 
 - **Thinking** — planning and strategizing; the "meta-work" above the work
 - **Doing** — executing; heads-down, building, shipping
 - **Communicating** — aligning stakeholders, sharing context, driving decisions across the org
 
-All three are necessary. The relative weight of each shifts with company size: at an early-stage startup, most of your time should be in *doing*. As the company grows, *communicating* takes up more and more of the calendar — not because you want it to, but because coordination costs scale with org complexity. 
+All three modes are necessary, but the relative weight of each shifts with company size: at an early-stage startup, most of your time should be in *doing*. As the company grows, *communicating* takes up more and more of the calendar — not because you want it to, but because coordination costs scale with org complexity. 
 
-Also critically missed is taking the time to *think*. Most folks in any role--but product especially because of the typical volume of meetings--often don't take enough time to *think* about the right next step. 
+Also critically missed is taking the time to *think*. Most folks in any role--but product especially because of the typical meeting volume--often don't take enough time to *think* about the right next step. 
 
-Understanding which mode you're in (and which one you *should* be in) is a meta-skill that most people underdevelop.
+Understanding which mode you're in (and which one you *should* be in) is a meta-skill most people underdevelop.
 
 ---
 
@@ -167,9 +182,9 @@ Every activity involves all modes, however, inherently some activities bias more
 
 Learning and hypothesizing by their very nature require much more _thinking_ than _doing_. You also want to make sure to be _communicating_ your learnings and updated strategy/ hypotheses prior to investing in more development.  
 
-Building often requires more _doing_ than _thinking_, although for highly technical products with high feasibility risk there may be a fair amount of thought involved. It also requires more _doing_ than _communicating_, but it is obviously very important to communicate changes to timeline, scope, etc. as development intiatives progress. 
+Building often requires more _doing_ than _thinking_ (although for highly technical products, there may be a fair amount of thought involved). It also requires more _doing_ than _communicating_ (although obviously very important to communicate changes to timeline, scope, etc). 
 
-Launching is inherently a _communicating_ activity--effectively you are communicating your solution to the market--so requires less _thinking_ and _doing_ in the "heads down" sense.  
+Launching is inherently a _communicating_ activity--effectively you're communicating your solution to the market--however, it does require _thinking_ about your marketing strategy and some _doing_ to prepare materials, etc. 
 
 --- 
 
