@@ -186,6 +186,14 @@ Building often requires more _doing_ than _thinking_ (although for highly techni
 
 Launching is inherently a _communicating_ activity--effectively you're communicating your solution to the market--however, it does require _thinking_ about your marketing strategy and some _doing_ to prepare materials, etc. 
 
+**Speed**
+
+Don't forget about speed! 
+
+Speed will help you compensate for any imperfection in the steps above, so don't get wrapped up in the details. 
+
+Speed is possibly the only path to winning in today's AI-powered/ accelerated world. 
+
 --- 
 
 I'm sure this will keep evolving. The frameworks that stick around are the ones that prove useful when you're actually in the weeds — making real tradeoffs under pressure. I'll update this as my thinking develops.

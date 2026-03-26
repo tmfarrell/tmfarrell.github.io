@@ -9,6 +9,9 @@ permalink: /ai-mode/
     <a href="{{ '/' | relative_url }}" class="back-button">← Back</a>
   </div>
   
+  <button id="reset-counters-btn" class="reset-counters-btn hidden">Reset Limits</button>
+  <button id="near-limit-btn" class="reset-counters-btn hidden">Near Limit</button>
+   
   <div class="search-container" style="margin-top: 50px;">
     <h1 style="font-weight: 300; margin-bottom: 25px;">AI Mode</h1>
     <!--<p class="search-description">Ask about any products I've worked on or things I've written</p>-->
@@ -61,16 +64,15 @@ permalink: /ai-mode/
       </div>
     </div>
 
-    <div class="mode-toggle hidden">
-      <button id="mode-search" class="mode-btn active">Search</button>
+    <div class="mode-toggle">
+      <button id="mode-search" class="mode-btn">Search</button>
       <span class="mode-divider">|</span>
-      <button id="mode-chat" class="mode-btn">Chat</button>
+      <button id="mode-chat" class="mode-btn active" title="Switch to chat mode">Chat</button>
     </div>
 
     <div id="search-results" class="search-results hidden" style="margin-top: 25px;"></div>
     
-    <div id="query-counter" class="query-counter hidden"></div>
-    <div id="chat-counter" class="query-counter hidden"></div>
+    <div id="usage-counter" class="usage-counter"></div>
   </div>
 </div>
 

@@ -7,7 +7,7 @@ const AI_MODE_SUGGESTIONS = [
 
 class AIChat {
     constructor() {
-        this.maxChatsPerDay = 3;
+        this.maxChatsPerDay = 5;
         this.isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
         this.useMockData = new URLSearchParams(window.location.search).get('mock') === 'true';
         this.useLocal = new URLSearchParams(window.location.search).get('local') === 'true';
@@ -16,6 +16,7 @@ class AIChat {
             : 'https://api-tmfarrell.netlify.app';
         this.messages = [];
         this.isStreaming = false;
+        this.hasUsedAI = false;
         this.init();
     }
 
@@ -26,7 +27,113 @@ class AIChat {
         this.bindSuggestionsToggle();
         this.showSuggestions();
         this.showSuggestionsToggle();
-        this.updateChatCounter();
+        this.checkChatAvailability();
+        this.updateUsageCounter();
+    }
+
+    checkChatAvailability() {
+        const { count } = this.getQueryCount();
+        if (count >= this.maxChatsPerDay) {
+            const chatBtn = document.getElementById('mode-chat');
+            
+            if (chatBtn) {
+                chatBtn.disabled = true;
+                chatBtn.classList.add('disabled');
+                chatBtn.title = "You've hit your chat limit for the day";
+            }
+            
+            this.activateSearchMode();
+        } else {
+            this.activateChatMode();
+        }
+    }
+
+    activateChatMode() {
+        const searchBtn = document.getElementById('mode-search');
+        const chatBtn = document.getElementById('mode-chat');
+        const searchForm = document.getElementById('search-form');
+        const chatForm = document.getElementById('chat-form');
+        const searchSuggestions = document.getElementById('search-suggestions');
+        const chatSuggestions = document.getElementById('chat-suggestions');
+        const chatMessages = document.getElementById('chat-messages');
+        const searchResults = document.getElementById('search-results');
+        
+        chatBtn?.classList.add('active');
+        searchBtn?.classList.remove('active');
+        chatForm?.classList.remove('hidden');
+        searchForm?.classList.add('hidden');
+        chatSuggestions?.classList.remove('hidden');
+        searchSuggestions?.classList.add('hidden');
+        chatMessages?.classList.remove('hidden');
+        searchResults?.classList.add('hidden');
+    }
+
+    activateSearchMode() {
+        const searchBtn = document.getElementById('mode-search');
+        const chatBtn = document.getElementById('mode-chat');
+        const searchForm = document.getElementById('search-form');
+        const chatForm = document.getElementById('chat-form');
+        const searchResults = document.getElementById('search-results');
+        const searchSuggestions = document.getElementById('search-suggestions');
+        const chatMessages = document.getElementById('chat-messages');
+        const chatSuggestions = document.getElementById('chat-suggestions');
+        const chatCounter = document.getElementById('chat-counter');
+        const usageCounter = document.getElementById('usage-counter');
+        
+        searchBtn?.classList.add('active');
+        chatBtn?.classList.remove('active');
+        searchForm?.classList.remove('hidden');
+        chatForm?.classList.add('hidden');
+        searchSuggestions?.classList.remove('hidden');
+        chatSuggestions?.classList.add('hidden');
+        searchResults?.classList.add('hidden');
+        chatMessages?.classList.add('hidden');
+        if (chatCounter) chatCounter.classList.add('hidden');
+        if (usageCounter) usageCounter.classList.remove('hidden');
+    }
+
+    updateUsageCounter() {
+        const { count } = this.getQueryCount();
+        const searchRemaining = this.getSearchRemaining();
+        const remaining = Math.max(0, this.maxChatsPerDay - count);
+        const usageCounter = document.getElementById('usage-counter');
+        
+        if (!usageCounter) return;
+        
+        if (this.hasUsedAI) {
+            if (searchRemaining > 0 && remaining > 0) {
+                usageCounter.textContent = `${searchRemaining} search${searchRemaining === 1 ? '' : 'es'}, ${remaining} chat${remaining === 1 ? '' : 's'} remaining today`;
+                usageCounter.className = 'usage-counter';
+            } else if (searchRemaining > 0) {
+                usageCounter.textContent = `${searchRemaining} search${searchRemaining === 1 ? '' : 'es'} remaining today`;
+                usageCounter.className = 'usage-counter';
+            } else if (remaining > 0) {
+                usageCounter.textContent = `${remaining} chat${remaining === 1 ? '' : 's'} remaining today`;
+                usageCounter.className = 'usage-counter';
+            } else {
+                usageCounter.textContent = 'Daily limits reached';
+                usageCounter.className = 'usage-counter limit-reached';
+            }
+        } else {
+            usageCounter.textContent = '';
+        }
+    }
+
+    getSearchRemaining() {
+        const today = new Date().toDateString();
+        const stored = localStorage.getItem('search_queries');
+        let searchCount = 0;
+        
+        if (stored) {
+            try {
+                const data = JSON.parse(stored);
+                if (data.date === today) {
+                    searchCount = data.count;
+                }
+            } catch (error) {}
+        }
+        
+        return Math.max(0, 20 - searchCount);
     }
 
     bindModeToggle() {
@@ -55,6 +162,11 @@ class AIChat {
             searchResults?.classList.add('hidden');
             chatMessages?.classList.add('hidden');
             chatCounter?.classList.add('hidden');
+            const usageCounter = document.getElementById('usage-counter');
+            if (usageCounter && chatInstance?.hasUsedAI) {
+                usageCounter.classList.remove('hidden');
+                chatInstance.updateUsageCounter();
+            }
         };
 
         const activateChat = () => {
@@ -71,6 +183,8 @@ class AIChat {
             chatMessages?.classList.remove('hidden');
             searchResults?.classList.add('hidden');
             queryCounter?.classList.add('hidden');
+            const usageCounter = document.getElementById('usage-counter');
+            if (usageCounter) usageCounter.classList.remove('hidden');
             this.updateChatCounter();
         };
 
@@ -139,12 +253,15 @@ class AIChat {
         queryData.count += 1;
         localStorage.setItem('chat_queries', JSON.stringify(queryData));
         
+        this.hasUsedAI = true;
+        
         const counterEl = document.getElementById('chat-counter');
         if (counterEl) {
             counterEl.classList.remove('hidden');
         }
         
         this.updateChatCounter();
+        this.updateUsageCounter();
     }
 
     updateChatCounter() {
@@ -160,9 +277,16 @@ class AIChat {
         } else {
             counterEl.textContent = 'Daily chat limit reached';
             counterEl.className = 'query-counter limit-reached';
+            
+            const chatBtn = document.getElementById('mode-chat');
+            if (chatBtn) {
+                chatBtn.disabled = true;
+                chatBtn.classList.add('disabled');
+                chatBtn.title = "You've hit your chat limit for the day";
+            }
         }
         
-        counterEl.classList.remove('hidden');
+        this.updateUsageCounter();
     }
 
     showSuggestions() {
@@ -245,17 +369,17 @@ class AIChat {
         
         if (!message) return;
 
-        const isUnlimited = this.useMockData || this.useLocal;
         const { count } = this.getQueryCount();
-        if (count >= this.maxChatsPerDay && !isUnlimited) {
-            this.showError("You've hit your limit for the day.<br>Feel free to email tfarrell01@gmail.com with any other questions!");
+        if (count >= this.maxChatsPerDay) {
+            this.showError("You've hit your chat limit for the day.<br>Feel free to email tfarrell01@gmail.com with any other questions!");
             return;
         }
 
         this.hideSuggestions();
-        if (!isUnlimited) {
-            this.incrementQueryCount();
-        }
+        this.incrementQueryCount();
+        
+        const newCount = this.getQueryCount().count;
+        const atLimit = newCount >= this.maxChatsPerDay;
         
         this.addMessage('user', message);
         input.value = '';
@@ -300,8 +424,16 @@ class AIChat {
                     throw new Error('Empty response from chat service');
                 }
             }
+            
+            if (atLimit) {
+                responseText += '\n\n---\n\nP.S. You\'ve hit your chat limit for the day. Feel free to use search mode or email tfarrell01@gmail.com with any other questions!';
+            }
 
             await this.streamResponse(responseText);
+            
+            if (atLimit) {
+                this.updateChatCounter();
+            }
 
         } catch (error) {
             console.error('Chat error:', error);

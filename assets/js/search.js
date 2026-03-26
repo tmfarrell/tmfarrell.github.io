@@ -1,10 +1,11 @@
 class SemanticSearch {
 
     constructor() {
-        this.maxQueriesPerDay = 3;
+        this.maxQueriesPerDay = 20;
         this.isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
         this.useMockData = new URLSearchParams(window.location.search).get('mock') === 'true';
         this.useLocal = new URLSearchParams(window.location.search).get('local') === 'true';
+        this.isDebugMode = this.useMockData || this.useLocal;
         this.apiBaseUrl = this.useLocal 
             ? 'http://localhost:8888' 
             : 'https://api-tmfarrell.netlify.app';
@@ -13,6 +14,78 @@ class SemanticSearch {
         if (form) {
             form.addEventListener('submit', (e) => this.handleSearch(e));
         }
+        
+        this.bindTextarea();
+        this.bindDebugButton();
+    }
+    
+    bindTextarea() {
+        const textarea = document.getElementById('search-query');
+        if (textarea) {
+            textarea.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    this.handleSearch(e);
+                }
+            });
+        }
+    }
+    
+    bindDebugButton() {
+        if (!this.isDebugMode) return;
+        
+        const resetBtn = document.getElementById('reset-counters-btn');
+        if (resetBtn) {
+            resetBtn.classList.remove('hidden');
+            resetBtn.addEventListener('click', () => this.resetCounters());
+        }
+        
+        const nearLimitBtn = document.getElementById('near-limit-btn');
+        if (nearLimitBtn) {
+            nearLimitBtn.classList.remove('hidden');
+            nearLimitBtn.addEventListener('click', () => this.setNearLimit());
+        }
+    }
+    
+    setNearLimit() {
+        const today = new Date().toDateString();
+        localStorage.setItem('search_queries', JSON.stringify({ date: today, count: this.maxQueriesPerDay - 1 }));
+        localStorage.setItem('chat_queries', JSON.stringify({ date: today, count: 5 - 1 }));
+        
+        if (chatInstance) {
+            chatInstance.hasUsedAI = true;
+            chatInstance.checkChatAvailability();
+            chatInstance.updateUsageCounter();
+        }
+        
+        this.updateQueryCounter();
+    }
+    
+    resetCounters() {
+        localStorage.removeItem('search_queries');
+        localStorage.removeItem('chat_queries');
+        
+        if (chatInstance) {
+            chatInstance.hasUsedAI = false;
+            chatInstance.messages = [];
+            const chatMessages = document.getElementById('chat-messages');
+            if (chatMessages) chatMessages.innerHTML = '';
+            
+            const chatBtn = document.getElementById('mode-chat');
+            if (chatBtn) {
+                chatBtn.disabled = false;
+                chatBtn.classList.remove('disabled');
+                chatBtn.title = 'Switch to chat mode';
+            }
+            
+            chatInstance.checkChatAvailability();
+            chatInstance.updateUsageCounter();
+        }
+        
+        const searchResults = document.getElementById('search-results');
+        if (searchResults) searchResults.innerHTML = '';
+        
+        this.updateQueryCounter();
     }
 
     getMockResults() {
@@ -83,9 +156,9 @@ class SemanticSearch {
         queryData.count += 1;
         localStorage.setItem('search_queries', JSON.stringify(queryData));
         
-        const counterEl = document.getElementById('query-counter');
-        if (counterEl) {
-            counterEl.classList.remove('hidden');
+        if (chatInstance) {
+            chatInstance.hasUsedAI = true;
+            chatInstance.updateUsageCounter();
         }
         
         this.updateQueryCounter();
@@ -94,26 +167,52 @@ class SemanticSearch {
     updateQueryCounter() {
         const { count } = this.getQueryCount();
         const remaining = Math.max(0, this.maxQueriesPerDay - count);
-        const counterEl = document.getElementById('query-counter');
+        const chatRemaining = this.getChatRemaining();
+        const counterEl = document.getElementById('usage-counter');
         
         if (!counterEl) return;
         
-        if (remaining > 0) {
-            counterEl.textContent = `${remaining} quer${remaining === 1 ? 'y' : 'ies'} remaining today`;
-            counterEl.className = 'query-counter';
+        if (remaining > 0 && chatRemaining > 0) {
+            counterEl.textContent = `${remaining} search${remaining === 1 ? '' : 's'}, ${chatRemaining} chat${chatRemaining === 1 ? '' : 's'} remaining today`;
+            counterEl.className = 'usage-counter';
+        } else if (remaining > 0) {
+            counterEl.textContent = `${remaining} search${remaining === 1 ? '' : 's'} remaining today`;
+            counterEl.className = 'usage-counter';
+        } else if (chatRemaining > 0) {
+            counterEl.textContent = `${chatRemaining} chat${chatRemaining === 1 ? '' : 's'} remaining today`;
+            counterEl.className = 'usage-counter';
         } else {
-            counterEl.textContent = 'Daily search limit reached';
-            counterEl.className = 'query-counter limit-reached';
+            counterEl.textContent = 'Daily limits reached';
+            counterEl.className = 'usage-counter limit-reached';
         }
+    }
+
+    getChatRemaining() {
+        const today = new Date().toDateString();
+        const stored = localStorage.getItem('chat_queries');
+        let chatCount = 0;
+        
+        if (stored) {
+            try {
+                const data = JSON.parse(stored);
+                if (data.date === today) {
+                    chatCount = data.count;
+                }
+            } catch (error) {}
+        }
+        
+        return Math.max(0, 5 - chatCount);
     }
 
     async handleSearch(e) {
         e.preventDefault();
         
-        const isUnlimited = this.useMockData || this.useLocal;
         const { count } = this.getQueryCount();
-        if (count >= this.maxQueriesPerDay && !isUnlimited) {
-            this.showError("You've hit your limit for the day.<br>Feel free to email tfarrell01@gmail.com with any other questions you might have!");
+        if (count >= this.maxQueriesPerDay) {
+            if (chatInstance) {
+                chatInstance.activateSearchMode();
+            }
+            this.showError("You've hit your search limit for the day.<br>Feel free to email tfarrell01@gmail.com with any other questions you might have!");
             return;
         }
 
@@ -123,9 +222,9 @@ class SemanticSearch {
         this.setLoading(true);
         this.hideSuggestions();
         this.clearResults();
+        this.incrementQueryCount();
         
         if (this.useMockData) {
-            this.incrementQueryCount();
             await new Promise(resolve => setTimeout(resolve, 500));
             this.displayResults(this.getMockResults(), query);
             this.setLoading(false);
@@ -150,16 +249,13 @@ class SemanticSearch {
 
             if (!response.ok) {
                 if (response.status === 429) {
-                    this.showError("Too many users have been using this feature and we've hit the limit of our free-tier backend service! Please take a break and try this feature again soon, or email tfarrell01@gmail.com with other questions you might have.");
+                    this.showError("Too many users have been using this feature and we've hit the limit of our free-tier backend service! Please take a break and try this feature again soon, or email tfarrell01@gmail.com with any other questions you might have.");
                 } else {
                     this.showError(data.message || data.error || 'An error occurred while searching.');
                 }
                 return;
             }
 
-            if (!isUnlimited) {
-                this.incrementQueryCount();
-            }
             this.displayResults(data.results, query);
 
         } catch (error) {
@@ -240,9 +336,9 @@ class SemanticSearch {
         const container = document.getElementById('search-results');
         if (!container) return;
         
+        container.classList.remove('hidden');
         container.innerHTML = `
             <div class="error-message">
-                <h3>Oops!</h3>
                 <p>${message}</p>
             </div>
         `;

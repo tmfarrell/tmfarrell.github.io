@@ -1226,6 +1226,57 @@ ul.post-list,
   font-weight: 500;
 }
 
+.usage-counter {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.usage-counter.limit-reached {
+  color: #ac4142;
+  font-weight: 500;
+}
+
+.mode-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+.mode-btn.disabled:hover {
+  opacity: 0.7;
+}
+
+.reset-counters-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background: white;
+  color: #ac4142;
+  border: 1px solid #ac4142;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0.8;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.reset-counters-btn:hover {
+  opacity: 1;
+  background-color: #fff5f5;
+}
+
+.reset-counters-btn.hidden {
+  display: none;
+}
+
+#near-limit-btn {
+  top: 52px;
+}
+
 /* Results Styles */
 .search-results {
   text-align: left;
@@ -1348,17 +1399,24 @@ ul.post-list,
 /* Error and No Results */
 .error-message,
 .no-results {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: #f8f9fa;
-  border-radius: 10px;
-  margin-top: 2rem;
+  text-align: left;
+  padding: 1rem;
+  background: #fff5f5;
+  border: 1px solid #fee;
+  border-radius: 12px;
+  margin: 1rem 0;
 }
 
 .error-message h3,
 .no-results h3 {
   color: #ac4142;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.error-message p,
+.no-results p {
+  margin: 0;
+  line-height: 1.6;
 }
 
 /* Mobile Responsive */
