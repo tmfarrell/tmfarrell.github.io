@@ -7,14 +7,15 @@ categories: writing
 tags: [product, strategy]
 ---
 
-I've been building and thinking about products for a while now, and this post is my attempt to synthesize the frameworks and mental models I keep coming back to. 
+This post is an attempt to synthesize my current thinking about the product development process. It's not meant to be exhaustive or original. Instead, the hope is that it forces clarity and helps me be consistent about how I operate. 
 
-This isn't meant to be exhaustive or original — most of it stands on the shoulders of people who've thought longer and harder about this than I have. But putting it in one place forces clarity and helps me be consistent about how I operate. 
+Overall, I think about the process as a set of cycles layered within each other. Represented visually, it might look like this: 
 
-Overall, I think about product development as a set of cycles layered within each other. Represented visually, it might look like this: 
-
-<img src="/assets/img/product_layers.png"
-	style="display: block; margin-left: auto; margin-right: auto; width: 80%;" />
+<figure>
+	<img src="/assets/img/product_layers_2.png"
+		style="display: block; margin-left: auto; margin-right: auto; width: 80%;" />
+	<figcaption>Yes, this was AI generated.</figcaption>
+</figure>
 
 ## Cycling and Speed
 
@@ -138,7 +139,7 @@ Regardless of phase or step, I think about day-to-day product work as cycling th
 
 This cycle applies at every level of granularity — from a new feature to a whole product line. The key is that each activity should feed the next. Learning informs the next hypothesis. A good hypothesis makes building more focused. A focused build makes for a cleaner launch. And a clean launch generates cleaner learning.
 
-
+<!--
 ## Three Modes (Bonus)
 
 Even one layer deeper: I think about the *mode* you and your team are operating in during any given activity. (Although, admittedly, this is a bit of a bonus layer, in that you only really need to understand the above sections.)
@@ -152,12 +153,12 @@ All three modes are necessary, but the relative weight of each shifts with compa
 Also critically missed is taking the time to *think*. Most folks in any role--but product especially because of the typical meeting volume--often don't take enough time to *think* about the right next step. 
 
 Understanding which mode you're in (and which one you *should* be in) is a meta-skill most people underdevelop.
-
+-->
 ---
 
 ## Fitting It All Together
 
-All of these layers — phases, steps, actions and modes — aren't separate and distinct layers. They nest and interact.
+All of these layers — phases, steps and actions — aren't separate and distinct layers. They nest and interact.
 
 **Phases & Steps**
 
@@ -176,6 +177,7 @@ I think of these as two concentric cycles, slightly offset.
 - **Development** = **building** (engineering the solution) + **launching** (making it available)
 - **Growth** = **launching** (marketing and sales) + **learning** (measuring value delivered)
 
+<!--
 **Actions & Modes**
 
 Every action involves all modes, however, inherently some bias more towards certain modes than others. 
@@ -185,7 +187,7 @@ Learning and hypothesizing by their very nature require much more _thinking_ tha
 Building often requires more _doing_ than _thinking_ (although for highly technical products, there may be a fair amount of thought involved). It also requires more _doing_ than _communicating_ (although obviously very important to communicate changes to timeline, scope, etc). 
 
 Launching is inherently a _communicating_ activity--effectively you're communicating your solution to the market--however, it does require _thinking_ about your marketing strategy and some _doing_ to prepare materials, etc. 
-
+-->
 **Speed**
 
 Don't forget about speed! 
@@ -196,6 +198,6 @@ Speed is now also possibly the only path to winning in today's AI-powered/ accel
 
 --- 
 
-I'm sure this will keep evolving. The frameworks that stick around are the ones that prove useful when you're actually in the weeds — making real tradeoffs under pressure. I'll update this as my thinking develops.
+I'm sure this will keep evolving. The frameworks that stick are the ones that prove useful when you're actually in the trenches making real-world product decisions. I'm sure I'll update this as my thinking progresses. 
 
 

@@ -6,14 +6,14 @@
   link:  https://phenom-docs.om1.com/
   date: 2026-01-01
   tags: [healthtech, AI/ ML, real-world data, platform]
-- id: om1-3
-  title: "Enrichment Copilot"
-  org: OM1
-  org_link: https://www.om1.com
-  description: "Agentic AI application to accelerate unstructured data search, extraction and enrichment"
-  link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
-  date: 2025-06-01
-  tags: [platform, AI/ ML, real-world data]
+#- id: om1-3
+#  title: "Enrichment Copilot"
+#  org: OM1
+#  org_link: https://www.om1.com
+#  description: "Agentic AI application to accelerate unstructured data search, extraction and enrichment"
+#  link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
+#  date: 2025-06-01
+#  tags: [platform, AI/ ML, real-world data]
 - id: om1-2
   title: "Patient Risk Panel"
   org: OM1
@@ -30,14 +30,14 @@
   link:  /assets/pdf/insights_platform.pdf
   date: 2024-11-01
   tags: [data/ analytics, platform, real-world data]
-- id: om1-0
-  title: "Data Studio"
-  org: OM1
-  org_link: https://www.om1.com
-  description: "Browser-native, notebook-based data analysis environment (partnership with Hex)"
-  link:  /assets/pdf/om1_data_studio.pdf
-  date: 2024-02-01
-  tags: [data/ analytics, platform, real-world data]
+#- id: om1-0
+#  title: "Data Studio"
+#  org: OM1
+#  org_link: https://www.om1.com
+#  description: "Browser-native, notebook-based data analysis environment (partnership with Hex)"
+#  link:  /assets/pdf/om1_data_studio.pdf
+#  date: 2024-02-01
+#  tags: [data/ analytics, platform, real-world data]
 - id: dzd-1
   title: "epiXact"
   org: Day Zero Diagnostics (DZD)

@@ -7,47 +7,97 @@
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       if (height > 0) {
         var scrolled = (winScroll / height) * 100;
-        progressBar.style.width = scrolled + "%";
+        progressBar.style.width = scrolled + '%';
       }
     }
   }
 
-  // Table of Contents Generation
-  function generateTableOfContents() {
-    var toc = document.getElementById('toc-list');
-    if (!toc) return;
+  // Roman numeral converter
+  function toRoman(num) {
+    var map = [
+      ['M', 1000], ['CM', 900], ['D', 500], ['CD', 400],
+      ['C', 100], ['XC', 90], ['L', 50], ['XL', 40],
+      ['X', 10], ['IX', 9], ['V', 5], ['IV', 4], ['I', 1]
+    ];
+    var result = '';
+    for (var i = 0; i < map.length; i++) {
+      while (num >= map[i][1]) {
+        result += map[i][0];
+        num -= map[i][1];
+      }
+    }
+    return result;
+  }
 
-    var headings = document.querySelectorAll('.post-content > h2, .post-content > h3');
+  // Typographic Table of Contents
+  function generateTOC() {
+    var nav = document.getElementById('toc');
+    if (!nav) return;
+
+    var headings = document.querySelectorAll('.post-content > h2');
     if (headings.length < 2) {
-      var tocNav = toc.closest('.toc');
-      if (tocNav) tocNav.style.display = 'none';
+      nav.style.display = 'none';
       return;
     }
 
-    var tocHTML = '';
-    headings.forEach(function(heading, index) {
-      var id = 'heading-' + index;
-      heading.setAttribute('id', id);
-      var text = heading.textContent;
-      tocHTML += '<li class="toc-' + heading.tagName.toLowerCase() + '"><a href="#' + id + '">' + text + '</a></li>';
+    var listHtml = '';
+    headings.forEach(function(h, i) {
+      var id = 'section-' + (i + 1);
+      h.setAttribute('id', id);
+      listHtml += '<li><a href="#' + id + '"><span class="toc-num">' + toRoman(i + 1) + '.</span> ' + h.textContent + '</a></li>';
     });
-    toc.innerHTML = tocHTML;
 
-    toc.addEventListener('click', function(e) {
-      if (e.target.tagName === 'A') {
+    nav.innerHTML =
+      '<button class="toc-toggle" aria-expanded="false">' +
+        '<span class="toc-toggle-icon"></span>' +
+        '<span class="toc-toggle-label">Table of Contents</span>' +
+      '</button>' +
+      '<div class="toc-content">' +
+        '<ol>' + listHtml + '</ol>' +
+      '</div>';
+
+    var toggle = nav.querySelector('.toc-toggle');
+    var content = nav.querySelector('.toc-content');
+    var icon = nav.querySelector('.toc-toggle-icon');
+
+    toggle.addEventListener('click', function() {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      content.classList.toggle('open');
+    });
+
+    // Smooth-scroll on click
+    var list = nav.querySelector('ol');
+    list.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (link) {
         e.preventDefault();
-        var targetId = e.target.getAttribute('href').substring(1);
-        var targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-        }
+        var id = link.getAttribute('href').substring(1);
+        var el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
+
+    // Active section tracking
+    if ('IntersectionObserver' in window) {
+      var links = list.querySelectorAll('a');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.id;
+            links.forEach(function(link) {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, { rootMargin: '-80px 0px -60% 0px' });
+      headings.forEach(function(h) { observer.observe(h); });
+    }
   }
 
   window.addEventListener('DOMContentLoaded', function() {
     updateReadingProgress();
-    generateTableOfContents();
+    generateTOC();
   });
   window.addEventListener('scroll', updateReadingProgress);
 })(document);
