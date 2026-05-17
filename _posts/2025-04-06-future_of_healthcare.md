@@ -17,7 +17,7 @@ US healthcare is broken and  it may be that with a slowdown in therapeutic devel
 
 These are 3 trends in digital health that have been emerging in recent years, and are likely to accelerate in the new regulatory environment. 
 
-## Future of healthcare is **remote/ decentralized**
+## The future of healthcare is **remote/ decentralized**
 
 Healthcare is moving from hospitals to homes. 
 
@@ -31,7 +31,7 @@ Google Trends shows this trend has probably continued now 5+ years later.
 <img src="/assets/img/telemedicine_google.png"
 	style="display: block; margin-left: auto; margin-right: auto; width: 80%; border:1px solid #D3D3D3" />
 
-## Future of healthcare is **high frequency**
+## The future of healthcare is **high frequency**
 
 Remote patient monitoring is gaining traction.
 
@@ -59,7 +59,7 @@ Wearables like Apple Watch, Oura Ring, and Whoop are also adding to and accelera
 
 These devices will get more "clinical." Clinical and medical devices will get more "consumerized." And hopefully we all get healthier. 
 
-## Future of healthcare is **predictive**
+## The future of healthcare is **predictive**
 
 Cheaper, more ubiquitous remote monitoring means more frequent measurements and more data. Ultimately, those with the data will want to operationalize and productize that data in the form of analytics and AI (i.e. the `data => analytics => AI` value chain). 
 

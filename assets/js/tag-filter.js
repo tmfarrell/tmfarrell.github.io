@@ -58,12 +58,12 @@ class TagFilter {
         
         if (this.isFilterVisible) {
           filterContainer.classList.add('visible');
-          toggleButton.classList.add('active');
+          toggleButton.setAttribute('aria-expanded', 'true');
           // Show all items when filtering is available
           this.showAllItems();
         } else {
           filterContainer.classList.remove('visible');
-          toggleButton.classList.remove('active');
+          toggleButton.setAttribute('aria-expanded', 'false');
           // Clear all filters when hiding the container
           this.clearFilters();
           // Return to preview-only view

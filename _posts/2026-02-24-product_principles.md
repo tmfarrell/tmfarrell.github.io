@@ -19,13 +19,13 @@ Overall, I think about the process as a set of cycles layered within each other.
 
 ## Cycling and Speed
 
-Before I describe all of the cycles/ layers, I believe that more important than what you do at each individual step is **how fast you cycle through the process.**
+Before I describe all of the cycles/ layers, more important than what you do at each individual step is **how fast you cycle through the process.**
 
 I'm very much a fan of [Certain To Win](https://www.amazon.com/Certain-Win-Strategy-Applied-Business/dp/1413453767), which describes how speed of execution and specifically having a fast "OODA loop" (Observe, Orient, Decide and Act) allows you to control the narrative and keep your enemy/ competitors on their back foot.   
 
-Especially in the current technology macrocycle that we're in--where AI is accelerating work beyond what we thought possible--this is probably the only viable approach. 
+Especially in the current technology macrocycle that we're in--where AI is accelerating work beyond what we thought possible--this is likely the only viable approach. 
 
-Simply put, don't get wrapped up in all the details. Speed is king. 
+Simply put, don't get wrapped up in all the details. Speed will always be king. 
 
 ## Two Phases
 

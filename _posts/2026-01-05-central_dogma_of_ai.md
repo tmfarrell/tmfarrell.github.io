@@ -9,7 +9,7 @@ tags: [AI/ ML, data/ analytics, strategy, forecasting]
 
 ## Being Data-Pilled
 
-Andrej Karpathy was pretty data-pilled in [his podcast with Dharmesh](https://www.youtube.com/watch?v=lXUZvyajciY) last year. Seemed bearish on AI's current state and seemed to attribute that to the poor quality of the internet as a dataset.
+Andrej Karpathy was pretty data-pilled in [his podcast with Dwarkesh](https://www.youtube.com/watch?v=lXUZvyajciY) last year. Seemed bearish on AI's current state and seemed to attribute that to the poor quality of the internet as a dataset.
 
 This reminded me of the "data-centric AI" trend from a few years ago. During the deep learning boom, everyone obsessed over model architectures. Then [people realized cleaning data could beat using fancy new models](https://www.youtube.com/watch?v=avoijDORAlc).
 

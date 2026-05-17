@@ -12,24 +12,7 @@
     }
   }
 
-  // Roman numeral converter
-  function toRoman(num) {
-    var map = [
-      ['M', 1000], ['CM', 900], ['D', 500], ['CD', 400],
-      ['C', 100], ['XC', 90], ['L', 50], ['XL', 40],
-      ['X', 10], ['IX', 9], ['V', 5], ['IV', 4], ['I', 1]
-    ];
-    var result = '';
-    for (var i = 0; i < map.length; i++) {
-      while (num >= map[i][1]) {
-        result += map[i][0];
-        num -= map[i][1];
-      }
-    }
-    return result;
-  }
-
-  // Typographic Table of Contents
+  // Table of Contents
   function generateTOC() {
     var nav = document.getElementById('toc');
     if (!nav) return;
@@ -44,13 +27,13 @@
     headings.forEach(function(h, i) {
       var id = 'section-' + (i + 1);
       h.setAttribute('id', id);
-      listHtml += '<li><a href="#' + id + '"><span class="toc-num">' + toRoman(i + 1) + '.</span> ' + h.textContent + '</a></li>';
+      listHtml += '<li><a href="#' + id + '"><span class="toc-num">' + (i + 1) + '.</span>' + h.textContent + '</a></li>';
     });
 
     nav.innerHTML =
       '<button class="toc-toggle" aria-expanded="false">' +
         '<span class="toc-toggle-icon"></span>' +
-        '<span class="toc-toggle-label">Table of Contents</span>' +
+        '<span class="toc-toggle-label">Sections</span>' +
       '</button>' +
       '<div class="toc-content">' +
         '<ol>' + listHtml + '</ol>' +
@@ -58,7 +41,6 @@
 
     var toggle = nav.querySelector('.toc-toggle');
     var content = nav.querySelector('.toc-content');
-    var icon = nav.querySelector('.toc-toggle-icon');
 
     toggle.addEventListener('click', function() {
       var expanded = toggle.getAttribute('aria-expanded') === 'true';
@@ -78,21 +60,21 @@
       }
     });
 
-    // Active section tracking
-    if ('IntersectionObserver' in window) {
+    // Active section tracking on scroll
+    function updateActiveSection() {
       var links = list.querySelectorAll('a');
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            var id = entry.target.id;
-            links.forEach(function(link) {
-              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
-            });
-          }
-        });
-      }, { rootMargin: '-80px 0px -60% 0px' });
-      headings.forEach(function(h) { observer.observe(h); });
+      var scrollY = window.scrollY + 100;
+      var current = -1;
+      for (var i = 0; i < headings.length; i++) {
+        if (headings[i].offsetTop <= scrollY) {
+          current = i;
+        }
+      }
+      links.forEach(function(link, i) {
+        link.classList.toggle('active', i === current);
+      });
     }
+    window.addEventListener('scroll', updateActiveSection);
   }
 
   window.addEventListener('DOMContentLoaded', function() {
