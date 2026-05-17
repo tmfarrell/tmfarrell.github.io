@@ -41,7 +41,9 @@ Remote patient monitoring is gaining traction.
 <img src="/assets/img/rpm_google.png"
 	style="display: block; margin-left: auto; margin-right: auto; width: 80%; border:1px solid #D3D3D3" /> 
 
-Why? It's way cheaper. It cuts out the administrative bloat of healthcare, which has been one of the biggest cost drivers for US healthcare in recent years.
+Why? It's way cheaper. It costs way less to collect basic health/ bio metrics remotely, rather than requiring patients to visit a physical site. 
+
+Physical healthcare sites--and the administrative bloat that comes with them--have been the biggest cost driver for US healthcare in recent years.
 
 <img src="/assets/img/healthcare_admin_waste_1.jpg"
 	style="display: block; margin-left: auto; margin-right: auto; width: 80%; border:1px solid #D3D3D3" /> 
@@ -49,7 +51,9 @@ Why? It's way cheaper. It cuts out the administrative bloat of healthcare, which
 <img src="/assets/img/healthcare_admin_waste_2.jpg"
 	style="display: block; margin-left: auto; margin-right: auto; width: 80%; border:1px solid #D3D3D3" />
 
-Wearables like Apple Watch, Oura Ring, and Whoop are also adding to and accelerating this trend. (The consumerization of healthcare is a related trend I'll leave for another post.)
+Continuous health monitoring using wearables like Apple Watch, Oura Ring and Whoop are also accelerating this trend. 
+
+Consumers are measuring their health in ways that were impossible 5-10 years ago. (The consumerization of healthcare is a related trend I'll leave for another post.)
 
 <img src="/assets/img/apple_watch.png"
 	style="display: block; margin-left: auto; margin-right: auto; width: 80%; border:1px solid #D3D3D3" />
@@ -57,7 +61,7 @@ Wearables like Apple Watch, Oura Ring, and Whoop are also adding to and accelera
 <img src="/assets/img/oura_v_whoop.png"
 	style="display: block; margin-left: auto; margin-right: auto; width: 80%; border:1px solid #D3D3D3" />
 
-These devices will get more "clinical." Clinical and medical devices will get more "consumerized." And hopefully we all get healthier. 
+Inevitably, these devices will get more "clinical" by allowing medical professionals to harness their data and help monitor their patients more continuously. 
 
 ## The future of healthcare is **predictive**
 
@@ -65,7 +69,7 @@ Cheaper, more ubiquitous remote monitoring means more frequent measurements and 
 
 You can already see this happening in the consumer wearable market with their sleep and recovery scores. Inevitably, they will want to implement predictive features that make reccomendations and are more forward looking.  
 
-On the clinical side, the literature on AI in medicine is also exploding.
+On the clinical side, the literature on AI in medicine is also steadily growing.
 
 <img src="/assets/img/ai_medicine_pubmed.png"
 	style="display: block; margin-left: auto; margin-right: auto; width: 80%; border:1px solid #D3D3D3" /> 
@@ -74,7 +78,7 @@ And these aren't just research papers. Last year, Eric Topol reviewed and highli
 
 One of the highlights: 
 
->[A recent study using machine learning was able to predict Alzheimer’s disease up to 7 years](https://www.nature.com/articles/s43587-024-00573-8) before diagnosis by integrating electronic health record data for cholesterol, blood pressure, vitamin D, and sex-specific features such as osteoporosis in women or erectile dysfunction and prostatic hypertrophy in men.
+>[A recent study using machine learning was able to predict Alzheimer’s disease up to 7 years](https://www.nature.com/articles/s43587-024-00573-8) before diagnosis by integrating electronic health record data for cholesterol, blood pressure, vitamin D, and sex-specific features.
 
 Incredible. Imagine the amount of prevention that can happen with _7-year_ lead time knowing you're high risk for a disease. 
 
