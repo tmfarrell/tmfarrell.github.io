@@ -3,7 +3,7 @@
   --bg: #ffffff;
   --text: #1a1a1a;
   --text-muted: #a0988c;
-  --text-light: #c0c0c0;
+  --text-light: #d0d0d0;
   --accent: #ac4142;
   --border: #e8e2d8;
   --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -101,8 +101,8 @@ hr {
 
 /* Post Meta */
 .post-meta {
-  color: var(--text-muted);
-  font-size: 0.9rem;
+  color: var(--text-light);
+  font-size: 0.85rem;
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -110,7 +110,11 @@ hr {
 }
 
 .post-meta .separator { color: var(--text-light); font-weight: 300; }
-.post-meta .reading-time { color: var(--text-muted); font-style: italic; }
+.post-meta .reading-time { color: var(--text-light); }
+
+.post-title {
+  margin-top: 0.25rem;
+}
 
 /* ── Table of Contents ── */
 .post-toc {
@@ -221,6 +225,10 @@ hr {
 /* Back button */
 .back-button, .back-button-container a {
   color: var(--accent) !important;
+}
+
+.back-button-container {
+  margin-bottom: 2rem;
 }
 
 /* Tab navigation */
@@ -447,6 +455,20 @@ ul.post-list,
   display: inline;
   opacity: 0.35;
   transition: opacity 0.15s ease;
+}
+
+.post-page-tags {
+  margin-bottom: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.post-page-tags .tag {
+  background-color: #f3f3f3;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  margin-right: 0.35rem;
+  color: #8c8c8c;
+  font-size: 0.75rem;
 }
 
 .post-list-item:hover .post-tags,

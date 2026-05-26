@@ -19,17 +19,24 @@ layout: default
 </div>
 
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-
   <div class="post-meta">
     <span>{{ page.date | date: site.theme_config.date_format }}</span>
-    <span class="separator">|</span>
     <span class="reading-time">
       {% assign words = content | strip_html | number_of_words %}
       {% assign reading_time = words | divided_by: 200 %}
       {% if reading_time == 0 %}1 min read{% else %}{{ reading_time }} min read{% endif %}
     </span>
   </div>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  {% if page.tags %}
+  <div class="post-page-tags">
+    {% for tag in page.tags %}
+    <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
 
   <article class="post-content">
     {% if page.toc %}
