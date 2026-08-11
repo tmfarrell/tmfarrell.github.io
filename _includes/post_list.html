@@ -9,18 +9,46 @@
 
 {%- if posts.size > 0 -%}
 
-<!-- Filter Toggle Button -->
-<button class="filter-toggle" id="filter-toggle-{{include.category}}" aria-expanded="false">
-  <span class="filter-toggle-icon"></span>
-  <span class="filter-toggle-label">Tags</span>
-</button>
+<div class="filter-component" data-filter="{{include.category}}">
+  <div class="filter-trigger-row">
+    <button type="button" class="filter-trigger" data-filter-action="toggle" aria-expanded="false" aria-controls="filter-panel-{{include.category}}">
+      <svg class="filter-trigger__icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M2 4h12M4 8h8M6 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="filter-trigger__label">Filters</span>
+      <span class="filter-trigger__badge" data-trigger-badge hidden>0</span>
+      <span class="filter-trigger__caret" aria-hidden="true"></span>
+    </button>
+  </div>
 
-<!-- Filter Container (Hidden by default) -->
-<div class="filter-container" id="filter-container-{{include.category}}">
-  <div class="filter-controls">
-    <div class="tag-cloud" id="tag-cloud-{{include.category}}"></div>
-    <div class="filter-actions">
-      <button id="clear-filter-{{include.category}}">Clear</button>
+  <div class="filter-wrap" id="filter-panel-{{include.category}}" data-expanded="false" role="region" aria-label="Filter {{include.category}} content">
+    <div class="filter-wrap__inner">
+      <section class="filter">
+        <div class="filter__row">
+          <label class="filter__search" for="filter-search-{{include.category}}">
+            <svg class="filter__search-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M11 11L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <input id="filter-search-{{include.category}}" type="search" name="q" placeholder="Search titles and tags…" autocomplete="off" data-filter-input="query" />
+          </label>
+
+          <button type="button" class="filter__close" data-filter-action="toggle" aria-label="Collapse filters">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="filter__facet">
+          <span class="filter__facet-label" id="filter-topic-label-{{include.category}}">Topic</span>
+          <div class="filter__chips" id="filter-chips-{{include.category}}" role="group" aria-labelledby="filter-topic-label-{{include.category}}"></div>
+        </div>
+
+        <div class="filter__status">
+          <button type="button" class="filter__clear" data-filter-action="clear" disabled>Clear all</button>
+        </div>
+      </section>
     </div>
   </div>
 </div>

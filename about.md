@@ -1,0 +1,33 @@
+---
+layout: default
+title: About
+permalink: /
+---
+
+<div class="header-container">
+  <div class="ai-mode-container">
+    <a href="{{ '/ai-mode/' | relative_url }}" class="ai-mode-btn">AI Mode</a>
+  </div>
+
+  <div style="text-align: center;">
+    <nav class="tab-nav">
+      <a href="{{ '/' | relative_url }}" class="active">about</a>
+      <span> | </span>
+      <a href="{{ '/reading/' | relative_url }}">read</a>
+      <span> | </span>
+      <a href="{{ '/writing/' | relative_url }}">write</a>
+      <span> | </span>
+      <a href="{{ '/building/' | relative_url }}">build</a>
+    </nav>
+  </div>
+</div>
+
+<hr data-content="">
+
+<div class="page">
+  <p>I'm Tim Farrell, a product builder/ leader working in bio/ healthtech. This site is a collection of what I've read, written and built. </p>
+
+  <p>I've been fascinated by the potential for engineering and tech, particularly data science and AI, to advance bio/ health/ medicine my whole career. With the latest wave of AI, it seems inevitable these technologies will radically transform how we manage and optimize our health and longevity.</p>
+  
+  <p>Exciting times!</p>
+</div>

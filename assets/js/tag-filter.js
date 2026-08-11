@@ -1,169 +1,168 @@
 class TagFilter {
   constructor(category) {
     this.category = category;
+    this.root = document.querySelector(`.filter-component[data-filter="${category}"]`);
+    if (!this.root) return;
+
+    this.container = document.getElementById(`post-list-${category}`) || document.getElementById(`portfolio-list`);
+    this.panel = this.root.querySelector('.filter-wrap');
+    this.trigger = this.root.querySelector('.filter-trigger');
+    this.searchInput = this.root.querySelector('[data-filter-input="query"]');
+    this.chipsEl = this.root.querySelector('.filter__chips');
+    this.badge = this.root.querySelector('[data-trigger-badge]');
+    this.clearBtn = this.root.querySelector('[data-filter-action="clear"]');
+
     this.allTags = new Set();
-    this.activeFilters = new Set();
-    this.isFilterVisible = false;
+    this.activeTags = new Set();
+    this.query = '';
+    this.isExpanded = false;
+
     this.init();
   }
 
   init() {
     this.collectTags();
-    this.renderTagCloud();
-    this.bindEvents();
-    this.bindToggleEvents();
-    this.initializeVisibility();
+    this.renderChips();
+    this.bindToggle();
+    this.bindSearch();
+    this.bindChips();
+    this.bindClear();
+    this.bindEscape();
+    this.updateStatus();
   }
 
-  initializeVisibility() {
-    // CSS handles initial visibility of additional items
-    const container = document.getElementById(`post-list-${this.category}`) || document.getElementById(`portfolio-list`);
-    if (container) {
-      container.classList.remove('filtering-active');
-    }
+  getItems() {
+    return document.querySelectorAll(
+      `[data-category="${this.category}"] .post-list-item, [data-category="${this.category}"] .portfolio-list-item`
+    );
+  }
+
+  getShowMoreItem() {
+    return document.querySelector(`[data-category="${this.category}"] .show-more-item`);
+  }
+
+  isFiltering() {
+    return this.activeTags.size > 0 || this.query.trim().length > 0;
   }
 
   collectTags() {
-    const items = document.querySelectorAll(`[data-category="${this.category}"] .post-list-item, [data-category="${this.category}"] .portfolio-list-item`);
-    
-    items.forEach(item => {
+    this.getItems().forEach(item => {
       const tags = item.dataset.tags;
       if (tags) {
         tags.split(',').forEach(tag => {
-          if (tag.trim()) {
-            this.allTags.add(tag.trim());
-          }
+          if (tag.trim()) this.allTags.add(tag.trim());
         });
       }
     });
   }
 
-  renderTagCloud() {
-    const tagCloud = document.getElementById(`tag-cloud-${this.category}`);
-    if (!tagCloud) return;
-
+  renderChips() {
+    if (!this.chipsEl) return;
     const sortedTags = Array.from(this.allTags).sort();
-    tagCloud.innerHTML = sortedTags.map(tag => 
-      `<button class="tag-button" data-tag="${tag}">${tag}</button>`
+    this.chipsEl.innerHTML = sortedTags.map(tag =>
+      `<button type="button" class="chip" aria-pressed="false" data-tag="${tag}">${tag}</button>`
     ).join('');
   }
 
-  bindToggleEvents() {
-    const toggleButton = document.getElementById(`filter-toggle-${this.category}`);
-    const filterContainer = document.getElementById(`filter-container-${this.category}`);
-    
-    if (toggleButton && filterContainer) {
-      toggleButton.addEventListener('click', () => {
-        this.isFilterVisible = !this.isFilterVisible;
-        
-        if (this.isFilterVisible) {
-          filterContainer.classList.add('visible');
-          toggleButton.setAttribute('aria-expanded', 'true');
-          // Show all items when filtering is available
-          this.showAllItems();
-        } else {
-          filterContainer.classList.remove('visible');
-          toggleButton.setAttribute('aria-expanded', 'false');
-          // Clear all filters when hiding the container
-          this.clearFilters();
-          // Return to preview-only view
-          this.showPreviewOnly();
-        }
-      });
-    }
-  }
-
   showAllItems() {
-    const container = document.getElementById(`post-list-${this.category}`) || document.getElementById(`portfolio-list`);
-    const showMoreItem = document.querySelector(`[data-category="${this.category}"] .show-more-item`);
-    
-    // Add filtering-active class to show additional items
-    if (container) {
-      container.classList.add('filtering-active');
-    }
-    
-    // Hide the "Show more" link since all items are now visible
-    if (showMoreItem) {
-      showMoreItem.style.display = 'none';
-    }
+    if (!this.container) return;
+    this.container.classList.add('filtering-active');
+    const showMoreItem = this.getShowMoreItem();
+    if (showMoreItem) showMoreItem.style.display = 'none';
   }
 
   showPreviewOnly() {
-    const container = document.getElementById(`post-list-${this.category}`) || document.getElementById(`portfolio-list`);
-    const showMoreItem = document.querySelector(`[data-category="${this.category}"] .show-more-item`);
-    const additionalItems = document.querySelectorAll(`[data-category="${this.category}"] .additional-item`);
-    
-    // Remove filtering-active class to hide additional items
-    if (container) {
-      container.classList.remove('filtering-active');
-    }
-    
-    // Remove hidden class from all items to reset state
-    const allItems = document.querySelectorAll(`[data-category="${this.category}"] .post-list-item, [data-category="${this.category}"] .portfolio-list-item`);
-    allItems.forEach(item => {
-      item.classList.remove('hidden');
-    });
-    
-    // Show the "Show more" link if there are additional items
-    if (showMoreItem && additionalItems.length > 0) {
-      showMoreItem.style.display = 'list-item';
-    }
+    if (!this.container) return;
+    this.container.classList.remove('filtering-active');
+    this.getItems().forEach(item => item.classList.remove('hidden'));
+    const showMoreItem = this.getShowMoreItem();
+    if (showMoreItem) showMoreItem.style.display = 'list-item';
   }
 
-  bindEvents() {
-    // Tag button filtering
-    const tagCloud = document.getElementById(`tag-cloud-${this.category}`);
-    if (tagCloud) {
-      tagCloud.addEventListener('click', (e) => {
-        if (e.target.classList.contains('tag-button')) {
-          this.toggleTagFilter(e.target.dataset.tag, e.target);
-        }
-      });
-    }
+  setExpanded(expanded) {
+    this.isExpanded = expanded;
+    this.panel.setAttribute('data-expanded', String(expanded));
+    this.trigger.setAttribute('aria-expanded', String(expanded));
 
-    // Clear filter button
-    const clearButton = document.getElementById(`clear-filter-${this.category}`);
-    if (clearButton) {
-      clearButton.addEventListener('click', () => {
-        this.clearFilters();
-      });
-    }
-  }
-
-
-
-  toggleTagFilter(tag, buttonElement) {
-    if (this.activeFilters.has(tag)) {
-      this.activeFilters.delete(tag);
-      buttonElement.classList.remove('active');
+    if (expanded) {
+      this.showAllItems();
     } else {
-      this.activeFilters.add(tag);
-      buttonElement.classList.add('active');
+      // Filters stay applied when collapsed; only return to the preview when clean
+      if (this.isFiltering()) {
+        this.showAllItems();
+      } else {
+        this.showPreviewOnly();
+      }
+      this.trigger.focus();
     }
-
-    this.applyTagFilters();
   }
 
-  applyTagFilters() {
-    const items = document.querySelectorAll(`[data-category="${this.category}"] .post-list-item, [data-category="${this.category}"] .portfolio-list-item`);
-    const showMoreItem = document.querySelector(`[data-category="${this.category}"] .show-more-item`);
-    
+  bindToggle() {
+    this.root.querySelectorAll('[data-filter-action="toggle"]').forEach(btn => {
+      btn.addEventListener('click', () => this.setExpanded(!this.isExpanded));
+    });
+  }
+
+  bindSearch() {
+    if (!this.searchInput) return;
+    this.searchInput.addEventListener('input', () => {
+      this.query = this.searchInput.value;
+      this.applyFilters();
+    });
+  }
+
+  bindChips() {
+    if (!this.chipsEl) return;
+    this.chipsEl.addEventListener('click', (e) => {
+      const chip = e.target.closest('.chip');
+      if (!chip) return;
+      const tag = chip.dataset.tag;
+      if (this.activeTags.has(tag)) {
+        this.activeTags.delete(tag);
+        chip.setAttribute('aria-pressed', 'false');
+      } else {
+        this.activeTags.add(tag);
+        chip.setAttribute('aria-pressed', 'true');
+      }
+      this.applyFilters();
+    });
+  }
+
+  bindClear() {
+    if (!this.clearBtn) return;
+    this.clearBtn.addEventListener('click', () => {
+      this.activeTags.clear();
+      this.query = '';
+      this.searchInput.value = '';
+      this.chipsEl.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', 'false'));
+      this.applyFilters();
+      this.searchInput.focus();
+    });
+  }
+
+  bindEscape() {
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && this.isExpanded) this.setExpanded(false);
+    });
+  }
+
+  applyFilters() {
+    const q = this.query.trim().toLowerCase();
     let visibleCount = 0;
 
-    // If filters are active and container is visible, show all items
-    if (this.activeFilters.size > 0 && this.isFilterVisible) {
-      this.showAllItems();
-    }
-
-    items.forEach(item => {
+    this.getItems().forEach(item => {
       const itemTags = (item.dataset.tags || '').split(',').map(t => t.trim()).filter(t => t);
-      
-      const hasAnyActiveTag = this.activeFilters.size === 0 || 
-                              Array.from(this.activeFilters).some(activeTag => 
-                                itemTags.includes(activeTag)
-                              );
 
-      if (hasAnyActiveTag) {
+      const matchesTag = this.activeTags.size === 0 ||
+        Array.from(this.activeTags).some(tag => itemTags.includes(tag));
+
+      const titleEl = item.querySelector('.post-link, .portfolio-link');
+      const title = (titleEl ? titleEl.textContent : '').toLowerCase();
+      const matchesQuery = !q ||
+        title.includes(q) ||
+        itemTags.some(tag => tag.toLowerCase().includes(q));
+
+      if (matchesTag && matchesQuery) {
         item.classList.remove('hidden');
         visibleCount++;
       } else {
@@ -171,45 +170,25 @@ class TagFilter {
       }
     });
 
-    // Hide "Show more" when filtering is active
-    if (showMoreItem) {
-      showMoreItem.style.display = (this.activeFilters.size > 0 || this.isFilterVisible) ? 'none' : 'list-item';
-    }
-
-    this.updateClearButton(this.activeFilters.size > 0);
-  }
-
-  clearFilters() {
-    // Clear active tag filters
-    this.activeFilters.clear();
-    
-    // Remove active class from tag buttons
-    const tagButtons = document.querySelectorAll(`#tag-cloud-${this.category} .tag-button`);
-    tagButtons.forEach(button => button.classList.remove('active'));
-
-    // Remove hidden class from all items
-    const items = document.querySelectorAll(`[data-category="${this.category}"] .post-list-item, [data-category="${this.category}"] .portfolio-list-item`);
-    items.forEach(item => item.classList.remove('hidden'));
-
-    // If filter container is visible, show all items; otherwise show preview only
-    if (this.isFilterVisible) {
+    if (this.isFiltering() || this.isExpanded) {
       this.showAllItems();
     } else {
       this.showPreviewOnly();
     }
 
-    this.updateClearButton(false);
+    const showMoreItem = this.getShowMoreItem();
+    if (showMoreItem) {
+      showMoreItem.style.display = (this.isFiltering() || this.isExpanded) ? 'none' : 'list-item';
+    }
+
+    this.updateStatus();
   }
 
-  updateClearButton(show) {
-    const filterActions = document.querySelector(`[data-category="${this.category}"] .filter-actions`);
-    if (filterActions) {
-      if (show) {
-        filterActions.classList.add('visible');
-      } else {
-        filterActions.classList.remove('visible');
-      }
-    }
+  updateStatus() {
+    const total = this.activeTags.size + (this.query.trim().length > 0 ? 1 : 0);
+    this.clearBtn.disabled = total === 0;
+    this.badge.hidden = total === 0;
+    this.badge.textContent = String(total);
   }
 }
 
@@ -247,7 +226,7 @@ class PortfolioExpander {
   toggleExpansion(header) {
     const content = header.nextElementSibling;
     const isExpanded = header.getAttribute('aria-expanded') === 'true';
-    
+
     if (isExpanded) {
       this.collapseItem(header, content);
     } else {
@@ -259,10 +238,10 @@ class PortfolioExpander {
     // Update ARIA attributes
     header.setAttribute('aria-expanded', 'true');
     content.setAttribute('aria-hidden', 'false');
-    
+
     // Add visual feedback
     header.classList.add('expanded');
-    
+
     // Focus management - keep focus on header for keyboard users
     header.focus();
   }
@@ -271,10 +250,10 @@ class PortfolioExpander {
     // Update ARIA attributes
     header.setAttribute('aria-expanded', 'false');
     content.setAttribute('aria-hidden', 'true');
-    
+
     // Remove visual feedback
     header.classList.remove('expanded');
-    
+
     // Focus management
     header.focus();
   }
@@ -282,18 +261,9 @@ class PortfolioExpander {
 
 // Initialize filters when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
-  // Check which page we're on and initialize appropriate filter
-  if (document.getElementById('filter-toggle-writing')) {
-    new TagFilter('writing');
-  }
-  
-  if (document.getElementById('filter-toggle-reading')) {
-    new TagFilter('reading');
-  }
-  
-  if (document.getElementById('filter-toggle-portfolio')) {
-    new TagFilter('portfolio');
-  }
+  document.querySelectorAll('.filter-component[data-filter]').forEach(component => {
+    new TagFilter(component.dataset.filter);
+  });
 
   // Initialize portfolio expander
   if (document.querySelector('.portfolio-list')) {

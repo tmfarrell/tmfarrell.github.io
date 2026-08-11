@@ -3,44 +3,36 @@ toc: true
 layout: post
 title: 'How I Think About Product (So Far)'
 date: 2026-03-01 08:00
-categories: writing
+categories: 
 tags: [product, strategy]
 ---
 
-This post is an attempt to synthesize my current thinking about the product development process. It's not meant to be exhaustive or original. Instead, the hope is that it forces clarity and helps me be consistent about how I operate. 
-
-Overall, I think about the process as a set of cycles layered within each other. Represented visually, it might look like this: 
-
-<figure>
-	<img src="/assets/img/product_layers_2.png"
-		style="display: block; margin-left: auto; margin-right: auto; width: 80%;" />
-	<figcaption>Yes, this was AI generated.</figcaption>
-</figure>
+This post is an attempt to synthesize my current thinking about product development. It's not meant to be exhaustive or original but, instead, to force clarity and help me be consistent about how I operate. 
 
 ## Cycling and Speed
 
-Before I describe all of the cycles/ layers, more important than what you do at each individual step is **how fast you cycle through the process.**
+Before I get into the details, I believe that just as important as _what_ you do (at each step in the process) is **how fast you do it.**
 
-I'm very much a fan of [Certain To Win](https://www.amazon.com/Certain-Win-Strategy-Applied-Business/dp/1413453767), which describes how speed of execution and specifically having a fast "OODA loop" (Observe, Orient, Decide and Act) allows you to control the narrative and keep your enemy/ competitors on their back foot.   
+I'm very much a fan of [Certain To Win](https://www.amazon.com/Certain-Win-Strategy-Applied-Business/dp/1413453767), which describes how speed of execution--specifically, having a fast "OODA loop" (Observe, Orient, Decide and Act)--allows you to control the narrative and keep your enemy/ competitors on their back foot.   
 
-Especially in the current technology macrocycle that we're in--where AI is accelerating work beyond what we thought possible--this is likely the only viable approach. 
+Especially in the current tech macrocycle we're all in--where AI is accelerating work beyond what we thought possible--this is likely the only viable approach. With new products launching every week and companies growing faster than ever, you have to make sure you're shipping enough to be part of the conversation. 
 
-Simply put, don't get wrapped up in all the details. Speed will always be king. 
+Don't let getting caught up in the details slow you down. Remember that being fast. 
 
 ## Two Phases
 
-At the highest level/ layer, I think about product development in two distinct phases:
+At the highest level, I think product development has two distinct phases:
 
-1. **Discovery** — the search for product-market fit
+1. **Discovery** — finding what works (often called product-market fit)
 2. **Growth** — scaling what works
 
-These phases are fundamentally different, and conflating them is one of the most common mistakes I see product teams make.
+These phases are fundamentally different, and a common mistake is ignoring the discovery phase for products that aren't yet working. 
 
 **Discovery**
 
-Discovery is about proving that your product deserves to exist. The goal isn't to build — it's to *learn*. You're treating your product like a hypothesis and testing it iteratively until the market validates it.
+Discovery is about proving your product deserves to exist. The goal isn't to build — it's to *learn*. You're treating your product like a hypothesis and testing it iteratively until you see some validation from the market.
 
-The best framework for this comes from Steve Blank's *Four Steps to the Epiphany*: customer discovery and customer validation before you ever think about scaling. Use interviews and prototypes to validate ideas cheaply. Use actual product releases to validate customers. 
+The best framework for this comes from Steve Blank's *Four Steps to the Epiphany*: customer discovery and customer validation before ever thinking about scaling. Use interviews and prototypes to validate ideas cheaply. Be open to making changes to your product (even radical ones), or pitch, based on what you hear from the market. 
 
 And critically, **do things that don't scale** — that's not a bug, it's a feature of this phase. Scalability is a growth problem, not a discovery problem.
 

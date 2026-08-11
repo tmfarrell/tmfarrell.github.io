@@ -2,34 +2,34 @@
   title: "PhenOM API"
   org: OM1
   org_link: https://www.om1.com
-  description: "API for a generative AI medical event model that allows health systems and plans to predict risk, screen patients and triage across a wide range of clinical outcomes"
+  description: "API for a generative AI medical event model that allows health systems and plans to screen patients, assess risks and triage for virtually any clinical outcome"
   link:  https://phenom-docs.om1.com/
   date: 2026-01-01
   tags: [healthtech, AI/ ML, real-world data, platform]
-#- id: om1-3
-#  title: "Enrichment Copilot"
-#  org: OM1
-#  org_link: https://www.om1.com
-#  description: "Agentic AI application to accelerate unstructured data search, extraction and enrichment"
-#  link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
-#  date: 2025-06-01
-#  tags: [platform, AI/ ML, real-world data]
 - id: om1-2
   title: "Patient Risk Panel"
   org: OM1
   org_link: https://www.om1.com
-  description: "Application for providers/ health plans to more effectively triage patients using clinical risks predicted from medical history"
+  description: "Application for providers to more effectively triage patients based on outcome risks predicted from medical history"
   link:  /assets/pdf/phenom_risk_panel.pdf
-  date: 2025-01-01
+  date: 2025-06-01
   tags: [healthtech, AI/ ML, real-world data]
-- id: om1-1
-  title: "Insights Platform"
+- id: om1-3
+  title: "Enrichment Copilot"
   org: OM1
   org_link: https://www.om1.com
-  description: "Digital platform for epidemiologists/ analysts to more rapidly analyze and generate evidence from real-world healthcare datasets"
-  link:  /assets/pdf/insights_platform.pdf
+  description: "Agentic AI application to accelerate unstructured data search, extraction and enrichment"
+  link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
   date: 2024-11-01
-  tags: [data/ analytics, platform, real-world data]
+  tags: [platform, AI/ ML, real-world data]
+#- id: om1-1
+#  title: "Insights Platform"
+#  org: OM1
+#  org_link: https://www.om1.com
+#  description: "Digital platform for epidemiologists/ analysts to more rapidly analyze and generate evidence from real-world healthcare datasets"
+#  link:  /assets/pdf/insights_platform.pdf
+#  date: 2024-11-01
+#  tags: [data/ analytics, platform, real-world data]
 #- id: om1-0
 #  title: "Data Studio"
 #  org: OM1

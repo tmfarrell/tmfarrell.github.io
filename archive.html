@@ -9,13 +9,12 @@ title: Writing
   </div>
   
   <div style="text-align: center;">
-    <h1 class="site-title" style="margin-bottom: 0.3rem;">{{ site.title }}</h1>
-    <p style="margin-top: 0; color: #666;">{{ site.tagline }}</p>
-
     <nav class="tab-nav">
+      <a href="{{ '/' | relative_url }}">about</a>
+      <span> | </span>
       <a href="{{ '/reading/' | relative_url }}">read</a>
       <span> | </span>
-      <a href="{{ '/archive/' | relative_url }}" class="active">write</a>
+      <a href="{{ '/writing/' | relative_url }}" class="active">write</a>
       <span> | </span>
       <a href="{{ '/building/' | relative_url }}">build</a>
     </nav>
