@@ -27,7 +27,7 @@ permalink: /
 <div class="page">
   <p>I'm Tim Farrell, a product builder/ leader working in bio/ healthtech. This site is a collection of what I've read, written and built. </p>
 
-  <p>I've been fascinated by the potential for engineering and tech, particularly data science and AI, to advance bio/ health/ medicine my whole career. With the latest wave of AI, it seems inevitable these technologies will radically transform how we manage and optimize our health and longevity.</p>
+  <p>My entire career I've been fascinated by the potential for engineering and tech, particularly data science and AI, to advance bio/ health/ medicine.</p>
   
-  <p>Exciting times!</p>
+  <p>With the latest wave of AI, it seems inevitable these technologies will radically transform how we manage and optimize our health and longevity. Exciting times!</p>
 </div>

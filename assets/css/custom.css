@@ -599,15 +599,6 @@ ul.post-list,
 
 /* Filter component — mobile */
 @media (max-width: 640px) {
-  .filter-trigger-row {
-    justify-content: stretch;
-  }
-
-  .filter-trigger {
-    width: 100%;
-    justify-content: space-between;
-  }
-
   .filter {
     padding: 0.75rem;
     border-radius: 6px;
@@ -841,6 +832,17 @@ ul.post-list,
     padding-right: 0;
   }
 
+  /* About page - breathing room on mobile */
+  .page {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* Header links - slightly smaller on mobile */
+  .header-container .tab-nav a {
+    font-size: 0.9rem;
+  }
+
   /* Back button container - align with post padding */
   .back-button-container {
     padding-left: 1.25rem;
@@ -932,8 +934,19 @@ ul.post-list,
 /* Small mobile devices */
 @media (max-width: 480px) {
   .ai-mode-btn {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     padding: 0.3rem 0.6rem;
+  }
+
+  /* About page - keep text clear of edges on small phones */
+  .page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Header links - smaller on small phones */
+  .header-container .tab-nav a {
+    font-size: 0.85rem;
   }
 }
 
@@ -1329,10 +1342,8 @@ ul.post-list,
 }
 
 .ai-mode-container {
-  position: absolute;
-  top: 0rem;
-  right: 0;
-  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .ai-mode-btn {
@@ -1659,13 +1670,8 @@ ul.post-list,
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .ai-mode-container {
-    top: 0.5rem;
-    right: 0.5rem;
-  }
-
   .ai-mode-btn {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 0.35rem 0.7rem;
   }
 
@@ -1704,7 +1710,7 @@ ul.post-list,
   }
 
   .ai-mode-btn {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     padding: 0.3rem 0.6rem;
   }
 }
@@ -1715,4 +1721,19 @@ figcaption {
   padding: 8px;
   text-align: center;
   color: #555;
+}
+
+/* Mobile - slightly smaller text in read/write/build lists */
+@media (max-width: 768px) {
+  .post-list-item,
+  .portfolio-list-item {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-list-item,
+  .portfolio-list-item {
+    font-size: 0.85rem !important;
+  }
 }
