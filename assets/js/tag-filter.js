@@ -9,11 +9,14 @@ class TagFilter {
     this.trigger = this.root.querySelector('.filter-trigger');
     this.searchInput = this.root.querySelector('[data-filter-input="query"]');
     this.chipsEl = this.root.querySelector('.filter__chips');
+    this.orgChipsEl = this.root.querySelector('[data-filter-chips="org"]');
     this.badge = this.root.querySelector('[data-trigger-badge]');
     this.clearBtn = this.root.querySelector('[data-filter-action="clear"]');
 
     this.allTags = new Set();
     this.activeTags = new Set();
+    this.allOrgs = new Map();
+    this.activeOrgs = new Set();
     this.query = '';
     this.isExpanded = false;
 
@@ -22,10 +25,13 @@ class TagFilter {
 
   init() {
     this.collectTags();
+    this.collectOrgs();
     this.renderChips();
+    this.renderOrgChips();
     this.bindToggle();
     this.bindSearch();
     this.bindChips();
+    this.bindOrgChips();
     this.bindClear();
     this.bindEscape();
     this.updateStatus();
@@ -42,7 +48,7 @@ class TagFilter {
   }
 
   isFiltering() {
-    return this.activeTags.size > 0 || this.query.trim().length > 0;
+    return this.activeTags.size > 0 || this.activeOrgs.size > 0 || this.query.trim().length > 0;
   }
 
   collectTags() {
@@ -56,11 +62,38 @@ class TagFilter {
     });
   }
 
+  collectOrgs() {
+    if (!this.orgChipsEl) return;
+    this.getItems().forEach(item => {
+      const org = item.dataset.org;
+      const display = item.dataset.orgDisplay || org;
+      if (!org || !org.trim()) return;
+      const key = org.trim();
+      const date = item.dataset.date || '';
+      const existing = this.allOrgs.get(key);
+      if (!existing) {
+        this.allOrgs.set(key, { display: display.trim(), maxDate: date });
+      } else if (date > existing.maxDate) {
+        existing.maxDate = date;
+      }
+    });
+  }
+
   renderChips() {
     if (!this.chipsEl) return;
     const sortedTags = Array.from(this.allTags).sort();
     this.chipsEl.innerHTML = sortedTags.map(tag =>
       `<button type="button" class="chip" aria-pressed="false" data-tag="${tag}">${tag}</button>`
+    ).join('');
+  }
+
+  renderOrgChips() {
+    if (!this.orgChipsEl) return;
+    const sortedOrgs = Array.from(this.allOrgs.entries()).sort((a, b) =>
+      b[1].maxDate.localeCompare(a[1].maxDate) || a[1].display.localeCompare(b[1].display)
+    );
+    this.orgChipsEl.innerHTML = sortedOrgs.map(([value, { display }]) =>
+      `<button type="button" class="chip" aria-pressed="false" data-org="${value}">${display}</button>`
     ).join('');
   }
 
@@ -128,13 +161,34 @@ class TagFilter {
     });
   }
 
+  bindOrgChips() {
+    if (!this.orgChipsEl) return;
+    this.orgChipsEl.addEventListener('click', (e) => {
+      const chip = e.target.closest('.chip');
+      if (!chip) return;
+      const org = chip.dataset.org;
+      if (this.activeOrgs.has(org)) {
+        this.activeOrgs.delete(org);
+        chip.setAttribute('aria-pressed', 'false');
+      } else {
+        this.activeOrgs.add(org);
+        chip.setAttribute('aria-pressed', 'true');
+      }
+      this.applyFilters();
+    });
+  }
+
   bindClear() {
     if (!this.clearBtn) return;
     this.clearBtn.addEventListener('click', () => {
       this.activeTags.clear();
+      this.activeOrgs.clear();
       this.query = '';
       this.searchInput.value = '';
       this.chipsEl.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', 'false'));
+      if (this.orgChipsEl) {
+        this.orgChipsEl.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', 'false'));
+      }
       this.applyFilters();
       this.searchInput.focus();
     });
@@ -152,9 +206,13 @@ class TagFilter {
 
     this.getItems().forEach(item => {
       const itemTags = (item.dataset.tags || '').split(',').map(t => t.trim()).filter(t => t);
+      const itemOrg = (item.dataset.org || '').trim();
 
       const matchesTag = this.activeTags.size === 0 ||
         Array.from(this.activeTags).some(tag => itemTags.includes(tag));
+
+      const matchesOrg = this.activeOrgs.size === 0 ||
+        (itemOrg && this.activeOrgs.has(itemOrg));
 
       const titleEl = item.querySelector('.post-link, .portfolio-link');
       const title = (titleEl ? titleEl.textContent : '').toLowerCase();
@@ -162,7 +220,7 @@ class TagFilter {
         title.includes(q) ||
         itemTags.some(tag => tag.toLowerCase().includes(q));
 
-      if (matchesTag && matchesQuery) {
+      if (matchesTag && matchesOrg && matchesQuery) {
         item.classList.remove('hidden');
         visibleCount++;
       } else {
@@ -185,7 +243,7 @@ class TagFilter {
   }
 
   updateStatus() {
-    const total = this.activeTags.size + (this.query.trim().length > 0 ? 1 : 0);
+    const total = this.activeTags.size + this.activeOrgs.size + (this.query.trim().length > 0 ? 1 : 0);
     this.clearBtn.disabled = total === 0;
     this.badge.hidden = total === 0;
     this.badge.textContent = String(total);

@@ -20,16 +20,16 @@
   org_link: https://www.om1.com
   description: "Agentic AI application to accelerate unstructured data search, extraction and enrichment"
   link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
-  date: 2024-11-01
+  date: 2025-01-01
   tags: [platform, AI/ ML, real-world data]
-#- id: om1-1
-#  title: "Insights Platform"
-#  org: OM1
-#  org_link: https://www.om1.com
-#  description: "Digital platform for epidemiologists/ analysts to more rapidly analyze and generate evidence from real-world healthcare datasets"
-#  link:  /assets/pdf/insights_platform.pdf
-#  date: 2024-11-01
-#  tags: [data/ analytics, platform, real-world data]
+- id: om1-1
+  title: "Insights Platform"
+  org: OM1
+  org_link: https://www.om1.com
+  description: "Digital platform for epidemiologists/ analysts to more rapidly analyze and generate evidence from real-world healthcare datasets"
+  link:  /assets/pdf/insights_platform.pdf
+  date: 2024-11-01
+  tags: [data/ analytics, platform, real-world data]
 #- id: om1-0
 #  title: "Data Studio"
 #  org: OM1

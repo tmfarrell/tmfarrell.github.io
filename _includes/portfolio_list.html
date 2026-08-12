@@ -45,6 +45,11 @@
           <div class="filter__chips" id="filter-chips-portfolio" role="group" aria-labelledby="filter-topic-label-portfolio"></div>
         </div>
 
+        <div class="filter__facet">
+          <span class="filter__facet-label" id="filter-org-label-portfolio">Company</span>
+          <div class="filter__chips" data-filter-chips="org" role="group" aria-labelledby="filter-org-label-portfolio"></div>
+        </div>
+
         <div class="filter__status">
           <button type="button" class="filter__clear" data-filter-action="clear" disabled>Clear all</button>
         </div>
@@ -55,7 +60,7 @@
 
 <ul class="portfolio-list" style="list-style:none;" id="portfolio-list" data-category="portfolio">
   {%- for item in limited_portfolio -%}
-  <li class="portfolio-list-item preview-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}" data-portfolio-id="{{ item.id }}">
+  <li class="portfolio-list-item preview-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}" data-org-display="{{ item.org }}" data-portfolio-id="{{ item.id }}">
     
     <!-- Main portfolio item row - expandable area -->
     <div class="portfolio-item-header" role="button" tabindex="0" aria-expanded="false">
@@ -90,7 +95,7 @@
   {%- if limit_exceeded -%}
     {%- assign remaining_portfolio = portfolio | slice: include.limit, portfolio.size -%}
     {%- for item in remaining_portfolio -%}
-    <li class="portfolio-list-item additional-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}" data-portfolio-id="{{ item.id }}">
+    <li class="portfolio-list-item additional-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}" data-org-display="{{ item.org }}" data-portfolio-id="{{ item.id }}">
       
       <!-- Main portfolio item row - expandable area -->
       <div class="portfolio-item-header" role="button" tabindex="0" aria-expanded="false">

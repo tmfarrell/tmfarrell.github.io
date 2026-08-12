@@ -32,5 +32,4 @@ permalink: /
   <p>My entire career I've been fascinated by the potential for engineering and tech—particularly data science and AI—to advance bio/ health/ medicine.</p>
   
   <p>With the latest wave of AI, it now seems inevitable technology will radically transform how we manage and optimize our health and longevity. Exciting times!</p>
-
 </div>
