@@ -83,7 +83,8 @@ a:focus {
 }
 
 blockquote {
-  border: none; 
+  border: none;
+  padding: 0.4rem 1rem;
 }
 
 /* Horizontal rule — thin line instead of theme's ////// */
