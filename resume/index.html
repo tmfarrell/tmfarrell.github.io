@@ -96,7 +96,7 @@ permalink: /resume/
   }
 
   /* Experience */
-  .job { margin-top: 6pt; break-inside: avoid; }
+  .job { margin-top: 10pt; break-inside: avoid; }
   .job:first-of-type { margin-top: 0; }
   .row {
     display: flex;
@@ -110,7 +110,8 @@ permalink: /resume/
   .org .note { font-weight: 400; color: var(--muted); }
   .loc, .dates { color: var(--muted); font-size: 9.5pt; white-space: nowrap; }
   .role { margin-top: 2pt; }
-  .role + .role, ul + .role { margin-top: 2pt; }
+  .role + .role { margin-top: 2pt; }
+  ul + .role { margin-top: 6pt; }
   .role-title { font-weight: 600; font-style: italic; }
   .role.sub { margin-top: 0; }
 
@@ -127,14 +128,14 @@ permalink: /resume/
   /* Education + PD side by side */
   .two-col {
     display: grid;
-    grid-template-columns: 1.12fr 1fr;
+    grid-template-columns: 1fr max-content;
     column-gap: 0.3in;
   }
   .two-col section { margin-top: 8pt; }
   .entry { margin-top: 3pt; }
   .entry:first-of-type { margin-top: 0; }
   .entry .row .what { font-weight: 600; }
-  .entry .sub-line { color: var(--muted); font-size: 9.5pt; }
+  .entry .sub-line { color: #8b949e; font-size: 8.75pt; margin-top: 0.5pt; }
 
   @page { size: Letter; margin: 0.45in 0.5in; }
   @media print {
@@ -175,7 +176,7 @@ permalink: /resume/
     <h1>Tim Farrell</h1>
     <div class="title">Senior Product Manager</div>
     <div class="contact">
-      <span>Boston, MA</span><span class="dot"> · </span><span>856-904-6017</span><span class="dot"> · </span><a href="mailto:tfarrell01@gmail.com">tfarrell01@gmail.com</a><span class="dot"> · </span><a href="https://www.linkedin.com/in/tfarrell01/">LinkedIn</a><span class="dot"> · </span><a href="https://tmfarrell.github.io/building/">Portfolio</a>
+      <span>Boston, MA</span><span class="dot"> · </span><span>856-904-6017</span><span class="dot"> · </span><a href="mailto:tfarrell01@gmail.com">tfarrell01@gmail.com</a><span class="dot"> · </span><a href="https://www.linkedin.com/in/tfarrell01/">linkedin</a><span class="dot"> · </span><a href="https://tmfarrell.github.io/building/">portfolio</a>
     </div>
   </header>
 
@@ -216,13 +217,13 @@ permalink: /resume/
       <div class="row role"><span class="role-title">Manager, Bioinformatics Engineering</span><span class="sep"> | </span><span class="dates">2020-2021</span></div>
       <div class="row role sub"><span class="role-title">Bioinformatics Engineer</span><span class="sep"> | </span><span class="dates">2019-2020</span></div>
       <ul>
-        <li>Developed <a href="https://tmfarrell.github.io/assets/pdf/microhmdb.pdf">data platform</a> to support ML model training and development. Grew data 35% YoY using partnerships and public data, building one of the largest datasets of its kind.</li>
+        <li>Developed <a href="https://tmfarrell.github.io/assets/pdf/microhmdb.pdf">data platform</a> to support ML model training and development. Grew data 35% YoY through partnerships and public data, building one of the largest datasets of its kind (50k+ genotype-phenotype pairs).</li>
       </ul>
     </div>
 
     <div class="job">
       <div class="row"><span class="org"><a href="https://www.broadinstitute.org/">Broad Institute of Harvard and MIT</a></span><span class="sep"> | </span><span class="loc">Cambridge, MA</span></div>
-      <div class="row role"><span class="role-title">Computational Biologist</span><span class="sep"> | </span><span class="dates">2017-2019</span></div>
+      <div class="row role"><span class="role-title">Assoc. Computational Biologist</span><span class="sep"> | </span><span class="dates">2017-2019</span></div>
       <ul>
         <li>Built <a href="https://github.com/tmfarrell/broad_malaria_firecloud/blob/master/20181128-microbial_meeting_broad_malaria_firecloud-talk.pdf">cloud-based genomics data system</a> supporting research and analytic workflows.</li>
         <li>Analyzed phase IV vaccine trial data and improved accuracy via error-correction research.</li>
@@ -241,8 +242,8 @@ permalink: /resume/
   <section>
     <h2>Skills</h2>
     <dl class="grid">
-      <dt>Product Management</dt><dd>0-to-1 development, Product strategy, GTM &amp; commercialization, Customer discovery, Roadmapping</dd>
-      <dt>Data &amp; AI</dt><dd>GenAI / LLM products, ML lifecycle, Model evaluations, Data platforms</dd>
+      <dt>Product</dt><dd>0-to-1 development, Product strategy, GTM &amp; commercialization, Discovery, Roadmapping</dd>
+      <dt>Data &amp; AI</dt><dd>ML lifecycle, Model evaluations, Data platforms, GenAI / LLM products</dd>
       <dt>Healthcare / Domain</dt><dd>Real world data (EMR/ EHR, claims, etc), FHIR, SMART on FHIR, Clinical trials, Genomics</dd>
     </dl>
   </section>
@@ -251,7 +252,7 @@ permalink: /resume/
     <h2>Tools</h2>
     <dl class="grid">
       <dt>Work Management</dt><dd>Jira, Confluence, Google Workspace</dd>
-      <dt>Prototyping/ Design</dt><dd>Figma, Cursor, Claude, Python, Javascript/ React</dd>
+      <dt>Prototyping/ Design</dt><dd>Cursor, Claude, Lovable, Figma, Python, Javascript/ React</dd>
       <dt>Data/ Analytics</dt><dd>Snowflake, Databricks, Google Analytics, BigQuery, Hex</dd>
     </dl>
   </section>
@@ -272,7 +273,7 @@ permalink: /resume/
     <section>
       <h2>Professional Development</h2>
       <div class="entry">
-        <div class="row"><span class="what">AI Product Management – <a href="https://www.coursera.org/account/accomplishments/verify/W18OAEJN5SM1">Duke University/ Coursera</a></span><span class="sep"> – </span><span class="dates">2026</span></div>
+        <div class="row"><span class="what">AI Product Management – <a href="https://www.coursera.org/account/accomplishments/verify/W18OAEJN5SM1">Coursera</a></span><span class="sep"> – </span><span class="dates">2026</span></div>
       </div>
       <div class="entry">
         <div class="row"><span class="what">Certified Product Owner – <a href="https://www.virtualbadge.io/certificate-validator?credential=cer-05b5f425-d28b-487f-bfd7-30eb72bc">Product HQ</a></span><span class="sep"> – </span><span class="dates">2022</span></div>
