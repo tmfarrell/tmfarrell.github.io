@@ -60,7 +60,8 @@
 
 <ul class="portfolio-list" style="list-style:none;" id="portfolio-list" data-category="portfolio">
   {%- for item in limited_portfolio -%}
-  <li class="portfolio-list-item preview-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}" data-org-display="{{ item.org }}" data-portfolio-id="{{ item.id }}">
+  {%- assign item_org = item.org | default: "Personal" -%}
+  <li class="portfolio-list-item preview-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item_org | downcase }}" data-org-display="{{ item_org }}" data-portfolio-id="{{ item.id }}">
     
     <!-- Main portfolio item row - expandable area -->
     <div class="portfolio-item-header" role="button" tabindex="0" aria-expanded="false">
@@ -95,7 +96,8 @@
   {%- if limit_exceeded -%}
     {%- assign remaining_portfolio = portfolio | slice: include.limit, portfolio.size -%}
     {%- for item in remaining_portfolio -%}
-    <li class="portfolio-list-item additional-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item.org | downcase }}" data-org-display="{{ item.org }}" data-portfolio-id="{{ item.id }}">
+    {%- assign item_org = item.org | default: "Personal" -%}
+    <li class="portfolio-list-item additional-item" data-tags="{% if item.tags %}{{ item.tags | join: ',' }}{% endif %}" data-date="{{ item.date | date: '%Y-%m-%d' }}" data-org="{{ item_org | downcase }}" data-org-display="{{ item_org }}" data-portfolio-id="{{ item.id }}">
       
       <!-- Main portfolio item row - expandable area -->
       <div class="portfolio-item-header" role="button" tabindex="0" aria-expanded="false">
