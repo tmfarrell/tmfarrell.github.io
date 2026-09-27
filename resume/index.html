@@ -1,0 +1,287 @@
+---
+layout: none
+title: Resume
+permalink: /resume/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tim Farrell – Senior Product Manager</title>
+<style>
+  :root {
+    --ink: #1f2328;
+    --muted: #57606a;
+    --accent: #ac4142;
+    --rule: #c9d3df;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Source Sans 3", "Source Sans Pro", "Inter", "Lato", "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.24;
+    color: var(--ink);
+    background: #eef1f4;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "kern", "liga";
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .sep { display: none; }  /* separators kept for plain-text / docx exports */
+
+  .page {
+    max-width: 8.5in;
+    margin: 0.4in auto;
+    padding: 0.5in 0.55in;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(31,35,40,.08), 0 8px 28px rgba(31,35,40,.10);
+    border-radius: 2px;
+  }
+
+  /* Header */
+  header { margin-bottom: 8pt; }
+  h1 {
+    font-size: 24pt;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+    color: var(--accent);
+  }
+  .title {
+    font-size: 12pt;
+    font-weight: 500;
+    color: var(--muted);
+    margin-top: 2pt;
+  }
+  .contact {
+    margin-top: 5pt;
+    font-size: 9.75pt;
+    color: var(--muted);
+  }
+  .contact .dot { color: #9aa4ae; padding: 0 2.5pt; }
+  .contact a { color: var(--accent); }
+
+  /* Sections */
+  section { margin-top: 8pt; }
+  h2 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-bottom: 2.5pt;
+    border-bottom: 1px solid var(--accent);
+    margin-bottom: 4pt;
+  }
+
+  /* Bullets */
+  ul { list-style: none; }
+  li {
+    position: relative;
+    padding-left: 11pt;
+    margin-top: 1pt;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 2pt;
+    top: 0.47em;
+    width: 3.5pt;
+    height: 3.5pt;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: .75;
+  }
+
+  /* Experience */
+  .job { margin-top: 10pt; break-inside: avoid; }
+  .job:first-of-type { margin-top: 0; }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+  }
+  .org { font-weight: 700; font-size: 10.5pt; }
+  .org a { color: var(--ink); }
+  .org a:hover { color: var(--accent); }
+  .org .note { font-weight: 400; color: var(--muted); }
+  .loc, .dates { color: var(--muted); font-size: 9.5pt; white-space: nowrap; }
+  .role { margin-top: 2pt; }
+  .role + .role { margin-top: 2pt; }
+  ul + .role { margin-top: 6pt; }
+  .role-title { font-weight: 600; font-style: italic; }
+  .role.sub { margin-top: 0; }
+
+  /* Skills / tools */
+  dl.grid {
+    display: grid;
+    grid-template-columns: 1.35in 1fr;
+    column-gap: 10pt;
+    row-gap: 2pt;
+  }
+  dt { font-weight: 600; }
+  dd { color: var(--muted); }
+
+  /* Education + PD side by side */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    column-gap: 0.3in;
+  }
+  .two-col section { margin-top: 8pt; }
+  .entry { margin-top: 3pt; }
+  .entry:first-of-type { margin-top: 0; }
+  .entry .row .what { font-weight: 600; }
+  .entry .sub-line { color: #8b949e; font-size: 8.75pt; margin-top: 0.5pt; }
+
+  @page { size: Letter; margin: 0.3in 0.5in; }
+  @media print {
+    body { background: #fff; }
+    .page { max-width: none; margin: 0; padding: 0; box-shadow: none; border-radius: 0; }
+    a:hover { text-decoration: none; }
+  }
+
+  /* Utility controls (hidden when printing) */
+  .resume-utility {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .resume-utility a {
+    color: var(--accent);
+    background: rgba(172,65,66,0.06);
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .resume-utility a:hover { text-decoration: underline; }
+  @media print { .resume-utility { display: none !important; } }
+</style>
+</head>
+<body>
+<div class="resume-utility" aria-hidden="true">
+  <a href="{{ '/' | relative_url }}">Back to site</a>
+  <a href="{{ '/assets/pdf/Tim_Farrell_Resume.pdf' | relative_url }}" download>Download PDF</a>
+</div>
+<main class="page">
+
+  <header>
+    <h1>Tim Farrell</h1>
+    <div class="title">Senior Product Manager</div>
+    <div class="contact">
+      <span>Boston, MA</span><span class="dot"> · </span><span>856-904-6017</span><span class="dot"> · </span><a href="mailto:tfarrell01@gmail.com">tfarrell01@gmail.com</a><span class="dot"> · </span><a href="https://www.linkedin.com/in/tfarrell01/">linkedin</a><span class="dot"> · </span><a href="https://tmfarrell.github.io/building/">portfolio</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <ul>
+      <li>Product builder/ leader specialized in data and AI/ML products for bio/ medicine.</li>
+      <li>Strategic lead for several large-scale data and AI/ML platforms (eg billions of clinical records, 100s of models), driving product development from concept to commercial impact.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Relevant Experience</h2>
+
+    <div class="job">
+      <div class="row"><span class="org"><a href="https://www.om1.com/">OM1</a></span><span class="sep"> | </span><span class="loc">Boston, MA</span></div>
+      <div class="row role"><span class="role-title">Senior Product Manager</span><span class="sep"> | </span><span class="dates">2024-Present</span></div>
+      <ul>
+        <li>Lead 0-to-1 development of <a href="https://drive.google.com/file/d/15wymRSPhBHhQO1D4cGm0rosWXDX0vh6n/view?usp=sharing">clinical AI product</a>, taking a proprietary foundation model from internal capability to externally consumable product with multiple surfaces (e.g. <a href="https://phenom-docs.om1.com/">API</a>).</li>
+        <li>Drive product strategy across payer, provider and life sciences markets, transitioning revenue streams from services to product based and enabling deals worth $400k+ ACV.</li>
+      </ul>
+      <div class="row role"><span class="role-title">Product Manager</span><span class="sep"> | </span><span class="dates">2022-2024</span></div>
+      <ul>
+        <li>Led <a href="https://tmfarrell.github.io/assets/pdf/insights_platform.pdf">platform</a> that improved data product discoverability—driving 50% YoY revenue growth and enabling deals worth $1.75M+ TCV—and streamlined delivery, reducing costs by 80%.</li>
+        <li>Oversaw ML/AI enrichments (extraction + imputation), which increased observations by 4x.</li>
+        <li>Built materials that drove significant commercial impact (e.g. deals worth $500k+ ACV).</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="row"><span class="org"><a href="https://www.dayzerodiagnostics.com/">Day Zero Diagnostics</a> <span class="note">(acquired by bioMérieux)</span></span><span class="sep"> | </span><span class="loc">Boston, MA</span></div>
+      <div class="row role"><span class="role-title">Product Manager</span><span class="sep"> | </span><span class="dates">2021-2022</span></div>
+      <ul>
+        <li>Led product for company’s first commercial offering (<a href="https://tmfarrell.github.io/assets/pdf/epixact.pdf">outbreak detection for hospitals</a>).</li>
+        <li>Drove CLIA certification process, to enable service to be sold as a clinical lab test.</li>
+        <li>Scaled commercial traction from ~1 deal/quarter to 1–2 deals/month.</li>
+      </ul>
+      <div class="row role"><span class="role-title">Manager, Bioinformatics Engineering</span><span class="sep"> | </span><span class="dates">2020-2021</span></div>
+      <div class="row role sub"><span class="role-title">Bioinformatics Engineer</span><span class="sep"> | </span><span class="dates">2019-2020</span></div>
+      <ul>
+        <li>Developed <a href="https://tmfarrell.github.io/assets/pdf/microhmdb.pdf">data platform</a> to support ML model training and development. Grew data 35% YoY through partnerships and public data, building one of the largest datasets of its kind (50k+ genotype-phenotype samples).</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="row"><span class="org"><a href="https://www.broadinstitute.org/">Broad Institute of Harvard and MIT</a></span><span class="sep"> | </span><span class="loc">Cambridge, MA</span></div>
+      <div class="row role"><span class="role-title">Assoc. Computational Biologist</span><span class="sep"> | </span><span class="dates">2017-2019</span></div>
+      <ul>
+        <li>Built <a href="https://github.com/tmfarrell/broad_malaria_firecloud/blob/master/20181128-microbial_meeting_broad_malaria_firecloud-talk.pdf">cloud-based genomics data system</a> supporting research and analytic workflows.</li>
+        <li>Analyzed phase IV vaccine trial data and improved accuracy via error-correction research.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="row"><span class="org">US Army Reserve</span></div>
+      <div class="row role"><span class="role-title">Operations Officer</span><span class="sep"> | </span><span class="dates">2012-2021</span></div>
+      <ul>
+        <li>Led operations for 100+ personnel; deployed overseas (2016) and for COVID-19 (2020).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="grid">
+      <dt>Product</dt><dd>0-to-1 development, Product strategy, GTM &amp; commercialization, Discovery, Roadmapping</dd>
+      <dt>Data &amp; AI</dt><dd>ML lifecycle, Model evaluations, Data platforms, GenAI / LLM products</dd>
+      <dt>Healthcare / Domain</dt><dd>Real world data (EMR/ EHR, claims, etc), FHIR, SMART on FHIR, Clinical trials, Genomics</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Tools</h2>
+    <dl class="grid">
+      <dt>Work Management</dt><dd>Jira, Confluence, Google Workspace</dd>
+      <dt>Prototyping/ Design</dt><dd>Cursor, Claude, Lovable, Figma, Python, Javascript/ React</dd>
+      <dt>Data/ Analytics</dt><dd>Snowflake, Databricks, Google Analytics, BigQuery, Hex</dd>
+    </dl>
+  </section>
+
+  <div class="two-col">
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="row"><span class="what">M.S., Bioinformatics – Boston University</span><span class="sep"> | </span><span class="dates">2014-2016</span></div>
+        <div class="sub-line">Activities: West End House Tutor (Chemistry and Math)</div>
+      </div>
+      <div class="entry">
+        <div class="row"><span class="what">B.S., Biomedical Engineering – Rutgers University</span><span class="sep"> | </span><span class="dates">2008-2012</span></div>
+        <div class="sub-line">Activities: Army ROTC (Top 10%)</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Development</h2>
+      <div class="entry">
+        <div class="row"><span class="what">AI Product Management – <a href="https://www.coursera.org/account/accomplishments/verify/W18OAEJN5SM1">Coursera</a></span><span class="sep"> – </span><span class="dates">2026</span></div>
+      </div>
+      <div class="entry">
+        <div class="row"><span class="what">Certified Product Owner – <a href="https://www.virtualbadge.io/certificate-validator?credential=cer-05b5f425-d28b-487f-bfd7-30eb72bc">Product HQ</a></span><span class="sep"> – </span><span class="dates">2022</span></div>
+      </div>
+    </section>
+  </div>
+
+</main>
+</body>
+</html>
+
