@@ -1,3 +1,9 @@
+- id: personal-2
+  title: "future in bio"
+  description: "Publication tracking the latest stories and signals across biotech, healthtech and the future of technology — short, information-dense summaries with context on long-term trends. <a href=\"https://github.com/tmfarrell/futureinbio\">Source on GitHub</a>."
+  link: https://www.futurein.bio
+  date: 2026-09-01
+  tags: [biotech, healthtech]
 - id: om1-4
   title: "PhenOM API"
   org: OM1
