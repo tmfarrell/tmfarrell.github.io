@@ -18,8 +18,6 @@ permalink: /
       <a href="{{ '/writing/' | relative_url }}">write</a>
       <span> | </span>
       <a href="{{ '/building/' | relative_url }}">build</a>
-      <span> | </span>
-      <a href="{{ '/resume/' | relative_url }}">resume</a>
     </nav>
   </div>
 </div>
