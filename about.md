@@ -29,7 +29,7 @@ permalink: /
   
   <p>I'm a product builder/ leader in bio/ healthtech, and this site is a collection of things I've read, written and built.</p> 
   
-  <p>My entire career I've been fascinated by the potential for engineering and tech—particularly data science and AI—to advance bio/ health/ medicine.</p>
+  <p>My entire career (and well before it was trendy) I've been fascinated by the potential for engineering and tech—particularly data science and ML/AI—to advance bio/ health/ medicine.</p>
   
-  <p>With the latest wave of AI, it now seems inevitable technology will radically transform how we manage and optimize our health and longevity. Exciting times!</p>
+  <p>With the latest wave of AI, I've never been more optimistic that tech will radically transform how we manage/ optimize our health and longevity. Exciting times!</p>
 </div>
