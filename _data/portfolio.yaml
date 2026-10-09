@@ -12,22 +12,22 @@
   link:  https://phenom-docs.om1.com/
   date: 2026-01-01
   tags: [healthtech, AI/ ML, real-world data, platform]
-- id: om1-2
-  title: "Patient Risk Panel"
+- id: om1-5
+  title: "PhenOM Platform"
   org: OM1
   org_link: https://www.om1.com
-  description: "Application for providers to more effectively triage patients based on outcome risks predicted from medical history"
-  link:  /assets/pdf/phenom_risk_panel.pdf
-  date: 2025-06-01
+  description: "Assistant-driven workspace where users describe an outcome or phenotype and PhenOM helps find it; includes Chat, a Catalog of outcomes, Cohorts, an Admin Console, Data Sources and Usage & Analytics."
+  link: /assets/img/portfolio/phenom_platform_hero.jpg
+  date: 2026-10-01
+  tags: [healthtech, AI/ ML, real-world data, platform]
+- id: om1-6
+  title: "PhenOM Health"
+  org: OM1
+  org_link: https://www.om1.com
+  description: "Clinician-facing view with a patient schedule and per-patient risk predictions grouped into panels (e.g., Primary Care - Metabolic; Primary Care - Oncology), showing 1-year probabilities, percentiles, and care opportunities such as GLP-1 eligibility."
+  link: /assets/img/portfolio/phenom_health_hero.jpg
+  date: 2026-10-01
   tags: [healthtech, AI/ ML, real-world data]
-- id: om1-3
-  title: "Enrichment Copilot"
-  org: OM1
-  org_link: https://www.om1.com
-  description: "Agentic AI application to accelerate unstructured data search, extraction and enrichment"
-  link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
-  date: 2025-01-01
-  tags: [platform, AI/ ML, real-world data]
 - id: om1-1
   title: "Insights Platform"
   org: OM1
