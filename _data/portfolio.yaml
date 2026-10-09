@@ -16,16 +16,16 @@
   title: "PhenOM Platform"
   org: OM1
   org_link: https://www.om1.com
-  description: "Assistant-driven workspace where users describe an outcome or phenotype and PhenOM helps find it; includes Chat, a Catalog of outcomes, Cohorts, an Admin Console, Data Sources and Usage & Analytics."
-  link: /assets/img/portfolio/phenom_platform_hero.jpg
+  description: "AI assistant-driven platform for finding, defining and building cohorts around clinical outcomes and phenotypes with PhenOM"
+  link: /assets/pdf/phenom_platform.pdf
   date: 2026-10-01
   tags: [healthtech, AI/ ML, real-world data, platform]
 - id: om1-6
   title: "PhenOM Health"
   org: OM1
   org_link: https://www.om1.com
-  description: "Clinician-facing view with a patient schedule and per-patient risk predictions grouped into panels (e.g., Primary Care - Metabolic; Primary Care - Oncology), showing 1-year probabilities, percentiles, and care opportunities such as GLP-1 eligibility."
-  link: /assets/img/portfolio/phenom_health_hero.jpg
+  description: "Clinician-facing application that ranks each patient's predicted risks and care opportunities across clinical panels to support triage and screening"
+  link: /assets/pdf/phenom_health.pdf
   date: 2026-10-01
   tags: [healthtech, AI/ ML, real-world data]
 - id: om1-1
