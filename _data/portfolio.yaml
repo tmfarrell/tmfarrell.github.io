@@ -18,7 +18,7 @@
   org_link: https://www.om1.com
   description: "AI assistant-driven platform for finding, defining and building cohorts around clinical outcomes and phenotypes with PhenOM"
   link: /assets/pdf/phenom_platform.pdf
-  date: 2026-10-01
+  date: 2026-02-01
   tags: [healthtech, AI/ ML, real-world data, platform]
 - id: om1-6
   title: "PhenOM Health"
@@ -26,7 +26,7 @@
   org_link: https://www.om1.com
   description: "Clinician-facing application that ranks each patient's predicted risks and care opportunities across clinical panels to support triage and screening"
   link: /assets/pdf/phenom_health.pdf
-  date: 2026-10-01
+  date: 2026-08-01
   tags: [healthtech, AI/ ML, real-world data]
 - id: om1-1
   title: "Insights Platform"
