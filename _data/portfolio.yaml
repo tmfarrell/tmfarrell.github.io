@@ -65,7 +65,7 @@
   org: Broad Institute of Harvard and MIT
   org_link: https://www.broadinstitute.org/
   description: "Fast data processing and analysis pipelines for malarial genomics"
-  link: https://github.com/tmfarrell/broad_malaria_firecloud
+  link: https://github.com/tmfarrell/broad_malaria_firecloud/blob/master/20181128-microbial_meeting_broad_malaria_firecloud-talk.pdf
   date: 2018-08-01
   tags: [genomics, research, data/ analytics, platform]
 - id: broad-0
