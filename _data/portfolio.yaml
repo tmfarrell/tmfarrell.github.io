@@ -4,22 +4,6 @@
   link: https://www.futurein.bio
   date: 2026-09-01
   tags: [biotech, healthtech]
-- id: om1-4
-  title: "PhenOM API"
-  org: OM1
-  org_link: https://www.om1.com
-  description: "API for a generative AI medical event model that allows health systems and plans to screen patients, assess risks and triage for virtually any clinical outcome"
-  link:  https://phenom-docs.om1.com/
-  date: 2026-01-01
-  tags: [healthtech, AI/ ML, real-world data, platform]
-- id: om1-5
-  title: "PhenOM Platform"
-  org: OM1
-  org_link: https://www.om1.com
-  description: "AI assistant-driven platform for finding, defining and building cohorts around clinical outcomes and phenotypes with PhenOM"
-  link: /assets/pdf/phenom_platform.pdf
-  date: 2026-02-01
-  tags: [healthtech, AI/ ML, real-world data, platform]
 - id: om1-6
   title: "PhenOM Health"
   org: OM1
@@ -28,6 +12,22 @@
   link: /assets/pdf/phenom_health.pdf
   date: 2026-08-01
   tags: [healthtech, AI/ ML, real-world data]
+- id: om1-5
+  title: "PhenOM Platform"
+  org: OM1
+  org_link: https://www.om1.com
+  description: "AI assistant-driven platform for finding, defining and building cohorts around clinical outcomes and phenotypes with PhenOM"
+  link: /assets/pdf/phenom_platform.pdf
+  date: 2026-02-01
+  tags: [healthtech, AI/ ML, real-world data, platform]
+- id: om1-4
+  title: "PhenOM API"
+  org: OM1
+  org_link: https://www.om1.com
+  description: "API for a generative AI medical event model that allows health systems and plans to screen patients, assess risks and triage for virtually any clinical outcome"
+  link:  https://phenom-docs.om1.com/
+  date: 2026-01-01
+  tags: [healthtech, AI/ ML, real-world data, platform]
 - id: om1-1
   title: "Insights Platform"
   org: OM1
