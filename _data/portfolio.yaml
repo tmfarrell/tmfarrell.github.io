@@ -4,6 +4,22 @@
   link: https://www.futurein.bio
   date: 2026-09-01
   tags: [biotech, healthtech]
+- id: om1-6
+  title: "PhenOM Health"
+  org: OM1
+  org_link: https://www.om1.com
+  description: "Clinician-facing application that ranks each patient's predicted risks and care opportunities across clinical panels to support triage and screening"
+  link: /assets/pdf/phenom_health.pdf
+  date: 2026-08-01
+  tags: [healthtech, AI/ ML, real-world data]
+- id: om1-5
+  title: "PhenOM Platform"
+  org: OM1
+  org_link: https://www.om1.com
+  description: "AI assistant-driven platform for finding, defining and building cohorts around clinical outcomes and phenotypes with PhenOM"
+  link: /assets/pdf/phenom_platform.pdf
+  date: 2026-02-01
+  tags: [healthtech, AI/ ML, real-world data, platform]
 - id: om1-4
   title: "PhenOM API"
   org: OM1
@@ -12,22 +28,6 @@
   link:  https://phenom-docs.om1.com/
   date: 2026-01-01
   tags: [healthtech, AI/ ML, real-world data, platform]
-- id: om1-2
-  title: "Patient Risk Panel"
-  org: OM1
-  org_link: https://www.om1.com
-  description: "Application for providers to more effectively triage patients based on outcome risks predicted from medical history"
-  link:  /assets/pdf/phenom_risk_panel.pdf
-  date: 2025-06-01
-  tags: [healthtech, AI/ ML, real-world data]
-- id: om1-3
-  title: "Enrichment Copilot"
-  org: OM1
-  org_link: https://www.om1.com
-  description: "Agentic AI application to accelerate unstructured data search, extraction and enrichment"
-  link:  /assets/mp4/enrichment_copilot-202512%5B720p%5D.mp4
-  date: 2025-01-01
-  tags: [platform, AI/ ML, real-world data]
 - id: om1-1
   title: "Insights Platform"
   org: OM1
@@ -65,7 +65,7 @@
   org: Broad Institute of Harvard and MIT
   org_link: https://www.broadinstitute.org/
   description: "Fast data processing and analysis pipelines for malarial genomics"
-  link: https://github.com/tmfarrell/broad_malaria_firecloud
+  link: https://github.com/tmfarrell/broad_malaria_firecloud/blob/master/20181128-microbial_meeting_broad_malaria_firecloud-talk.pdf
   date: 2018-08-01
   tags: [genomics, research, data/ analytics, platform]
 - id: broad-0
