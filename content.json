@@ -4,7 +4,7 @@ layout: null
 [
 {
   "title": "Resume - Tim Farrell",
-  "url": "/assets/pdf/Tim_Farrell_Resume.pdf",
+  "url": "/resume/",
   "content": "My resume includes more detailed information on my background, education, experience and skills.",
   "category": "about",
   "date": "2026-01-01"
@@ -40,42 +40,42 @@ layout: null
 {
   "title": "Senior Product Manager at OM1",
   "url": "https://www.om1.com/",
-  "content": "Leading development of a medical event risk prediction solution powered by a proprietary generative AI model. Conduct prototyping and product discovery to validate and launch new products. Manage analytics platform improving product discoverability and reducing delivery costs by 80%. Lead development of AI agents to accelerate development and delivery. Manage and mentor a junior product manager and improve roadmap and planning processes.",
+  "content": "Lead 0-to-1 development of a clinical AI product, taking a proprietary foundation model from internal capability to externally consumable product with multiple surfaces (e.g. API). Drive product strategy across payer, provider and life sciences markets, transitioning revenue streams from services to products, enabling deals worth $400k+ ACV.",
   "category": "experience",
   "date": "2024-01-01"
 },
 {
   "title": "Product Manager at OM1",
   "url": "https://www.om1.com/",
-  "content": "Delivered a data analytics platform using a partnership-driven approach, resulting in $1.75M in total contract value. Managed a real-world data platform covering 350M+ patients and drove 50% year-over-year revenue growth. Oversaw machine learning and AI model development, increasing observations by more than 4x.",
+  "content": "Led analytics platform that improved data product discoverability—driving 50% YoY revenue growth and enabling deals worth $1.75M+ TCV—and streamlined delivery, reducing costs by 80%. Oversaw ML/AI enrichments for real-world data platform (300M+ patient journeys), which increased observations by 4x. Built sales materials that drove significant commercial impact (e.g. deals worth $500k+ ACV).",
   "category": "experience",
   "date": "2022-01-01"
 },
 {
   "title": "Product Manager at Day Zero Diagnostics",
   "url": "https://www.dayzerodiagnostics.com/",
-  "content": "Led product development for the company’s first commercial offering: an outbreak detection sequencing solution for hospital systems. Facilitated CLIA certification enabling the product to be offered as a lab test. Scaled business from one deal per quarter to 1-2 deals per month.",
+  "content": "Led product for company’s first commercial offering: outbreak detection for hospitals. Drove CLIA certification process to enable service to be sold as a clinical lab test. Scaled commercial traction from ~1 deal/quarter to 1–2 deals/month.",
   "category": "experience",
   "date": "2021-01-01"
 },
 {
   "title": "Manager, Bioinformatics Engineering at Day Zero Diagnostics",
   "url": "https://www.dayzerodiagnostics.com/",
-  "content": "Developed a data platform supporting machine learning model training and development. Grew data assets by 35% year-over-year through partnerships and public data sources, resulting in one of the largest datasets of its kind. Contributed to technology that was later acquired by bioMérieux.",
+  "content": "Developed data platform to support ML model training and development. Grew data 35% YoY through partnerships and public data, building one of the largest datasets of its kind (50k+ genotype-phenotype samples). Company later acquired by bioMérieux.",
   "category": "experience",
   "date": "2020-01-01"
 },
 {
   "title": "Bioinformatics Engineer at Day Zero Diagnostics",
   "url": "https://www.dayzerodiagnostics.com/",
-  "content": "Worked as a bioinformatics engineer contributing to data platform and model development initiatives supporting infectious disease diagnostics.",
+  "content": "Developed data platform to support ML model training and development. Grew data 35% YoY through partnerships and public data, building one of the largest datasets of its kind (50k+ genotype-phenotype samples).",
   "category": "experience",
   "date": "2019-01-01"
 },
 {
-  "title": "Computational Biologist at Broad Institute",
+  "title": "Assoc. Computational Biologist at Broad Institute",
   "url": "https://www.broadinstitute.org/",
-  "content": "Built a cloud-based data system for malaria genomics. Performed analysis for a phase IV vaccine clinical trial. Conducted research on amplicon sequencing error correction.",
+  "content": "Built cloud-based genomics data system supporting research and analytic workflows. Analyzed phase IV vaccine trial data and improved accuracy via error-correction research.",
   "category": "experience",
   "date": "2017-01-01"
 },
@@ -110,7 +110,7 @@ layout: null
 {
   "title": "Operations Officer at US Army Reserve",
   "url": "https://www.goarmy.com/reserve.html",
-  "content": "Served as a part-time military leader managing operations for 100+ soldiers. Commitment included 2 days per month and 4 weeks per year. Deployed in 2016-2017 (Operation Freedom's Sentinel) and April-June 2020 for COVID-19 federal response in NYC.",
+  "content": "Led operations for 100+ personnel; deployed overseas (2016) and for COVID-19 (2020).",
   "category": "experience",
   "date": "2012-01-01"
 },
