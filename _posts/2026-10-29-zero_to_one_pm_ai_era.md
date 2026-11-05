@@ -1,46 +1,81 @@
 ---
 toc: true
 layout: post
-title: '0 -> 1 Product Management in the AI Era'
+title: Building 0-to-1 in the AI Era
 date: 2026-10-29 08:00
 categories: writing
-tags: [product, AI/ ML, strategy]
+tags:
+  - product
+  - strategy
+  - AI/ML
 ---
 
-What a time to be alive and building products zero to one.
+What a time to be alive and building products 0 to 1!
 
-The tools available to a small team today would have been hard to imagine a few years ago. A designer or PM can go from idea to clickable, working prototype in an afternoon. Engineers can scaffold whole services with an agent at their side. The cost of _making something_ has collapsed.
+The powerful tools available today would've been hard to imagine before the acceleration of AI in the past few years. A designer or PM can go from idea to clickable, working prototype in hours or even minutes. Engineers can move at a velocity previously only dreamed of. Everyone can be a 10X engineer!
 
-Except there's an enormous amount of complexity being introduced by AI too, including **slop**. When anyone can generate a feature, a spec, a deck or a prototype in minutes, the hard part shifts. It's no longer "can we build it?" but "should we build it, which version, and how do we keep everyone pointed at the same end state?"
+Except there's an enormous amount of complexity being introduced by AI too, known affectionately as **AI slop**. When anyone can generate a feature, a spec or a prototype, the hard part is no longer "can we build it" but "should we" and "if we do, how does it fit with everything else." 
 
-I've been working through this in practice, and this post is an attempt to write down the patterns that have actually worked for me. It's not exhaustive--just a few nuggets from the trenches.
+I've been working through this in practice for the past couple of years (specifically in the context of an enterprise B2B startup), and this post is an attempt to document some patterns that I've seen work well. Not meant to be exhaustive, just some of my notes.   
 
-## The Core Problem: Speed Without Direction
+## The Core Problem: Speed Without Vision or Cohesion
 
-In a [previous post](/product_principles) I argued that **speed is possibly the only path to winning** in today's AI-accelerated world. I still believe that. But speed has a failure mode: when output is cheap, you can generate a lot of it without generating much _value_.
+In a [previous post](/product_principles) I argued that **speed is required to win** in today's AI-accelerated world. Still believe that. But speed has a failure mode: when it's cheap for individuals to move fast, everyone can move in wildly different directions. This can manifest in a few ways: 
 
-In zero-to-one work, this shows up a few ways:
-
-- Prototypes that never converge into a real product
+- Too many mock ups
+- Too many versions of mock ups
+- Mock ups that don't demonstrate unique, differentiated value 
+- Mock ups or prototypes that never converge on a real product
 - Engineering building things that haven't been validated by the market
-- Multiple "sources of truth" (a deck, a Figma file, a demo, a ticket) that quietly disagree
-- Nobody being quite sure what stage a given feature is actually in
+- Too many product surfaces that don't feel like a cohesive whole
 
-The goal, then, isn't just to go fast. It's to **go fast in a way that reduces uncertainty at each step**. Here's the workflow I've landed on.
+The goal, then, isn't just to go fast. It's to **go fast (a) in a singular direction and (b) in a way that reduces uncertainty at each step**. 
 
-## 1. Keep a Stripped-Down Version for Vibe Coding
+## Build the Cheapest Thing First
+
+With the "vibe coding" trend, it's hard to resist the temptation to build software from scratch. 
+
+Slides > Mock ups > Prototype > Production 
+
+- **Slide deck**: the story and hypothesis. Why this, why now, who it's for.
+- **Prototype**: the hypothesis made tangible. Used for discovery, sales and choosing between options.
+- **Production**: the validated version, built by engineering against a clear spec, triggered by real customer commitment.
+
+Each stage costs more than the last, and each one should only be entered once the previous stage has earned it. AI has made the first two dramatically cheaper and faster, which means you can (and should) spend much more time there, and arrive at production with far less uncertainty.
+
+## Create a Demo/ Prototype Version of Your Product
 
 Have a small, stripped-down version of your product that design and product can vibe code on. Not the production codebase--a separate, lightweight demo app that's cheap to change and cheap to throw away.
 
 This demo becomes incredibly useful well before there's a "real" product:
 
+- **Vision:** 
 - **Discovery**: put it in front of potential users and get specific, concrete feedback instead of abstract opinions about a concept
 - **Early sales conversations**: prospects react to something that looks and feels real, which makes it a much better prospecting tool than a slide
 - **GTM tailoring**: because it's cheap to change, you can tailor versions to each GTM angle or campaign--a different emphasis for a different segment, buyer or use case
 
-The key insight is that **the demo is a discovery tool, not a product**. It's there to help you learn what deserves to exist. That's exactly the kind of "do things that don't scale" work that belongs in the discovery phase.
+The key insight is that **the demo is a discovery tool**. It's meant to help you learn what the team should build. It's meant to be bespoke and custom; it's exactly the "do things that don't scale" work that belongs in the discovery phase.
 
-## 2. Let Pilots and Paid Deals Trigger the Production Build
+## Explore and Evaluate Variants Before Committing
+
+Before making changes to the demo, create an artifact with several different options. With AI, generating three or four variants of a screen or flow costs almost nothing.
+
+Then, depending on the size of the feature:
+
+- **Small feature**: iterate yourself and make the design decision
+- **Larger feature**: send the options out for feedback and choose the best one (or, often, a mixture of options)
+
+Once you've picked a direction, add it to the demo to see how it actually *feels* in context. If it holds up, promote it to the production app.
+
+So the flow looks something like this:
+
+**Options artifact → Demo → Production**
+
+Each step is a filter. Cheap exploration happens at the front, and only things that survive real-world feel make it to the expensive end. This is basically the Double Diamond (diverge → converge) [TODO: link], just compressed from weeks into hours.
+
+## Let Pilots Trigger a Partial Production Build
+
+## Let Paid Deals Trigger the Full Build
 
 Once you have pilots or paid deals lined up, have your engineering team implement a production version of what you've been demoing.
 
@@ -53,26 +88,7 @@ I've done this a few times now and it makes the actual build super smooth and st
 
 This is a big shift from how many teams operate, where engineering builds first and sales tries to sell what got built. Here, the market pulls the product into production.
 
-In regulated domains, this separation matters even more. [TODO: Tim to verify/edit] At Day Zero, I was on the team that prepared an FDA Breakthrough Device submission for an AMR-prediction SaMD. In that world, the production system carries real quality, documentation and validation requirements, so you want as much product learning as possible to happen _before_ code enters that process--and a prototype is a much cheaper place to be wrong. [TODO: confirm this matches your experience / how much detail to share]
-
-## 3. Explore Options as Artifacts Before Touching the Demo
-
-Before making changes to the demo, create an artifact with several different options. With AI, generating three or four variants of a screen or flow costs almost nothing.
-
-Then, depending on the size of the feature:
-
-- **Small feature**: iterate yourself and make the design decision
-- **Larger feature**: send the options out for feedback and choose the best one (or, often, a mixture of options)
-
-Once you've picked a direction, add it to the demo to see how it actually _feels_ in context. If it holds up, promote it to the production app.
-
-So the flow looks something like this:
-
-**Options artifact → Demo → Production**
-
-Each step is a filter. Cheap exploration happens at the front, and only things that survive real-world feel make it to the expensive end. This is basically the Double Diamond (diverge → converge) [TODO: link], just compressed from weeks into hours.
-
-## 4. Make Every Product's Stage Visible
+## [Bonus #1] Make Every Product's Stage Visible
 
 When you have multiple products, features and experiments moving at once, **be explicit about what stage each one is in**. Is it an idea? A prototype in the demo? In a pilot? In production?
 
@@ -82,27 +98,15 @@ Have a visible status tracker for features that anyone can add to and check in o
 - Anyone can add requests or ideas, so nothing lives in someone's DMs
 - The stage determines the expectations: a prototype isn't promised to a customer, and a production feature isn't casually changed
 
-This is the delivery management piece I find so underrated. The faster you move, the more the gap between plan and reality grows, unless someone actively manages it.
+This delivery management piece can be particularly helpful for executive leadership. 
 
-## 5. Close the Loop with Agents
+## [Bonus #2] Close the Loop with Agents
 
 More recently, I've started building an agentic loop that can read in these lists and trackers. [TODO: Tim to describe what the loop actually does today]
 
 Once your work is structured--clear stages, a visible tracker, demo and production clearly separated--it becomes legible to AI agents, too. An agent can read the backlog, see what's in which stage, and help draft options, update the demo or prep the next step.
 
 This is a nice example of a broader point: **AI rewards structure**. The teams that get the most leverage out of agents will be the ones that have already made their workflows explicit and digital.
-
-## Putting It Together: Slide Deck > Prototype > Production
-
-If I had to compress all of this into one line, it'd be:
-
-**Slide deck > prototype > production**
-
-- **Slide deck**: the story and hypothesis. Why this, why now, who it's for.
-- **Prototype**: the hypothesis made tangible. Used for discovery, sales and choosing between options.
-- **Production**: the validated version, built by engineering against a clear spec, triggered by real customer commitment.
-
-Each stage costs more than the last, and each one should only be entered once the previous stage has earned it. AI has made the first two dramatically cheaper and faster, which means you can (and should) spend much more time there, and arrive at production with far less uncertainty.
 
 ## Final Takeaway
 
