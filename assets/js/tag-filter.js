@@ -214,7 +214,7 @@ class TagFilter {
       const matchesOrg = this.activeOrgs.size === 0 ||
         (itemOrg && this.activeOrgs.has(itemOrg));
 
-      const titleEl = item.querySelector('.post-link, .portfolio-link');
+      const titleEl = item.querySelector('.post-link, .portfolio-title, .portfolio-link');
       const title = (titleEl ? titleEl.textContent : '').toLowerCase();
       const matchesQuery = !q ||
         title.includes(q) ||
@@ -250,7 +250,7 @@ class TagFilter {
   }
 }
 
-// Portfolio Expander Class
+// Portfolio Expander Class — single-open chevron accordion
 class PortfolioExpander {
   constructor() {
     this.init();
@@ -261,17 +261,19 @@ class PortfolioExpander {
   }
 
   bindEvents() {
-    // Handle clicks on portfolio item headers
     document.addEventListener('click', (e) => {
+      if (e.target.closest('.portfolio-cta')) return;
+
       const header = e.target.closest('.portfolio-item-header');
       if (header) {
         this.toggleExpansion(header);
       }
     });
 
-    // Handle keyboard navigation (Enter and Space)
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
+        if (e.target.closest('.portfolio-cta')) return;
+
         const header = e.target.closest('.portfolio-item-header');
         if (header) {
           e.preventDefault();
@@ -283,37 +285,41 @@ class PortfolioExpander {
 
   toggleExpansion(header) {
     const content = header.nextElementSibling;
+    if (!content || !content.classList.contains('portfolio-item-content')) return;
+
     const isExpanded = header.getAttribute('aria-expanded') === 'true';
 
     if (isExpanded) {
       this.collapseItem(header, content);
     } else {
+      this.collapseOthers(header);
       this.expandItem(header, content);
     }
   }
 
+  collapseOthers(exceptHeader) {
+    document.querySelectorAll('.portfolio-item-header[aria-expanded="true"]').forEach((header) => {
+      if (header === exceptHeader) return;
+      const content = header.nextElementSibling;
+      if (content && content.classList.contains('portfolio-item-content')) {
+        this.collapseItem(header, content);
+      }
+    });
+  }
+
   expandItem(header, content) {
-    // Update ARIA attributes
     header.setAttribute('aria-expanded', 'true');
     content.setAttribute('aria-hidden', 'false');
-
-    // Add visual feedback
+    content.removeAttribute('inert');
     header.classList.add('expanded');
-
-    // Focus management - keep focus on header for keyboard users
     header.focus();
   }
 
   collapseItem(header, content) {
-    // Update ARIA attributes
     header.setAttribute('aria-expanded', 'false');
     content.setAttribute('aria-hidden', 'true');
-
-    // Remove visual feedback
+    content.setAttribute('inert', '');
     header.classList.remove('expanded');
-
-    // Focus management
-    header.focus();
   }
 }
 
