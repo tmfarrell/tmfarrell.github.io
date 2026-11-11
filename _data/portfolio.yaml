@@ -1,5 +1,6 @@
 - id: personal-2
   title: "future in bio"
+  hidden: true  # hidden from the portfolio until it is ready to show
   description: "Visual newsletter with the latest news and research in bio, health and tech. Short and information-dense."
   link: https://www.futurein.bio
   date: 2026-09-01
