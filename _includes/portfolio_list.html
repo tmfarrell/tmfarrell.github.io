@@ -1,4 +1,4 @@
-{%- assign portfolio = site.data.portfolio | sort: "date" | reverse -%}
+{%- assign portfolio = site.data.portfolio | where_exp: "item", "item.hidden != true" | sort: "date" | reverse -%}
 {%- if include.limit and portfolio.size > include.limit -%}
   {%- assign limited_portfolio = portfolio | slice: 0, include.limit -%}
   {%- assign limit_exceeded = true -%}
