@@ -56,10 +56,10 @@
 <ul class="post-list" id="post-list-{{include.category}}" data-category="{{include.category}}">
   {%- for post in limited_posts -%}
   <li class="post-list-item preview-item" data-tags="{% if post.tags %}{{ post.tags | join: ',' }}{% endif %}" data-date="{{ post.date | date: '%Y-%m-%d' }}">
-    <div class="post-item-header">
+    <a href="{{ post.url | relative_url }}" class="post-item-header">
       <span class="post-date">{{ post.date | date: "%Y-%m " }}</span>
       <span class="post-title-section">
-        <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
+        <span class="post-link">{{ post.title }}</span>
       </span>
       {% if post.tags and post.tags.size > 0 %}
         <span class="post-tags">
@@ -68,17 +68,17 @@
           {% endfor %}
         </span>
       {% endif %}
-    </div>
+    </a>
   </li>
   {%- endfor -%}
   {%- if limit_exceeded -%}
     {%- assign remaining_posts = posts | slice: include.limit, posts.size -%}
     {%- for post in remaining_posts -%}
     <li class="post-list-item additional-item" data-tags="{% if post.tags %}{{ post.tags | join: ',' }}{% endif %}" data-date="{{ post.date | date: '%Y-%m-%d' }}">
-      <div class="post-item-header">
+      <a href="{{ post.url | relative_url }}" class="post-item-header">
         <span class="post-date">{{ post.date | date: "%Y-%m " }}</span>
         <span class="post-title-section">
-          <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
+          <span class="post-link">{{ post.title }}</span>
         </span>
         {% if post.tags and post.tags.size > 0 %}
           <span class="post-tags">
@@ -87,7 +87,7 @@
             {% endfor %}
           </span>
         {% endif %}
-      </div>
+      </a>
     </li>
     {%- endfor -%}
   {%- endif -%}
