@@ -1,6 +1,6 @@
 const AI_MODE_SUGGESTIONS = [
     'What products has Tim worked on?',
-    'Tell me about his experience with AI/ML.', 
+    'Tell me about his experience with AI/ML.',
     'What experience does Tim have with APIs?',
     'Does Tim have a technical background?'
 ];
@@ -11,8 +11,9 @@ class AIChat {
         this.isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
         this.useMockData = new URLSearchParams(window.location.search).get('mock') === 'true';
         this.useLocal = new URLSearchParams(window.location.search).get('local') === 'true';
-        this.apiBaseUrl = this.useLocal 
-            ? 'http://localhost:8888' 
+        this.isDebugMode = this.useMockData || this.useLocal;
+        this.apiBaseUrl = this.useLocal
+            ? 'http://localhost:8888'
             : 'https://api-tmfarrell.netlify.app';
         this.messages = [];
         this.isStreaming = false;
@@ -21,97 +22,86 @@ class AIChat {
     }
 
     init() {
-        this.bindModeToggle();
         this.bindChatForm();
         this.bindTextarea();
         this.bindSuggestionsToggle();
+        this.bindDebugButton();
         this.showSuggestions();
         this.showSuggestionsToggle();
         this.checkChatAvailability();
         this.updateUsageCounter();
     }
 
-    checkChatAvailability() {
-        const { count } = this.getQueryCount();
-        if (count >= this.maxChatsPerDay) {
-            const chatBtn = document.getElementById('mode-chat');
-            
-            if (chatBtn) {
-                chatBtn.disabled = true;
-                chatBtn.classList.add('disabled');
-                chatBtn.title = "You've hit your chat limit for the day";
-            }
-            
-            this.activateSearchMode();
-        } else {
-            this.activateChatMode();
+    bindDebugButton() {
+        if (!this.isDebugMode) return;
+
+        const resetBtn = document.getElementById('reset-counters-btn');
+        if (resetBtn) {
+            resetBtn.classList.remove('hidden');
+            resetBtn.addEventListener('click', () => this.resetCounters());
+        }
+
+        const nearLimitBtn = document.getElementById('near-limit-btn');
+        if (nearLimitBtn) {
+            nearLimitBtn.classList.remove('hidden');
+            nearLimitBtn.addEventListener('click', () => this.setNearLimit());
         }
     }
 
-    activateChatMode() {
-        const searchBtn = document.getElementById('mode-search');
-        const chatBtn = document.getElementById('mode-chat');
-        const searchForm = document.getElementById('search-form');
-        const chatForm = document.getElementById('chat-form');
-        const searchSuggestions = document.getElementById('search-suggestions');
-        const chatSuggestions = document.getElementById('chat-suggestions');
-        const chatMessages = document.getElementById('chat-messages');
-        const searchResults = document.getElementById('search-results');
-        
-        chatBtn?.classList.add('active');
-        searchBtn?.classList.remove('active');
-        chatForm?.classList.remove('hidden');
-        searchForm?.classList.add('hidden');
-        chatSuggestions?.classList.remove('hidden');
-        searchSuggestions?.classList.add('hidden');
-        chatMessages?.classList.remove('hidden');
-        searchResults?.classList.add('hidden');
+    setNearLimit() {
+        const today = new Date().toDateString();
+        localStorage.setItem('chat_queries', JSON.stringify({ date: today, count: this.maxChatsPerDay - 1 }));
+        this.hasUsedAI = true;
+        this.checkChatAvailability();
+        this.updateUsageCounter();
     }
 
-    activateSearchMode() {
-        const searchBtn = document.getElementById('mode-search');
-        const chatBtn = document.getElementById('mode-chat');
-        const searchForm = document.getElementById('search-form');
-        const chatForm = document.getElementById('chat-form');
-        const searchResults = document.getElementById('search-results');
-        const searchSuggestions = document.getElementById('search-suggestions');
+    resetCounters() {
+        localStorage.removeItem('chat_queries');
+        this.hasUsedAI = false;
+        this.messages = [];
+
         const chatMessages = document.getElementById('chat-messages');
-        const chatSuggestions = document.getElementById('chat-suggestions');
-        const chatCounter = document.getElementById('chat-counter');
-        const usageCounter = document.getElementById('usage-counter');
-        
-        searchBtn?.classList.add('active');
-        chatBtn?.classList.remove('active');
-        searchForm?.classList.remove('hidden');
-        chatForm?.classList.add('hidden');
-        searchSuggestions?.classList.remove('hidden');
-        chatSuggestions?.classList.add('hidden');
-        searchResults?.classList.add('hidden');
-        chatMessages?.classList.add('hidden');
-        if (chatCounter) chatCounter.classList.add('hidden');
-        if (usageCounter) usageCounter.classList.remove('hidden');
+        if (chatMessages) chatMessages.innerHTML = '';
+
+        this.checkChatAvailability();
+        this.updateUsageCounter();
+    }
+
+    checkChatAvailability() {
+        const { count } = this.getQueryCount();
+        const input = document.getElementById('chat-input');
+        const form = document.getElementById('chat-form');
+        const btn = form?.querySelector('.ai-btn');
+
+        if (count >= this.maxChatsPerDay) {
+            if (input) {
+                input.disabled = true;
+                input.placeholder = "You've hit your chat limit for the day";
+            }
+            if (btn) btn.disabled = true;
+        } else {
+            if (input) {
+                input.disabled = false;
+                input.placeholder = 'Ask anything...';
+            }
+            if (btn) btn.disabled = false;
+        }
     }
 
     updateUsageCounter() {
         const { count } = this.getQueryCount();
-        const searchRemaining = this.getSearchRemaining();
         const remaining = Math.max(0, this.maxChatsPerDay - count);
         const usageCounter = document.getElementById('usage-counter');
-        
+
         if (!usageCounter) return;
-        
+
         if (this.hasUsedAI) {
-            if (searchRemaining > 0 && remaining > 0) {
-                usageCounter.textContent = `${searchRemaining} search${searchRemaining === 1 ? '' : 'es'}, ${remaining} chat${remaining === 1 ? '' : 's'} remaining today`;
-                usageCounter.className = 'usage-counter';
-            } else if (searchRemaining > 0) {
-                usageCounter.textContent = `${searchRemaining} search${searchRemaining === 1 ? '' : 'es'} remaining today`;
-                usageCounter.className = 'usage-counter';
-            } else if (remaining > 0) {
+            if (remaining > 0) {
                 usageCounter.textContent = `${remaining} chat${remaining === 1 ? '' : 's'} remaining today`;
                 usageCounter.className = 'usage-counter';
             } else {
-                usageCounter.textContent = 'Daily limits reached';
+                usageCounter.textContent = 'Daily chat limit reached';
                 usageCounter.className = 'usage-counter limit-reached';
             }
         } else {
@@ -119,88 +109,15 @@ class AIChat {
         }
     }
 
-    getSearchRemaining() {
-        const today = new Date().toDateString();
-        const stored = localStorage.getItem('search_queries');
-        let searchCount = 0;
-        
-        if (stored) {
-            try {
-                const data = JSON.parse(stored);
-                if (data.date === today) {
-                    searchCount = data.count;
-                }
-            } catch (error) {}
-        }
-        
-        return Math.max(0, 20 - searchCount);
-    }
-
-    bindModeToggle() {
-        const searchBtn = document.getElementById('mode-search');
-        const chatBtn = document.getElementById('mode-chat');
-        const searchForm = document.getElementById('search-form');
-        const chatForm = document.getElementById('chat-form');
-        const searchResults = document.getElementById('search-results');
-        const searchSuggestions = document.getElementById('search-suggestions');
-        const chatMessages = document.getElementById('chat-messages');
-        const chatSuggestions = document.getElementById('chat-suggestions');
-        const queryCounter = document.getElementById('query-counter');
-        const chatCounter = document.getElementById('chat-counter');
-
-        const activateSearch = () => {
-            const chatValue = document.getElementById('chat-input')?.value || '';
-            const searchInput = document.getElementById('search-query');
-            if (searchInput) searchInput.value = chatValue;
-            
-            searchBtn?.classList.add('active');
-            chatBtn?.classList.remove('active');
-            searchForm?.classList.remove('hidden');
-            chatForm?.classList.add('hidden');
-            searchSuggestions?.classList.remove('hidden');
-            chatSuggestions?.classList.add('hidden');
-            searchResults?.classList.add('hidden');
-            chatMessages?.classList.add('hidden');
-            chatCounter?.classList.add('hidden');
-            const usageCounter = document.getElementById('usage-counter');
-            if (usageCounter && chatInstance?.hasUsedAI) {
-                usageCounter.classList.remove('hidden');
-                chatInstance.updateUsageCounter();
-            }
-        };
-
-        const activateChat = () => {
-            const searchValue = document.getElementById('search-query')?.value || '';
-            const chatInput = document.getElementById('chat-input');
-            if (chatInput) chatInput.value = searchValue;
-            
-            chatBtn?.classList.add('active');
-            searchBtn?.classList.remove('active');
-            chatForm?.classList.remove('hidden');
-            searchForm?.classList.add('hidden');
-            chatSuggestions?.classList.remove('hidden');
-            searchSuggestions?.classList.add('hidden');
-            chatMessages?.classList.remove('hidden');
-            searchResults?.classList.add('hidden');
-            queryCounter?.classList.add('hidden');
-            const usageCounter = document.getElementById('usage-counter');
-            if (usageCounter) usageCounter.classList.remove('hidden');
-            this.updateChatCounter();
-        };
-
-        searchBtn?.addEventListener('click', activateSearch);
-        chatBtn?.addEventListener('click', activateChat);
-    }
-
     bindSuggestionsToggle() {
         const toggle = document.getElementById('suggestions-toggle');
         const wrapper = document.getElementById('suggestions-wrapper');
-        
+
         if (!toggle || !wrapper) return;
-        
+
         toggle.addEventListener('click', () => {
             const isVisible = wrapper.classList.contains('visible');
-            
+
             if (isVisible) {
                 wrapper.classList.remove('visible');
                 toggle.classList.remove('active');
@@ -234,9 +151,9 @@ class AIChat {
     getQueryCount() {
         const today = new Date().toDateString();
         const stored = localStorage.getItem('chat_queries');
-        
+
         if (!stored) return { date: today, count: 0 };
-        
+
         try {
             const data = JSON.parse(stored);
             if (data.date !== today) {
@@ -252,14 +169,14 @@ class AIChat {
         const queryData = this.getQueryCount();
         queryData.count += 1;
         localStorage.setItem('chat_queries', JSON.stringify(queryData));
-        
+
         this.hasUsedAI = true;
-        
+
         const counterEl = document.getElementById('chat-counter');
         if (counterEl) {
             counterEl.classList.remove('hidden');
         }
-        
+
         this.updateChatCounter();
         this.updateUsageCounter();
     }
@@ -268,71 +185,50 @@ class AIChat {
         const { count } = this.getQueryCount();
         const remaining = Math.max(0, this.maxChatsPerDay - count);
         const counterEl = document.getElementById('chat-counter');
-        
-        if (!counterEl) return;
-        
-        if (remaining > 0) {
-            counterEl.textContent = `${remaining} chat${remaining === 1 ? '' : 's'} remaining today`;
-            counterEl.className = 'query-counter';
-        } else {
-            counterEl.textContent = 'Daily chat limit reached';
-            counterEl.className = 'query-counter limit-reached';
-            
-            const chatBtn = document.getElementById('mode-chat');
-            if (chatBtn) {
-                chatBtn.disabled = true;
-                chatBtn.classList.add('disabled');
-                chatBtn.title = "You've hit your chat limit for the day";
+
+        if (counterEl) {
+            if (remaining > 0) {
+                counterEl.textContent = `${remaining} chat${remaining === 1 ? '' : 's'} remaining today`;
+                counterEl.className = 'query-counter';
+            } else {
+                counterEl.textContent = 'Daily chat limit reached';
+                counterEl.className = 'query-counter limit-reached';
             }
         }
-        
+
+        if (remaining <= 0) {
+            this.checkChatAvailability();
+        }
+
         this.updateUsageCounter();
     }
 
     showSuggestions() {
-        const searchContainer = document.getElementById('search-suggestions');
         const chatContainer = document.getElementById('chat-suggestions');
+        if (!chatContainer) return;
 
         const shuffled = [...AI_MODE_SUGGESTIONS].sort(() => Math.random() - 0.5);
         const selected = shuffled.slice(0, 2);
 
-        if (searchContainer) {
-            searchContainer.innerHTML = selected.map(s => 
-                `<button class="suggestion-btn">${s}</button>`
-            ).join('');
+        chatContainer.innerHTML = selected.map(s =>
+            `<button class="suggestion-btn">${s}</button>`
+        ).join('');
 
-            searchContainer.querySelectorAll('.suggestion-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const input = document.getElementById('search-query');
-                    if (input) {
-                        input.value = btn.textContent;
-                        input.focus();
-                    }
-                });
+        chatContainer.querySelectorAll('.suggestion-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const input = document.getElementById('chat-input');
+                if (input) {
+                    input.value = btn.textContent;
+                    input.focus();
+                }
             });
-        }
-
-        if (chatContainer) {
-            chatContainer.innerHTML = selected.map(s => 
-                `<button class="suggestion-btn">${s}</button>`
-            ).join('');
-
-            chatContainer.querySelectorAll('.suggestion-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const input = document.getElementById('chat-input');
-                    if (input) {
-                        input.value = btn.textContent;
-                        input.focus();
-                    }
-                });
-            });
-        }
+        });
     }
 
     hideSuggestions() {
         const wrapper = document.getElementById('suggestions-wrapper');
         const toggle = document.getElementById('suggestions-toggle');
-        
+
         if (wrapper) {
             wrapper.classList.remove('visible');
             wrapper.style.display = 'none';
@@ -346,7 +242,7 @@ class AIChat {
     showSuggestionsToggle() {
         const wrapper = document.getElementById('suggestions-wrapper');
         const toggle = document.getElementById('suggestions-toggle');
-        
+
         if (wrapper) wrapper.style.display = '';
         if (toggle) toggle.style.display = '';
     }
@@ -361,12 +257,12 @@ class AIChat {
 
     async handleSubmit(e) {
         e.preventDefault();
-        
+
         if (this.isStreaming) return;
 
         const input = document.getElementById('chat-input');
         const message = input?.value.trim();
-        
+
         if (!message) return;
 
         const { count } = this.getQueryCount();
@@ -377,20 +273,20 @@ class AIChat {
 
         this.hideSuggestions();
         this.incrementQueryCount();
-        
+
         const newCount = this.getQueryCount().count;
         const atLimit = newCount >= this.maxChatsPerDay;
-        
+
         this.addMessage('user', message);
         input.value = '';
 
         this.setLoading(true);
-        
+
         try {
             let responseText;
-            
+
             let responseData = null;
-            
+
             if (this.useMockData) {
                 await new Promise(resolve => setTimeout(resolve, 1500));
                 responseText = this.getMockResponse(message);
@@ -400,7 +296,7 @@ class AIChat {
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ 
+                    body: JSON.stringify({
                         query: message,
                         history: this.messages
                     })
@@ -419,18 +315,18 @@ class AIChat {
 
                 responseData = await response.json();
                 responseText = responseData.response || responseData.text || responseData.content || responseData.result || JSON.stringify(responseData);
-                
+
                 if (!responseText || responseText === '{}') {
                     throw new Error('Empty response from chat service');
                 }
             }
-            
+
             if (atLimit) {
-                responseText += '\n\n---\n\nP.S. You\'ve hit your chat limit for the day. Feel free to use search mode or email tfarrell01@gmail.com with any other questions!';
+                responseText += '\n\n---\n\nP.S. You\'ve hit your chat limit for the day. Feel free to email tfarrell01@gmail.com with any other questions!';
             }
 
             await this.streamResponse(responseText);
-            
+
             if (atLimit) {
                 this.updateChatCounter();
             }
@@ -445,28 +341,28 @@ class AIChat {
 
     addMessage(role, content) {
         this.messages.push({ role, content });
-        
+
         const container = document.getElementById('chat-messages');
         if (!container) return;
-        
+
         container.classList.remove('hidden');
 
         const messageDiv = document.createElement('div');
         messageDiv.className = `chat-message ${role}`;
-        
+
         const formattedContent = role === 'assistant' ? this.formatMarkdown(content) : this.escapeHtml(content);
         messageDiv.innerHTML = `<div class="message-content">${formattedContent}</div>`;
-        
+
         container.appendChild(messageDiv);
         this.scrollToBottom();
     }
 
     async streamResponse(text) {
         this.isStreaming = true;
-        
+
         const container = document.getElementById('chat-messages');
         container.classList.remove('hidden');
-        
+
         const streamingDiv = document.createElement('div');
         streamingDiv.className = 'chat-message assistant';
         streamingDiv.id = 'streaming-message';
@@ -475,21 +371,21 @@ class AIChat {
 
         const contentDiv = streamingDiv.querySelector('.message-content');
         const typingIndicator = streamingDiv.querySelector('.typing-indicator');
-        
+
         const chars = text.split('');
         const baseDelay = Math.max(8, 600 / text.length);
-        
+
         for (let i = 0; i < chars.length; i++) {
             await new Promise(resolve => setTimeout(resolve, baseDelay + (Math.random() * 5 - 2.5)));
-            
+
             const partialText = text.substring(0, i + 1);
             contentDiv.innerHTML = this.formatMarkdown(partialText);
             this.scrollToBottom();
         }
-        
+
         typingIndicator?.remove();
         this.isStreaming = false;
-        
+
         this.messages.push({ role: 'assistant', content: text });
     }
 
@@ -502,38 +398,38 @@ class AIChat {
 
     formatMarkdown(text) {
         if (!text) return '';
-        
+
         let formatted = this.escapeHtml(text);
-        
+
         formatted = formatted.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
         formatted = formatted.replace(/\*(.+?)\*/g, '<em>$1</em>');
         formatted = formatted.replace(/`(.+?)`/g, '<code>$1</code>');
-        
+
         formatted = formatted.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
-        
+
         formatted = formatted.replace(/^(\d+)\.\s+(.+)$/gm, '<li>$2</li>');
         formatted = formatted.replace(/(<li>.*<\/li>)/s, '<ol>$1</ol>');
-        
+
         formatted = formatted.replace(/^[-•]\s+(.+)$/gm, '<li>$1</li>');
         formatted = formatted.replace(/(<li>.*<\/li>)/s, (match) => {
             if (match.includes('<ol>')) return match;
             return '<ul>' + match + '</ul>';
         });
-        
+
         formatted = formatted.replace(/\n\n/g, '</p><p>');
         formatted = formatted.replace(/\n/g, '<br>');
-        
+
         if (!formatted.startsWith('<p>') && !formatted.startsWith('<ol>') && !formatted.startsWith('<ul>')) {
             formatted = '<p>' + formatted + '</p>';
         }
-        
+
         return formatted;
     }
 
     showError(message) {
         const container = document.getElementById('chat-messages');
         if (!container) return;
-        
+
         const errorDiv = document.createElement('div');
         errorDiv.className = 'chat-message error';
         errorDiv.innerHTML = `
@@ -551,7 +447,7 @@ class AIChat {
         const text = btn?.querySelector('.ai-btn-text');
         const spinner = btn?.querySelector('.ai-btn-loading');
         const input = document.getElementById('chat-input');
-        
+
         if (btn) btn.disabled = loading;
         if (input) input.disabled = loading;
         if (text) text.style.display = loading ? 'none' : 'inline';

@@ -4,25 +4,7 @@ title: About
 permalink: /
 ---
 
-<div class="header-container">
-  <div class="ai-mode-container">
-    <a href="{{ '/ai-mode/' | relative_url }}" class="ai-mode-btn">AI Mode</a>
-  </div>
-
-  <div style="text-align: center;">
-    <nav class="tab-nav">
-      <a href="{{ '/' | relative_url }}" class="active">about</a>
-      <span> | </span>
-      <a href="{{ '/reading/' | relative_url }}">read</a>
-      <span> | </span>
-      <a href="{{ '/writing/' | relative_url }}">write</a>
-      <span> | </span>
-      <a href="{{ '/building/' | relative_url }}">build</a>
-    </nav>
-  </div>
-</div>
-
-<hr data-content="">
+{% include site_header.html active="about" %}
 
 <div class="page">
   <p>Hi there!</p>

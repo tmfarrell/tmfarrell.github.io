@@ -6,19 +6,33 @@ class SemanticSearch {
         this.useMockData = new URLSearchParams(window.location.search).get('mock') === 'true';
         this.useLocal = new URLSearchParams(window.location.search).get('local') === 'true';
         this.isDebugMode = this.useMockData || this.useLocal;
-        this.apiBaseUrl = this.useLocal 
-            ? 'http://localhost:8888' 
+        this.apiBaseUrl = this.useLocal
+            ? 'http://localhost:8888'
             : 'https://api-tmfarrell.netlify.app';
-        
+
         const form = document.getElementById('search-form');
         if (form) {
             form.addEventListener('submit', (e) => this.handleSearch(e));
         }
-        
+
         this.bindTextarea();
         this.bindDebugButton();
+        this.updateQueryCounter();
+        this.autoSearchFromQuery();
     }
-    
+
+    autoSearchFromQuery() {
+        const params = new URLSearchParams(window.location.search);
+        const q = params.get('q');
+        if (!q) return;
+
+        const input = document.getElementById('search-query');
+        if (!input) return;
+
+        input.value = q;
+        this.handleSearch({ preventDefault() {} });
+    }
+
     bindTextarea() {
         const textarea = document.getElementById('search-query');
         if (textarea) {
@@ -30,61 +44,35 @@ class SemanticSearch {
             });
         }
     }
-    
+
     bindDebugButton() {
         if (!this.isDebugMode) return;
-        
+
         const resetBtn = document.getElementById('reset-counters-btn');
         if (resetBtn) {
             resetBtn.classList.remove('hidden');
             resetBtn.addEventListener('click', () => this.resetCounters());
         }
-        
+
         const nearLimitBtn = document.getElementById('near-limit-btn');
         if (nearLimitBtn) {
             nearLimitBtn.classList.remove('hidden');
             nearLimitBtn.addEventListener('click', () => this.setNearLimit());
         }
     }
-    
+
     setNearLimit() {
         const today = new Date().toDateString();
         localStorage.setItem('search_queries', JSON.stringify({ date: today, count: this.maxQueriesPerDay - 1 }));
-        localStorage.setItem('chat_queries', JSON.stringify({ date: today, count: 5 - 1 }));
-        
-        if (chatInstance) {
-            chatInstance.hasUsedAI = true;
-            chatInstance.checkChatAvailability();
-            chatInstance.updateUsageCounter();
-        }
-        
         this.updateQueryCounter();
     }
-    
+
     resetCounters() {
         localStorage.removeItem('search_queries');
-        localStorage.removeItem('chat_queries');
-        
-        if (chatInstance) {
-            chatInstance.hasUsedAI = false;
-            chatInstance.messages = [];
-            const chatMessages = document.getElementById('chat-messages');
-            if (chatMessages) chatMessages.innerHTML = '';
-            
-            const chatBtn = document.getElementById('mode-chat');
-            if (chatBtn) {
-                chatBtn.disabled = false;
-                chatBtn.classList.remove('disabled');
-                chatBtn.title = 'Switch to chat mode';
-            }
-            
-            chatInstance.checkChatAvailability();
-            chatInstance.updateUsageCounter();
-        }
-        
+
         const searchResults = document.getElementById('search-results');
         if (searchResults) searchResults.innerHTML = '';
-        
+
         this.updateQueryCounter();
     }
 
@@ -123,9 +111,9 @@ class SemanticSearch {
     getQueryCount() {
         const today = new Date().toDateString();
         const stored = localStorage.getItem('search_queries');
-        
+
         if (!stored) return { date: today, count: 0 };
-        
+
         try {
             const data = JSON.parse(stored);
             if (data.date !== today) {
@@ -140,7 +128,7 @@ class SemanticSearch {
     hideSuggestions() {
         const wrapper = document.getElementById('suggestions-wrapper');
         const toggle = document.getElementById('suggestions-toggle');
-        
+
         if (wrapper) {
             wrapper.classList.remove('visible');
             wrapper.style.display = 'none';
@@ -155,63 +143,30 @@ class SemanticSearch {
         const queryData = this.getQueryCount();
         queryData.count += 1;
         localStorage.setItem('search_queries', JSON.stringify(queryData));
-        
-        if (chatInstance) {
-            chatInstance.hasUsedAI = true;
-            chatInstance.updateUsageCounter();
-        }
-        
         this.updateQueryCounter();
     }
 
     updateQueryCounter() {
         const { count } = this.getQueryCount();
         const remaining = Math.max(0, this.maxQueriesPerDay - count);
-        const chatRemaining = this.getChatRemaining();
         const counterEl = document.getElementById('usage-counter');
-        
+
         if (!counterEl) return;
-        
-        if (remaining > 0 && chatRemaining > 0) {
-            counterEl.textContent = `${remaining} search${remaining === 1 ? '' : 's'}, ${chatRemaining} chat${chatRemaining === 1 ? '' : 's'} remaining today`;
-            counterEl.className = 'usage-counter';
-        } else if (remaining > 0) {
-            counterEl.textContent = `${remaining} search${remaining === 1 ? '' : 's'} remaining today`;
-            counterEl.className = 'usage-counter';
-        } else if (chatRemaining > 0) {
-            counterEl.textContent = `${chatRemaining} chat${chatRemaining === 1 ? '' : 's'} remaining today`;
+
+        if (remaining > 0) {
+            counterEl.textContent = `${remaining} search${remaining === 1 ? '' : 'es'} remaining today`;
             counterEl.className = 'usage-counter';
         } else {
-            counterEl.textContent = 'Daily limits reached';
+            counterEl.textContent = 'Daily search limit reached';
             counterEl.className = 'usage-counter limit-reached';
         }
     }
 
-    getChatRemaining() {
-        const today = new Date().toDateString();
-        const stored = localStorage.getItem('chat_queries');
-        let chatCount = 0;
-        
-        if (stored) {
-            try {
-                const data = JSON.parse(stored);
-                if (data.date === today) {
-                    chatCount = data.count;
-                }
-            } catch (error) {}
-        }
-        
-        return Math.max(0, 5 - chatCount);
-    }
-
     async handleSearch(e) {
         e.preventDefault();
-        
+
         const { count } = this.getQueryCount();
         if (count >= this.maxQueriesPerDay) {
-            if (chatInstance) {
-                chatInstance.activateSearchMode();
-            }
             this.showError("You've hit your search limit for the day.<br>Feel free to email tfarrell01@gmail.com with any other questions you might have!");
             return;
         }
@@ -223,14 +178,14 @@ class SemanticSearch {
         this.hideSuggestions();
         this.clearResults();
         this.incrementQueryCount();
-        
+
         if (this.useMockData) {
             await new Promise(resolve => setTimeout(resolve, 500));
             this.displayResults(this.getMockResults(), query);
             this.setLoading(false);
             return;
         }
-        
+
         try {
             const response = await fetch(`${this.apiBaseUrl}/.netlify/functions/search`, {
                 method: 'POST',
@@ -260,7 +215,7 @@ class SemanticSearch {
 
         } catch (error) {
             console.error('Search error:', error);
-            
+
             if (error.name === 'TypeError' && error.message.includes('fetch')) {
                 this.showError('Unable to connect to search service. Please check your internet connection and try again.');
             } else {
@@ -272,11 +227,12 @@ class SemanticSearch {
     }
 
     setLoading(loading) {
-        const btn = document.querySelector('.ai-btn');
+        const form = document.getElementById('search-form');
+        const btn = form?.querySelector('.ai-btn');
         const text = btn?.querySelector('.ai-btn-text');
         const spinner = btn?.querySelector('.ai-btn-loading');
         const input = document.getElementById('search-query');
-        
+
         if (btn) btn.disabled = loading;
         if (input) input.disabled = loading;
         if (text) text.style.display = loading ? 'none' : 'inline';
@@ -293,9 +249,9 @@ class SemanticSearch {
     displayResults(results, query) {
         const container = document.getElementById('search-results');
         if (!container) return;
-        
+
         container.classList.remove('hidden');
-        
+
         if (!results || results.length === 0) {
             container.innerHTML = `
                 <div class="no-results">
@@ -335,7 +291,7 @@ class SemanticSearch {
     showError(message) {
         const container = document.getElementById('search-results');
         if (!container) return;
-        
+
         container.classList.remove('hidden');
         container.innerHTML = `
             <div class="error-message">

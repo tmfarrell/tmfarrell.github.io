@@ -94,13 +94,16 @@ class TextChunker {
       ? content.substring(0, this.excerptLength - 3) + '...'
       : content;
 
-    // Build searchable content with category and tags prepended to each chunk
+    // Build searchable content with category, tags, and org appended to each chunk
     let searchableContent = `[title: ${title}] ${content}`;
     if (category) {
       searchableContent = `${searchableContent} [Category: ${category}]`;
     }
     if (tags && Array.isArray(tags) && tags.length > 0) {
       searchableContent = `${searchableContent} [Tags: ${tags.join(', ')}]`;
+    }
+    if (originalMetadata.org) {
+      searchableContent = `${searchableContent} [Org: ${originalMetadata.org}]`;
     }
 
     // Create deterministic ID

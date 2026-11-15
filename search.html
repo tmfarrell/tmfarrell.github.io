@@ -1,0 +1,43 @@
+---
+layout: default
+title: Search
+permalink: /search/
+---
+
+<div class="search-page">
+  <div class="back-button-container">
+    <a href="{{ '/' | relative_url }}" class="back-button">← Back</a>
+  </div>
+
+  <button id="reset-counters-btn" class="reset-counters-btn hidden">Reset Limits</button>
+  <button id="near-limit-btn" class="reset-counters-btn hidden">Near Limit</button>
+
+  <div class="search-container" style="margin-top: 50px;">
+    <h1 style="font-weight: 300; margin-bottom: 25px;">Search</h1>
+
+    <div class="ai-input-area">
+      <form id="search-form" class="ai-form">
+        <div class="ai-input-container">
+          <textarea
+            id="search-query"
+            class="ai-input"
+            placeholder="Search..."
+            maxlength="200"
+            rows="1"
+            required
+          ></textarea>
+          <button type="submit" class="ai-btn">
+            <span class="ai-btn-text">Search</span>
+            <span class="ai-btn-loading" style="display: none;">...</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div id="search-results" class="search-results hidden" style="margin-top: 25px;"></div>
+
+    <div id="usage-counter" class="usage-counter"></div>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/search.js' | relative_url }}"></script>

@@ -8,38 +8,20 @@ permalink: /ai-mode/
   <div class="back-button-container">
     <a href="{{ '/' | relative_url }}" class="back-button">← Back</a>
   </div>
-  
+
   <button id="reset-counters-btn" class="reset-counters-btn hidden">Reset Limits</button>
   <button id="near-limit-btn" class="reset-counters-btn hidden">Near Limit</button>
-   
+
   <div class="search-container" style="margin-top: 50px;">
     <h1 style="font-weight: 300; margin-bottom: 25px;">AI Mode</h1>
-    <!--<p class="search-description">Ask about any products I've worked on or things I've written</p>-->
-    
+
     <div id="chat-messages" class="chat-messages hidden" style="margin-top: 25px;"></div>
 
     <div class="ai-input-area">
-      <form id="search-form" class="ai-form hidden">
-        <div class="ai-input-container">
-          <textarea 
-            id="search-query" 
-            class="ai-input"
-            placeholder="Search..."
-            maxlength="200"
-            rows="1"
-            required
-          ></textarea>
-          <button type="submit" class="ai-btn">
-            <span class="ai-btn-text">Send</span>
-            <span class="ai-btn-loading" style="display: none;">...</span>
-          </button>
-        </div>
-      </form>
-      
       <form id="chat-form" class="ai-form">
         <div class="ai-input-container">
-          <textarea 
-            id="chat-input" 
+          <textarea
+            id="chat-input"
             class="ai-input"
             placeholder="Ask anything..."
             maxlength="1000"
@@ -53,17 +35,8 @@ permalink: /ai-mode/
       </form>
     </div>
 
-    <div class="mode-toggle">
-      <button id="mode-search" class="mode-btn">Search</button>
-      <span class="mode-divider">|</span>
-      <button id="mode-chat" class="mode-btn active" title="Switch to chat mode">Chat</button>
-    </div>
-
-    <div id="search-results" class="search-results hidden" style="margin-top: 25px;"></div>
-    
     <div id="usage-counter" class="usage-counter"></div>
   </div>
 </div>
 
-<script src="{{ '/assets/js/search.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/chat.js' | relative_url }}"></script>
