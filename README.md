@@ -21,7 +21,7 @@ Changes pushed to `main` auto-deploy via GitHub Pages.
 
 ## Search / AI Mode
 
-The site includes a semantic search feature powered by Pinecone vector DB.
+Header search submits to `/search/` (Pinecone-backed semantic search). AI Mode at `/ai-mode/` is chat-only.
 
 ### Rebuild Search Index
 
@@ -40,9 +40,11 @@ Requires `PINECONE_API_KEY` and `PINECONE_INDEX` in `.env`.
 To iterate on the search UI without hitting the API:
 
 1. Start the local server: `bundle exec jekyll serve`
-2. Visit: `http://localhost:4000/ai-mode/?mock=true`
+2. Visit: `http://localhost:4000/search/?mock=true`
 
 This loads mock results from `assets/js/search.js` (the `getMockResults` function). Edit this function to test different result formats, tags, styling, etc.
+
+For chat UI mocks: `http://localhost:4000/ai-mode/?mock=true`
 
 ## Content
 

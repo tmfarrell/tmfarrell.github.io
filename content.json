@@ -40,37 +40,30 @@ layout: null
 {
   "title": "Senior Product Manager at OM1",
   "url": "https://www.om1.com/",
-  "content": "Leading development of a medical event risk prediction solution powered by a proprietary generative AI model. Conduct prototyping and product discovery to validate and launch new products. Manage analytics platform improving product discoverability and reducing delivery costs by 80%. Lead development of AI agents to accelerate development and delivery. Manage and mentor a junior product manager and improve roadmap and planning processes.",
+  "content": "Leading development of the PhenOM API (https://phenom-docs.om1.com/), a medical event risk prediction solution powered by a proprietary generative AI model. Conduct prototyping and product discovery to validate and launch new products. Manage analytics platform improving product discoverability and reducing delivery costs by 80%. Lead development of AI agents to accelerate development and delivery. Manage and mentor a junior product manager and improve roadmap and planning processes.",
   "category": "experience",
   "date": "2024-01-01"
 },
 {
   "title": "Product Manager at OM1",
   "url": "https://www.om1.com/",
-  "content": "Delivered a data analytics platform using a partnership-driven approach, resulting in $1.75M in total contract value. Managed a real-world data platform covering 350M+ patients and drove 50% year-over-year revenue growth. Oversaw machine learning and AI model development, increasing observations by more than 4x.",
+  "content": "Delivered Insights Platform (https://tmfarrell.github.io/assets/pdf/insights_platform.pdf), a data analytics platform using a partnership-driven approach, resulting in $1.75M in total contract value. Managed a real-world data platform covering 350M+ patients and drove 50% year-over-year revenue growth. Oversaw machine learning and AI model development, increasing observations by more than 4x.",
   "category": "experience",
   "date": "2022-01-01"
 },
 {
   "title": "Product Manager at Day Zero Diagnostics",
   "url": "https://www.dayzerodiagnostics.com/",
-  "content": "Led product development for the company’s first commercial offering: an outbreak detection sequencing solution for hospital systems. Facilitated CLIA certification enabling the product to be offered as a lab test. Scaled business from one deal per quarter to 1-2 deals per month.",
+  "content": "Led product development for epiXact (https://tmfarrell.github.io/assets/pdf/epixact.pdf), the company’s first commercial offering: an outbreak detection sequencing solution for hospital systems. Facilitated CLIA certification enabling the product to be offered as a lab test. Scaled business from one deal per quarter to 1-2 deals per month.",
   "category": "experience",
   "date": "2021-01-01"
 },
 {
   "title": "Manager, Bioinformatics Engineering at Day Zero Diagnostics",
   "url": "https://www.dayzerodiagnostics.com/",
-  "content": "Developed a data platform supporting machine learning model training and development. Grew data assets by 35% year-over-year through partnerships and public data sources, resulting in one of the largest datasets of its kind. Contributed to technology that was later acquired by bioMérieux.",
+  "content": "Developed MicrohmDB (https://tmfarrell.github.io/assets/pdf/microhmdb.pdf), a data platform supporting machine learning model training and development. Grew data assets by 35% year-over-year through partnerships and public data sources, resulting in one of the largest datasets of its kind. Contributed to technology that was later acquired by bioMérieux.",
   "category": "experience",
   "date": "2020-01-01"
-},
-{
-  "title": "Bioinformatics Engineer at Day Zero Diagnostics",
-  "url": "https://www.dayzerodiagnostics.com/",
-  "content": "Worked as a bioinformatics engineer contributing to data platform and model development initiatives supporting infectious disease diagnostics.",
-  "category": "experience",
-  "date": "2019-01-01"
 },
 {
   "title": "Computational Biologist at Broad Institute",

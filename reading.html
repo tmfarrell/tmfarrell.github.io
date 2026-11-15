@@ -3,24 +3,6 @@ layout: default
 title: Reading
 ---
 
-<div class="header-container">
-  <div class="ai-mode-container">
-    <a href="{{ '/ai-mode/' | relative_url }}" class="ai-mode-btn">AI Mode</a>
-  </div>
-  
-  <div style="text-align: center;">
-    <nav class="tab-nav">
-      <a href="{{ '/' | relative_url }}">about</a>
-      <span> | </span>
-      <a href="{{ '/reading/' | relative_url }}" class="active">read</a>
-      <span> | </span>
-      <a href="{{ '/writing/' | relative_url }}">write</a>
-      <span> | </span>
-      <a href="{{ '/building/' | relative_url }}">build</a>
-    </nav>
-  </div>
-</div>
-
-<hr data-content="">
+{% include site_header.html active="read" %}
 
 {% include post_list.html category="reading" limit=5 show_more=true show_more_url="/reading/archive/" show_more_text="More..." %}

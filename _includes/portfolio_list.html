@@ -85,6 +85,15 @@
           <div class="portfolio-description">
             {{ item.description }}
           </div>
+          {%- if item.org -%}
+          <div class="portfolio-org">
+            {%- if item.org_link -%}
+            <a href="{{ item.org_link }}">{{ item.org }}</a>
+            {%- else -%}
+            {{ item.org }}
+            {%- endif -%}
+          </div>
+          {%- endif -%}
           {%- if item.link contains "http" -%}
           <a class="portfolio-cta" href="{{ item.link }}">View project →</a>
           {%- else -%}
@@ -123,6 +132,15 @@
             <div class="portfolio-description">
               {{ item.description }}
             </div>
+            {%- if item.org -%}
+            <div class="portfolio-org">
+              {%- if item.org_link -%}
+              <a href="{{ item.org_link }}">{{ item.org }}</a>
+              {%- else -%}
+              {{ item.org }}
+              {%- endif -%}
+            </div>
+            {%- endif -%}
             {%- if item.link contains "http" -%}
             <a class="portfolio-cta" href="{{ item.link }}">View project →</a>
             {%- else -%}

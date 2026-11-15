@@ -232,6 +232,17 @@ hr {
   margin-bottom: 2rem;
 }
 
+.search-page .back-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.search-page .back-button {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
 /* Tab navigation */
 .tab-nav {
   text-align: center;
@@ -248,16 +259,18 @@ hr {
   font-weight: 600;
 }
 
-/* Footer */
+/* Footer — match header tab nav link size */
 .site-footer {
   text-align: center;
   margin-top: 3rem;
   padding-top: 1.5rem;
   border-top: 1px solid #e8e8e8;
+  font-size: 1em;
 }
 
 .site-footer a {
   margin: 0 0.5rem;
+  font-size: inherit;
 }
 
 /* Post list - no bullets on read/write lists (theme outputs bare <ul> with no .post-list class) */
@@ -900,7 +913,8 @@ a.post-item-header:focus-visible {
   }
 
   /* Header links - slightly smaller on mobile */
-  .header-container .tab-nav a {
+  .header-container .tab-nav a,
+  .site-footer {
     font-size: 0.9rem;
   }
 
@@ -915,8 +929,13 @@ a.post-item-header:focus-visible {
     margin: 1rem 0;
   }
   
-  .tab-nav a {
+  .tab-nav a,
+  .site-footer {
     font-size: 0.95rem; /* Increased from 0.9rem */
+  }
+
+  .tab-nav a,
+  .site-footer a {
     margin: 0 0.3rem;
   }
 
@@ -979,7 +998,8 @@ a.post-item-header:focus-visible {
     font-size: 1.05rem !important; /* Increased from 0.9rem */
   }
 
-  .tab-nav a {
+  .tab-nav a,
+  .site-footer {
     font-size: 1rem;
   }
 
@@ -995,6 +1015,17 @@ a.post-item-header:focus-visible {
     padding: 0.3rem 0.6rem;
   }
 
+  .header-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .header-search input[type="search"] {
+    width: 140px;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+
   /* About page - keep text clear of edges on small phones */
   .page {
     padding-left: 1rem;
@@ -1002,47 +1033,10 @@ a.post-item-header:focus-visible {
   }
 
   /* Header links - smaller on small phones */
-  .header-container .tab-nav a {
+  .header-container .tab-nav a,
+  .site-footer {
     font-size: 0.85rem;
   }
-}
-
-/* Mode Toggle */
-.mode-toggle {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 0.75rem;
-  gap: 0;
-  background: #f0f0f0;
-  border-radius: 8px;
-  padding: 2px;
-}
-
-.mode-btn {
-  padding: 0.35rem 0.75rem;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 0.85rem;
-  transition: all 0.15s ease;
-  color: #666;
-  border-radius: 6px;
-}
-
-.mode-btn:hover {
-  color: #333;
-}
-
-.mode-btn.active {
-  background: white;
-  color: var(--accent);
-  font-weight: 600;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.mode-divider {
-  display: none;
 }
 
 .chat-messages {
@@ -1266,15 +1260,6 @@ a.post-item-header:focus-visible {
 
 /* Mobile responsive for chat */
 @media (max-width: 768px) {
-  .mode-toggle {
-    margin-top: 0.5rem;
-  }
-
-  .mode-btn {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.8rem;
-  }
-
   .chat-messages {
     max-height: 150px;
     overflow-y: auto;
@@ -1318,7 +1303,8 @@ a.post-item-header:focus-visible {
     padding-right: 1rem;
   }
 
-  .tab-nav a {
+  .tab-nav a,
+  .site-footer {
     font-size: 0.9rem;
   }
 
@@ -1394,9 +1380,44 @@ a.post-item-header:focus-visible {
   position: relative;
 }
 
-.ai-mode-container {
+.ai-mode-container,
+.header-actions {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.header-search {
+  margin: 0;
+}
+
+.header-search input[type="search"] {
+  width: 200px;
+  padding: 0.4rem 0.75rem;
+  border-radius: 10px;
+  border: 0.5px solid #dee2e6;
+  background: white;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  outline: none;
+  transition: border 0.1s ease;
+}
+
+.header-search input[type="search"]::placeholder {
+  color: #999;
+}
+
+.header-search input[type="search"]:focus {
+  border: 1px solid var(--accent);
+}
+
+.header-search input[type="search"]::-webkit-search-decoration,
+.header-search input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }
 
 .ai-mode-btn {
@@ -1413,6 +1434,7 @@ a.post-item-header:focus-visible {
   border: 0.5px solid #dee2e6;
   cursor: pointer;
   /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);*/
+  white-space: nowrap;
 }
 
 .ai-mode-btn:hover {
@@ -1726,6 +1748,10 @@ a.post-item-header:focus-visible {
   .ai-mode-btn {
     font-size: 0.8rem;
     padding: 0.35rem 0.7rem;
+  }
+
+  .header-search input[type="search"] {
+    width: 160px;
   }
 
   .search-container h1 {

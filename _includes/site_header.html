@@ -1,0 +1,23 @@
+{%- assign active = include.active | default: "" -%}
+<div class="header-container">
+  <div class="ai-mode-container header-actions">
+    <form class="header-search" action="{{ '/search/' | relative_url }}" method="get" role="search">
+      <input type="search" name="q" placeholder="Search…" maxlength="200" aria-label="Search site" autocomplete="off" />
+    </form>
+    <a href="{{ '/ai-mode/' | relative_url }}" class="ai-mode-btn">AI Mode</a>
+  </div>
+
+  <div style="text-align: center;">
+    <nav class="tab-nav">
+      <a href="{{ '/' | relative_url }}"{% if active == "about" %} class="active"{% endif %}>about</a>
+      <span> | </span>
+      <a href="{{ '/reading/' | relative_url }}"{% if active == "read" %} class="active"{% endif %}>read</a>
+      <span> | </span>
+      <a href="{{ '/writing/' | relative_url }}"{% if active == "write" %} class="active"{% endif %}>write</a>
+      <span> | </span>
+      <a href="{{ '/building/' | relative_url }}"{% if active == "build" %} class="active"{% endif %}>build</a>
+    </nav>
+  </div>
+</div>
+
+<hr data-content="">
