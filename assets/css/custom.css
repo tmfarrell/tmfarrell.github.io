@@ -1266,14 +1266,6 @@ a.post-item-header:focus-visible {
     max-height: 150px;
     overflow-y: auto;
   }
-
-  .search-page:not(.ai-mode-page) .ai-input-container {
-    flex-direction: column;
-  }
-
-  .search-page:not(.ai-mode-page) .ai-btn {
-    min-width: auto;
-  }
 }
   
   body {
@@ -1751,15 +1743,7 @@ a.post-item-header:focus-visible {
     font-size: 2rem;
   }
 
-  .search-page:not(.ai-mode-page) .ai-input-container {
-    flex-direction: column;
-  }
-
-  .search-page:not(.ai-mode-page) .ai-btn {
-    min-width: auto;
-  }
-
-  .ai-mode-page .ai-input-container {
+  .search-page .ai-input-container {
     flex-direction: row;
     align-items: center;
   }
