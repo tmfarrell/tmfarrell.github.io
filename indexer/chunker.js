@@ -155,19 +155,23 @@ class TextChunker {
   }
 
   /**
-   * Create a URL-safe slug from title and URL
+   * Create a URL-safe slug from title and URL.
+   * Title is included whenever a URL is present so roles that share an employer
+   * homepage (OM1, Day Zero) do not overwrite each other on upsert.
    */
   createSlug(title, url) {
-    // Use URL path if available, otherwise fallback to title
-    if (url && url !== '/') {
-      return url.replace(/^\//, '').replace(/\//g, '_').replace(/[^a-zA-Z0-9_-]/g, '');
-    }
-    
-    return title
+    const titleSlug = String(title || '')
       .toLowerCase()
       .replace(/[^a-zA-Z0-9\s-]/g, '')
       .replace(/\s+/g, '_')
       .replace(/-+/g, '_');
+
+    if (url && url !== '/') {
+      const urlSlug = url.replace(/^\//, '').replace(/\//g, '_').replace(/[^a-zA-Z0-9_-]/g, '').replace(/_+$/g, '');
+      return titleSlug ? `${urlSlug}_${titleSlug}` : urlSlug;
+    }
+
+    return titleSlug;
   }
 
   /**

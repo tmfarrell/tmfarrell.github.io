@@ -1260,30 +1260,17 @@ a.post-item-header:focus-visible {
 
 /* Mobile responsive for chat */
 @media (max-width: 768px) {
-  .chat-messages {
+  .search-page:not(.ai-mode-page) .chat-messages {
     max-height: 150px;
     overflow-y: auto;
   }
 
-  .chat-message.user {
-    margin-left: 1rem;
-  }
-
-  .chat-message.assistant,
-  .chat-message.error {
-    margin-right: 1rem;
-  }
-
-  .ai-input-container {
+  .search-page:not(.ai-mode-page) .ai-input-container {
     flex-direction: column;
   }
 
-  .ai-btn {
+  .search-page:not(.ai-mode-page) .ai-btn {
     min-width: auto;
-  }
-
-  .ai-input-area {
-    margin-top: 2rem;
   }
 }
   
@@ -1453,6 +1440,10 @@ a.post-item-header:focus-visible {
 
 .search-container {
   text-align: center;
+}
+
+.ai-mode-heading {
+  margin-top: 50px;
 }
 
 .search-container h1 {
@@ -1758,12 +1749,17 @@ a.post-item-header:focus-visible {
     font-size: 2rem;
   }
 
-  .ai-input-container {
+  .search-page:not(.ai-mode-page) .ai-input-container {
     flex-direction: column;
   }
 
-  .ai-btn {
+  .search-page:not(.ai-mode-page) .ai-btn {
     min-width: auto;
+  }
+
+  .ai-mode-page .ai-input-container {
+    flex-direction: row;
+    align-items: center;
   }
 
   .result-card {
@@ -1784,7 +1780,7 @@ a.post-item-header:focus-visible {
 }
 
 @media (max-width: 480px) {
-  .search-page {
+  .search-page:not(.ai-mode-page) {
     padding: 1rem 0.5rem;
   }
 
