@@ -94,8 +94,14 @@ class TextChunker {
       ? content.substring(0, this.excerptLength - 3) + '...'
       : content;
 
-    // Build searchable content with category, tags, and org appended to each chunk
+    // Build searchable content with date, category, tags, and org appended to each chunk.
+    // Date goes in the text because chat reads this field, not the metadata date.
+    // Skill and about pages use a placeholder date, so leave those undated.
     let searchableContent = `[title: ${title}] ${content}`;
+    const dateLabel = originalMetadata.dates || originalMetadata.date;
+    if (dateLabel && category !== 'skills' && category !== 'about') {
+      searchableContent = `${searchableContent} [Date: ${dateLabel}]`;
+    }
     if (category) {
       searchableContent = `${searchableContent} [Category: ${category}]`;
     }
