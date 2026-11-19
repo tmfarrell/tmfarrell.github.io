@@ -94,8 +94,14 @@ class TextChunker {
       ? content.substring(0, this.excerptLength - 3) + '...'
       : content;
 
-    // Build searchable content with category, tags, and org appended to each chunk
+    // Build searchable content with date, category, tags, and org appended to each chunk.
+    // Date goes in the text because chat reads this field, not the metadata date.
+    // Skill and about pages use a placeholder date, so leave those undated.
     let searchableContent = `[title: ${title}] ${content}`;
+    const dateLabel = originalMetadata.dates || originalMetadata.date;
+    if (dateLabel && category !== 'skills' && category !== 'about') {
+      searchableContent = `${searchableContent} [Date: ${dateLabel}]`;
+    }
     if (category) {
       searchableContent = `${searchableContent} [Category: ${category}]`;
     }
@@ -149,19 +155,23 @@ class TextChunker {
   }
 
   /**
-   * Create a URL-safe slug from title and URL
+   * Create a URL-safe slug from title and URL.
+   * Title is included whenever a URL is present so roles that share an employer
+   * homepage (OM1, Day Zero) do not overwrite each other on upsert.
    */
   createSlug(title, url) {
-    // Use URL path if available, otherwise fallback to title
-    if (url && url !== '/') {
-      return url.replace(/^\//, '').replace(/\//g, '_').replace(/[^a-zA-Z0-9_-]/g, '');
-    }
-    
-    return title
+    const titleSlug = String(title || '')
       .toLowerCase()
       .replace(/[^a-zA-Z0-9\s-]/g, '')
       .replace(/\s+/g, '_')
       .replace(/-+/g, '_');
+
+    if (url && url !== '/') {
+      const urlSlug = url.replace(/^\//, '').replace(/\//g, '_').replace(/[^a-zA-Z0-9_-]/g, '').replace(/_+$/g, '');
+      return titleSlug ? `${urlSlug}_${titleSlug}` : urlSlug;
+    }
+
+    return titleSlug;
   }
 
   /**

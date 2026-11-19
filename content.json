@@ -28,91 +28,91 @@ layout: null
   "url": "https://www.bu.edu/",
   "content": "Master of Science in Bioinformatics from Boston University (2014-2016). Software engineering and data science focus.",
   "category": "background/ education",
-  "date": "2016-01-01"
+  "date": "2014-2016"
 },
 {
   "title": "BS Biomedical Engineering - Rutgers University",
   "url": "https://www.rutgers.edu/",
   "content": "Bachelor of Science in Biomedical Engineering from Rutgers University (2008-2012). Bioengineering focus. Activities: Army ROTC (top 10%).",
   "category": "background/ education",
-  "date": "2012-01-01"
+  "date": "2008-2012"
 },
 {
   "title": "Senior Product Manager at OM1",
   "url": "https://www.om1.com/",
-  "content": "Lead 0-to-1 development of a clinical AI product, taking a proprietary foundation model from internal capability to externally consumable product with multiple surfaces (e.g. API). Drive product strategy across payer, provider and life sciences markets, transitioning revenue streams from services to products, enabling deals worth $400k+ ACV.",
+  "content": "Dates: 2024-Present. Lead 0-to-1 development of a clinical AI product, taking a proprietary foundation model from internal capability to externally consumable product with multiple surfaces (e.g. API). Drive product strategy across payer, provider and life sciences markets, transitioning revenue streams from services to products, enabling deals worth $400k+ ACV.",
   "category": "experience",
-  "date": "2024-01-01"
+  "date": "2024-Present"
 },
 {
   "title": "Product Manager at OM1",
   "url": "https://www.om1.com/",
-  "content": "Led analytics platform that improved data product discoverability—driving 50% YoY revenue growth and enabling deals worth $1.75M+ TCV—and streamlined delivery, reducing costs by 80%. Oversaw ML/AI enrichments for real-world data platform (300M+ patient journeys), which increased observations by 4x. Built sales materials that drove significant commercial impact (e.g. deals worth $500k+ ACV).",
+  "content": "Dates: 2022-2024. Led analytics platform that improved data product discoverability—driving 50% YoY revenue growth and enabling deals worth $1.75M+ TCV—and streamlined delivery, reducing costs by 80%. Oversaw ML/AI enrichments for real-world data platform (300M+ patient journeys), which increased observations by 4x. Built sales materials that drove significant commercial impact (e.g. deals worth $500k+ ACV).",
   "category": "experience",
-  "date": "2022-01-01"
+  "date": "2022-2024"
 },
 {
   "title": "Product Manager at Day Zero Diagnostics",
   "url": "https://www.dayzerodiagnostics.com/",
-  "content": "Led product for company’s first commercial offering: outbreak detection for hospitals. Drove CLIA certification process to enable service to be sold as a clinical lab test. Scaled commercial traction from ~1 deal/quarter to 1–2 deals/month.",
+  "content": "Dates: 2021-2022. Led product for company’s first commercial offering: outbreak detection for hospitals. Drove CLIA certification process to enable service to be sold as a clinical lab test. Scaled commercial traction from ~1 deal/quarter to 1–2 deals/month.",
   "category": "experience",
-  "date": "2021-01-01"
+  "date": "2021-2022"
 },
 {
   "title": "Manager, Bioinformatics Engineering at Day Zero Diagnostics",
   "url": "https://www.dayzerodiagnostics.com/",
-  "content": "Developed data platform to support ML model training and development. Grew data 35% YoY through partnerships and public data, building one of the largest datasets of its kind (50k+ genotype-phenotype samples). Company later acquired by bioMérieux.",
+  "content": "Dates: 2020-2021. Developed data platform to support ML model training and development. Grew data 35% YoY through partnerships and public data, building one of the largest datasets of its kind (50k+ genotype-phenotype samples). Company later acquired by bioMérieux.",
   "category": "experience",
-  "date": "2020-01-01"
+  "date": "2020-2021"
 },
 {
   "title": "Bioinformatics Engineer at Day Zero Diagnostics",
   "url": "https://www.dayzerodiagnostics.com/",
-  "content": "Developed data platform to support ML model training and development. Grew data 35% YoY through partnerships and public data, building one of the largest datasets of its kind (50k+ genotype-phenotype samples).",
+  "content": "Dates: 2019-2020. Developed data platform to support ML model training and development. Grew data 35% YoY through partnerships and public data, building one of the largest datasets of its kind (50k+ genotype-phenotype samples).",
   "category": "experience",
-  "date": "2019-01-01"
+  "date": "2019-2020"
 },
 {
   "title": "Assoc. Computational Biologist at Broad Institute",
   "url": "https://www.broadinstitute.org/",
-  "content": "Built cloud-based genomics data system supporting research and analytic workflows. Analyzed phase IV vaccine trial data and improved accuracy via error-correction research.",
+  "content": "Dates: 2017-2019. Built cloud-based genomics data system supporting research and analytic workflows. Analyzed phase IV vaccine trial data and improved accuracy via error-correction research.",
   "category": "experience",
-  "date": "2017-01-01"
+  "date": "2017-2019"
 },
 {
   "title": "Research Assistant at Boston University Department of Health",
   "url": "https://github.com/tmfarrell/HCP/tree/master",
-  "content": "Built a pre-processing pipeline for an fMRI connectivity study using Human Connectome data.",
+  "content": "Dates: 2016. Built a pre-processing pipeline for an fMRI connectivity study using Human Connectome data.",
   "category": "experience",
-  "date": "2016-05-01"
+  "date": "2016"
 },
 {
   "title": "Research Assistant at Boston University School of Medicine",
   "url": "https://github.com/tmfarrell/PCRL_Logbook",
-  "content": "Developed a data management and analysis system for a 24-primate study on metabolism.",
+  "content": "Dates: 2015. Developed a data management and analysis system for a 24-primate study on metabolism.",
   "category": "experience",
-  "date": "2015-12-01"
+  "date": "2015"
 },
 {
   "title": "Biomedical Informatics Intern at Harvard Medical School",
   "url": "/assets/pdf/20151211_Phenotype%20prediction%20from%20highly-polymorphic%20structurally-variant%20genotypes_talk.pdf",
-  "content": "Developed a genomics-based classifier for predicting antigenic phenotypes from third-generation sequencing (3GS) data.",
+  "content": "Dates: 2016. Developed a genomics-based classifier for predicting antigenic phenotypes from third-generation sequencing (3GS) data.",
   "category": "experience",
-  "date": "2016-05-01"
+  "date": "2016"
 },
 {
   "title": "Bioinformatics Intern at New England Biolabs",
   "url": "/assets/pdf/20150804-NEB_Intership_Talk.pdf",
-  "content": "Developed error mitigation and correction methods for third-generation sequencing technologies.",
+  "content": "Dates: 2015. Developed error mitigation and correction methods for third-generation sequencing technologies.",
   "category": "experience",
-  "date": "2015-08-01"
+  "date": "2015"
 },
 {
   "title": "Operations Officer at US Army Reserve",
   "url": "https://www.goarmy.com/reserve.html",
-  "content": "Led operations for 100+ personnel; deployed overseas (2016) and for COVID-19 (2020).",
+  "content": "Dates: 2012-2021. Led operations for 100+ personnel; deployed overseas (2016) and for COVID-19 (2020).",
   "category": "experience",
-  "date": "2012-01-01"
+  "date": "2012-2021"
 },
 {
   "title": "Product Management Skills",
@@ -185,6 +185,9 @@ layout: null
   {%- assign content = item.description -%}
   {%- if item_year < 2019 -%}
     {%- assign content = "" -%}
+  {%- elsif item.date -%}
+    {%- assign date_label = item.date | date: "%Y-%m-%d" -%}
+    {%- assign content = content | append: " Dates: " | append: date_label -%}
   {%- endif -%}
   {
     "title": {{ item.title | jsonify }},
